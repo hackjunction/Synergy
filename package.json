@@ -22,11 +22,8 @@
   "dependencies": {
     "babel-watch": "^2.0.6",
     "express": "^4.15.3",
-<<<<<<< HEAD
     "node-sass": "^4.5.3",
-=======
     "if-env": "^1.0.0",
->>>>>>> 8230f169dd56f12f7cb64751e05035126cc57599
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "sass-loader": "^6.0.6",
