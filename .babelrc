@@ -1,0 +1,13 @@
+{
+    "presets": ["stage-0", "es2015", "react"],
+    "plugins": [
+        ["module-resolver", {
+            "root": ["./"],
+            "alias": {
+                "src": "./src"
+            }
+        }],
+        "babel-polyfill"
+    ],
+    "env": {}
+}
