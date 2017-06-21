@@ -28,6 +28,9 @@ https://projects.invisionapp.com/share/WRC7ILATV#/screens/239458262_Junction_Fro
 Color palette:
 https://coolors.co/232323-fbfbfb-ec008b-5abecf-ef4637
 
+Junction Brand book:
+https://docs.google.com/presentation/d/1IZQWn9Qdxa3jouFwNKVXYSbyGQtCY2c5kTjKWZ_hGA8/edit?usp=sharing
+
 ## Back end side
 
 We will use the wordpress API
