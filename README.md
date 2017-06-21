@@ -1,6 +1,18 @@
 # Synergy
 Junction 2017 platform
 
+## Development
+
+1. Install *yarn* by running
+```
+npm install -g yarn
+```
+
+2. Install dependencies by running
+```
+yarn
+```
+
 ## Back end side
 
 We will use the wordpress API
