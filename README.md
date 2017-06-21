@@ -13,9 +13,20 @@ npm install -g yarn
 yarn
 ```
 
-## Mock up
+3. Launch the internal server
+```
+yarn start
+```
+And it should be running on localhost:3000
+
+
+## Design
+
 First mockup:
 https://projects.invisionapp.com/share/WRC7ILATV#/screens/239458262_Junction_Front
+
+Color palette:
+https://coolors.co/232323-fbfbfb-ec008b-5abecf-ef4637
 
 ## Back end side
 
