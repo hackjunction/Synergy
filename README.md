@@ -8,7 +8,7 @@ Junction 2017 platform
 npm install -g yarn
 ```
 
-2. Install dependencies by running
+2. Install dependencies by running (run always when `yarn.lock` file has changed when you pull)
 ```
 yarn
 ```
