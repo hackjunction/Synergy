@@ -24,6 +24,10 @@ You can launch the docker with `docker-compose up -d`
 You can stop it with `docker-compose down`
 Removes the containers, default network, and the Wordpress database `docker-compose down --volumes`
 
+## Troubleshooting
+
+If your wordpress doesn't display json add `?rest_route=/wp/v2/posts` at the end of your url
+
 
 ## Links
 
