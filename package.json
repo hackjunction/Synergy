@@ -4,7 +4,8 @@
   "description": "Junction 2017 platform",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development babel-watch -w src src/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,9 @@
   },
   "homepage": "https://github.com/hackjunction/Synergy#readme",
   "dependencies": {
-    "babel-watch": "^2.0.6"
+    "babel-watch": "^2.0.6",
+    "express": "^4.15.3",
+    "yargs": "^8.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
