@@ -26,6 +26,8 @@
     "if-env": "^1.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.0.0",
     "yargs": "^8.0.2"
   },
   "devDependencies": {
