@@ -27,7 +27,7 @@ Removes the containers, default network, and the Wordpress database `docker-comp
 ## Troubleshooting
 
 If your wordpress doesn't display json add `?rest_route=/wp/v2/posts` at the end of your url
-
+Change the permalink setting in the wp-admin to something like Post name and it should now work.
 
 ## Links
 
