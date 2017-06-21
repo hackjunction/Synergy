@@ -20,8 +20,11 @@
   "dependencies": {
     "babel-watch": "^2.0.6",
     "express": "^4.15.3",
+    "node-sass": "^4.5.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.0.0",
     "yargs": "^8.0.2"
   },
   "devDependencies": {

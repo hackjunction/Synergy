@@ -1,0 +1,18 @@
+// color palette
+$primary:#232323;
+$secondary:#FBFBFB;
+$accent:#5ABECF;
+$accent2:#EC008B;
+$accent3:#EF4637;
+
+@mixin theme($name, $color) {
+  .#{$name} {
+    .element {
+      color: $color;
+    }
+
+    .other-element {
+      background: $color;
+    }
+  }
+}
