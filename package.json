@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development babel-watch -w src src/server.js"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev && true",
+    "start:dev": "NODE_ENV=development babel-watch -w src src/server.js",
+    "start:prod": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,11 @@
   "dependencies": {
     "babel-watch": "^2.0.6",
     "express": "^4.15.3",
+<<<<<<< HEAD
     "node-sass": "^4.5.3",
+=======
+    "if-env": "^1.0.0",
+>>>>>>> 8230f169dd56f12f7cb64751e05035126cc57599
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "sass-loader": "^6.0.6",
