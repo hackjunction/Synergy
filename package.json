@@ -20,6 +20,8 @@
   "dependencies": {
     "babel-watch": "^2.0.6",
     "express": "^4.15.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "yargs": "^8.0.2"
   },
   "devDependencies": {
