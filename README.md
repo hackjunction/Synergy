@@ -17,6 +17,10 @@ yarn
 ```
 yarn start
 ```
+and
+```
+yarn watch
+```
 And it should be running on localhost:3000
 
 
