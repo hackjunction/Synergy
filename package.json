@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/hackjunction/Synergy#readme",
   "dependencies": {
+    "axios": "^0.16.2",
     "babel-watch": "^2.0.6",
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.4",
