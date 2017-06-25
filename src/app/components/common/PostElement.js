@@ -4,6 +4,7 @@ export default class PostElement extends React.Component {
   // render
   render() {
     const { post } = this.props;
+
     return (
       <tr>
         <td>{post.title.rendered}</td>
@@ -15,5 +16,5 @@ export default class PostElement extends React.Component {
 
 // prop checks
 PostElement.propTypes = {
-  user: PropTypes.object.isRequired
+  post: PropTypes.object.isRequired
 };

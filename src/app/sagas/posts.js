@@ -8,6 +8,6 @@ export function* getAllPost(action) {
   // save the posts in state
   yield put({
     type: "GET_POSTS_SAVE",
-    posts: posts
+    posts: posts.data
   });
 }

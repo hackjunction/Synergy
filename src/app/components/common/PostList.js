@@ -3,9 +3,7 @@ import { connect } from "react-redux";
 import { push } from "react-router-redux";
 import PostElement from "./PostElement";
 
-// User list component
 export class PostList extends React.Component {
-  // constructor
   constructor(props) {
     super(props);
   }
@@ -20,11 +18,8 @@ export class PostList extends React.Component {
         <table>
           <thead>
             <tr>
-              <th>ID</th>
-              <th>Username</th>
-              <th>Job</th>
-              <th>Edit</th>
-              <th>Delete</th>
+              <th>Title</th>
+              <th>Content</th>
             </tr>
           </thead>
           <tbody>
@@ -42,7 +37,7 @@ export class PostList extends React.Component {
 // export the connected class
 function mapStateToProps(state) {
   return {
-    users: state.users
+    posts: state.posts
   };
 }
 export default connect(mapStateToProps)(PostList);

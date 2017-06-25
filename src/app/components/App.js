@@ -5,15 +5,20 @@ import "../stylesheets/main.scss";
 // app component
 export class App extends React.Component {
   componentWillMount() {
-    // the first time we load the app, we need that users list
+    // the first time we load the app, we need that posts list
     this.props.dispatch({ type: "GET_POSTS" });
   }
 
   // render
   render() {
     const { posts, children } = this.props;
-    console.log(posts);
-    console.log(children);
+    if (!posts.length) {
+      return (
+        <p>
+          No post
+        </p>
+      );
+    }
 
     return (
       <div className="container">
