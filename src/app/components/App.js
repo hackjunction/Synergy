@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import Menu from "./common/Menu";
 import "../stylesheets/main.scss";
 
 // app component
@@ -22,7 +23,12 @@ export class App extends React.Component {
 
     return (
       <div className="container">
-        {children}
+        <div>
+          <Menu />
+        </div>
+        <div>
+          {children}
+        </div>
       </div>
     );
   }
