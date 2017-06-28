@@ -1,6 +1,4 @@
 # Synergy
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/hackjunction/Synergy.svg)](https://greenkeeper.io/)
 Junction 2017 platform
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/hackjunction/Synergy.svg)](https://greenkeeper.io/)
