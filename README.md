@@ -1,6 +1,8 @@
 # Synergy
 Junction 2017 platform
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hackjunction/Synergy.svg)](https://greenkeeper.io/)
+
 ## Development
 
 1. Install *yarn* by running
