@@ -2,6 +2,7 @@
 Junction 2017 platform
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/hackjunction/Synergy.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/hackjunction/Synergy.svg?branch=master)](https://travis-ci.org/hackjunction/Synergy)
 
 ## Development
 
