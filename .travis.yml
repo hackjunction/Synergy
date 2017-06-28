@@ -5,9 +5,8 @@ os:
   - linux
 script:
   - yarn test
-#before_install: yarn global add greenkeeper-lockfile@1
-#before_script: greenkeeper-lockfile-update
-#after_script: greenkeeper-lockfile-upload
+after_script:
+  # custome upcloud script should go here. More info https://docs.travis-ci.com/user/deployment/custom/
 notifications:
   slack:
     on_failure: always
