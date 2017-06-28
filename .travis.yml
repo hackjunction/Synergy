@@ -6,7 +6,8 @@ os:
 script:
   - yarn test
 after_script:
-  # custome upcloud script should go here. More info https://docs.travis-ci.com/user/deployment/custom/
+  # Custome upcloud script should go here. More info https://docs.travis-ci.com/user/deployment/custom/
+  # For encrypting keys: https://docs.travis-ci.com/user/encrypting-files/
 notifications:
   slack:
     on_failure: always
