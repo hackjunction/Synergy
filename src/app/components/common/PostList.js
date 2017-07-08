@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import { push } from "react-router-redux";
 import PostElement from "./PostElement";
 
 export class PostList extends React.Component {
@@ -8,10 +7,25 @@ export class PostList extends React.Component {
     super(props);
   }
 
+  componentWillMount() {
+    // the first time we load the app, we need that posts list
+    this.props.dispatch({ type: "GET_POSTS" });
+  }
+
   // render
   render() {
     const { posts } = this.props;
 
+    console.log(posts);
+
+    if (!posts.length) {
+      return (
+        <p>
+          No post
+        </p>
+      );
+    }
+    
     // show the list of posts
     return (
       <div>
@@ -28,7 +42,6 @@ export class PostList extends React.Component {
             })}
           </tbody>
         </table>
-
       </div>
     );
   }
@@ -37,7 +50,7 @@ export class PostList extends React.Component {
 // export the connected class
 function mapStateToProps(state) {
   return {
-    posts: state.posts
+    posts: state.posts || []
   };
 }
 export default connect(mapStateToProps)(PostList);

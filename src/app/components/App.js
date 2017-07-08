@@ -1,43 +1,23 @@
-import React from "react";
-import { connect } from "react-redux";
-import Menu from "./common/Menu";
-import "../stylesheets/main.scss";
+import React from 'react';
+import { Route, Link } from 'react-router-dom';
+import Landing from './Landing';
+import Post from './Post';
+import About from './About';
 
-// app component
-export class App extends React.Component {
-  componentWillMount() {
-    // the first time we load the app, we need that posts list
-    this.props.dispatch({ type: "GET_POSTS" });
-  }
+const App = () => (
+  <div>
+    <header>
+      <Link to="/">Landing</Link>
+      <Link to="/post">Post</Link>
+      <Link to="/about">About</Link>
+    </header>
 
-  // render
-  render() {
-    const { posts, children } = this.props;
-    if (!posts.length) {
-      return (
-        <p>
-          No post
-        </p>
-      );
-    }
+    <main>
+      <Route exact path="/" component={Landing} />
+      <Route exact path="/post" component={Post} />
+      <Route exact path="/about" component={About} />
+    </main>
+  </div>
+)
 
-    return (
-      <div className="container">
-        <div>
-          <Menu />
-        </div>
-        <div>
-          {children}
-        </div>
-      </div>
-    );
-  }
-}
-
-// export the connected class
-function mapStateToProps(state) {
-  return {
-    posts: state.posts || []
-  };
-}
-export default connect(mapStateToProps)(App);
+export default App
