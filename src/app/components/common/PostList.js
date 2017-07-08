@@ -16,8 +16,6 @@ export class PostList extends React.Component {
   render() {
     const { posts } = this.props;
 
-    console.log(posts);
-
     if (!posts.length) {
       return (
         <p>
