@@ -15,7 +15,8 @@
     "semi": 2
   },
   "env": {
-    "node": true
+    "node": true,
+    "browser": true
   },
   "plugins": [
     "react"
