@@ -41567,7 +41567,7 @@ var PostList = exports.PostList = function (_Component) {
 
 
 PostList.propTypes = {
-  dispatch: _propTypes2.default.node,
+  dispatch: _propTypes2.default.func,
   posts: _propTypes2.default.object
 };
 

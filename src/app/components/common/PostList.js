@@ -11,7 +11,7 @@ export class PostList extends Component {
   componentWillMount() {
     // the first time we load the app, we need that posts list
     this.props.dispatch({ type: 'GET_POSTS' });
-  }
+  } 
 
   // render
   render() {
@@ -46,7 +46,7 @@ export class PostList extends Component {
 
 // prop checks
 PostList.propTypes = {
-  dispatch: PropTypes.node,
+  dispatch: PropTypes.func,
   posts: PropTypes.object
 };
 
