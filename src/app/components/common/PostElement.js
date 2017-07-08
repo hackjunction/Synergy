@@ -1,5 +1,4 @@
 import React, { PropTypes } from "react";
-import { Link } from "react-router";
 export default class PostElement extends React.Component {
   // render
   render() {
@@ -7,8 +6,12 @@ export default class PostElement extends React.Component {
 
     return (
       <tr>
-        <td>{post.title.rendered}</td>
-        <td>{post.content.rendered}</td>
+        <td>
+          {post.title.rendered}
+        </td>
+        <td>
+          {post.content.rendered}
+        </td>
       </tr>
     );
   }
