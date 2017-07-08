@@ -1,11 +1,14 @@
-import React, { PropTypes } from "react";
-export default class Challenge extends React.Component {
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import Partner from "../partners/Partner";
+
+export default class Challenge extends Component {
   // render
   render() {
     var challengeConfig = {
       title: this.props.title,
       image: this.props.image,
-      partners: this.props.partners
+      partners: this.props.partners,
       description: this.props.description,
       criteria: this.props.criteria,
       prize: this.props.prize,
@@ -20,6 +23,7 @@ export default class Challenge extends React.Component {
         {challengeConfig.partners.map(function(object, i) {
           return (
             <Partner
+              key={i}
               name={object.name}
               description={object.description}
               logo={object.logo}
@@ -34,7 +38,7 @@ export default class Challenge extends React.Component {
         </p>
         {challengeConfig.links.map(function(object, i) {
           return (
-            <p>{object.name}</p>
+            <p key={i}>{object.name}</p>
           );
         })}
       </div>
@@ -49,5 +53,6 @@ Challenge.propTypes = {
   partners: PropTypes.object.isRequired,
   description: PropTypes.string.isRequired,
   criteria: PropTypes.string.isRequired,
-  prize: PropTypes.string.isRequired
+  prize: PropTypes.string.isRequired,
+  links: PropTypes.string.isRequired
 };

@@ -1,8 +1,8 @@
-import React from 'react';
-import { Route, Link } from 'react-router-dom';
-import Landing from './Landing';
-import Post from './Post';
-import About from './About';
+import React from "react";
+import { Route, Link } from "react-router-dom";
+import Landing from "./Landing";
+import Post from "./Post";
+import About from "./About";
 
 const App = () => (
   <div>
@@ -18,6 +18,6 @@ const App = () => (
       <Route exact path="/about" component={About} />
     </main>
   </div>
-)
+);
 
-export default App
+export default App;

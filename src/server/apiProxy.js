@@ -1,14 +1,14 @@
-import express from "express";
-import * as wordpressApi from "src/server/lib/wordpressApi";
+import express from 'express';
+import * as wordpressApi from './lib/wordpressApi';
 
 const apiRouter = express.Router();
 
-apiRouter.get("/posts", (req, res) => {
+apiRouter.get('/posts', (req, res) => {
   wordpressApi
     .getPosts()
-    .then(({data}) => {
+    .then(({ data }) => {
       res.json(data);
-    })
+    });
 });
 
 export default apiRouter;

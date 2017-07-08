@@ -1,11 +1,14 @@
-import React, { PropTypes } from "react";
-export default class TrackOverview extends React.Component {
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Partner from '../partners/Partner';
+
+export default class TrackOverview extends Component {
   // render
   render() {
-    var trackOverviewConfig = {
+    const trackOverviewConfig = {
       title: this.props.title,
       image: this.props.image,
-      partners: this.props.partners
+      partners: this.props.partners,
     };
     return (
       <div>
@@ -13,15 +16,14 @@ export default class TrackOverview extends React.Component {
           {trackOverviewConfig.title}
         </h1>
         <img src={trackOverviewConfig.image} />
-        {trackOverviewConfig.partners.map(function(object, i) {
-          return (
-            <Partner
-              name={object.name}
-              description={object.description}
-              logo={object.logo}
-            />
-          );
-        })}
+        {trackOverviewConfig.partners.map((object, i) => (
+          <Partner
+            key={i}
+            name={object.name}
+            description={object.description}
+            logo={object.logo}
+          />
+        ))}
       </div>
     );
   }
@@ -31,5 +33,5 @@ export default class TrackOverview extends React.Component {
 TrackOverview.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  partners: PropTypes.object.isRequired
+  partners: PropTypes.object.isRequired,
 };

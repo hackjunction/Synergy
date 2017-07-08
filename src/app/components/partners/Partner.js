@@ -1,11 +1,13 @@
-import React, { PropTypes } from "react";
-export default class Partner extends React.Component {
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+export default class Partner extends Component {
   // render
   render() {
-    var partnerConfig = {
+    const partnerConfig = {
       name: this.props.name,
       logo: this.props.logo,
-      description: this.props.description
+      description: this.props.description,
     };
     return (
       <div>
@@ -24,6 +26,6 @@ export default class Partner extends React.Component {
 // prop checks
 Partner.propTypes = {
   name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired
+  logo: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };

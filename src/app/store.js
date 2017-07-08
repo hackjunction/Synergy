@@ -1,12 +1,12 @@
-import { createStore, applyMiddleware, compose } from "redux";
-import createHistory from "history/createBrowserHistory";
-import { routerMiddleware, push } from "react-router-redux";
-import createSagaMiddleware from "redux-saga";
-import { reducers } from "./reducers/index";
-import { sagas } from "./sagas/index";
+import { createStore, applyMiddleware, compose } from 'redux';
+import createHistory from 'history/createBrowserHistory';
+import { routerMiddleware } from 'react-router-redux';
+import createSagaMiddleware from 'redux-saga';
+import reducers from './reducers/index';
+import sagas from './sagas/index';
 
 // add the middlewares
-let middlewares = [];
+const middlewares = [];
 
 // Create a history of your choosing (we"re using a browser history in this case)
 const history = createHistory();
@@ -22,7 +22,7 @@ middlewares.push(sagaMiddleware);
 let middleware = applyMiddleware(...middlewares);
 
 // add the redux dev tools
-if (process.env.NODE_ENV !== "production" && window.devToolsExtension) {
+if (process.env.NODE_ENV !== 'production' && window.devToolsExtension) {
   middleware = compose(middleware, window.devToolsExtension());
 }
 

@@ -1,5 +1,7 @@
-import React, { PropTypes } from "react";
-export default class PostElement extends React.Component {
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+export default class PostElement extends Component {
   // render
   render() {
     const { post } = this.props;
@@ -19,5 +21,5 @@ export default class PostElement extends React.Component {
 
 // prop checks
 PostElement.propTypes = {
-  post: PropTypes.object.isRequired
+  post: PropTypes.object.isRequired,
 };

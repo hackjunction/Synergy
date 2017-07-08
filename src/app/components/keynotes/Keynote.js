@@ -1,12 +1,14 @@
-import React, { PropTypes } from "react";
-export default class Keynote extends React.Component {
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+export default class Keynote extends Component {
   // render
   render() {
-    var keynoteConfig = {
+    const keynoteConfig = {
       name: this.props.name,
       image: this.props.image,
       description: this.props.description,
-      link: this.props.link
+      link: this.props.link,
     };
     return (
       <div>
@@ -30,5 +32,5 @@ Keynote.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired
+  link: PropTypes.string.isRequired,
 };
