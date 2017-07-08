@@ -1,5 +1,5 @@
-import { call, put } from 'redux-saga/effects';
-import ApiPosts from '../api/posts';
+import { call, put } from "redux-saga/effects";
+import ApiPosts from "../api/posts";
 
 // get all the post from wordpress
 export default function* getAllPost() {
@@ -7,7 +7,7 @@ export default function* getAllPost() {
 
   // save the posts in state
   yield put({
-    type: 'GET_POSTS_SAVE',
+    type: "GET_POSTS_SAVE",
     posts: posts.data,
   });
 }

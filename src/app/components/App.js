@@ -4,7 +4,7 @@ import Landing from "./Landing";
 import Post from "./Post";
 import About from "./About";
 
-const App = () => (
+const App = () =>
   <div>
     <header>
       <Link to="/">Landing</Link>
@@ -17,7 +17,6 @@ const App = () => (
       <Route exact path="/post" component={Post} />
       <Route exact path="/about" component={About} />
     </main>
-  </div>
-);
+  </div>;
 
 export default App;

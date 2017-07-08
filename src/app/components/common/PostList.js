@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import PostElement from './PostElement';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import PostElement from "./PostElement";
 
 export class PostList extends Component {
   constructor(props) {
@@ -10,19 +10,15 @@ export class PostList extends Component {
 
   componentWillMount() {
     // the first time we load the app, we need that posts list
-    this.props.dispatch({ type: 'GET_POSTS' });
-  } 
+    this.props.dispatch({ type: "GET_POSTS" });
+  }
 
   // render
   render() {
     const { posts } = this.props;
 
     if (!posts.length) {
-      return (
-        <p>
-          No post
-        </p>
-      );
+      return <p>No post</p>;
     }
 
     // show the list of posts
@@ -36,7 +32,9 @@ export class PostList extends Component {
             </tr>
           </thead>
           <tbody>
-            {posts.map((post, index) => <PostElement key={index} post={post} />)}
+            {posts.map((post, index) =>
+              <PostElement key={index} post={post} />,
+            )}
           </tbody>
         </table>
       </div>
@@ -47,9 +45,8 @@ export class PostList extends Component {
 // prop checks
 PostList.propTypes = {
   dispatch: PropTypes.func,
-  posts: PropTypes.object
+  posts: PropTypes.object,
 };
-
 
 // export the connected class
 function mapStateToProps(state) {
