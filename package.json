@@ -27,6 +27,7 @@
     "css-loader": "^0.28.4",
     "express": "^4.15.3",
     "extract-text-webpack-plugin": "^2.1.2",
+    "history": "^4.6.3",
     "if-env": "^1.0.0",
     "node-sass": "^4.5.3",
     "react": "^15.6.1",
