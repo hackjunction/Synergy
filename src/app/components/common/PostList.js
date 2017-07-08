@@ -17,6 +17,15 @@ export class PostList extends React.Component {
     const { posts } = this.props;
 
     console.log(posts);
+
+    if (!posts.length) {
+      return (
+        <p>
+          No post
+        </p>
+      );
+    }
+    
     // show the list of posts
     return (
       <div>

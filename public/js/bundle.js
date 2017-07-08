@@ -41515,6 +41515,15 @@ var PostList = exports.PostList = function (_React$Component) {
 
 
       console.log(posts);
+
+      if (!posts.length) {
+        return _react2.default.createElement(
+          "p",
+          null,
+          "No post"
+        );
+      }
+
       // show the list of posts
       return _react2.default.createElement(
         "div",
