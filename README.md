@@ -31,7 +31,7 @@ And it should be running on localhost:3000
 
 ## Design
 
-First mockup:
+Website Prototype (Updating constantly):
 https://projects.invisionapp.com/share/WRC7ILATV#/screens/239458262_Junction_Front
 
 Color palette:
