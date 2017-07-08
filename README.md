@@ -47,6 +47,39 @@ You can launch the docker with `docker-compose up -d`
 You can stop it with `docker-compose down`
 Removes the containers, default network, and the Wordpress database `docker-compose down --volumes`
 
+## Wordpress configuration
+
+All content added as a post, tagged to specific categories; Track, Partner, Challenge etc.
+Plugins in use:
+  Advanced Custom Fields (4.4.1)
+  ACF to WP API (1.4.0)
+
+In advanced custom fields all of these post types have relevant fields added
+
+Front page section: text content in the post
+  Background (image)
+  Image
+Track:
+  description
+  image
+  challenges
+  Main partners
+  Secondary partners
+Partner:
+  image
+Challenge:
+  description (text)
+  image
+  criteria (text)
+  prize (text)
+  partners
+  links to company specifications (text)
+Keynote:
+  image
+  info
+  link
+
+
 ## Troubleshooting
 
 If your wordpress doesn't display json add `?rest_route=/wp/v2/posts` at the end of your url
