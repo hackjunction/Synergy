@@ -50,6 +50,7 @@ PostList.propTypes = {
 
 // export the connected class
 function mapStateToProps(state) {
+  console.log('posts', state.posts);
   return {
     posts: state.posts || [],
   };
