@@ -12,7 +12,8 @@
     "dot-notation": 0,
     "no-console": 0,
     "react/jsx-key": 0,
-    "semi": 2
+    "semi": 2,
+    "import/prefer-default-export": 0
   },
   "env": {
     "node": true,
