@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 import { PostList } from "./common/PostList";
 
-export class Post extends Component {
+class Post extends Component {
   constructor(props) {
     super(props);
   }
