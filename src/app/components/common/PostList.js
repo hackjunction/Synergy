@@ -1,16 +1,16 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import PostElement from "./PostElement";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import PostElement from './PostElement';
 
-export class PostList extends Component {
+class PostList extends Component {
   constructor(props) {
     super(props);
   }
 
   componentWillMount() {
     // the first time we load the app, we need that posts list
-    this.props.dispatch({ type: "GET_POSTS" });
+    this.props.dispatch({ type: 'GET_POSTS' });
   }
 
   // render
@@ -45,7 +45,7 @@ export class PostList extends Component {
 // prop checks
 PostList.propTypes = {
   dispatch: PropTypes.func,
-  posts: PropTypes.object,
+  posts: PropTypes.array,
 };
 
 // export the connected class
@@ -54,4 +54,5 @@ function mapStateToProps(state) {
     posts: state.posts || [],
   };
 }
+
 export default connect(mapStateToProps)(PostList);
