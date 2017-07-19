@@ -1,6 +1,5 @@
 // http://webpack.github.io/docs/configuration.html
 // http://webpack.github.io/docs/webpack-dev-server.html
-var path = require("path");
 var CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
