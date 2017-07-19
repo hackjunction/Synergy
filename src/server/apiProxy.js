@@ -1,6 +1,7 @@
 import express from 'express';
 import * as wordpressApi from './lib/wordpressApi';
 import facebookClient from './lib/facebookClient';
+import instagramClient from './lib/instagramApi';
 
 const FACEBOOK_PAGE = 'hackjunction';
 
@@ -38,6 +39,17 @@ apiRouter.get('/fb/events', (req, res) => {
       res.json(fbRes.data);
     }
   );
+
+apiRouter.get('/ig/images', (req, res) => {
+  instagramClient.get('users/self/media/recent').then(pictures => {
+    res.json(pictures.data.slice(0, 13).map(picture => {
+      return {
+        url:picture.images.standard_resolution.url,
+      //  caption:picture.caption.text,
+        link:picture.link
+      }
+    }));
+  })
 });
 
 export default apiRouter;
