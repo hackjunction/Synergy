@@ -1,40 +1,43 @@
 // http://webpack.github.io/docs/configuration.html
 // http://webpack.github.io/docs/webpack-dev-server.html
-var CleanWebpackPlugin = require("clean-webpack-plugin");
+var path = require('path');
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: ["babel-polyfill", __dirname + "/src/app/index.js"],
+  entry: ['babel-polyfill', __dirname + '/src/app/index.js'],
   output: {
-    path: __dirname + "/public/js",
-    publicPath: "js/",
-    filename: "bundle.js"
+    path: __dirname + '/public/js',
+    publicPath: 'js/',
+    filename: 'bundle.js',
   },
   module: {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ["react-hot-loader", "babel-loader", "eslint-loader"],
-        exclude: /node_modules/
+        loaders: ['react-hot-loader', 'babel-loader', 'eslint-loader'],
+        exclude: /node_modules/,
       },
       {
         // https://github.com/jtangelder/sass-loader
         test: /\.scss$/,
-        loaders: ["style-loader", "css-loader", "sass-loader"]
+        loaders: ['style-loader', 'css-loader', 'sass-loader'],
+        include: /flexboxgrid/,
       },
       {
         test: /\.css$/,
-        loaders: ["style-loader", "css-loader"]
-      }
-    ]
+        loaders: ['style-loader', 'css-loader'],
+        include: /flexboxgrid/,
+      },
+    ],
   },
   devServer: {
-    contentBase: __dirname + "/public"
+    contentBase: __dirname + '/public',
   },
   plugins: [
-    new CleanWebpackPlugin(["css/main.css", "js/bundle.js"], {
-      root: __dirname + "/public",
+    new CleanWebpackPlugin(['css/main.css', 'js/bundle.js'], {
+      root: __dirname + '/public',
       verbose: true,
-      dry: false // true for simulation
-    })
-  ]
+      dry: false, // true for simulation
+    }),
+  ],
 };

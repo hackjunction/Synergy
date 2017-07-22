@@ -1,5 +1,5 @@
 import express from 'express';
-import * as wordpressApi from './lib/wordpressApi';
+// import * as wordpressApi from './lib/wordpressApi';
 import facebookClient from './lib/facebookClient';
 import * as mediumClient from './lib/mediumClient';
 import instagramClient from './lib/instagramApi';
@@ -8,16 +8,14 @@ const FACEBOOK_PAGE = 'hackjunction';
 
 const apiRouter = express.Router();
 
-apiRouter.get('/posts', (req, res) => {
-  wordpressApi
-    .getPosts()
-    .then(({ data }) => {
-      res.json(data);
-    });
-});
+// apiRouter.get('/posts', (req, res) => {
+//   wordpressApi.getPosts().then(({ data }) => {
+//     res.json(data);
+//   });
+// });
 
 apiRouter.get('/fb/posts', (req, res) => {
-  facebookClient.api(`/${FACEBOOK_PAGE}`, (fbRes) => {
+  facebookClient.api('/hackjunction', fbRes => {
     res.json(fbRes);
   });
 });
