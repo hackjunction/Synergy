@@ -9,15 +9,13 @@ const FACEBOOK_PAGE = 'hackjunction';
 const apiRouter = express.Router();
 
 apiRouter.get('/posts', (req, res) => {
-  wordpressApi
-    .getPosts()
-    .then(({ data }) => {
-      res.json(data);
-    });
+  wordpressApi.getPosts().then(({ data }) => {
+    res.json(data);
+  });
 });
 
 apiRouter.get('/fb/posts', (req, res) => {
-  facebookClient.api(`/${FACEBOOK_PAGE}`, (fbRes) => {
+  facebookClient.api(`/${FACEBOOK_PAGE}`, fbRes => {
     res.json(fbRes);
   });
 });
@@ -36,29 +34,30 @@ apiRouter.get('/fb/events', (req, res) => {
         'end_time',
       ],
     },
-    (fbRes) => {
+    fbRes => {
       res.json(fbRes.data);
-    }
+    },
   );
+});
 
 apiRouter.get('/ig/images', (req, res) => {
   instagramClient.get('users/self/media/recent').then(pictures => {
-    res.json(pictures.data.slice(0, 13).map(picture => {
-      return {
-        url:picture.images.standard_resolution.url,
-      //  caption:picture.caption.text,
-        link:picture.link
-      }
-    }));
-  })
+    res.json(
+      pictures.data.slice(0, 13).map(picture => {
+        return {
+          url: picture.images.standard_resolution.url,
+          //  caption:picture.caption.text,
+          link: picture.link,
+        };
+      }),
+    );
+  });
 });
 
 apiRouter.get('/medium/posts', (req, res) => {
-  mediumClient
-    .getPosts()
-    .then((posts) => {
-      res.json(posts);
-    });
+  mediumClient.getPosts().then(posts => {
+    res.json(posts);
+  });
 });
 
 export default apiRouter;
