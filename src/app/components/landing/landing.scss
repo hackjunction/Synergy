@@ -1,9 +1,47 @@
 // Button component
-$color: black;
-$body-color: #ecf0f1;
-$color1: #566473;
-$color2: #16a085;
-$color3: #435a6b;
+$color3: teal;
+
+.junction_welcome {
+  min-height: 800px;
+  margin: 0;
+  padding: 0;
+  color: $color3;
+  padding: 0;
+  .junction_hackthefuture {
+    margin-top: 200px;
+  }
+  .junction_welcome_bottom {
+    margin-top: 300px;
+  }
+}
+
+.junction_tracks {
+  img {
+    max-width: 100%;
+    box-shadow: 8px 8px 10px #aaa;
+  }
+}
+
+.junction.hacktalks {
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+}
 
 .junction_button {
   position: relative;
@@ -15,10 +53,10 @@ $color3: #435a6b;
   font-size: 18px;
   margin: 1em 0.8em;
 
-  &.border_junction {
+  &.junction_border {
     color: $color3;
-    &.border_junction:after,
-    &.border_junction:before {
+    &.junction_border:after,
+    &.junction_border:before {
       content: "";
       display: block;
       position: absolute;
@@ -29,7 +67,7 @@ $color3: #435a6b;
       border-radius: 2px;
     }
 
-    &.border_junction:after {
+    &.junction_border:after {
       bottom: 0;
       right: 0;
       border-top-color: transparent;
@@ -38,7 +76,7 @@ $color3: #435a6b;
       border-right-color: $color3;
     }
 
-    &.border_junction:before {
+    &.junction_border:before {
       top: 0;
       left: 0;
       border-bottom-color: transparent;
@@ -47,7 +85,7 @@ $color3: #435a6b;
       border-left-color: $color3;
     }
 
-    &.border_junction:hover:after {
+    &.junction_border:hover:after {
       right: -15px;
       border-bottom-color: $color3;
       border-right-color: $color3;
@@ -57,7 +95,7 @@ $color3: #435a6b;
       height: 100%;
     }
 
-    &.border_junction:hover:before {
+    &.junction_border:hover:before {
       top: -12px;
       border-bottom-color: $color3;
       border-right-color: $color3;

@@ -1,24 +1,20 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
 import './landing/landing.scss';
+import Welcome from './landing/Welcome';
+import About from './landing/About';
+import Tracks from './landing/Tracks';
+import Partners from './landing/Partners';
+import Hacktalks from './landing/Hacktalks';
+import Media from './landing/Media';
 
 const Landing = () =>
-  <Grid>
-    <Row center="xs" middle="xs">
-      <Col xs={12}>
-        <h2>HACK THE FUTURE</h2>
-      </Col>
-      <Col xs={12}>
-        <h4>27-29 November - Helsinki</h4>
-      </Col>
-      <Col xs={12}>
-        <div>
-          <button className="junction_button border_junction">
-            REGISTRATION FORM
-          </button>
-        </div>
-      </Col>
-    </Row>
-  </Grid>;
+  <div>
+    <Welcome />
+    <About />
+    <Tracks />
+    <Partners />
+    <Hacktalks />
+    <Media />
+  </div>;
 
 export default Landing;
