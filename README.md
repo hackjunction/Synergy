@@ -16,7 +16,9 @@ npm install -g yarn
 yarn
 ```
 
-3. Launch the internal server
+3. Copy `dotenv` as `.env` to get your local configuration in place. *Use `src/lib/config.js` to import configuration to other script files!*
+
+4. Launch the internal server
 ```
 yarn start
 ```
@@ -29,7 +31,7 @@ And it should be running on localhost:3000
 
 ## Design
 
-First mockup:
+Website Prototype (Updating constantly):
 https://projects.invisionapp.com/share/WRC7ILATV#/screens/239458262_Junction_Front
 
 Color palette:
@@ -44,6 +46,39 @@ We will use the wordpress API
 You can launch the docker with `docker-compose up -d`
 You can stop it with `docker-compose down`
 Removes the containers, default network, and the Wordpress database `docker-compose down --volumes`
+
+## Wordpress configuration
+
+All content added as a post, tagged to specific categories; Track, Partner, Challenge etc.
+Plugins in use:
+  Advanced Custom Fields (4.4.1)
+  ACF to WP API (1.4.0)
+
+In advanced custom fields all of these post types have relevant fields added
+
+Front page section: text content in the post
+  Background (image)
+  Image
+Track:
+  description
+  image
+  challenges
+  Main partners
+  Secondary partners
+Partner:
+  image
+Challenge:
+  description (text)
+  image
+  criteria (text)
+  prize (text)
+  partners
+  links to company specifications (text)
+Keynote:
+  image
+  info
+  link
+
 
 ## Troubleshooting
 

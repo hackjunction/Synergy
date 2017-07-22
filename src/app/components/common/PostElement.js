@@ -1,14 +1,19 @@
-import React, { PropTypes } from "react";
-import { Link } from "react-router";
-export default class PostElement extends React.Component {
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+export default class PostElement extends Component {
   // render
   render() {
     const { post } = this.props;
 
     return (
       <tr>
-        <td>{post.title.rendered}</td>
-        <td>{post.content.rendered}</td>
+        <td>
+          {post.title.rendered}
+        </td>
+        <td>
+          {post.content.rendered}
+        </td>
       </tr>
     );
   }
@@ -16,5 +21,5 @@ export default class PostElement extends React.Component {
 
 // prop checks
 PostElement.propTypes = {
-  post: PropTypes.object.isRequired
+  post: PropTypes.object.isRequired,
 };
