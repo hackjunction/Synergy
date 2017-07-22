@@ -3,6 +3,7 @@ import { routerReducer } from 'react-router-redux';
 import { reducer as formReducer } from 'redux-form';
 import { posts, mediumPosts } from './posts';
 import challenges from './challenges';
+import tracks from './tracks';
 
 const reducers = combineReducers({
   routing: routerReducer,
@@ -10,6 +11,7 @@ const reducers = combineReducers({
   posts: posts,
   mediumPosts: mediumPosts,
   challenges: challenges,
+  tracks: tracks,
 });
 
 export default reducers;
