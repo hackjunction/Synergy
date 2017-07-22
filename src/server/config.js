@@ -7,10 +7,6 @@ export const WORDPRESS_BASE_URL = process.env.WORDPRESS_BASE_URL;
 export const FACEBOOK_APP_ID = process.env.FACEBOOK_APP_ID;
 export const FACEBOOK_APP_SECRET = process.env.FACEBOOK_APP_SECRET;
 
-// Medium API
-export const MEDIUM_CLIENT_ID = MEDIUM_CLIENT_ID;
-export const MEDIUM_CLIENT_SECRET = MEDIUM_CLIENT_SECRET;
-
 // Instagram API
 export const INSTAGRAM_ACCESS_TOKEN = process.env.INSTAGRAM_ACCESS_TOKEN;
 export const INSTAGRAM_CLIENT_SECRET = process.env.INSTAGRAM_CLIENT_SECRET;
