@@ -1,6 +1,7 @@
 import express from 'express';
 import * as wordpressApi from './lib/wordpressApi';
 import facebookClient from './lib/facebookClient';
+import * as mediumClient from './lib/mediumClient';
 import instagramClient from './lib/instagramApi';
 
 const FACEBOOK_PAGE = 'hackjunction';
@@ -50,6 +51,14 @@ apiRouter.get('/ig/images', (req, res) => {
       }
     }));
   })
+});
+
+apiRouter.get('/medium/posts', (req, res) => {
+  mediumClient
+    .getPosts()
+    .then((posts) => {
+      res.json(posts);
+    });
 });
 
 export default apiRouter;

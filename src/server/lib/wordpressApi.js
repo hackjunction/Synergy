@@ -12,3 +12,5 @@ wordpressApiClient.interceptors.request.use((config) => {
 });
 
 export const getPosts = () => wordpressApiClient.get('/posts');
+
+export const getPartners = () => wordpressApiClient.get('/posts');
