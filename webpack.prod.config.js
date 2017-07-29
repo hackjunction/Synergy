@@ -24,7 +24,14 @@ module.exports.plugins.push(
 // export css to a separate file
 module.exports.module.loaders[1] = {
   test: /\.scss$/,
-  loader: ExtractTextPlugin.extract("css!sass")
+  loader: ExtractTextPlugin.extract({
+    fallback: "style-loader",
+    use: [{
+      loader: "css-loader"
+    }, {
+      loader: "sass-loader"
+    }]
+  })
 };
 
 module.exports.plugins.push(new ExtractTextPlugin("../css/main.css"));
