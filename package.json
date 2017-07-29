@@ -8,8 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev && true",
     "start:dev": "NODE_ENV=development babel-watch -w src server.js",
-    "start:prod": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch --config webpack.dev.config.js"
+    "start:prod": "npm run build:webpack && node server.js",
+    "watch": "webpack --watch --config webpack.dev.config.js",
+    "build:webpack": "NODE_ENV=production webpack --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
