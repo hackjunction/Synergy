@@ -1,13 +1,20 @@
 language: node_js
 node_js:
-  - "node"
+- node
 os:
-  - linux
+- linux
 script:
-  - yarn test
-after_script:
-  # Custome upcloud script should go here. More info https://docs.travis-ci.com/user/deployment/custom/
-  # For encrypting keys: https://docs.travis-ci.com/user/encrypting-files/
+- yarn test
 notifications:
   slack:
+    on_success: never
     on_failure: always
+deploy:
+  provider: script
+  script: deploy.sh
+  on:
+    branch: master
+env:
+  matrix:
+  - secure: UjXutzRsJ4XifoJdZcLlACOk9t4JiSRr/xyIRqUio03vpBLR+U1RIj8WqYHJZ8kqBlMyuWWJkBXfFN0080kQ1YH2qDwcbwo9hBwEHeN7kql3pMjduDBPX8NB3Bly4e5M6+CKdDBNKo0N/sqUOyBD93h4rfItBZArMNsAoC00P1kt6Hb0avNNCIc5taGXC7f85qc8r6RM+fP6aJ3Oef57rHH8UuYv2hvQCFLpeVkdZqVVj+bhOfJvlJ3quw6rmcbzYRVbLYNTpm3dDqzAXM1M8/epSJsGwssiGjEo7Yha14/FMR0YX8TTKebA7Nq/kLic42aR54m0roKfhOv0AHLw1dt8mF7v95Kb8pN7Sbs8XZSxWmXwbHUQ2nI2kU4DZf3+73IPsCRkKxNNcwG9A/YgNyL369X+kfQ4mdXcc7Gx2PbNGD8JkftTTXJs7FqLjiKF9H7+6AZnJ7tO2SxpfDlNuznAQ15TJZ9BU7dz3IX0eHdxUZEqJ8X4IBiVEUiDqW4NXYIIvFl0EWyheUj/DQpNs3nGZqmkoR4nicBgp0LiP5JI9+2DxBDOuzA/sXjMgSSC/1y1sNtm2CekNUXzPMt1dgSW1C1Gf2FVaEIaJzE0tKkyD2ujidSz33IAtP/emHtUG+UH+DG8gDWqMzzieifC5nAlJw1xE5DESHiwV34YLiI=
+  - secure: PQ6rFzaTBBzmPibIn3G4qKjkADu0xYnG/mBpfeViUExm5G+CVAvR4dNUj/ZCApLJeax9IRtZC9kuVOy9MyVhnD+RJaZGYRIbNCRz8AGzRcGxfFdYWS7ceEFd6wD5ketmG7BdzKCatj2SozyodPByaNKwgOePTMYmi76oEcFz5zo0H+kqBaZ98vmD85xxNFFbbH8qd+g9xixHPawrLQrnkbf7lcAsdLFfNxjkMYyrfF/qatsoVUZs+sOkF4MyVE8spKsNQwGShHf9nCa0UqClagXTFElkdXAH2ZdC/tmDY8zo2d+P1XolM1ijKf3j3xEdB6+LikJ8sbYjrnotlrwXWwrOXCtKQ3dnXL5OqZT1RunRSgqN4SMLSOZ7kSf9/vLJNuf3YcUcL3DO4piqcK7A2jvNLxaLxe5gR2Q/vmvnZWljhsdcjmELbDZQztnu+1qC4Xf7ZbX16c1ejhzfjmwR6tJqvU/BUTFWaqvK5Pd3TQrAFpdBCUtd6u80DvT9sE5bd25Nbss4yfX6aDLBEPpTFjzTtzrcbpiKk9FMGKTOxGYz6pGhnc6xQKsrdwjtdhVFrGaL+KfgR9cCip8ocjltTxPDfe4daCd57+b1QUAMqi+6nHR34gOOHammgE+IqJpoHMfsje0DbPRovCBI8UPxVYEQYY4LbOTeClo08SP9WYo=
