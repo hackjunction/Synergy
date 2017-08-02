@@ -6,7 +6,12 @@ import Post from './Post';
 import About from './About';
 
 const App = () =>
-  <div>
+  <div className="junction_website">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
     <Grid fluid>
       <Row>
         <Col xs={12}>
@@ -39,6 +44,16 @@ const App = () =>
       <Route exact path="/post" component={Post} />
       <Route exact path="/about" component={About} />
     </Grid>
+    <nav className="junction_menu">
+      <ul>
+        <li>Welcome</li>
+        <li>About</li>
+        <li>Tracks</li>
+        <li>Partners</li>
+        <li>At the event</li>
+        <li>Media</li>
+      </ul>
+    </nav>
   </div>;
 
 export default App;

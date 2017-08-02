@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import PostElement from './PostElement';
@@ -23,21 +24,15 @@ class PostList extends Component {
 
     // show the list of posts
     return (
-      <div>
-        <table>
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Content</th>
-            </tr>
-          </thead>
-          <tbody>
-            {posts.map((post, index) =>
+      <Grid fluid>
+        <Row>
+          {posts.map((post, index) =>
+            <Col xs={3}>
               <PostElement key={index} post={post} />,
-            )}
-          </tbody>
-        </table>
-      </div>
+            </Col>,
+          )}
+        </Row>
+      </Grid>
     );
   }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../../stylesheets/main.scss';
 
 export default class PostElement extends Component {
   // render
@@ -7,14 +8,15 @@ export default class PostElement extends Component {
     const { post } = this.props;
 
     return (
-      <tr>
-        <td>
+      <div className="junction_posts">
+        <img src={post.acf.image} />
+        <h2>
           {post.title.rendered}
-        </td>
-        <td>
-          {post.content.rendered}
-        </td>
-      </tr>
+        </h2>
+        <p>
+          {post.acf.description}
+        </p>
+      </div>
     );
   }
 }

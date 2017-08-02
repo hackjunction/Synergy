@@ -13,10 +13,10 @@ export default class ApiPosts {
   }
 
   static getTracks() {
-    return clientApi.get('/posts?categories=2');
+    return clientApi.get('/posts?_embed&categories=2');
   }
 
   static getChallenges() {
-    return clientApi.get('/posts?categorie=4');
+    return clientApi.get('/posts?_embed&categories=4');
   }
 }

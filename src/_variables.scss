@@ -1,9 +1,9 @@
 // color palette
-$primary:#232323;
-$secondary:#FBFBFB;
-$accent:#5ABECF;
-$accent2:#EC008B;
-$accent3:#EF4637;
+$primary: #232323;
+$secondary: #fbfbfb;
+$accent: #5abecf;
+$accent2: #ec008b;
+$accent3: #ef4637;
 
 @mixin theme($name, $color) {
   .#{$name} {
@@ -15,4 +15,20 @@ $accent3:#EF4637;
       background: $color;
     }
   }
+}
+
+.text-primary {
+  color: $secondary;
+}
+.text-secondary {
+  color: $accent;
+}
+.background-primary {
+  background-color: $secondary;
+}
+.background-secondary {
+  background-color: $accent;
+}
+.bold {
+  font-weight: bold;
 }
