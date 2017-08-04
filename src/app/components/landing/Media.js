@@ -9,7 +9,7 @@ const Media = () =>
         <h4>MEDIA</h4>
       </Col>
       <Col xsOffset={3} xs={3}>
-        <h1 className="text-underline text-title-bold">
+        <h1 className="text-underline">
           STAY UP TO DATE <br /> WITH US
         </h1>
       </Col>

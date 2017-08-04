@@ -9,7 +9,7 @@ const Hacktalks = () =>
         <h4>HACK/TALKS</h4>
       </Col>
       <Col xsOffset={3} xs={4}>
-        <h1 className="text-underline text-title-bold">
+        <h1 className="text-underline">
           KEYNOTES ON THE <br /> EDGE OF TECH
         </h1>
       </Col>

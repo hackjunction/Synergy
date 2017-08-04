@@ -19,8 +19,14 @@
 body {
   background-color: #232323;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Lato, sans-serif;
 }
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+}
+
 // color palette
 $primary: #232323;
 $secondary: #fbfbfb;
@@ -46,6 +52,9 @@ $accent3: #ef4637;
 .text-secondary {
   color: $accent;
 }
+.text-body {
+  font-family: Lato, sans-serif;
+}
 .background-primary {
   background-color: $secondary;
 }
@@ -58,9 +67,6 @@ $accent3: #ef4637;
 .text-underline {
   border-bottom: 10px solid $accent;
   margin-bottom: 10px;
-}
-.text-title-bold {
-  font-weight: 900;
 }
 .junction-description {
   font-size: 36px;

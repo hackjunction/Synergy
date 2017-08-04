@@ -9,7 +9,7 @@ const Partners = () =>
         <h4>PARTNERS</h4>
       </Col>
       <Col xsOffset={3} xs={4}>
-        <h1 className="text-underline text-title-bold">
+        <h1 className="text-underline">
           WHY TO PARTNER <br /> WITH US
         </h1>
       </Col>
