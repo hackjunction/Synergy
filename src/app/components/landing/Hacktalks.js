@@ -8,8 +8,8 @@ const Hacktalks = () =>
       <Col xsOffset={3} xs={9}>
         <h4>HACK/TALKS</h4>
       </Col>
-      <Col xsOffset={3} xs={9}>
-        <h1>
+      <Col xsOffset={3} xs={4}>
+        <h1 className="text-underline text-title-bold">
           KEYNOTES ON THE <br /> EDGE OF TECH
         </h1>
       </Col>

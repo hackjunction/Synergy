@@ -14,7 +14,7 @@ const About = () =>
     <Col xs={12}>
       <Row>
         <Col xsOffset={2} xs={2}>
-          <h1 className="text-underline">JUNCTION?</h1>
+          <h1 className="text-underline text-title-bold">JUNCTION?</h1>
         </Col>
       </Row>
     </Col>
@@ -46,8 +46,8 @@ const About = () =>
     </Col>
     <Col xs={12}>
       <Row>
-        <Col xsOffset={2} xs={2}>
-          <h1 className="text-underline">PRE EVENTS</h1>
+        <Col xsOffset={2} xs={3}>
+          <h1 className="text-underline text-title-bold">PRE EVENTS</h1>
         </Col>
       </Row>
     </Col>

@@ -8,8 +8,8 @@ const Tracks = () =>
       <Col xsOffset={3} xs={9}>
         <h4>TRACKS</h4>
       </Col>
-      <Col xsOffset={3} xs={9}>
-        <h1>BUILDING FOR TOMORROW</h1>
+      <Col xsOffset={3} xs={5}>
+        <h1 className="text-underline text-title-bold">BUILDING FOR TOMORROW</h1>
       </Col>
       <Col xsOffset={3} xs={9}>
         A hackathon with unlimited possibilities to build

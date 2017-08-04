@@ -8,9 +8,9 @@ const Media = () =>
       <Col xsOffset={3} xs={9}>
         <h4>MEDIA</h4>
       </Col>
-      <Col xsOffset={3} xs={9}>
-        <h1>
-          STAY UP TO DATA <br /> WITH US
+      <Col xsOffset={3} xs={3}>
+        <h1 className="text-underline text-title-bold">
+          STAY UP TO DATE <br /> WITH US
         </h1>
       </Col>
       <Col xsOffset={3} xs={6}>
