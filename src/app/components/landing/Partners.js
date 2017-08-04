@@ -5,15 +5,15 @@ import './landing.scss';
 const Partners = () =>
   <Grid fluid>
     <Row start="xs" className="junction_partners">
-      <Col xsOffset={3} xs={9}>
+      <Col xsOffset={1} xs={9}>
         <h4>PARTNERS</h4>
       </Col>
-      <Col xsOffset={3} xs={4}>
+      <Col xsOffset={1} xs={5}>
         <h1 className="text-underline">
           WHY TO PARTNER <br /> WITH US
         </h1>
       </Col>
-      <Col xsOffset={3} xs={6}>
+      <Col xsOffset={1} xs={6}>
         Alii nullo quaerente vultus severitate adsimulata patrimonia sua in
         inmensum extollunt, cultorum ut puta feracium multiplicantes annuos
         fructus, quae a primo ad ultimum solem se abunde iactitant possidere,

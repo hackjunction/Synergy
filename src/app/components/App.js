@@ -12,7 +12,7 @@ const App = () =>
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:400"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400"
       rel="stylesheet"
     />
 
