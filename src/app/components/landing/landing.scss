@@ -2,7 +2,9 @@
 $color3: white;
 
 .junction_welcome {
-  background: url('https://staging.hackjunction.com/wp-content/uploads/2017/08/hannu-pekka-peuranen-1301.jpg') no-repeat center;
+  background: url('https://staging.hackjunction.com/wp-content/uploads/2017/08/hannu-pekka-peuranen-1301.jpg')no-repeat center center fixed;
+  background-color: #232323;
+  background-size: cover;
   margin: 0;
   padding: 0;
   color: $color3;
@@ -14,9 +16,6 @@ $color3: white;
     margin-top: 300px;
   }
 }
-
-
-
 .junction_tracks {
   img {
     box-shadow: 8px 8px 10px #aaa;
