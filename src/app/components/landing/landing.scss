@@ -16,12 +16,36 @@ $color3: white;
     margin-top: 300px;
   }
 }
-.junction_tracks {
+.junction_about {
+  box-sizing: border-box;
+  padding: 80px 0 0 0;
   img {
-    box-shadow: 8px 8px 10px #aaa;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+  }
+  .junction-description {
+    padding: 50px 0 50px 0;
+  }
+  .junction_up_next{
+    padding: 50px 0 0 0;
+  }
+  .junction_events_hacktalks {
+    max-height: 480px;
+    min-width: 100%;
   }
 }
+.junction_tracks {
+  padding: 80px 0 0 0;
+  img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+  }
+}
+.junction_partners{
+  padding: 80px 0 0 0;
+}
 .junction.hacktalks {
+  padding: 80px 0 0 0;
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
@@ -40,6 +64,10 @@ $color3: white;
     color: grey;
     font-size: 18px;
   }
+}
+
+.junction_media{
+  padding: 80px 0 0 0;
 }
 
 .junction_button {
@@ -103,12 +131,5 @@ $color3: white;
       width: 100%;
       height: 130%;
     }
-  }
-}
-.junction_about {
-  box-sizing: border-box;
-  .junction_events_hacktalks {
-    max-height: 480px;
-    min-width: 100%;
   }
 }

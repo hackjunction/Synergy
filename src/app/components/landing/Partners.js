@@ -5,8 +5,8 @@ import './landing.scss';
 const Partners = () =>
   <Grid fluid>
     <Row start="xs" className="junction_partners">
-      <Col xsOffset={1} xs={9}>
-        <h4>PARTNERS</h4>
+      <Col xsOffset={1} xs={9} className="bold text-secondary">
+        <h3>PARTNERS</h3>
       </Col>
       <Col xsOffset={1} xs={5}>
         <h1 className="text-underline">

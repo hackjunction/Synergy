@@ -5,8 +5,8 @@ import './landing.scss';
 const Hacktalks = () =>
   <Grid fluid>
     <Row start="xs" className="junction_hacktalks">
-      <Col xsOffset={1} xs={9}>
-        <h4>HACK/TALKS</h4>
+      <Col xsOffset={1} xs={9} className="bold text-secondary">
+        <h3>ABOUT THE EVENT</h3>
       </Col>
       <Col xsOffset={1} xs={5}>
         <h1 className="text-underline">

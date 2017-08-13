@@ -5,8 +5,8 @@ import './landing.scss';
 const Media = () =>
   <Grid fluid>
     <Row start="xs" className="junction_media">
-      <Col xsOffset={1} xs={9}>
-        <h4>MEDIA</h4>
+      <Col xsOffset={1} xs={9} className="bold text-secondary">
+        <h3>MEDIA</h3>
       </Col>
       <Col xsOffset={1} xs={5}>
         <h1 className="text-underline">
@@ -22,6 +22,25 @@ const Media = () =>
         nec victu nec indumentorum vilitate gregariis militibus discrepantes
         opposita cuncta superasse virtute.
       </Col>
+      <Row>
+        <Col xsOffset={2} xs={9}>
+          <Col xs={4}>
+            <img src="http://loremflickr.com/320/240" />
+            <h3>AMAZING POST</h3>
+            <p>This is a very nice and short description that is really a clickbait...</p>
+          </Col>
+          <Col xs={4}>
+            <img src="http://loremflickr.com/320/240" />
+            <h3>AMAZING POST</h3>
+            <p>This is a very nice and short description that is really a clickbait...</p>
+          </Col>
+          <Col xs={4}>
+            <img src="http://loremflickr.com/320/240" />
+            <h3>AMAZING POST</h3>
+            <p>This is a very nice and short description that is really a clickbait...</p>
+          </Col>
+        </Col>
+      </Row>
       <Col xsOffset={5} xs={6}>
         <div>
           <button className="junction_button junction_border">SEE ALL</button>
