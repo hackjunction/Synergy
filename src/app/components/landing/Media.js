@@ -14,13 +14,7 @@ const Media = () =>
         </h1>
       </Col>
       <Col xsOffset={1} xs={6}>
-        Alii nullo quaerente vultus severitate adsimulata patrimonia sua in
-        inmensum extollunt, cultorum ut puta feracium multiplicantes annuos
-        fructus, quae a primo ad ultimum solem se abunde iactitant possidere,
-        ignorantes profecto maiores suos, per quos ita magnitudo Romana
-        porrigitur, non divitiis eluxisse sed per bella saevissima, nec opibus
-        nec victu nec indumentorum vilitate gregariis militibus discrepantes
-        opposita cuncta superasse virtute.
+        We often share our wisdom, from our path to build this amazing Hackathon. Be part of the conversation and learn first all the intriguing doings of Junction.
       </Col>
       <Row>
         <Col xsOffset={2} xs={9}>
