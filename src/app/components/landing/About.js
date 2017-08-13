@@ -40,7 +40,7 @@ const About = () =>
     <Col xs={12}>
       <Row>
         <Col xsOffset={1} xs={9} className="bold text-secondary junction_up_next">
-          <h3>UP NEXT</h3>
+          <h4>UP NEXT</h4>
         </Col>
       </Row>
     </Col>
