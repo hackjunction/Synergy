@@ -6,7 +6,7 @@ const Hacktalks = () =>
   <Grid fluid>
     <Row start="xs" className="junction_hacktalks">
       <Col xsOffset={1} xs={9} className="bold text-secondary">
-        <h3>ABOUT THE EVENT</h3>
+        <h4>ABOUT THE EVENT</h4>
       </Col>
       <Col xsOffset={1} xs={5}>
         <h1 className="text-underline">

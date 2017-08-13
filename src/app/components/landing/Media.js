@@ -6,7 +6,7 @@ const Media = () =>
   <Grid fluid>
     <Row start="xs" className="junction_media">
       <Col xsOffset={1} xs={9} className="bold text-secondary">
-        <h3>MEDIA</h3>
+        <h4>MEDIA</h4>
       </Col>
       <Col xsOffset={1} xs={5}>
         <h1 className="text-underline">
