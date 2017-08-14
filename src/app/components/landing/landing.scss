@@ -1,9 +1,10 @@
 // Button component
 $color3: white;
-.junction_welcome {
-  background: url('https://staging.hackjunction.com/wp-content/uploads/2017/08/hannu-pekka-peuranen-1301.jpg')no-repeat center center fixed;
+.junction_website {
+  background: url('https://staging.hackjunction.com/wp-content/uploads/2017/08/hannu-pekka-peuranen-1301.jpg')
+    no-repeat;
   background-color: #232323;
-  background-size: cover;
+  background-size: 100% 100vh;
   margin: 0;
   padding: 0;
   color: $color3;
@@ -132,7 +133,8 @@ $color3: white;
 
 // Rotating text
 .react-rotating-text-cursor {
-  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
+    infinite;
 }
 
 @keyframes blinking-cursor {
@@ -152,4 +154,3 @@ $color3: white;
   margin: 10px;
   padding: 2%;
 }
-
