@@ -1,3 +1,10 @@
+$white: #ffffff;
+// color palette
+$primary: #232323;
+$secondary: #fbfbfb;
+$accent: #5abecf;
+$accent2: #ec008b;
+$accent3: #ef4637;
 .junction_logo {
   width: 200px;
 }
@@ -7,6 +14,29 @@
 .junction_posts img {
   max-width: 100%;
 }
+.junction_header_nav {
+  a:link {
+    color: $secondary;
+  }
+
+  /* visited link */
+  a:visited {
+    color: $secondary;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: $secondary;
+    padding: 10px;
+    background-color: $accent;
+    text-decoration: none;
+  }
+
+  /* selected link */
+  a:active {
+    color: $secondary;
+  }
+}
 
 .junction_menu {
   position: fixed;
@@ -14,9 +44,111 @@
   right: 0;
   z-index: 3000;
   text-transform: uppercase;
+  list-style: none;
+  cursor: default;
 
   -webkit-transition: all ease 0.1s;
   transition: all ease 0.1s;
+  /* latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'),
+      url(//fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2)
+        format('woff2');
+
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+      U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .dot {
+    list-style: none;
+    cursor: default;
+    user-select: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 3rem;
+
+    li {
+      display: block;
+      margin: 0 1rem 1rem;
+      width: 1rem;
+      height: 1rem;
+      cursor: pointer;
+      position: relative;
+    }
+  }
+
+  .item {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    outline: none;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, .3);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  // Fill up
+
+  .fillUp {
+    .item {
+      background: transparent;
+      overflow: hidden;
+      box-shadow: inset 0 0 0 .0625rem white;
+      transition: background .3s ease;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 .0625rem #fff;
+        transition: height .3s ease;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: rgba(0, 0, 0, .2);
+      }
+    }
+  }
+
+  .fillUp .current .item::after {
+    height: 100%;
+  }
 }
 
 .junction_fixed_social {
@@ -49,13 +181,6 @@ h1 {
   font-family: Montserrat, sans-serif;
   font-weight: 900;
 }
-
-// color palette
-$primary: #232323;
-$secondary: #fbfbfb;
-$accent: #5abecf;
-$accent2: #ec008b;
-$accent3: #ef4637;
 
 @mixin theme($name, $color) {
   .#{$name} {

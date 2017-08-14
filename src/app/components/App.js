@@ -19,23 +19,26 @@ const App = () =>
     <Grid fluid>
       <Row className="topnav">
         <Col xs={12}>
-          <Row end="xs">
+          <Row>
             <Col xs={1}>
               <img
                 className="junction_logo"
                 src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
               />
             </Col>
-            <Col xs>
+            <Col xsOffset={7} xs={4} className="junction_header_nav">
               <Row end="xs">
-                <Col xs={1}>
-                  <Link to="/">Landing</Link>
+                <Col xs={3}>
+                  <Link to="/">COMMUNITY</Link>
                 </Col>
-                <Col xs={1}>
-                  <Link to="/post">Post</Link>
+                <Col xs={3}>
+                  <Link to="/post">EVENT</Link>
                 </Col>
-                <Col xs={1}>
-                  <Link to="/about">About</Link>
+                <Col xs={3}>
+                  <Link to="/about">PARTNERS</Link>
+                </Col>
+                <Col xs={3}>
+                  <Link to="/about">REGISTER</Link>
                 </Col>
               </Row>
             </Col>
@@ -49,13 +52,37 @@ const App = () =>
       <Route exact path="/about" component={About} />
     </Grid>
     <nav className="junction_menu">
-      <ul>
-        <li>Welcome</li>
-        <li>About</li>
-        <li>Tracks</li>
-        <li>Partners</li>
-        <li>At the event</li>
-        <li>Media</li>
+      <ul className="dot fillUp">
+        <li className="current">
+          <a className="item" href="#">
+            Welcome
+          </a>
+        </li>
+        <li>
+          <a className="item" href="#">
+            About
+          </a>
+        </li>
+        <li>
+          <a className="item" href="#">
+            Tracks
+          </a>
+        </li>
+        <li>
+          <a className="item" href="#">
+            Partners
+          </a>
+        </li>
+        <li>
+          <a className="item" href="#">
+            At the event
+          </a>
+        </li>
+        <li>
+          <a className="item" href="#">
+            Media
+          </a>
+        </li>
       </ul>
     </nav>
     <nav className="junction_fixed_social">
