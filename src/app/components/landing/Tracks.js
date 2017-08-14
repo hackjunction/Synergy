@@ -5,7 +5,7 @@ import './landing.scss';
 const Tracks = () =>
   <Grid fluid>
     <Row start="xs" className="junction_tracks">
-      <Col xsOffset={1} xs={9}>
+      <Col xsOffset={1} xs={9} className="bold text-secondary">
         <h4>TRACKS</h4>
       </Col>
       <Col xsOffset={1} xs={5}>

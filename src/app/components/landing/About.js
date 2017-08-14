@@ -20,7 +20,7 @@ const About = () =>
     </Col>
     <Col xs={12}>
       <Row>
-        <Col xsOffset={1} xs={6} className="junction-description">
+        <Col xsOffset={1} xs={8} className="junction-description">
           Junction is a{' '}
           <span className="text-secondary">global converging point</span> for
           thousands of developers, designers, and entrepreneurs from around the
@@ -39,8 +39,8 @@ const About = () =>
     </Col>
     <Col xs={12}>
       <Row>
-        <Col xsOffset={1} xs={9} className="bold text-secondary">
-          <h3>UP NEXT</h3>
+        <Col xsOffset={1} xs={9} className="bold text-secondary junction_up_next">
+          <h4>UP NEXT</h4>
         </Col>
       </Row>
     </Col>
@@ -65,12 +65,15 @@ const About = () =>
       <Row>
         <Col xsOffset={2} xs={9}>
           <Col xs={4}>
+            <img src="http://loremflickr.com/320/240" />
             <h3>HUGE EVENT</h3>
           </Col>
           <Col xs={4}>
+            <img src="http://loremflickr.com/320/240" />
             <h3>HUGE EVENT</h3>
           </Col>
           <Col xs={4}>
+            <img src="http://loremflickr.com/320/240" />
             <h3>HUGE EVENT</h3>
           </Col>
         </Col>

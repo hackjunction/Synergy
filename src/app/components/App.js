@@ -17,13 +17,13 @@ const App = () =>
     />
 
     <Grid fluid>
-      <Row>
+      <Row className="topnav">
         <Col xs={12}>
           <Row end="xs">
             <Col xs={1}>
               <img
                 className="junction_logo"
-                src="http://i.imgur.com/ZrifrOS.png"
+                src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
               />
             </Col>
             <Col xs>
@@ -48,7 +48,7 @@ const App = () =>
       <Route exact path="/post" component={Post} />
       <Route exact path="/about" component={About} />
     </Grid>
-    <nav className="junction_menu">
+    {/*<nav className="junction_menu">
       <ul>
         <li>Welcome</li>
         <li>About</li>
@@ -57,7 +57,7 @@ const App = () =>
         <li>At the event</li>
         <li>Media</li>
       </ul>
-    </nav>
+    </nav>*/}
   </div>;
 
 export default App;
