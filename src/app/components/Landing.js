@@ -6,6 +6,7 @@ import Tracks from './landing/Tracks';
 import Partners from './landing/Partners';
 import Hacktalks from './landing/Hacktalks';
 import Media from './landing/Media';
+import Pictures from './landing/Pictures';
 import Footer from './landing/Footer';
 
 const Landing = () =>
@@ -16,6 +17,7 @@ const Landing = () =>
     <Partners />
     <Hacktalks />
     <Media />
+    <Pictures />
     <Footer />
   </div>;
 
