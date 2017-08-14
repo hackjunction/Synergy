@@ -1243,6 +1243,10 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
+classnames@^2.1.2:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
+
 clean-webpack-plugin@^0.1.16:
   version "0.1.16"
   resolved "https://registry.yarnpkg.com/clean-webpack-plugin/-/clean-webpack-plugin-0.1.16.tgz#422a8e150bf3d5abfd3d14bfacb070e80fb2e23f"
@@ -4106,6 +4110,12 @@ react-redux@^5.0.5:
     lodash-es "^4.2.0"
     loose-envify "^1.1.0"
     prop-types "^15.5.10"
+
+react-rotating-text@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-rotating-text/-/react-rotating-text-1.2.0.tgz#566c90cfb464a076e039a7f4c93a15c15029a413"
+  dependencies:
+    classnames "^2.1.2"
 
 react-router-dom@^4.1.1:
   version "4.1.1"

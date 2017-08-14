@@ -1,6 +1,5 @@
 // Button component
 $color3: white;
-
 .junction_welcome {
   background: url('https://staging.hackjunction.com/wp-content/uploads/2017/08/hannu-pekka-peuranen-1301.jpg')no-repeat center center fixed;
   background-color: #232323;
@@ -16,6 +15,7 @@ $color3: white;
     margin-top: 300px;
   }
 }
+
 .junction_about {
   box-sizing: border-box;
   padding: 80px 0 0 0;
@@ -26,7 +26,7 @@ $color3: white;
   .junction-description {
     padding: 50px 0 50px 0;
   }
-  .junction_up_next{
+  .junction_up_next {
     padding: 50px 0 0 0;
   }
   .junction_events_hacktalks {
@@ -34,6 +34,7 @@ $color3: white;
     min-width: 100%;
   }
 }
+
 .junction_tracks {
   padding: 80px 0 0 0;
   img {
@@ -41,9 +42,11 @@ $color3: white;
     max-width: 300px;
   }
 }
-.junction_partners{
+
+.junction_partners {
   padding: 80px 0 0 0;
 }
+
 .junction.hacktalks {
   padding: 80px 0 0 0;
   .card {
@@ -55,18 +58,16 @@ $color3: white;
       max-width: 100%;
     }
   }
-
   .container {
     padding: 0 16px;
   }
-
   .title {
     color: grey;
     font-size: 18px;
   }
 }
 
-.junction_media{
+.junction_media {
   padding: 80px 0 0 0;
 }
 
@@ -79,7 +80,6 @@ $color3: white;
   outline: none;
   font-size: 18px;
   margin: 1em 0.8em;
-
   &.junction_border {
     color: $color3;
     &.junction_border:after,
@@ -93,7 +93,6 @@ $color3: white;
       transition: all 0.6s ease;
       border-radius: 2px;
     }
-
     &.junction_border:after {
       bottom: 0;
       right: 0;
@@ -102,7 +101,6 @@ $color3: white;
       border-bottom-color: $color3;
       border-right-color: $color3;
     }
-
     &.junction_border:before {
       top: 0;
       left: 0;
@@ -111,7 +109,6 @@ $color3: white;
       border-top-color: $color3;
       border-left-color: $color3;
     }
-
     &.junction_border:hover:after {
       right: -15px;
       border-bottom-color: $color3;
@@ -121,7 +118,6 @@ $color3: white;
       width: 115%;
       height: 100%;
     }
-
     &.junction_border:hover:before {
       top: -12px;
       border-bottom-color: $color3;
@@ -133,3 +129,21 @@ $color3: white;
     }
   }
 }
+
+// Rotating text
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
