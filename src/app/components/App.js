@@ -8,7 +8,11 @@ import About from './About';
 const App = () =>
   <div className="junction_website">
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400"
       rel="stylesheet"
     />
 

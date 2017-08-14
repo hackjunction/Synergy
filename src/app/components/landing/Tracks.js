@@ -5,13 +5,13 @@ import './landing.scss';
 const Tracks = () =>
   <Grid fluid>
     <Row start="xs" className="junction_tracks">
-      <Col xsOffset={3} xs={9}>
+      <Col xsOffset={1} xs={9}>
         <h4>TRACKS</h4>
       </Col>
-      <Col xsOffset={3} xs={9}>
-        <h1>BUILDING FOR TOMORROW</h1>
+      <Col xsOffset={1} xs={5}>
+        <h1 className="text-underline">BUILDING FOR TOMORROW</h1>
       </Col>
-      <Col xsOffset={3} xs={9}>
+      <Col xsOffset={1} xs={9}>
         A hackathon with unlimited possibilities to build
       </Col>
       <Col xs>
