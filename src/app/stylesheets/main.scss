@@ -1,7 +1,7 @@
 .junction_logo {
   width: 200px;
 }
-.topnav{
+.topnav {
   margin: 20px 0 20px 0;
 }
 .junction_posts img {
@@ -18,6 +18,25 @@
   -webkit-transition: all ease 0.1s;
   transition: all ease 0.1s;
 }
+
+.junction_fixed_social {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  z-index: 3000;
+  text-transform: uppercase;
+
+  -webkit-transition: all ease 0.1s;
+  transition: all ease 0.1s;
+  .social-media {
+    img {
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+    }
+  }
+}
+
 body {
   background-color: #232323;
   color: white;

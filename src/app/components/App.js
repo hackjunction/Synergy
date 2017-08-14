@@ -48,7 +48,7 @@ const App = () =>
       <Route exact path="/post" component={Post} />
       <Route exact path="/about" component={About} />
     </Grid>
-    {/*<nav className="junction_menu">
+    <nav className="junction_menu">
       <ul>
         <li>Welcome</li>
         <li>About</li>
@@ -57,7 +57,24 @@ const App = () =>
         <li>At the event</li>
         <li>Media</li>
       </ul>
-    </nav>*/}
+    </nav>
+    <nav className="junction_fixed_social">
+      <Row>
+        <div className="social-media">
+          <img src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/3-128.png" />
+        </div>
+      </Row>
+      <Row className="social-media">
+        <div className="social-media">
+          <img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c521.png" />
+        </div>
+      </Row>
+      <Row className="social-media">
+        <div className="social-media">
+          <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Medium-128.png" />
+        </div>
+      </Row>
+    </nav>
   </div>;
 
 export default App;
