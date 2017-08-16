@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
@@ -27,6 +27,7 @@ class EventList extends Component {
         <Col xsOffset={2} xs={9}>
           {events.map(event => (
             <Col xs={4}>
+              <img src={event.cover.source} />
               <h3>{event.name}</h3>
             </Col>
           ))}
