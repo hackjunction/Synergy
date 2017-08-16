@@ -2,6 +2,8 @@ import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import './landing.scss';
 
+import EventList from '../common/EventList';
+
 const About = () =>
   <Row start="xs" className="junction_about">
     <Col xs={12}>
@@ -62,22 +64,7 @@ const About = () =>
       </Row>
     </Col>
     <Col xs={12}>
-      <Row>
-        <Col xsOffset={2} xs={9}>
-          <Col xs={4}>
-            <img src="http://loremflickr.com/320/240" />
-            <h3>HUGE EVENT</h3>
-          </Col>
-          <Col xs={4}>
-            <img src="http://loremflickr.com/320/240" />
-            <h3>HUGE EVENT</h3>
-          </Col>
-          <Col xs={4}>
-            <img src="http://loremflickr.com/320/240" />
-            <h3>HUGE EVENT</h3>
-          </Col>
-        </Col>
-      </Row>
+      <EventList />
     </Col>
   </Row>;
 
