@@ -2,6 +2,8 @@ import React from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import './landing.scss';
 
+import FaqSection from '../FaqSection';
+
 const Hacktalks = () =>
   <Grid fluid>
     <Row start="xs" className="junction_hacktalks">
@@ -21,6 +23,14 @@ const Hacktalks = () =>
         porrigitur, non divitiis eluxisse sed per bella saevissima, nec opibus
         nec victu nec indumentorum vilitate gregariis militibus discrepantes
         opposita cuncta superasse virtute.
+      </Col>
+    </Row>
+    <Row>
+      <Col xsOffset={1} xs={4}>
+        <FaqSection question='What is Junction?'>Angelos.</FaqSection>
+      </Col>
+      <Col xsOffset={1} xs={4}>
+        <FaqSection question='What is Junction?'>Angelos.</FaqSection>
       </Col>
     </Row>
   </Grid>;
