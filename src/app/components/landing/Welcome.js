@@ -9,15 +9,13 @@ const Welcome = () =>
       <h1>
         HACK THE FUTURE OF <br /><br />
         <ReactRotatingText color='#5abecf' items={[
+          'HEALTHTECH',
+          'LOGISTICS',
           'ENTERTAINMENT',
-          'DATA DRIVEN ECONOMY',
-          'VR-AR-MR',
-          'ARTIFICIAL INTELLIGENCE',
-          'SELF-DRIVING CARS',
-          'SEXTECH',
-          'INTELLIGENT BUILDINGS',
-          'HACK THE LAW',
-          'SMART LIVING']} />
+          'MULTIMODAL MOBILITY',
+          'INDUSTRIAL INTERNET',
+          'FINTECH',
+        ]} />
       </h1>
       <br />
       <h2>27-29 November - Helsinki</h2>
