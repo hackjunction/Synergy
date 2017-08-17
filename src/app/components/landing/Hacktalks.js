@@ -22,28 +22,6 @@ const Hacktalks = () =>
         nec victu nec indumentorum vilitate gregariis militibus discrepantes
         opposita cuncta superasse virtute.
       </Col>
-      <Col xsOffset={3} xs={6}>
-        <Col xs={6}>
-          <div className="card">
-            <img src="http://loremflickr.com/320/240" />
-            <div className="container">
-              <h1>John Doe</h1>
-              <p className="title">CEO & Founder, Example</p>
-              <p>Harvard University</p>
-            </div>
-          </div>
-        </Col>
-        <Col xs={6}>
-          <div className="card">
-            <img src="http://loremflickr.com/320/240" />
-            <div className="container">
-              <h1>John Doe</h1>
-              <p className="title">CEO & Founder, Example</p>
-              <p>Harvard University</p>
-            </div>
-          </div>
-        </Col>
-      </Col>
     </Row>
   </Grid>;
 
