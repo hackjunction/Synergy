@@ -24,9 +24,13 @@ const About = () =>
       <Row>
         <Col xsOffset={1} xs={8} className="junction-description">
           Junction is a{' '}
-          <span className="text-secondary">global converging point</span> for
+          <span className="text-secondary">global converging point*</span> for
           thousands of developers, designers, and entrepreneurs from around the
-          world
+          world.
+        </Col>
+        <Col xsOffset={1} xs={8} className="junction-description">
+          {' '}
+          <span className="text-tetriary">Convergence is a coming together of two or more distinct entities or phenomena.</span>
         </Col>
       </Row>
     </Col>

@@ -12,7 +12,7 @@ const Tracks = () =>
         <h1 className="text-underline">BUILDING FOR TOMORROW</h1>
       </Col>
       <Col xsOffset={1} xs={9}>
-        A hackathon with unlimited possibilities to build
+        <p>Junction is divided into multiple themes (tracks), each including several challenges set by our partner companies. Teams are free to participate in different challenges.</p>
       </Col>
       <Col xs>
         <Row center="xs">

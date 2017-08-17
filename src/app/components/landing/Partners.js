@@ -14,9 +14,35 @@ const Partners = () =>
         </h1>
       </Col>
       <Col xsOffset={1} xs={6}>
-          A unique opportunity to this crossroad of Engineering, Design and Business Development across the globe, happens once a year before Slush. You would not want to miss out.
-          Contact our Partnerships extraordinaire Mikko for more info
-          mikko-at-hackjunction.com
+          A unique opportunity to the front row of Engineering, Design and Business Development, happens once a year before Slush. You would not want to miss out.
+          Contact our Head of Partnerships, Mikko for more info
+          mikko.kuusisto-at-hackjunction.com
+      </Col>
+      <Col xsOffset={2} xs={9}>
+        <Col xs={4}>
+          <img src="http://loremflickr.com/320/240" />
+        </Col>
+        <Col xs={4}>
+          <img src="http://loremflickr.com/320/240" />
+        </Col>
+        <Col xs={4}>
+          <img src="http://loremflickr.com/320/240" />
+        </Col>
+      </Col>
+        <Col xsOffset={1} xs={9}>
+          <Col xs={3}>
+            <img src="http://loremflickr.com/320/240" />
+          </Col>
+          <Col xs={3}>
+            <img src="http://loremflickr.com/320/240" />
+          </Col>
+          <Col xs={3}>
+            <img src="http://loremflickr.com/320/240" />
+          </Col>
+          <Col xs={3}>
+            <img src="http://loremflickr.com/320/240" />
+          </Col>
+
       </Col>
       <Col xsOffset={5} xs={6}>
         <div>

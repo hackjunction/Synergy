@@ -200,6 +200,12 @@ h1 {
 .text-secondary {
   color: $accent;
 }
+.text-tetriary {
+  color: $accent;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
 .text-body {
   font-family: Lato, sans-serif;
 }

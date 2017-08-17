@@ -5,7 +5,7 @@ import React from 'react';
 // );
 class FaqSection extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
       isOpen: false,
     };
@@ -16,7 +16,6 @@ class FaqSection extends React.Component {
     this.setState({
       isOpen: !this.state.isOpen,
     });
-    console.log("isOpen", this.state.isOpen)
   }
 
   render() {
