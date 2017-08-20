@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
+import Scrollchor from 'react-scrollchor';
 import ReactRotatingText from 'react-rotating-text';
 import styles from './Welcome.c.scss';
 import Block from '../viewBlocks/Block';
@@ -35,14 +36,14 @@ const Welcome = () =>
         <h2>27-29 November - Helsinki</h2>
       </Col>
       <Col xs={1} className="junction_welcome_bottom">
-        <a href="#about">
+        <Scrollchor to="#about">
           <div className={styles.arrow}>
             <ul>
-              <li></li>
-              <li></li>
+              <li />
+              <li />
             </ul>
           </div>
-        </a>
+        </Scrollchor>
       </Col>
     </Row>
   </Block>;
