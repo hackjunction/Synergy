@@ -1,38 +1,42 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
+import classNames from "classnames";
+import styles from "./FaqSection.c.scss";
 
-// const FaqSection = () => (
-//   <div>This is my awesome about page</div>
-// );
 class FaqSection extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      isOpen: false,
-    };
-    this.toggle = this.toggle.bind(this);
-  }
+  static propTypes = {
+    question: PropTypes.string,
+    children: PropTypes.string,
+  };
 
-  toggle() {
+  state = {
+    isOpen: false,
+  };
+
+  toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen,
     });
-  }
+  };
 
   render() {
-    const rootClass = this.state.isOpen
-      ? "faq_section open"
-      : "faq_section";
+    const containerClasses = classNames({
+      [styles.faqSection]: true,
+      [styles.open]: this.state.isOpen,
+    });
 
     return (
-      <div onClick={this.toggle} className={rootClass}>
-        <div>
+      <div onClick={this.toggle} className={containerClasses}>
+        <div className={styles.faqQuestion}>
+          <span className={styles.openButton} />
           {this.props.question}
         </div>
-        <div className="articlewrap">
-          {this.props.children}
+        <div className={styles.faqAnswer}>
+          <span className={styles.faqAnswerText}>
+            {this.props.children}
+          </span>
         </div>
       </div>
-
     );
   }
 }

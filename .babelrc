@@ -1,13 +1,17 @@
 {
-    "presets": ["stage-0", "es2015", "react"],
-    "plugins": [
-        ["module-resolver", {
-            "root": ["./"],
-            "alias": {
-                "src": "./src"
-            }
-        }],
-        "babel-polyfill"
+  "presets": ["stage-0", "es2015", "react"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "src": "./src"
+        }
+      }
     ],
-    "env": {}
+    "transform-class-properties",
+    "babel-polyfill"
+  ],
+  "env": {}
 }
