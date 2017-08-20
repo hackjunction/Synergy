@@ -1,0 +1,19 @@
+.faqSection {
+  position: relative;
+  width: 100%;
+  border-bottom: 5px solid #fbfbfb;
+  border-left: 2px solid #fbfbfb;
+  border-right: 2px solid #fbfbfb;
+}
+
+.faqSection.open {
+  .faqAnswer {
+    height: 120px;
+  }
+}
+
+.faqAnswer {
+  height: 0;
+  overflow: hidden;
+  transition: all .2s ease-in;
+}

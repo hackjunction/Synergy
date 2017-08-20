@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
+import styles from "./FaqSection.c.scss";
 
 class FaqSection extends React.Component {
   static propTypes = {
@@ -18,14 +20,17 @@ class FaqSection extends React.Component {
   };
 
   render() {
-    const rootClass = this.state.isOpen ? "faq_section open" : "faq_section";
+    const containerClasses = classNames({
+      [styles.faqSection]: true,
+      [styles.open]: this.state.isOpen,
+    });
 
     return (
-      <div onClick={this.toggle} className={rootClass}>
-        <div>
+      <div onClick={this.toggle} className={containerClasses}>
+        <div className={styles.testi}>
           {this.props.question}
         </div>
-        <div className="articlewrap">
+        <div className={styles.faqAnswer}>
           {this.props.children}
         </div>
       </div>

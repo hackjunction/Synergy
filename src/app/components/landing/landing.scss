@@ -155,27 +155,6 @@ $color3: white;
   padding: 2%;
 }
 
-//FAQ SECTION
-.faq_section {
-  position: relative;
-  width: 100%;
-  border-bottom: 5px solid #FBFBFB;
-  border-left: 2px solid #FBFBFB;
-  border-right: 2px solid #FBFBFB;
-}
-
-.faq_section.open {
-  .articlewrap {
-    height: 120px;
-  }
-}
-
-.articlewrap {
-  height: 0;
-  overflow: hidden;
-  transition: all .2s ease-in;
-}
-
 // Arrow Down
 
 .arrow {
@@ -193,7 +172,7 @@ $color3: white;
   -webkit-transition: ease 1s;
   transition: ease 1s;
   -webkit-animation: bouncey 1.6s linear infinite;
-          animation: bouncey 1.6s linear infinite;
+  animation: bouncey 1.6s linear infinite;
 }
 .arrow ul {
   list-style: none;
@@ -208,7 +187,7 @@ $color3: white;
   top: 0;
   position: absolute;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   border-radius: 5px 0 0 5px;
 }
 .arrow ul li:nth-child(2) {
@@ -217,7 +196,7 @@ $color3: white;
   border-radius: 0 5px 5px 0;
   top: 0;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .arrow:hover {
   opacity: 1;
@@ -226,29 +205,29 @@ $color3: white;
 @-webkit-keyframes bouncey {
   0% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
     -webkit-transform: translateY(4px);
-            transform: translateY(4px);
+    transform: translateY(4px);
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes bouncey {
   0% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
     -webkit-transform: translateY(4px);
-            transform: translateY(4px);
+    transform: translateY(4px);
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
