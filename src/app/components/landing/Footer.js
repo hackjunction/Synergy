@@ -1,6 +1,5 @@
-import React from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import './landing.scss';
+import React from "react";
+import { Grid, Row, Col } from "react-flexbox-grid";
 
 const Footer = () =>
   <Grid fluid>

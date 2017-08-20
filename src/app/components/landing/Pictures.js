@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import { Grid, Row, Col } from "react-flexbox-grid";
-import "./landing.scss";
 
 const settings = {
   dots: true,

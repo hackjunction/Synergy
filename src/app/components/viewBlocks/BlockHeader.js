@@ -5,16 +5,15 @@ import styles from "./BlockHeader.c.scss";
 
 const BlockHeader = ({ title, children: description }) =>
   <Row>
-    <Col md={5}>
+    <Col xs={12} md={5}>
       <h1 className={styles.title}>
         {title}
       </h1>
     </Col>
-    <Col md={9}>
-      <p>
+    {!!description &&
+      <Col xs={12} md={9}>
         {description}
-      </p>
-    </Col>
+      </Col>}
   </Row>;
 
 BlockHeader.propTypes = {
