@@ -27,11 +27,14 @@ class FaqSection extends React.Component {
 
     return (
       <div onClick={this.toggle} className={containerClasses}>
-        <div className={styles.testi}>
+        <div className={styles.faqQuestion}>
+          <span className={styles.openButton} />
           {this.props.question}
         </div>
         <div className={styles.faqAnswer}>
-          {this.props.children}
+          <span className={styles.faqAnswerText}>
+            {this.props.children}
+          </span>
         </div>
       </div>
     );
