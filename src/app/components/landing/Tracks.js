@@ -6,6 +6,8 @@ import TrackElement from "../common/TrackElement";
 import Block from "../viewBlocks/Block";
 import BlockHeader from "../viewBlocks/BlockHeader";
 
+import styles from "./Tracks.c.scss";
+
 class Tracks extends Component {
   componentWillMount() {
     // the first time we load the app, we need that tracks list
@@ -31,7 +33,7 @@ class Tracks extends Component {
         </BlockHeader>
         {grid.map(row => {
           return (
-            <Row height={1} center="xs">
+            <Row height={1} className={styles.track_row} center="xs">
               {row.map(width => {
                 var element = (
                   <Col xs={width}>
