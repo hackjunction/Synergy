@@ -1,66 +1,32 @@
-import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
-import './landing.scss';
-
-import EventList from '../common/EventList';
+import React from "react";
+import { Row, Col } from "react-flexbox-grid";
+import Block from "../viewBlocks/Block";
+import BlockHeader from "../viewBlocks/BlockHeader";
 
 const About = () =>
-  <Row start="xs" className="junction_about">
-    <Col xs={12}>
-      <Row>
-        <Col xsOffset={1} xs={9} className="bold text-secondary">
-          <h4>ABOUT</h4>
-        </Col>
-      </Row>
-    </Col>
-    <Col xs={12}>
-      <Row>
-        <Col xsOffset={1} xs={2}>
-          <h1 className="text-underline">JUNCTION?</h1>
-        </Col>
-      </Row>
-    </Col>
-    <Col xs={12}>
-      <Row>
-        <Col xsOffset={1} xs={8} className="junction-description">
-          Junction is a{' '}
-          <span className="text-secondary">global converging point*</span> for
-          thousands of developers, designers, and entrepreneurs from around the
-          world.
-        </Col>
-        <Col xsOffset={1} xs={8} className="junction-description">
-          {' '}
-          <span className="text-tetriary">Convergence is a coming together of two or more distinct entities or phenomena.</span>
-        </Col>
-      </Row>
-    </Col>
-    <Col xs={12}>
-      <Row>
-        <Col xsOffset={1} xs={9} className="bold text-secondary junction_up_next">
-          <h4>UP NEXT</h4>
-        </Col>
-      </Row>
-    </Col>
-    <Col xs={12}>
-      <Row>
-        <Col xsOffset={1} xs={3}>
-          <h1 className="text-underline">PRE EVENTS</h1>
-        </Col>
-      </Row>
-    </Col>
-    <Col xs={12}>
-      <Row>
-        <Col xsOffset={2} xs={8}>
-          <img
-            className="junction_events_hacktalks responsive"
-            src="http://www.citi.io/wp-content/uploads/2015/08/1168-00-06.jpg"
-          />
-        </Col>
-      </Row>
-    </Col>
-    <Col xs={12}>
-      <EventList />
-    </Col>
-  </Row>;
+  <Block>
+    <Row>
+      <Col xs={12} className="bold text-secondary">
+        <h4>ABOUT</h4>
+      </Col>
+    </Row>
+    <BlockHeader title="JUNCTION?" />
+    <Row className="junction_about">
+      <Col xs={12} className="junction-description">
+        Junction is a{" "}
+        <span className="text-secondary">global converging point*</span> for
+        thousands of developers, designers, and entrepreneurs from around the
+        world.
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12} className="junction-description">
+        {" "}<span className="text-tetriary">
+          Convergence is a coming together of two or more distinct entities or
+          phenomena.
+        </span>
+      </Col>
+    </Row>
+  </Block>;
 
 export default About;
