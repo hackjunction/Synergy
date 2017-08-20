@@ -3,6 +3,7 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 import { connect } from 'react-redux';
 import { Redirect } from "react-router-dom";
 import PropTypes from 'prop-types';
+import styles from './Track.c.scss';
 
 class Track extends Component {
   componentWillMount() {
@@ -25,8 +26,8 @@ class Track extends Component {
 
     return (
       <Grid fluid>
-        <Row center="xs sm md" style={style} className="track_header">
-          <Col className="track_name" xs={12} sm={12} md={12}>
+        <Row center="xs sm md" style={style} className={styles.track_header}>
+          <Col className={styles.track_name} xs={12} sm={12} md={12}>
             {track.title}
           </Col>
         </Row>
