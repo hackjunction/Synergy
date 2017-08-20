@@ -21,29 +21,38 @@ const Partners = () =>
       </Col>
       <Col xsOffset={2} xs={9}>
         <Col xs={4}>
-          <img src="http://loremflickr.com/320/240" className="responsive" />
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/elisa.png" className="responsive" />
         </Col>
         <Col xs={4}>
-          <img src="http://loremflickr.com/320/240" className="responsive" />
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/veikkaus.png" className="responsive" />
         </Col>
         <Col xs={4}>
-          <img src="http://loremflickr.com/320/240" className="responsive" />
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suunto.png" className="responsive" />
         </Col>
       </Col>
-      <Col xsOffset={1} xs={9}>
-        <Col xs={3}>
-          <img src="http://loremflickr.com/320/240" className="responsive" />
+      <Col xsOffset={2} xs={9}>
+        <Col xs={4}>
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suneffects.png" className="responsive" />
         </Col>
-        <Col xs={3}>
-          <img src="http://loremflickr.com/320/240" className="responsive" />
+        <Col xs={4}>
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/daimler.png" className="responsive" />
         </Col>
-        <Col xs={3}>
-          <img src="http://loremflickr.com/320/240" className="responsive" />
-        </Col>
-        <Col xs={3}>
-          <img src="http://loremflickr.com/320/240" className="responsive" />
+        <Col xs={4}>
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/planmeca.png" className="responsive" />
         </Col>
       </Col>
+      <Col xsOffset={2} xs={9}>
+        <Col xs={4}>
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/outotec.png" className="responsive" />
+        </Col>
+        <Col xs={4}>
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/helvar.png" className="responsive" />
+        </Col>
+        <Col xs={4}>
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/procountor.png" className="responsive" />
+        </Col>
+      </Col>
+
       <Col xsOffset={5} xs={6}>
         <div>
           <button className="junction_button junction_border">SEE ALL</button>
