@@ -23,12 +23,11 @@ class EventList extends Component {
       <Row>
         {events.map(event =>
           <Col md={4} className={styles.event}>
-            <a className={styles.event_link} href={`http://www.facebook.com/events/${event.id}`}>
               <img src={event.cover.source} className="responsive" />
               <h3 className={styles.event_link}>
                 {event.name}
               </h3>
-            </a>
+              <p className={styles.event_link}><a href={`http://www.facebook.com/events/${event.id}`}>Attend</a></p>
           </Col>,
         )}
         {!events.length &&

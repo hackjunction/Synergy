@@ -1,5 +1,16 @@
 .event_link {
-  color:#232323;
+  a:link{
+    color:#5abecf;
+    text-decoration: none;
+  }
+  a:visited{
+    color:#5abecf;
+    text-decoration: none;
+  }
+  a:hover{
+    color:#5abecf;
+    text-decoration: underline;
+  }
 }
 .event {
   padding-top: 0.5em;
