@@ -44,119 +44,6 @@ img.responsive {
   display: block;
 }
 
-.junction_menu {
-  position: fixed;
-  top: 40%;
-  right: 0;
-  z-index: 3000;
-  text-transform: uppercase;
-  list-style: none;
-  cursor: default;
-
-  -webkit-transition: all ease 0.1s;
-  transition: all ease 0.1s;
-  /* latin */
-  @font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Lato Regular'), local('Lato-Regular'),
-      url(//fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2)
-        format('woff2');
-
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
-      U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    min-height: 100vh;
-    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
-    font-family: 'Lato', sans-serif;
-    color: #fff;
-
-    display: flex;
-    flex-flow: row nowrap;
-    flex: 1 1 auto;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .dot {
-    list-style: none;
-    cursor: default;
-    user-select: none;
-    padding: 0;
-    margin: 0 auto;
-    width: 3rem;
-
-    li {
-      display: block;
-      margin: 0 1rem 1rem;
-      width: 1rem;
-      height: 1rem;
-      cursor: pointer;
-      position: relative;
-    }
-  }
-
-  .item {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    outline: none;
-    background-color: #fff;
-    background-color: rgba(255, 255, 255, .3);
-
-    &:focus {
-      outline: none;
-    }
-  }
-
-  // Fill up
-
-  .fillUp {
-    .item {
-      background: transparent;
-      overflow: hidden;
-      box-shadow: inset 0 0 0 .0625rem white;
-      transition: background .3s ease;
-
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        height: 0;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        box-shadow: 0 0 .0625rem #fff;
-        transition: height .3s ease;
-      }
-
-      &:hover,
-      &:focus {
-        background-color: rgba(0, 0, 0, .2);
-      }
-    }
-  }
-
-  .fillUp .current .item::after {
-    height: 100%;
-  }
-}
-
 .junction_fixed_social {
   position: fixed;
   top: 40%;
@@ -231,4 +118,60 @@ h1 {
 .junction-description {
   font-size: 36px;
   line-height: 60px;
+}
+nav.junction_menu {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  z-index: 3000;
+  text-transform: uppercase;
+  list-style: none;
+  cursor: default;
+  padding-left: 1em;
+  float: right;
+  text-align: right;
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    li {
+      margin: 10px 0;
+      transition: linear 0.3s;
+      direction: rtl;
+      &:before {
+        position: relative;
+        display: inline-block;
+        content: '';
+        width: 10px;
+        height: 10px;
+        margin-right: 1em;
+        border: 2px solid $accent;
+        border-radius: 50%;
+        box-shadow: 0 0 2px $accent;
+        transition: linear 0.3s;
+      }
+      &:hover {
+        cursor: pointer;
+        &:before {
+          box-shadow: 0 0 3px darken($accent, 10%);
+        }
+      }
+      &.active {
+        transition: linear 0.3s;
+        &:before {
+          background-color: $accent;
+        }
+      }
+    }
+  }
+  ul li:before {
+    padding: 5px;
+    margin-left: 10px;
+  }
 }
