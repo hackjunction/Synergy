@@ -1,6 +1,6 @@
-import React from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import './landing.scss';
+import React from "react";
+import { Grid, Row, Col } from "react-flexbox-grid";
+import "./landing.scss";
 
 const Tracks = () =>
   <Grid fluid>
@@ -12,40 +12,71 @@ const Tracks = () =>
         <h1 className="text-underline">BUILDING FOR TOMORROW</h1>
       </Col>
       <Col xsOffset={1} xs={9}>
-        <p>Junction is divided into multiple themes (tracks), each including several challenges set by our partner companies. Teams are free to participate in different challenges.</p>
+        <p>
+          Junction is divided into multiple themes (tracks), each including
+          several challenges set by our partner companies. Teams are free to
+          participate in different challenges.
+        </p>
       </Col>
       <Col xs>
         <Row center="xs">
           <Col xs={3}>
-            <img src="http://lorempixel.com/output/city-q-c-640-480-8.jpg" />
+            <img
+              src="http://lorempixel.com/output/city-q-c-640-480-8.jpg"
+              className="responsive"
+            />
           </Col>
           <Col xs={3}>
-            <img src="http://lorempixel.com/output/sports-q-c-640-480-2.jpg" />
+            <img
+              src="http://lorempixel.com/output/sports-q-c-640-480-2.jpg"
+              className="responsive"
+            />
           </Col>
           <Col xs={3}>
-            <img src="http://lorempixel.com/output/animals-q-c-640-480-4.jpg" />
-          </Col>
-        </Row>
-        <Row center="xs">
-          <Col xs={3}>
-            <img src="http://lorempixel.com/output/sports-q-c-640-480-7.jpg" />
-          </Col>
-          <Col xs={3}>
-            <img src="http://lorempixel.com/output/people-q-c-640-480-7.jpg" />
-          </Col>
-          <Col xs={3}>
-            <img src="http://lorempixel.com/output/abstract-q-c-640-480-4.jpg" />
+            <img
+              src="http://lorempixel.com/output/animals-q-c-640-480-4.jpg"
+              className="responsive"
+            />
           </Col>
         </Row>
         <Row center="xs">
           <Col xs={3}>
-            <img src="http://lorempixel.com/output/animals-q-c-640-480-5.jpg" />
+            <img
+              src="http://lorempixel.com/output/sports-q-c-640-480-7.jpg"
+              className="responsive"
+            />
           </Col>
           <Col xs={3}>
-            <img src="http://lorempixel.com/output/food-q-c-640-480-6.jpg" />
+            <img
+              src="http://lorempixel.com/output/people-q-c-640-480-7.jpg"
+              className="responsive"
+            />
           </Col>
           <Col xs={3}>
-            <img src="http://lorempixel.com/output/sports-q-c-640-480-3.jpg" />
+            <img
+              src="http://lorempixel.com/output/abstract-q-c-640-480-4.jpg"
+              className="responsive"
+            />
+          </Col>
+        </Row>
+        <Row center="xs">
+          <Col xs={3}>
+            <img
+              src="http://lorempixel.com/output/animals-q-c-640-480-5.jpg"
+              className="responsive"
+            />
+          </Col>
+          <Col xs={3}>
+            <img
+              src="http://lorempixel.com/output/food-q-c-640-480-6.jpg"
+              className="responsive"
+            />
+          </Col>
+          <Col xs={3}>
+            <img
+              src="http://lorempixel.com/output/sports-q-c-640-480-3.jpg"
+              className="responsive"
+            />
           </Col>
         </Row>
       </Col>
