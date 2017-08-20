@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Row, Col } from "react-flexbox-grid";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import styles from './EventList.c.scss';
 
 class EventList extends Component {
   constructor(props) {
@@ -21,11 +22,13 @@ class EventList extends Component {
     return (
       <Row>
         {events.map(event =>
-          <Col md={4}>
-            <img src={event.cover.source} className="responsive" />
-            <h3>
-              {event.name}
-            </h3>
+          <Col md={4} className={styles.event}>
+            <a className={styles.event_link} href={`http://www.facebook.com/events/${event.id}`}>
+              <img src={event.cover.source} className="responsive" />
+              <h3 className={styles.event_link}>
+                {event.name}
+              </h3>
+            </a>
           </Col>,
         )}
         {!events.length &&
