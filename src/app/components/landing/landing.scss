@@ -70,6 +70,16 @@ $color3: white;
 
 .junction_media {
   padding: 80px 0 0 0;
+  .medium_post {
+    padding: 80px 0 0 0;
+  }
+  .medium_post_pictures {
+    width: 200px;
+    height: 200px;
+  }
+  .medium_post_title {
+    height: 100px;
+  }
 }
 
 .junction_button {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Grid } from 'react-flexbox-grid';
 
 import './landing/landing.scss';
 import Welcome from './landing/Welcome';
@@ -13,7 +14,7 @@ import Footer from './landing/Footer';
 class Landing extends React.Component {
   render() {
     return (
-      <div>
+      <Grid fluid>
         <div id="welcome">
           <Welcome />
         </div>
@@ -38,7 +39,7 @@ class Landing extends React.Component {
         <div id="footer">
           <Footer />
         </div>
-      </div>
+      </Grid>
     );
   }
 }

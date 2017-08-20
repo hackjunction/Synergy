@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Row } from 'react-flexbox-grid';
+
 import MediumElement from './MediumElement';
 
 class MediumList extends Component {
@@ -16,28 +18,18 @@ class MediumList extends Component {
   // render
   render() {
     const { mediumPosts } = this.props;
-
+    let posts;
     if (!mediumPosts.length) {
       return <p>No post</p>;
+    } else {
+      posts = mediumPosts.slice(0, 3);
     }
 
     // show the list of posts
     return (
-      <div>
-        <table>
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Content</th>
-            </tr>
-          </thead>
-          <tbody>
-            {mediumPosts.map((post, index) =>
-              <MediumElement key={index} post={post} />,
-            )}
-          </tbody>
-        </table>
-      </div>
+      <Row>
+        {posts.map((post, index) => <MediumElement key={index} post={post} />)}
+      </Row>
     );
   }
 }
