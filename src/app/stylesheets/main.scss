@@ -11,15 +11,15 @@ $accent3: #ef4637;
 }
 .topnav {
   margin: 20px 0 20px 0;
-  a:link{
+  a:link {
     color: $secondary;
     text-decoration: none;
   }
-  a:visited{
+  a:visited {
     color: $secondary;
     text-decoration: none;
   }
-  a:hover{
+  a:hover {
     color: $accent;
     text-decoration: underline;
   }
@@ -214,4 +214,60 @@ h1 {
 .junction-description {
   font-size: 36px;
   line-height: 60px;
+}
+nav.junction_menu {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  z-index: 3000;
+  text-transform: uppercase;
+  list-style: none;
+  cursor: default;
+  padding-left: 1em;
+  float: right;
+  text-align: right;
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    li {
+      margin: 10px 0;
+      transition: linear 0.3s;
+      direction: rtl;
+      &:before {
+        position: relative;
+        display: inline-block;
+        content: '';
+        width: 10px;
+        height: 10px;
+        margin-right: 1em;
+        border: 2px solid $accent;
+        border-radius: 50%;
+        box-shadow: 0 0 2px $accent;
+        transition: linear 0.3s;
+      }
+      &:hover {
+        cursor: pointer;
+        &:before {
+          box-shadow: 0 0 3px darken($accent, 10%);
+        }
+      }
+      &.active {
+        transition: linear 0.3s;
+        &:before {
+          background-color: $accent;
+        }
+      }
+    }
+  }
+  ul li:before {
+    padding: 5px;
+    margin-left: 10px;
+  }
 }
