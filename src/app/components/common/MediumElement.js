@@ -8,8 +8,8 @@ export default class MediumElement extends Component {
     const { post } = this.props;
 
     return (
-      <Col xs={4} className="medium_post">
-        <img src={post.images} className="medium_post_pictures" />
+      <Col xs={12} md={4} lg={4}>
+        <img src={post.images} className="responsive" />
         <div className="medium_post_title">
           <h2>
             {post.title}

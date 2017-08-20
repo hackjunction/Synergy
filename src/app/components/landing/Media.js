@@ -3,6 +3,7 @@ import { Row, Col } from 'react-flexbox-grid';
 import styles from './Media.c.scss';
 import Block from '../viewBlocks/Block';
 import BlockHeader from '../viewBlocks/BlockHeader';
+import Mediumlist from '../common/MediumList';
 
 const Media = () =>
   <Block className={styles.block}>
@@ -19,23 +20,7 @@ const Media = () =>
       </p>
     </BlockHeader>
     <Row className="junction_media">
-      <Col xs={12} md={4}>
-        <img src="http://loremflickr.com/320/240" className="responsive" />
-        <h3>AMAZING POST</h3>
-        <p>
-          This is a very nice and short description that is really a
-          clickbait...
-        </p>
-      </Col>
-      <Col xs={12} md={4}>
-        <img src="http://loremflickr.com/320/240" className="responsive" />
-        <h3>AMAZING POST</h3>
-        <p>
-          This is a very nice and short description that is really a
-          clickbait...
-        </p>
-      </Col>
-      <Col xsOffset={1} xs={9}>
+      <Col xs>
         <Mediumlist />
       </Col>
       <Col xsOffset={5} xs={6}>
