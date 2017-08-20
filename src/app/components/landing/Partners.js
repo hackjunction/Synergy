@@ -52,12 +52,6 @@ const Partners = () =>
           <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/procountor.png" className="responsive" />
         </Col>
       </Col>
-
-      <Col xsOffset={5} xs={6}>
-        <div>
-          <button className="junction_button junction_border">SEE ALL</button>
-        </div>
-      </Col>
     </Row>
   </Grid>;
 
