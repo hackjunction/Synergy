@@ -36,7 +36,7 @@ const Welcome = () =>
       </Col>
       <Col xs={1} className="junction_welcome_bottom">
         <a href="#about">
-          <div className="arrow">
+          <div className={styles.arrow}>
             <ul>
               <li></li>
               <li></li>
