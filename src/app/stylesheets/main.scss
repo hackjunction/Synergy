@@ -10,31 +10,17 @@ $accent3: #ef4637;
 }
 .topnav {
   margin: 20px 0 20px 0;
-}
-.junction_posts img {
-  max-width: 100%;
-}
-.junction_header_nav {
-  a:link {
+  a:link{
     color: $secondary;
-  }
-
-  /* visited link */
-  a:visited {
-    color: $secondary;
-  }
-
-  /* mouse over link */
-  a:hover {
-    color: $secondary;
-    padding: 10px;
-    background-color: $accent;
     text-decoration: none;
   }
-
-  /* selected link */
-  a:active {
+  a:visited{
     color: $secondary;
+    text-decoration: none;
+  }
+  a:hover{
+    color: $accent;
+    text-decoration: underline;
   }
 }
 
@@ -51,6 +37,10 @@ body {
 
   box-sizing: border-box;
   width: 100%;
+}
+
+.junction_posts img {
+  max-width: 100%;
 }
 
 img.responsive {
