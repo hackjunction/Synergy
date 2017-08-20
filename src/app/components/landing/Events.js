@@ -20,10 +20,10 @@ const Events = () =>
     </BlockHeader>
     <Row>
       <Col xs={12}>
-        <img
+        <a href="https://blog.hackjunction.com/dear-linus-can-you-please-reply-to-my-messages-f596b929d09f"><img
           className="junction_events_hacktalks responsive"
           src="https://staging.hackjunction.com/wp-content/uploads/2017/08/hacktalks.jpg"
-        />
+        /></a>
       </Col>
     </Row>
     <EventList />
