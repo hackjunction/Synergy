@@ -13,7 +13,7 @@ import Footer from './landing/Footer';
 class Landing extends React.Component {
   render() {
     return (
-      <Grid fluid>
+      <div fluid>
         <div id="welcome">
           <Welcome />
         </div>
@@ -36,7 +36,7 @@ class Landing extends React.Component {
         <div id="footer">
           <Footer />
         </div>
-      </Grid>
+      </div>
     );
   }
 }
