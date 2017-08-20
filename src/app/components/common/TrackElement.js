@@ -5,16 +5,15 @@ export default class TrackElement extends Component {
   // render
   render() {
     const { post } = this.props;
+    const style = {
+      "background": `url(${post.image})`
+    };
 
     return (
-      <tr>
-        <td>
-          {post.title.rendered}
-        </td>
-        <td>
-          {post.content.rendered}
-        </td>
-      </tr>
+      <div style={style}>
+            {post.title}
+            {post.content}
+      </div>
     );
   }
 }
