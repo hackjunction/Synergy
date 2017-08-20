@@ -12,17 +12,11 @@ const Hacktalks = () =>
       </Col>
       <Col xsOffset={1} xs={5}>
         <h1 className="text-underline">
-          KEYNOTES ON THE <br /> EDGE OF TECH
+          FREQUENTLY ASKED <br />QUESTIONS
         </h1>
       </Col>
       <Col xsOffset={1} xs={6}>
-        Alii nullo quaerente vultus severitate adsimulata patrimonia sua in
-        inmensum extollunt, cultorum ut puta feracium multiplicantes annuos
-        fructus, quae a primo ad ultimum solem se abunde iactitant possidere,
-        ignorantes profecto maiores suos, per quos ita magnitudo Romana
-        porrigitur, non divitiis eluxisse sed per bella saevissima, nec opibus
-        nec victu nec indumentorum vilitate gregariis militibus discrepantes
-        opposita cuncta superasse virtute.
+        Anything you want to know about the event, we got you covered. While we can argue we have all the answers, if you feel something is missing, feel free to contact us.
       </Col>
     </Row>
     <Row>
