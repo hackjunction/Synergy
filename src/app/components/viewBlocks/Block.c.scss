@@ -1,5 +1,11 @@
 @import '../../stylesheets/variables';
 
 .container {
-  background: rgba(255, 0, 0, 0.1);
+  width: 100%;
+}
+
+.content {
+  max-width: 1024px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }

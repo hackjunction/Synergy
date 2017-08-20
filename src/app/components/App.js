@@ -18,22 +18,11 @@ class App extends React.Component {
           href="https://fonts.googleapis.com/css?family=Lato:300,400"
           rel="stylesheet"
         />
-
-        <Grid fluid>
-          <Row center="xs sm md">
-            <Col xs={12} sm={12} md={12}>
-              <img
-                className="junction_logo"
-                src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
-              />
-            </Col>
-          </Row>
-        </Grid>
-        <Grid fluid>
+        <div>
           <Route exact path="/" component={Landing} />
           <Route exact path="/post" component={Post} />
           <Route exact path="/about" component={About} />
-        </Grid>
+        </div>
         <nav className="junction_menu">
           <ul>
             <Scrollchor to="#welcome">
