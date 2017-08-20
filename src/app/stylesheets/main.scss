@@ -1,10 +1,5 @@
-$white: #ffffff;
-// color palette
-$primary: #232323;
-$secondary: #fbfbfb;
-$accent: #5abecf;
-$accent2: #ec008b;
-$accent3: #ef4637;
+@import 'variables';
+
 .junction_logo {
   width: 200px;
   padding-top: 5%;
