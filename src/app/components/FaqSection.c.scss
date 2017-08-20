@@ -24,6 +24,8 @@ $answer-padding: $question-padding;
   padding-bottom: $question-padding;
   padding-left: $question-padding;
   padding-right: $question-height;
+  user-select: none;
+  cursor: pointer;
 }
 
 .faqAnswer {
