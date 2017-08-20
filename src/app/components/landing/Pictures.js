@@ -51,58 +51,50 @@ const Pictures = () =>
           <Slider {...settings}>
             <div>
               <img
-                className="picture_continer_image"
+                className="responsive picture_container_image"
                 src="http://lorempixel.com/400/200/"
-                className="responsive"
               />
             </div>
             <div>
               <img
-                className="picture_continer_image"
+                className="responsive picture_container_image"
                 src="http://lorempixel.com/400/200/"
-                className="responsive"
               />
             </div>
             <div>
               <img
-                className="picture_continer_image"
+                className="responsive picture_container_image"
                 src="http://lorempixel.com/400/200/"
-                className="responsive"
               />
             </div>
             <div>
               <img
-                className="picture_continer_image"
+                className="responsive picture_container_image"
                 src="http://lorempixel.com/400/200/"
-                className="responsive"
               />
             </div>
             <div>
               <img
-                className="picture_continer_image"
+                className="responsive picture_container_image"
                 src="http://lorempixel.com/400/200/"
-                className="responsive"
               />
             </div>
             <div>
               <img
-                className="picture_continer_image"
+                className="responsive picture_container_image"
                 src="http://lorempixel.com/400/200/"
-                className="responsive"
               />
             </div>
             <div>
               <img
-                className="picture_continer_image"
+                className="responsive picture_container_image"
                 src="http://lorempixel.com/400/200/"
-                className="responsive"
               />
             </div>
             <div>
               <img
-                className="picture_continer_image"
+                className="responsive picture_container_image"
                 src="http://lorempixel.com/400/200/"
-                className="responsive"
               />
             </div>
           </Slider>
