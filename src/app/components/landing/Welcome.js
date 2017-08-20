@@ -38,8 +38,8 @@ const Welcome = () =>
         <a href="#about">
           <div className="arrow">
             <ul>
-              <li />
-              <li />
+              <li></li>
+              <li></li>
             </ul>
           </div>
         </a>
