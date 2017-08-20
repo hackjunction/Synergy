@@ -17,6 +17,11 @@ class Tracks extends Component {
 
     return (
       <Block>
+        <Row>
+          <Col xs={12} className="bold text-secondary">
+            <h4>TRACKS</h4>
+          </Col>
+        </Row>
         <BlockHeader title="BUILDING FOR TOMORROW">
           <p>
             Junction is divided into multiple themes (tracks), each including

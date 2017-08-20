@@ -5,6 +5,11 @@ import BlockHeader from "../viewBlocks/BlockHeader";
 
 const About = () =>
   <Block>
+    <Row>
+      <Col xs={12} className="bold text-secondary">
+        <h4>ABOUT</h4>
+      </Col>
+    </Row>
     <BlockHeader title="JUNCTION?" />
     <Row className="junction_about">
       <Col xs={12} className="junction-description">
