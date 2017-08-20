@@ -2,35 +2,41 @@ import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import './landing.scss';
 
+import EventList from '../common/EventList';
+
 const About = () =>
   <Row start="xs" className="junction_about">
     <Col xs={12}>
       <Row>
-        <Col xsOffset={2} xs={9} className="bold text-secondary">
+        <Col xsOffset={1} xs={9} className="bold text-secondary">
           <h4>ABOUT</h4>
         </Col>
       </Row>
     </Col>
     <Col xs={12}>
       <Row>
-        <Col xsOffset={2} xs={2}>
+        <Col xsOffset={1} xs={2}>
           <h1 className="text-underline">JUNCTION?</h1>
         </Col>
       </Row>
     </Col>
     <Col xs={12}>
       <Row>
-        <Col xsOffset={2} xs={6} className="junction-description">
+        <Col xsOffset={1} xs={8} className="junction-description">
           Junction is a{' '}
-          <span className="text-secondary">global converging point</span> for
+          <span className="text-secondary">global converging point*</span> for
           thousands of developers, designers, and entrepreneurs from around the
-          world
+          world.
+        </Col>
+        <Col xsOffset={1} xs={8} className="junction-description">
+          {' '}
+          <span className="text-tetriary">Convergence is a coming together of two or more distinct entities or phenomena.</span>
         </Col>
       </Row>
     </Col>
     <Col xs={12}>
       <Row>
-        <Col xsOffset={2} xs={2}>
+        <Col xsOffset={1} xs={2}>
           <button className="junction_button junction_border">
             OUR COMMUNITY
           </button>
@@ -39,14 +45,14 @@ const About = () =>
     </Col>
     <Col xs={12}>
       <Row>
-        <Col xsOffset={2} xs={9} className="bold text-secondary">
-          <h3>UP NEXT</h3>
+        <Col xsOffset={1} xs={9} className="bold text-secondary junction_up_next">
+          <h4>UP NEXT</h4>
         </Col>
       </Row>
     </Col>
     <Col xs={12}>
       <Row>
-        <Col xsOffset={2} xs={2}>
+        <Col xsOffset={1} xs={3}>
           <h1 className="text-underline">PRE EVENTS</h1>
         </Col>
       </Row>
@@ -55,26 +61,14 @@ const About = () =>
       <Row>
         <Col xsOffset={2} xs={8}>
           <img
-            className="junction_events_hacktalks"
+            className="junction_events_hacktalks responsive"
             src="http://www.citi.io/wp-content/uploads/2015/08/1168-00-06.jpg"
           />
         </Col>
       </Row>
     </Col>
     <Col xs={12}>
-      <Row>
-        <Col xsOffset={3} xs={9}>
-          <Col xs={3}>
-            <h3>HUGE EVENT</h3>
-          </Col>
-          <Col xs={3}>
-            <h3>HUGE EVENT</h3>
-          </Col>
-          <Col xs={3}>
-            <h3>HUGE EVENT</h3>
-          </Col>
-        </Col>
-      </Row>
+      <EventList />
     </Col>
   </Row>;
 

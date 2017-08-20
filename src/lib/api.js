@@ -5,4 +5,8 @@ const api = axios.create({
   timeout: 8000,
 });
 
+export const getEvents = () => {
+  return api.get('/fb/events');
+};
+
 export default api;
