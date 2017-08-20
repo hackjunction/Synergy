@@ -1,8 +1,9 @@
-import React from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import './landing.scss';
+import React from "react";
+import { Grid, Row, Col } from "react-flexbox-grid";
+import "./landing.scss";
+import styles from "./Hacktalks.c.scss";
 
-import FaqSection from '../FaqSection';
+import FaqSection from "../FaqSection";
 
 const Hacktalks = () =>
   <Grid fluid>
@@ -16,15 +17,29 @@ const Hacktalks = () =>
         </h1>
       </Col>
       <Col xsOffset={1} xs={6}>
-        Anything you want to know about the event, we got you covered. While we can argue we have all the answers, if you feel something is missing, feel free to contact us.
+        Anything you want to know about the event, we got you covered. While we
+        can argue we have all the answers, if you feel something is missing,
+        feel free to contact us.
       </Col>
     </Row>
     <Row>
-      <Col xsOffset={1} xs={4}>
-        <FaqSection question='What is Junction?'>Angelos.</FaqSection>
+      <Col xsOffset={1} xs={4} className={styles.faqCell}>
+        <FaqSection question="What is Junction?">Angelos.</FaqSection>
       </Col>
-      <Col xsOffset={1} xs={4}>
-        <FaqSection question='What is Junction?'>Angelos.</FaqSection>
+      <Col xsOffset={1} xs={4} className={styles.faqCell}>
+        <FaqSection question="What is Junction?">Angelos.</FaqSection>
+      </Col>
+      <Col xsOffset={1} xs={4} className={styles.faqCell}>
+        <FaqSection question="What is Junction?">Angelos.</FaqSection>
+      </Col>
+      <Col xsOffset={1} xs={4} className={styles.faqCell}>
+        <FaqSection question="What is Junction?">Angelos.</FaqSection>
+      </Col>
+      <Col xsOffset={1} xs={4} className={styles.faqCell}>
+        <FaqSection question="What is Junction?">Angelos.</FaqSection>
+      </Col>
+      <Col xsOffset={1} xs={4} className={styles.faqCell}>
+        <FaqSection question="What is Junction?">Angelos.</FaqSection>
       </Col>
     </Row>
   </Grid>;
