@@ -38,6 +38,12 @@ $accent3: #ef4637;
   }
 }
 
+img.responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .junction_menu {
   position: fixed;
   top: 40%;
