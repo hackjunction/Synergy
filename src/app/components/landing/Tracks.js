@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Grid, Row, Col } from "react-flexbox-grid";
-import { connect } from 'react-redux';
 import "./landing.scss";
 import TrackElement from "../common/TrackElement";
 
@@ -46,8 +45,9 @@ class Tracks extends Component {
                 i += 1;
                 return element;
               })}
-            </Row>;
-          })}
+            </Row>
+          );
+        })}
       </Grid>
     );
   }
