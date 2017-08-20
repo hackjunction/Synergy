@@ -4,8 +4,8 @@ import ReactRotatingText from "react-rotating-text";
 import "./landing.scss";
 
 const Welcome = () =>
-  <Row center="xs" className="junction_welcome">
-    <Col className="junction_hackthefuture">
+  <Row center="xs sm md" className="junction_welcome">
+    <Col className="junction_hackthefuture" xs={12} sm={12} md={12}>
       <h1>
         HACK THE FUTURE OF <br />
         <br />

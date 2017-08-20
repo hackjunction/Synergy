@@ -36,15 +36,6 @@ const About = () =>
     </Col>
     <Col xs={12}>
       <Row>
-        <Col xsOffset={1} xs={2}>
-          <button className="junction_button junction_border">
-            OUR COMMUNITY
-          </button>
-        </Col>
-      </Row>
-    </Col>
-    <Col xs={12}>
-      <Row>
         <Col xsOffset={1} xs={9} className="bold text-secondary junction_up_next">
           <h4>UP NEXT</h4>
         </Col>
