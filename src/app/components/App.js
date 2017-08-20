@@ -1,7 +1,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import Scrollchor from "react-scrollchor";
-import { Grid, Row, Col } from "react-flexbox-grid";
+import { Row } from "react-flexbox-grid";
 import Landing from "./Landing";
 import Post from "./Post";
 import About from "./About";

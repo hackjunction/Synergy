@@ -8,7 +8,6 @@ import Tracks from "./landing/Tracks";
 import Partners from "./landing/Partners";
 import Hacktalks from "./landing/Hacktalks";
 import Media from "./landing/Media";
-import Pictures from "./landing/Pictures";
 import Footer from "./landing/Footer";
 
 class Landing extends React.Component {
