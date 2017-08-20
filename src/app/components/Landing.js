@@ -1,5 +1,4 @@
 import React from 'react';
-import { Grid } from 'react-flexbox-grid';
 
 import Welcome from './landing/Welcome';
 import About from './landing/About';
