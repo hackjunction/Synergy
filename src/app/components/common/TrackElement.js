@@ -5,16 +5,21 @@ export default class TrackElement extends Component {
   // render
   render() {
     const { post } = this.props;
-    const style = {
-      "background": `url(${post.image})`
-    };
 
-    return (
-      <div style={style}>
-            {post.title}
-            {post.content}
-      </div>
-    );
+    if(post){
+      const style = {
+        "background": `url(${post.image})`,
+        "height": "180px"
+      };
+
+      return (
+        <div className="responsive" style={style}>
+              {/*{post.title}
+              {post.content}
+              */}
+        </div>
+      );
+    } else return <div></div>
   }
 }
 

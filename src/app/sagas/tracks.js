@@ -8,6 +8,6 @@ export function* getAllTracks() {
   // save the tracks in state
   yield put({
     type: 'GET_TRACKS_SAVE',
-    tracks: tracks,
+    tracks: tracks.data,
   });
 }
