@@ -10,8 +10,8 @@ export default class MediumElement extends Component {
 
     return (
       <Col xs={12} md={4} lg={4} className={styles.block}>
-        <div className="heightFixed">
-          <img src={post.images} className="responsive " />
+        <div className={styles.fixed}>
+          <img src={post.images} className={styles.content} />
         </div>
 
         <div className="medium_post_title">
