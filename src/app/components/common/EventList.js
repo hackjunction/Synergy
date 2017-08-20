@@ -27,7 +27,7 @@ class EventList extends Component {
         <Col xsOffset={2} xs={9}>
           {events.map(event => (
             <Col xs={4}>
-              <img src={event.cover.source} />
+              <img src={event.cover.source} className="responsive" />
               <h3>{event.name}</h3>
             </Col>
           ))}

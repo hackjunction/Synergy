@@ -1,27 +1,24 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
-// const FaqSection = () => (
-//   <div>This is my awesome about page</div>
-// );
 class FaqSection extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      isOpen: false,
-    };
-    this.toggle = this.toggle.bind(this);
-  }
+  static propTypes = {
+    question: PropTypes.string,
+    children: PropTypes.string,
+  };
 
-  toggle() {
+  state = {
+    isOpen: false,
+  };
+
+  toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen,
     });
-  }
+  };
 
   render() {
-    const rootClass = this.state.isOpen
-      ? "faq_section open"
-      : "faq_section";
+    const rootClass = this.state.isOpen ? "faq_section open" : "faq_section";
 
     return (
       <div onClick={this.toggle} className={rootClass}>
@@ -32,7 +29,6 @@ class FaqSection extends React.Component {
           {this.props.children}
         </div>
       </div>
-
     );
   }
 }

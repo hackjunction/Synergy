@@ -61,7 +61,7 @@ const About = () =>
       <Row>
         <Col xsOffset={2} xs={8}>
           <img
-            className="junction_events_hacktalks"
+            className="junction_events_hacktalks responsive"
             src="http://www.citi.io/wp-content/uploads/2015/08/1168-00-06.jpg"
           />
         </Col>
