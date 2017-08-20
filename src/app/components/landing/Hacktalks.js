@@ -23,22 +23,22 @@ const Hacktalks = () =>
       </Col>
     </Row>
     <Row>
-      <Col xsOffset={1} xs={4} className={styles.faqCell}>
+      <Col xsOffset={1} xs={11} md={5} className={styles.faqCell}>
         <FaqSection question="What is Junction?">Angelos.</FaqSection>
       </Col>
-      <Col xsOffset={1} xs={4} className={styles.faqCell}>
+      <Col xsOffset={1} xs={11} md={5} className={styles.faqCell}>
         <FaqSection question="What is Junction?">Angelos.</FaqSection>
       </Col>
-      <Col xsOffset={1} xs={4} className={styles.faqCell}>
+      <Col xsOffset={1} xs={11} md={5} className={styles.faqCell}>
         <FaqSection question="What is Junction?">Angelos.</FaqSection>
       </Col>
-      <Col xsOffset={1} xs={4} className={styles.faqCell}>
+      <Col xsOffset={1} xs={11} md={5} className={styles.faqCell}>
         <FaqSection question="What is Junction?">Angelos.</FaqSection>
       </Col>
-      <Col xsOffset={1} xs={4} className={styles.faqCell}>
+      <Col xsOffset={1} xs={11} md={5} className={styles.faqCell}>
         <FaqSection question="What is Junction?">Angelos.</FaqSection>
       </Col>
-      <Col xsOffset={1} xs={4} className={styles.faqCell}>
+      <Col xsOffset={1} xs={11} md={5} className={styles.faqCell}>
         <FaqSection question="What is Junction?">Angelos.</FaqSection>
       </Col>
     </Row>
