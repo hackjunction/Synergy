@@ -1,19 +1,19 @@
-import React from "react";
-import "./landing/landing.scss";
+import React from 'react';
+import { Grid } from 'react-flexbox-grid';
 
-import Welcome from "./landing/Welcome";
-import About from "./landing/About";
-import Events from "./landing/Events";
-import Tracks from "./landing/Tracks";
-import Partners from "./landing/Partners";
-import Hacktalks from "./landing/Hacktalks";
-import Media from "./landing/Media";
-import Footer from "./landing/Footer";
+import Welcome from './landing/Welcome';
+import About from './landing/About';
+import Events from './landing/Events';
+import Tracks from './landing/Tracks';
+import Partners from './landing/Partners';
+import Hacktalks from './landing/Hacktalks';
+import Media from './landing/Media';
+import Footer from './landing/Footer';
 
 class Landing extends React.Component {
   render() {
     return (
-      <div>
+      <Grid fluid>
         <div id="welcome">
           <Welcome />
         </div>
@@ -36,7 +36,7 @@ class Landing extends React.Component {
         <div id="footer">
           <Footer />
         </div>
-      </div>
+      </Grid>
     );
   }
 }
