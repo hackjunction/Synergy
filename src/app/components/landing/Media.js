@@ -1,6 +1,6 @@
-import React from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import './landing.scss';
+import React from "react";
+import { Grid, Row, Col } from "react-flexbox-grid";
+import "./landing.scss";
 
 const Media = () =>
   <Grid fluid>
@@ -14,24 +14,35 @@ const Media = () =>
         </h1>
       </Col>
       <Col xsOffset={1} xs={6}>
-        We often share our wisdom, from our path to build this amazing Hackathon. Be part of the conversation and learn first all the intriguing doings of Junction.
+        We often share our wisdom, from our path to build this amazing
+        Hackathon. Be part of the conversation and learn first all the
+        intriguing doings of Junction.
       </Col>
       <Row>
         <Col xsOffset={2} xs={9}>
           <Col xs={4}>
-            <img src="http://loremflickr.com/320/240" />
+            <img src="http://loremflickr.com/320/240" className="responsive" />
             <h3>AMAZING POST</h3>
-            <p>This is a very nice and short description that is really a clickbait...</p>
+            <p>
+              This is a very nice and short description that is really a
+              clickbait...
+            </p>
           </Col>
           <Col xs={4}>
-            <img src="http://loremflickr.com/320/240" />
+            <img src="http://loremflickr.com/320/240" className="responsive" />
             <h3>AMAZING POST</h3>
-            <p>This is a very nice and short description that is really a clickbait...</p>
+            <p>
+              This is a very nice and short description that is really a
+              clickbait...
+            </p>
           </Col>
           <Col xs={4}>
-            <img src="http://loremflickr.com/320/240" />
+            <img src="http://loremflickr.com/320/240" className="responsive" />
             <h3>AMAZING POST</h3>
-            <p>This is a very nice and short description that is really a clickbait...</p>
+            <p>
+              This is a very nice and short description that is really a
+              clickbait...
+            </p>
           </Col>
         </Col>
       </Row>
