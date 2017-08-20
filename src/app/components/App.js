@@ -1,10 +1,10 @@
-import React from 'react';
-import { Route, Link } from 'react-router-dom';
-import Scrollchor from 'react-scrollchor';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import Landing from './Landing';
-import Post from './Post';
-import About from './About';
+import React from "react";
+import { Route } from "react-router-dom";
+import Scrollchor from "react-scrollchor";
+import { Grid, Row, Col } from "react-flexbox-grid";
+import Landing from "./Landing";
+import Post from "./Post";
+import About from "./About";
 
 class App extends React.Component {
   render() {
@@ -20,14 +20,13 @@ class App extends React.Component {
         />
 
         <Grid fluid>
-
-              <Row center="xs sm md">
-                <Col xs={12} sm={12} md={12}>
-                  <img
-                    className="junction_logo"
-                    src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
-                  />
-                </Col>
+          <Row center="xs sm md">
+            <Col xs={12} sm={12} md={12}>
+              <img
+                className="junction_logo"
+                src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
+              />
+            </Col>
           </Row>
         </Grid>
         <Grid fluid>
@@ -62,20 +61,22 @@ class App extends React.Component {
           <Row>
             <div className="social-media">
               <a href="https://www.facebook.com/hackjunction">
-              <img src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/3-128.png" /></a>
+                <img src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/3-128.png" />
+              </a>
             </div>
           </Row>
           <Row className="social-media">
             <div className="social-media">
               <a href="https://www.instagram.com/hackjunction/">
-              <img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c521.png" /></a>
+                <img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c521.png" />
+              </a>
             </div>
           </Row>
           <Row className="social-media">
             <div className="social-media">
               <a href="https://blog.hackjunction.com/">
-              <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Medium-128.png" /></a>
-
+                <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Medium-128.png" />
+              </a>
             </div>
           </Row>
         </nav>
