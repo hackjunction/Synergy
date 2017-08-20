@@ -3,7 +3,7 @@ import { WORDPRESS_BASE_URL } from '../config';
 
 const wordpressApiClient = axios.create({
   baseURL: `${WORDPRESS_BASE_URL}/wp-json/wp/v2`,
-  timeout: 5000,
+  timeout: 50000,
 });
 
 wordpressApiClient.interceptors.request.use((config) => {
@@ -31,7 +31,8 @@ export const getTracks = () =>  {
             }
           }) : [],
           main_partners: track.main_partners,
-          partners: track.partners
+          partners: track.partners,
+          slug: track.slug
         }
       })
     })

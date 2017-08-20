@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Grid, Row, Col } from "react-flexbox-grid";
+import { connect } from 'react-redux';
 import "./landing.scss";
 import TrackElement from "../common/TrackElement";
 
@@ -45,73 +46,8 @@ class Tracks extends Component {
                 i += 1;
                 return element;
               })}
-            </Row>
-          );
-        })}
-        <Row>
-          <Col xs>
-            <Row center="xs">
-              <Col xs={3}>
-                <img
-                  src="http://lorempixel.com/output/city-q-c-640-480-8.jpg"
-                  className="responsive"
-                />
-              </Col>
-              <Col xs={3}>
-                <img
-                  src="http://lorempixel.com/output/sports-q-c-640-480-2.jpg"
-                  className="responsive"
-                />
-              </Col>
-              <Col xs={3}>
-                <img
-                  src="http://lorempixel.com/output/animals-q-c-640-480-4.jpg"
-                  className="responsive"
-                />
-              </Col>
-            </Row>
-            <Row center="xs">
-              <Col xs={3}>
-                <img
-                  src="http://lorempixel.com/output/sports-q-c-640-480-7.jpg"
-                  className="responsive"
-                />
-              </Col>
-              <Col xs={3}>
-                <img
-                  src="http://lorempixel.com/output/people-q-c-640-480-7.jpg"
-                  className="responsive"
-                />
-              </Col>
-              <Col xs={3}>
-                <img
-                  src="http://lorempixel.com/output/abstract-q-c-640-480-4.jpg"
-                  className="responsive"
-                />
-              </Col>
-            </Row>
-            <Row center="xs">
-              <Col xs={3}>
-                <img
-                  src="http://lorempixel.com/output/animals-q-c-640-480-5.jpg"
-                  className="responsive"
-                />
-              </Col>
-              <Col xs={3}>
-                <img
-                  src="http://lorempixel.com/output/food-q-c-640-480-6.jpg"
-                  className="responsive"
-                />
-              </Col>
-              <Col xs={3}>
-                <img
-                  src="http://lorempixel.com/output/sports-q-c-640-480-3.jpg"
-                  className="responsive"
-                />
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+            </Row>;
+          })}
       </Grid>
     );
   }
