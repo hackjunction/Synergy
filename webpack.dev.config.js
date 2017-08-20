@@ -7,11 +7,15 @@ module.exports.module.loaders[1] = {
   test: /\.scss$/,
   loader: ExtractTextPlugin.extract({
     fallback: "style-loader",
-    use: [{
-      loader: "css-loader"
-    }, {
-      loader: "sass-loader"
-    }]
-  })
+    use: [
+      {
+        loader: "css-loader",
+      },
+      {
+        loader: "sass-loader",
+      },
+    ],
+  }),
+  exclude: /\.c\.scss$/,
 };
 module.exports.plugins.push(new ExtractTextPlugin("../css/main.css"));
