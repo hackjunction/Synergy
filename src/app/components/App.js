@@ -1,10 +1,10 @@
-import React from "react";
-import { Route } from "react-router-dom";
-import Scrollchor from "react-scrollchor";
-import { Row } from "react-flexbox-grid";
-import Landing from "./Landing";
-import Post from "./Post";
-import About from "./About";
+import React from 'react';
+import { Route } from 'react-router-dom';
+import Scrollchor from 'react-scrollchor';
+import { Row } from 'react-flexbox-grid';
+import Landing from './Landing';
+import Post from './Post';
+import About from './About';
 import Track from './Track';
 
 class App extends React.Component {

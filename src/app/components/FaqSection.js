@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
-import styles from "./FaqSection.c.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import styles from './FaqSection.c.scss';
 
 class FaqSection extends React.Component {
   static propTypes = {
@@ -32,9 +32,9 @@ class FaqSection extends React.Component {
           {this.props.question}
         </div>
         <div className={styles.faqAnswer}>
-          <span className={styles.faqAnswerText}>
+          <div className={styles.faqAnswerText}>
             {this.props.children}
-          </span>
+          </div>
         </div>
       </div>
     );
