@@ -23,11 +23,6 @@ const Media = () =>
       <Col xs>
         <Mediumlist />
       </Col>
-      <Col xsOffset={5} xs={6}>
-        <div>
-          <button className="junction_button junction_border">SEE ALL</button>
-        </div>
-      </Col>
     </Row>
   </Block>;
 

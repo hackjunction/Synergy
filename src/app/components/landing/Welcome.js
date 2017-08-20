@@ -1,12 +1,12 @@
-import React from "react";
-import { Row, Col } from "react-flexbox-grid";
-import ReactRotatingText from "react-rotating-text";
-import styles from "./Welcome.c.scss";
-import Block from "../viewBlocks/Block";
+import React from 'react';
+import { Row, Col } from 'react-flexbox-grid';
+import ReactRotatingText from 'react-rotating-text';
+import styles from './Welcome.c.scss';
+import Block from '../viewBlocks/Block';
 
 const Welcome = () =>
   <Block className={styles.block} contentClassName={styles.blockContent}>
-    <Row center="xs sm md">
+    <Row center="xs">
       <Col>
         <img
           className="junction_logo"
@@ -14,20 +14,20 @@ const Welcome = () =>
         />
       </Col>
     </Row>
-    <Row center="xs sm md" className="junction_welcome">
-      <Col xs={12} className="junction_hackthefuture">
+    <Row center="xs" className="junction_welcome">
+      <Col xs={12} className={styles.junction_hackthefuture}>
         <h1>
           HACK THE FUTURE OF <br />
           <br />
           <ReactRotatingText
             color="#5abecf"
             items={[
-              "HEALTHTECH",
-              "LOGISTICS",
-              "ENTERTAINMENT",
-              "MULTIMODAL MOBILITY",
-              "INDUSTRIAL INTERNET",
-              "FINTECH",
+              'HEALTHTECH',
+              'LOGISTICS',
+              'ENTERTAINMENT',
+              'MULTIMODAL MOBILITY',
+              'INDUSTRIAL INTERNET',
+              'FINTECH',
             ]}
           />
         </h1>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Col } from 'react-flexbox-grid';
+import styles from './MediumElement.c.scss';
 
 export default class MediumElement extends Component {
   // render
@@ -8,8 +9,11 @@ export default class MediumElement extends Component {
     const { post } = this.props;
 
     return (
-      <Col xs={12} md={4} lg={4}>
-        <img src={post.images} className="responsive" />
+      <Col xs={12} md={4} lg={4} className={styles.block}>
+        <div className="heightFixed">
+          <img src={post.images} className="responsive " />
+        </div>
+
         <div className="medium_post_title">
           <h2>
             {post.title}
@@ -20,6 +24,9 @@ export default class MediumElement extends Component {
             {post.content}
           </p>
         </div>
+        <a href={post.link} className="medium_post_link">
+          READ MORE
+        </a>
       </Col>
     );
   }
