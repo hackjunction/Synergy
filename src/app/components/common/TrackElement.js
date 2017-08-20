@@ -14,7 +14,7 @@ export default class TrackElement extends Component {
 
     if(post){
       const style = {
-        "background": `url(${post.image})`,
+        "background-image": `url(${post.image})`,
       };
 
       return (

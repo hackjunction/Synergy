@@ -21,18 +21,18 @@ class Track extends Component {
     } else track = {};
 
     var style = {
-      background: `url(${track.image})`
+      "background-image": `url(${track.image})`
     };
 
     return (
       <Grid fluid>
         <Row center="xs sm md" style={style} className={styles.track_header}>
           <Col className={styles.track_name} xs={12} sm={12} md={12}>
-            {track.title}
+            <h1>{track.title}</h1>
           </Col>
         </Row>
-        <Row>
-          <Col className="track_content" xs={12} sm={12} md={12}>
+        <Row center="xs sm md">
+          <Col className="track_content" xs={12} sm={9} md={9}>
             <div dangerouslySetInnerHTML={{__html: track.content}}></div>
           </Col>
         </Row>
