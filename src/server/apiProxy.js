@@ -14,6 +14,13 @@ apiRouter.get('/posts', (req, res) => {
   });
 });
 
+apiRouter.get('/tracks', (req, res) => {
+  wordpressApi.getTracks().then(data => {
+    res.json(data);
+  });
+});
+
+
 apiRouter.get('/fb/posts', (req, res) => {
   facebookClient.api(`/${FACEBOOK_PAGE}`, fbRes => {
     res.json(fbRes);
