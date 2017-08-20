@@ -20,10 +20,15 @@ const Welcome = () =>
       <br />
       <h2>27-29 November - Helsinki</h2>
     </Col>
-    <Col xsOffset={2} xs={1} className="junction_welcome_bottom">
-      {/*<a>FACEBOOK</a>
-      <a>INSTAGRAM</a>
-      <a>BLOG</a>*/}
+    <Col xsOffset={1} xs={1} className="junction_welcome_bottom">
+      <a href="#about">
+        <div className="arrow">
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </a>
     </Col>
   </Row>;
 
