@@ -7,7 +7,7 @@ import BlockHeader from "../viewBlocks/BlockHeader";
 const Partners = () =>
   <Block className={styles.block}>
     <Row>
-      <Col className="bold text-secondary">
+      <Col xs={12} className="bold text-secondary">
         <h4>PARTNERS</h4>
       </Col>
     </Row>
