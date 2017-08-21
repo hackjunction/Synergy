@@ -21,7 +21,8 @@ module.exports.module.loaders[1] = {
     }, {
       loader: "sass-loader"
     }]
-  })
+  }),
+  exclude: /\.c\.scss$/
 };
 /*
 // compress the js file
