@@ -6,7 +6,10 @@ import styles from './FaqSection.c.scss';
 class FaqSection extends React.Component {
   static propTypes = {
     question: PropTypes.string,
-    children: PropTypes.string,
+    children: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.array
+    ]),
   };
 
   state = {
