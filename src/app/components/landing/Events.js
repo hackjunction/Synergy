@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-flexbox-grid";
+import Scroll from 'react-scroll';
 import styles from "./Events.c.scss";
 import Block from "../viewBlocks/Block";
 import BlockHeader from "../viewBlocks/BlockHeader";
@@ -7,6 +8,7 @@ import BlockHeader from "../viewBlocks/BlockHeader";
 import EventList from "../common/EventList";
 
 const Events = () =>
+<Scroll.Element name="events">
   <Block className={styles.block}>
     <Row>
       <Col xs={12} className="bold text-secondary">
@@ -27,6 +29,7 @@ const Events = () =>
       </Col>
     </Row>
     <EventList />
-  </Block>;
+  </Block>
+  </Scroll.Element>;
 
 export default Events;

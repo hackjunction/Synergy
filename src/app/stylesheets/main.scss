@@ -1,9 +1,9 @@
 @import 'variables';
-
 .junction_logo {
   width: 200px;
   padding-top: 15%;
 }
+
 .topnav {
   margin: 20px 0 20px 0;
   a:link {
@@ -45,7 +45,6 @@ body {
     color: $accent;
     text-decoration: underline;
   }
-
   box-sizing: border-box;
   width: 100%;
 }
@@ -59,6 +58,7 @@ img.responsive {
   height: auto;
   display: block;
 }
+
 .heightFixed {
   display: block;
   height: 300px;
@@ -67,13 +67,17 @@ img.responsive {
 }
 
 .junction_fixed_social {
+  // Temp solution to hide nav on small devices - TODO: Make is responsive
+  visibility: hidden;
+  @media only screen and (min-width: 1200px) {
+    visibility: visible
+  }
   position: fixed;
   padding-left: 10px;
   top: 40%;
   left: 0;
   z-index: 3000;
   text-transform: uppercase;
-
   -webkit-transition: all ease 0.1s;
   transition: all ease 0.1s;
   .social-media {
@@ -95,7 +99,6 @@ h1 {
     .element {
       color: $color;
     }
-
     .other-element {
       background: $color;
     }
@@ -105,39 +108,52 @@ h1 {
 .text-primary {
   color: $secondary;
 }
+
 .text-secondary {
   color: $accent;
 }
+
 .text-tetriary {
   color: $accent;
   font-size: 18px;
   font-weight: 400;
   font-style: italic;
 }
+
 .text-body {
   font-family: Lato, sans-serif;
 }
+
 .background-primary {
   background-color: $secondary;
 }
+
 .background-secondary {
   background-color: $accent;
 }
+
 .bold {
   font-weight: bold;
 }
+
 .text-underline {
   border-bottom: 10px solid $accent;
   margin-bottom: 10px;
 }
+
 .junction-description {
   font-size: 36px;
   font-family: Montserrat;
   font-weight: 700;
   line-height: 60px;
 }
+
 nav.junction_menu {
+  // Temp solution to hide nav on small devices - TODO: Make is responsive
   visibility: hidden;
+  @media only screen and (min-width: 1200px) {
+    visibility: visible
+  }
   position: fixed;
   top: 40%;
   right: 0;
@@ -156,12 +172,8 @@ nav.junction_menu {
     list-style: none;
     a {
       text-decoration: none;
-      color: white;
-    }
-    li {
-      margin: 10px 0;
-      transition: linear 0.3s;
-      direction: rtl;
+      color: $accent;
+      font-weight: 600;
       &:before {
         position: relative;
         display: inline-block;
@@ -187,9 +199,16 @@ nav.junction_menu {
         }
       }
     }
+    li {
+      margin: 10px 0;
+      transition: linear 0.3s;
+      direction: rtl;
+    }
   }
-  ul li:before {
+  ul li a:before {
     padding: 5px;
     margin-left: 10px;
+    vertical-align: bottom;
   }
 }
+

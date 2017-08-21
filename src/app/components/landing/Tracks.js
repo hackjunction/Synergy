@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Row, Col } from "react-flexbox-grid";
+import Scroll from 'react-scroll';
 import TrackElement from "../common/TrackElement";
 import Block from "../viewBlocks/Block";
 import BlockHeader from "../viewBlocks/BlockHeader";
@@ -18,37 +19,39 @@ class Tracks extends Component {
     var i = 0;
 
     return (
-      <Block>
-        <Row>
-          <Col xs={12} className="bold text-secondary">
-            <h4>TRACKS</h4>
-          </Col>
-        </Row>
-        <BlockHeader title="BUILDING FOR TOMORROW">
-          <p>
-            Junction is divided into multiple themes (tracks), each including
+      <Scroll.Element name="tracks">
+        <Block>
+          <Row>
+            <Col xs={12} className="bold text-secondary">
+              <h4>TRACKS</h4>
+            </Col>
+          </Row>
+          <BlockHeader title="BUILDING FOR TOMORROW">
+            <p>
+              Junction is divided into multiple themes (tracks), each including
             several challenges set by our partner companies. Teams are free to
             participate in different challenges.
           </p>
-        </BlockHeader>
-        {grid.map(row => {
-          return (
-            <Row height={1} className={styles.track_row} center="xs">
-              {row.map(width => {
-                var element = (
-                  <Col xs={width}>
-                    {this.props.tracks[i]
-                      ? <TrackElement key={i} post={this.props.tracks[i]} />
-                      : <div />}
-                  </Col>
-                );
-                i += 1;
-                return element;
-              })}
-            </Row>
-          );
-        })}
-      </Block>
+          </BlockHeader>
+          {grid.map(row => {
+            return (
+              <Row height={1} className={styles.track_row} center="xs">
+                {row.map(width => {
+                  var element = (
+                    <Col xs={width}>
+                      {this.props.tracks[i]
+                        ? <TrackElement key={i} post={this.props.tracks[i]} />
+                        : <div />}
+                    </Col>
+                  );
+                  i += 1;
+                  return element;
+                })}
+              </Row>
+            );
+          })}
+        </Block>
+      </Scroll.Element>
     );
   }
 }
