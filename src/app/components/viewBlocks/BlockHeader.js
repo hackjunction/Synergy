@@ -18,7 +18,7 @@ const BlockHeader = ({ title, children: description }) =>
 
 BlockHeader.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.string,
+  children: PropTypes.object,
 };
 
 export default BlockHeader;
