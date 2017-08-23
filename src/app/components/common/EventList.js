@@ -23,7 +23,9 @@ class EventList extends Component {
       <Row>
         {events.map(event =>
           <Col xs={12} sm={12} md={4} lg={4} className={styles.event}>
+            <a href={`http://www.facebook.com/events/${event.id}`}>
               <img src={event.cover.source} className="responsive" />
+            </a>
               <h3 className={styles.event_link}>
                 {event.name}
               </h3>
