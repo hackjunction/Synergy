@@ -22,7 +22,7 @@ class EventList extends Component {
     return (
       <Row>
         {events.map(event =>
-          <Col md={4} className={styles.event}>
+          <Col xs={12} sm={12} md={4} lg={4} className={styles.event}>
               <img src={event.cover.source} className="responsive" />
               <h3 className={styles.event_link}>
                 {event.name}
