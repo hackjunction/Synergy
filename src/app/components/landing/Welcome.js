@@ -37,12 +37,14 @@ const Welcome = () =>
           <h2>27-29 November - Helsinki</h2>
         </Col>
         <Col xs={1} className="junction_welcome_bottom">
-          <div className={styles.arrow}>
-            <ul>
-              <li />
-              <li />
-            </ul>
-          </div>
+          <Scroll.Link to="about" smooth={true} duration={500}>
+            <div className={styles.arrow}>
+              <ul>
+                <li />
+                <li />
+              </ul>
+            </div>
+          </Scroll.Link>
         </Col>
       </Row>
     </Block>
