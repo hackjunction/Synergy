@@ -1,8 +1,11 @@
 @import '../../stylesheets/variables';
 
 .title {
-  width: max-content;
+  @media only screen and (min-width: 768px) {
+    width: max-content;
+  }
   border-bottom: 10px solid $accent;
   margin-top: 0px;
   margin-bottom: 10px;
 }
+
