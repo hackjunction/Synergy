@@ -34,7 +34,7 @@ const Welcome = () =>
             />
           </h1>
           <br />
-          <h2>27-29 November - Helsinki</h2>
+          <h2>24-26 November - Helsinki</h2>
         </Col>
         <Col xs={1} className="junction_welcome_bottom">
           <Scroll.Link to="about" smooth={true} duration={500}>
