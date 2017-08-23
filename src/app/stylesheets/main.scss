@@ -171,15 +171,15 @@ nav.junction_menu {
     flex-direction: column;
     list-style: none;
     a {
+      font-size: 14px;
       text-decoration: none;
       color: $accent;
+      vertical-align: bottom;
       font-weight: 600;
       &:before {
         position: relative;
         display: inline-block;
         content: '';
-        width: 10px;
-        height: 10px;
         margin-right: 1em;
         border: 2px solid $accent;
         border-radius: 50%;
@@ -208,7 +208,7 @@ nav.junction_menu {
   ul li a:before {
     padding: 5px;
     margin-left: 10px;
-    vertical-align: bottom;
+    vertical-align: middle;
   }
 }
 
