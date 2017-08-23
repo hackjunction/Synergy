@@ -9,7 +9,7 @@ export default class MediumElement extends Component {
     const { post } = this.props;
 
     return (
-      <Col xs={12} md={4} lg={4} className={styles.block}>
+      <Col xs={12} sm={6} md={4} lg={4} className={styles.block}>
         <div className={styles.fixed}>
           <img src={post.images} className={styles.content} />
         </div>
