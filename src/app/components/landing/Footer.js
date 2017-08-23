@@ -5,20 +5,20 @@ import styles from "./Footer.c.scss";
 const Footer = () =>
   <Grid fluid>
     <Row start="xs" className="junction_footer">
-      <Col xsOffset={1} lg={3}>
+      <Col xsOffset={1} xs={12} sm={12} md={3} lg={3}>
         <h2>Event</h2>
         <p>Contact:<br />
           hello@hackjunction.com<br />
           partnerships@hackjunction.com
         </p>
       </Col>
-      <Col xsOffset={1} lg={3}>
+      <Col xsOffset={1} xs={12} sm={12} md={3} lg={3}>
         <h2>For Media</h2>
         <p>
           We are excited too, but content is coming soon. Promise!
         </p>
       </Col>
-      <Col xsOffset={1} lg={3}>
+      <Col xsOffset={1} xs={12} sm={12} md={3} lg={3}>
         <h2>Social</h2>
         <p><a href="https://www.facebook.com/hackjunction">
           <img className={styles.junction_footer_social_image} src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/3-128.png" width="24px;" />
