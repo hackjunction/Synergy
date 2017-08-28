@@ -8,12 +8,6 @@ import Block from '../viewBlocks/Block';
 const Welcome = () =>
   <Scroll.Element name="welcome">
     <Block className={styles.block} contentClassName={styles.blockContent}>
-      <div className={styles.fullscreen_bg}>
-        <video loop autoPlay poster="https://staging.hackjunction.com/wp-content/uploads/2017/08/front.jpg" className={styles.fullscreen_bg__video}>
-          <source src="https://staging.hackjunction.com/wp-content/uploads/2017/08/vidwebm.webm" type="video/webm" />
-          <source src="https://staging.hackjunction.com/wp-content/uploads/2017/08/vidmp4.mp4" type="video/mp4" />
-        </video>
-      </div>
       <Row center="xs">
         <Col>
           <img
