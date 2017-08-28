@@ -29,7 +29,7 @@ class EventList extends Component {
               <h3 className={styles.event_link}>
                 {event.name}
               </h3>
-              <p className={styles.event_link}><a href={`http://www.facebook.com/events/${event.id}`}>Attend</a></p>
+              <p className={styles.event_link}><a href={`http://www.facebook.com/events/${event.id}`}>ATTEND</a></p>
           </Col>,
         )}
         {!events.length &&
