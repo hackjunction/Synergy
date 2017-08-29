@@ -81,6 +81,67 @@ const Hacktalks = () =>
           </FaqSection>
         </Col>
         <Col xs={12} md={6} className={styles.faqCell}>
+          <FaqSection question="Will there be travel reimbursements available?">
+            <p>
+              Yes! If you are coming from outside Helsinki metropolitan area it is
+              possible to apply for reimbursements to cover some travel expenses.
+              Depending on where you come from the reimbursement can be up to:
+            </p>
+            <ul>
+              <li>Finland (Outside Helsinki region) 20€</li>
+              <li>Baltics & Nordics & Russia 50€</li>
+              <li>Rest of Europe 75€</li>
+              <li>Rest of the World 150€</li>
+            </ul>
+            <p>We are also organising bus rides from Oulu and St. Petersburg.</p>
+            <p>Note: To guarantee the travel reimbursement, please be ready to provide us with
+              your travel receipts and bank address.
+            </p>
+            <p>Still want to know more about travel reimbursement? Get in contact with
+              participants@hackjunction.com and get some help with it :)
+            </p>
+          </FaqSection>
+        </Col>
+        <Col xs={12} md={6} className={styles.faqCell}>
+          <FaqSection question="How can I form my team?">
+            <p>
+              If you don’t yet have a team we will also help with matching people up at
+              the beginning of the event. We’re also inviting people to different networking
+              channels to make the team-building easier already before the event. If you
+              have been accepted, you should have an invitation in your email for joining
+              the Facebook group. A slack invite is incoming also!
+            </p>
+          </FaqSection>
+        </Col>
+        <Col xs={12} md={6} className={styles.faqCell}>
+          <FaqSection question="How do tracks work? Can I only work on one track?">
+            <p>
+              You can work on multiple tracks at the same time, but it’s best if you could
+              focus on one or two. Tracks are in situated in interconnected rooms: Think of it
+              as a minihackathon within that theme, but the benefits of connecting to a huge
+              pool of participants and activities.
+            </p>
+          </FaqSection>
+        </Col>
+        <Col xs={12} md={6} className={styles.faqCell}>
+          <FaqSection question="Will food be served at the event?">
+            <p>
+              Yes. There will be enough food to keep everyone hacking well into the night (and next day).
+              This takes the form of basic scheduled catering, and on top of that some snacks, microwaveable
+              food and meal-replacements. In our confirmation form, please state any dietary
+              restrictions so we can take them into consideration when making orders.
+            </p>
+          </FaqSection>
+        </Col>
+        <Col xs={12} md={6} className={styles.faqCell}>
+          <FaqSection question="Who owns the intellectual property of hacks?">
+            <p>
+              All intellectual property produced at the event is owned solely by the participants and their team.
+              Further plans may be discussed between the partners and the teams after the event.
+            </p>
+          </FaqSection>
+        </Col>
+        <Col xs={12} md={6} className={styles.faqCell}>
           <FaqSection question="Are there any rules for competing?">
             <p>Yes.</p>
             <ol>
@@ -90,6 +151,63 @@ const Hacktalks = () =>
               <li>Follow the MLH Code of Conduct</li>
               <li>Participants can only submit their project in one team</li>
             </ol>
+          </FaqSection>
+        </Col>
+        <Col xs={12} md={6} className={styles.faqCell}>
+          <FaqSection question="What size can a team be?">
+            <p>
+              Teams can be up to 5 people. If you want to hack alone, that’s totally fine. If you are still
+              looking for a team, don’t worry, we will have team building and pitching sessions at the event.
+              You can apply at any time and join any team at any time. The team question in the application is
+              only to make sure the entire team makes it to the event.
+            </p>
+          </FaqSection>
+        </Col>
+        <Col xs={12} md={6} className={styles.faqCell}>
+          <FaqSection question="What about accommodation?">
+            <p>
+              We will have school-level accommodation available in multiple different destinations for a few
+              hundred participants. If you want to make sure you have a room to sleep in, book a room at our
+              partner hotel or hostel. More information this to come.
+            </p>
+          </FaqSection>
+        </Col>
+        <Col xs={12} md={6} className={styles.faqCell}>
+          <FaqSection question="What hardware can I hack on?">
+            <p>
+              We’ll have a wide variety of hardware at the event - more info to come soon! 😊
+            </p>
+          </FaqSection>
+        </Col>
+        <Col xs={12} md={6} className={styles.faqCell}>
+          <FaqSection question="What are the criteria for winning the Grand Prize?">
+            <p>
+              <b>Utilization of multiple technologies</b><br />
+              Does it combine multiple existing technologies into something larger than a sum of its parts?
+            </p>
+            <p>
+              <b>Design and UX</b><br />
+              Does the design stand out? Is it user-friendly?
+            </p>
+            <p>
+              <b>Real World Impact</b><br />
+              Could the project be a start for a viable business? Could it create actual change in the world?
+            </p>
+            <p>
+              <b>Devpost Submission</b><br />
+              We want to see what kind of challenges you faced and what kind of learning took place.
+            </p>
+            <p>
+              <b>Sisu</b><br />
+              Sisu – Finnish word for courage. Encouraging out-of-the-box thinking.
+            </p>
+          </FaqSection>
+        </Col>
+        <Col xs={12} md={6} className={styles.faqCell}>
+          <FaqSection question="Where can I ask more questions?">
+            <p>
+              We are happy to help out with any questions! Just drop us a message at hello@hackjunction.com 
+            </p>
           </FaqSection>
         </Col>
       </Row>

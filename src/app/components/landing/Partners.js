@@ -37,18 +37,6 @@ const Partners = () =>
         </Col>
         <Col xs={6} md={4}>
           <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suunto.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suneffects.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/08/outotec.png"
             className="responsive"
           />
@@ -58,19 +46,53 @@ const Partners = () =>
             src="https://staging.hackjunction.com/wp-content/uploads/2017/08/planmeca.png"
             className="responsive"
           />
+
         </Col>
-        <Col xs={6} md={4}>
+      </Row>
+      <Row>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suunto.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
           <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/08/helvar.png"
             className="responsive"
           />
         </Col>
-        <Col xs={6} md={4}>
+        <Col xs={4} md={3}>
           <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/08/procountor.png"
             className="responsive"
           />
         </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/finnid.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/fleetboard.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/qt.png"
+            className="responsive"
+          />
+          </Col>
+          <Col xs={4} md={3}>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suneffects.png"
+              className="responsive"
+            />
+          </Col>
+
       </Row>
     </Block>
   </Scroll.Element>;
