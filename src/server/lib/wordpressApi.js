@@ -6,7 +6,7 @@ const wordpressApiClient = axios.create({
   timeout: 50000,
 });
 
-wordpressApiClient.interceptors.request.use((config) => {
+wordpressApiClient.interceptors.request.use(config => {
   console.log(config);
   return config;
 });
@@ -15,8 +15,9 @@ export const getPosts = () => wordpressApiClient.get('/posts');
 
 export const getPartners = () => wordpressApiClient.get('/posts');
 
-export const getTracks = () =>  {
-  return wordpressApiClient.get('/posts?_embed&categories=2')
+export const getTracks = () => {
+  return wordpressApiClient
+    .get('/posts?_embed&categories=2')
     .then(tracks => tracks.data)
     .then(tracks => {
       return tracks.map(track => {
@@ -24,16 +25,18 @@ export const getTracks = () =>  {
           title: track.title.rendered,
           content: track.content.rendered,
           image: track.acf.image,
-          challenges: track.acf.challenges? track.acf.challenges.map(challenge => {
-            return {
-              title: challenge.post_title,
-              content: challenge.post_content
-            }
-          }) : [],
+          challenges: track.acf.challenges
+            ? track.acf.challenges.map(challenge => {
+                return {
+                  title: challenge.post_title,
+                  content: challenge.post_content,
+                };
+              })
+            : [],
           main_partners: track.main_partners,
           partners: track.partners,
-          slug: track.slug
-        }
-      })
-    })
+          slug: track.slug,
+        };
+      });
+    });
 };

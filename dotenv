@@ -1,4 +1,4 @@
-WORDPRESS_BASE_URL="https://staging.hackjunction.com/wp-json/wp/v2"
+WORDPRESS_BASE_URL="https://staging.hackjunction.com"
 
 FACEBOOK_APP_ID=
 FACEBOOK_APP_SECRET=
