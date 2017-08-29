@@ -35,6 +35,7 @@ const Welcome = () =>
           </h1>
           <br />
           <h2>24-26 November - Helsinki</h2>
+            <button>APPLY</button>
         </Col>
         <Col xs={1} className="junction_welcome_bottom">
           <Scroll.Link to="about" smooth={true} duration={500}>
