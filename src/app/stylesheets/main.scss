@@ -70,7 +70,7 @@ img.responsive {
   // Temp solution to hide nav on small devices - TODO: Make is responsive
   visibility: hidden;
   @media only screen and (min-width: 1200px) {
-    visibility: visible
+    visibility: visible;
   }
   position: fixed;
   padding-left: 10px;
@@ -151,8 +151,16 @@ h1 {
 nav.junction_menu {
   // Temp solution to hide nav on small devices - TODO: Make is responsive
   visibility: hidden;
+
+  a:not(.active) {
+    visibility: hidden;
+  }
+
+  a:before {
+    visibility: visible;
+  }
   @media only screen and (min-width: 1200px) {
-    visibility: visible
+    visibility: visible;
   }
   position: fixed;
   top: 33%;
@@ -211,4 +219,3 @@ nav.junction_menu {
     vertical-align: middle;
   }
 }
-
