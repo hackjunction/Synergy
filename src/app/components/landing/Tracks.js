@@ -15,7 +15,7 @@ class Tracks extends Component {
     this.props.dispatch({ type: 'GET_TRACKS' });
   }
   render() {
-    var grid = [[6, 6], [6, 6], [6, 6], [6, 6], [6]];
+    var grid = [[6, 6], [6, 6], [6, 6], [6, 6], [6, 6]];
     var i = 0;
 
     return (
