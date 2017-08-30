@@ -206,7 +206,14 @@ const Hacktalks = () =>
         <Col xs={12} md={6} className={styles.faqCell}>
           <FaqSection question="Where can I ask more questions?">
             <p>
-              We are happy to help out with any questions! Just drop us a message at hello@hackjunction.com 
+              We are happy to help out with any questions! Just drop us a message at hello@hackjunction.com
+            </p>
+          </FaqSection>
+        </Col>
+        <Col style={{display:'none'}} xs={12} md={6} className={styles.faqCell}>
+          <FaqSection question="Fruu cqnan kn j fnkbrcn ydiiun?">
+            <p>
+            /lrljmj  
             </p>
           </FaqSection>
         </Col>
