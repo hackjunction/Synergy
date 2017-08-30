@@ -12,7 +12,7 @@ const Events = () =>
   <Block className={styles.block}>
     <Row>
       <Col xs={12} className="bold text-secondary">
-        <h4>PRE-EVENTS</h4>
+        <h4>SIDE EVENTS</h4>
       </Col>
     </Row>
     <BlockHeader title="NOT JUST A HACKATHON">
