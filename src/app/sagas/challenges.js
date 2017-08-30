@@ -11,3 +11,10 @@ export function* getAllChallenges() {
     challenges: challenges.data,
   });
 }
+export function* getChallenge(action) {
+  const challenge = yield call(ApiPosts.getChallenge, action.id);
+  yield put({
+    type: 'GET_CHALLENGE_SAVE',
+    challenge: challenge.data,
+  });
+}

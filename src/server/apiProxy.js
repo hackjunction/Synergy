@@ -20,6 +20,11 @@ apiRouter.get('/tracks', (req, res) => {
   });
 });
 
+apiRouter.get('/challenge', (req, res) => {
+  wordpressApi.getChallenge(req.query.id).then(data => {
+    res.json(data);
+  });
+});
 
 apiRouter.get('/fb/posts', (req, res) => {
   facebookClient.api(`/${FACEBOOK_PAGE}`, fbRes => {

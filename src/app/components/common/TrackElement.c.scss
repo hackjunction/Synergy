@@ -1,30 +1,43 @@
 .trackCell {
   height: 180px;
+  text-decoration: none;
+
   position: relative;
   color: white;
-  background-size: cover;
+  background-size: 100%;
+  -webkit-transition: background-size 500ms linear;
+  -moz-transition: background-size 500ms linear;
+  -o-transition: background-size 500ms linear;
+  -ms-transition: background-size 500ms linear;
+  transition: background-size 500ms linear;
+  .awesome_overlay {
+    background-color: rgba(53, 226, 223, 0);
+    height: 180px;
+  }
+  .awesome_overlay:hover {
+    background-color: rgba(53, 226, 223, 0.3);
+
+    transition: background-color 0.3s ease-in, transform 0.3s ease-in;
+  }
+
   .inside {
     h2 {
-      padding-top: 5%;
+      padding-top: 15%;
+      text-shadow: 5px 5px 10px black;
     }
     transition: opacity 0.3s ease-in, transform 0.3s ease-in;
-    transform: translate(0px, 0px);
 
     * {
       transition: all 0.5s ease-in 0.1s;
-      transform: scale(1);
     }
   }
 
   &:hover {
+    background-size: 120%;
+
     .inside {
       transition: all 0.5s ease;
-      transform: translate(0, 15%);
       opacity: 1;
-
-      * {
-        transform: scale(1.3);
-      }
     }
   }
 }

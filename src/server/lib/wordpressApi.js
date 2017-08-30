@@ -30,6 +30,7 @@ export const getTracks = () => {
                 return {
                   title: challenge.post_title,
                   content: challenge.post_content,
+                  id: challenge.ID
                 };
               })
             : [],
@@ -40,3 +41,19 @@ export const getTracks = () => {
       });
     });
 };
+
+export const getChallenge = (id) => {
+  return wordpressApiClient.get('/posts/' + id)
+  .then(challenge => challenge.data)
+  .then(challenge => {
+    return {
+      id: challenge.id,
+      title: challenge.title.rendered,
+      description: challenge.acf.description,
+      image: challenge.acf.image,
+      criteria: challenge.acf.criteria,
+      prize: challenge.acf.prize,
+      partner: challenge.acf.partner
+    }
+  })
+}
