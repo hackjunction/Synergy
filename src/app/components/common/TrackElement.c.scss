@@ -4,24 +4,26 @@
   color: white;
   background-size: cover;
   .inside {
-    transition: opacity .3s ease-in, transform .3s ease-in;
+    h2 {
+      padding-top: 5%;
+    }
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
     transform: translate(0px, 0px);
-    opacity: 0;
 
     * {
-      transition: all .5s ease-in .1s;
-      transform: scale(1.5);
+      transition: all 0.5s ease-in 0.1s;
+      transform: scale(1);
     }
   }
 
   &:hover {
     .inside {
-      transition: all .5s ease;
-      transform: translate(10px, 10px);
+      transition: all 0.5s ease;
+      transform: translate(0, 15%);
       opacity: 1;
 
       * {
-        transform: scale(1);
+        transform: scale(1.3);
       }
     }
   }

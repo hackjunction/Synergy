@@ -6,10 +6,7 @@ import styles from './FaqSection.c.scss';
 class FaqSection extends React.Component {
   static propTypes = {
     question: PropTypes.string,
-    children: PropTypes.oneOfType([
-      PropTypes.object,
-      PropTypes.array
-    ]),
+    children: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   };
 
   state = {
@@ -35,9 +32,7 @@ class FaqSection extends React.Component {
           {this.props.question}
         </div>
         <div className={styles.faqAnswer}>
-          <div className={styles.faqAnswerText}>
-            {this.props.children}
-          </div>
+          <div className={styles.faqAnswerText}>{this.props.children}</div>
         </div>
       </div>
     );
