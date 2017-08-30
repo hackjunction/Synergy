@@ -20,8 +20,8 @@ apiRouter.get('/tracks', (req, res) => {
   });
 });
 
-apiRouter.get('/challenges', (req, res) => {
-  wordpressApi.getTracks(req.query.track).then(data => {
+apiRouter.get('/challenge', (req, res) => {
+  wordpressApi.getChallenge(req.query.id).then(data => {
     res.json(data);
   });
 });

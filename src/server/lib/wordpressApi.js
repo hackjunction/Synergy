@@ -44,16 +44,16 @@ export const getTracks = () => {
 
 export const getChallenge = (id) => {
   return wordpressApiClient.get('/posts/' + id)
-  .then(challenges => challenges.data)
-  .then(challenges => {
+  .then(challenge => challenge.data)
+  .then(challenge => {
     return {
       id: challenge.id,
       title: challenge.title.rendered,
-      description: track.acf.description,
-      image: track.acf.image,
-      criteria: track.acf.criteria,
-      prize: track.acf.prize,
-      partner: track.acf.partner
+      description: challenge.acf.description,
+      image: challenge.acf.image,
+      criteria: challenge.acf.criteria,
+      prize: challenge.acf.prize,
+      partner: challenge.acf.partner
     }
   })
 }

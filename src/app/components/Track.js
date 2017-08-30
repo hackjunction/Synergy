@@ -48,7 +48,7 @@ class Track extends Component {
 
         { track.challenges && track.challenges.map(challenge => {
           return (
-              <Challenge title={challenge.title} content={challenge.content} post_id={challenge.id}>
+              <Challenge key={challenge.id} title={challenge.title} content={challenge.content} post_id={challenge.id}>
               </Challenge>
           );
         })}

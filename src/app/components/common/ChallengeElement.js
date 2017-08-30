@@ -5,6 +5,11 @@ import { connect } from 'react-redux';
 import styles from './ChallengeElement.c.scss';
 
 class ChallengeElement extends Component {
+  componentWillMount() {
+    if(!this.props.challenges[this.props.post_id]){
+      this.props.getChallenge(this.props.post_id);
+    }
+  }
   // render
   render() {
     const { title, content, post_id } = this.props;
@@ -13,62 +18,14 @@ class ChallengeElement extends Component {
     if(this.props.challenges[post_id]){
       data = this.props.challenges[post_id];
     }
-    title; content; data;
 
-    /*
-    return (
-      <div>
-      <Col className={styles.chief + " " + styles.collage} xs={12}>
-        <Row>
-          <Col xs={12} md={4}>
-            {data &&
-              <img className={styles["partner-logo"]} src={data.url} />
-            }
-          </Col>
-          <Col xs={12} md={8}>
-            <h2 className={styles.left}> { title } </h2>
-            <p className={styles.left}>
-              { content }
-            </p>
-          </Col>
-        </Row>
-
-        <Row className={styles.fullwidth}>
-          <Col xs={3} md={3} lg={3}>
-            <h3 className={styles.left}> Prize </h3>
-            {data &&
-              <ul>
-                {data.prize.split('|').map(text => {
-                  return <li> {text} </li>;
-                })}
-              </ul>
-            }
-          </Col>
-          <Col xs={6} md={6} lg={6}>
-            <h3 className={styles.left}> Criteria </h3>
-            {data &&
-              <ul>
-                {data.criteria.split('|').map(text => {
-                  return <li> {text} </li>;
-                })}
-              </ul>
-            }
-          </Col>
-          <Col xs={3} md={3} lg={3}>
-            <button><i className="fa fa-arrow-right"></i></button>
-          </Col>
-        </Row>
-      </Col>
-    </div>
-
-  );*/
   return (
     <div>
     <Col className={styles.chief + " " + styles.collage} xs={12}>
       <Row>
         <Col xs={12} md={4}>
-          {data.url &&
-            <img className={styles["partner-logo"]} src={data.url} />
+          {data.image &&
+            <img className={styles["partner-logo"]} src={data.image} />
           }
         </Col>
         <Col xs={12} md={8}>
@@ -86,21 +43,21 @@ class ChallengeElement extends Component {
         <Col xs={3} md={3} lg={3}>
           <h3 className={styles.left}> Prize </h3>
           {data.prize &&
-            <ul>
+            <div>
               {data.prize.split('|').map(text => {
-                return <li> {text} </li>;
+                return <p className={styles.left}> {text} </p>;
               })}
-            </ul>
+            </div>
           }
         </Col>
         <Col xs={6} md={6} lg={6}>
           <h3 className={styles.left}> Criteria </h3>
           {data.criteria &&
-            <ul>
+            <div>
               {data.criteria.split('|').map(text => {
-                return <li> {text} </li>;
+                return <p className={styles.left}> {text} </p>;
               })}
-            </ul>
+            </div>
           }
         </Col>
         <Col xs={3} md={3} lg={3}>
