@@ -24,8 +24,7 @@ const About = () =>
       <Row>
         <Col xs={12} className="junction-description">
           {" "}<span className="text-tetriary">
-            * Convergence is a coming together of two or more distinct entities or
-          phenomena.
+            * We really mean; an incredible event, awesome people and crazy parties.
         </span>
         </Col>
       </Row>

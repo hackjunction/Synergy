@@ -24,6 +24,8 @@ const Welcome = () => (
             <ReactRotatingText
               color="#35E2DF"
               items={[
+                'GAMING',
+                'INTELLIGENT BUILDINGS',
                 'HEALTHTECH',
                 'LOGISTICS',
                 'ENTERTAINMENT',

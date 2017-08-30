@@ -37,13 +37,19 @@ const Partners = () =>
         </Col>
         <Col xs={6} md={4}>
           <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/outotec.png"
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/nordea.png"
             className="responsive"
           />
         </Col>
         <Col xs={6} md={4}>
           <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/08/planmeca.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={6} md={4}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/outotec.png"
             className="responsive"
           />
         </Col>
