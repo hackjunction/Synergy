@@ -28,7 +28,7 @@
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
+@media only screen and (min-width: 321px) and (max-device-width: 1024px) {
   .junction-description {
     line-height: 30px;
     font-size: 16px;
