@@ -26,7 +26,7 @@ class EventList extends Component {
             <a href={`http://www.facebook.com/events/${event.id}`}>
               <img src={event.cover.source} className="responsive" />
             </a>
-              <h3 className={styles.event_link}>
+              <h3 className={[styles.event_link, styles.event_title]}>
                 {event.name}
               </h3>
               <p className={styles.event_link}><a href={`http://www.facebook.com/events/${event.id}`}>ATTEND</a></p>

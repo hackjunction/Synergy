@@ -1,17 +1,29 @@
 $color3: white;
+
+.track_page {
+  background-color: #FBFBFB;
+}
 .hero {
   padding-left: 0;
   padding-right: 0;
 }
+.background_top{
+  height:40vh;
+}
 .track_header {
-  background-color: #232323;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  color: $color3;
-  padding: 0;
-  .track_name {
-    margin-top: 250px;
+  margin-top: -100px!important;
+  position: relative;
+  background: #FBFBFB;
+  color: #232323;
+  padding: 20px 50px 50px 50px;
+  width: 700px;
+  margin: 20px auto 0 auto;
+  .track_content{
+    color:#232323;
+    margin-top:20px;
+    font-size:16px;
+    font-weight: 300;
+    line-height:22px;
   }
 }
 

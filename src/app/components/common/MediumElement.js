@@ -17,9 +17,9 @@ export default class MediumElement extends Component {
         </div>
 
         <div className="medium_post_title">
-          <h2>
+          <h3 className={styles.medium_title}>
             {post.title}
-          </h2>
+          </h3>
         </div>
         <div className="medium_post_content">
           <p>

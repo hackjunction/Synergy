@@ -46,10 +46,10 @@ const Partners = () =>
             src="https://staging.hackjunction.com/wp-content/uploads/2017/08/planmeca.png"
             className="responsive"
           />
-
         </Col>
-      </Row>
-      <Row>
+        <Col xs={12} md={12}>
+          <hr className={styles.separator}></hr>
+        </Col>
         <Col xs={4} md={3}>
           <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suunto.png"

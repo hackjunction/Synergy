@@ -41,7 +41,7 @@ class Landing extends React.Component {
           <ul>
             <li><Scroll.Link activeClass="active" to="welcome" spy={true} smooth={true} duration={500}>Welcome</Scroll.Link></li>
             <li><Scroll.Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>About</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="events" spy={true} smooth={true} duration={500}>Events</Scroll.Link></li>
+            <li><Scroll.Link activeClass="active" to="events" spy={true} smooth={true} duration={500}>Side Events</Scroll.Link></li>
             <li><Scroll.Link activeClass="active" to="tracks" spy={true} smooth={true} duration={500}>Tracks</Scroll.Link></li>
             <li><Scroll.Link activeClass="active" to="partners" spy={true} smooth={true} duration={500}>Partners</Scroll.Link></li>
             <li><Scroll.Link activeClass="active" to="hacktalks" spy={true} smooth={true} duration={500}>FAQ</Scroll.Link></li>
