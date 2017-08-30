@@ -19,15 +19,15 @@ export default class TrackElement extends Component {
       return (
         <Link to={`/${post.slug}`}>
           <div className={`responsive ${styles.trackCell}`} style={style}>
-            <div className={styles.inside}>
-              <h2>
-                {post.title}
-              </h2>
-            </div>
+            <div className={styles.awesome_overlay}>
+              <div className={styles.inside}>
+                <h2>{post.title}</h2>
+              </div>
 
-            {/*{post.title}
+              {/*{post.title}
                 {post.content}
                 */}
+            </div>
           </div>
         </Link>
       );
