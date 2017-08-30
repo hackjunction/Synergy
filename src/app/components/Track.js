@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Redirect } from "react-router-dom";
 import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
+import Challenge from './common/ChallengeElement';
 
 class Track extends Component {
   componentWillMount() {
@@ -44,7 +45,15 @@ class Track extends Component {
           <Col className={styles.track_content} xs={12} sm={9} md={9}>
             <div dangerouslySetInnerHTML={{__html: track.content}}></div>
           </Col>
+
+        { track.challenges && track.challenges.map(challenge => {
+          return (
+              <Challenge title={challenge.title} content={challenge.content} post_id={challenge.id}>
+              </Challenge>
+          );
+        })}
         </Row>
+
       </Grid>
       </div>
     );
@@ -61,7 +70,7 @@ Track.propTypes = {
 function mapStateToProps(state) {
   console.log('tracks', state.tracks);
   return {
-    tracks: state.tracks || [],
+    tracks: state.tracks || []
   };
 }
 function mapDispatchToProps(dispatch) {

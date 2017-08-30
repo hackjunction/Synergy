@@ -1,0 +1,147 @@
+.wrapper{
+  position: relative;
+  clear:both;
+  margin: 0 auto 75px auto;
+  width: 100%;
+  overflow: hidden;
+}
+.top{
+  background: #FF4444;
+  height: 180px;
+  border-top: 20px solid #CC0000;
+}
+
+h1{
+  text-align:center;
+  font-family: Montserrat;
+  font-size:24px;
+  color:#232323;
+  font-weight:700;
+}
+
+h2{
+  font-family: Montserrat;
+  font-size:24px;
+  color:#232323;
+  font-weight:700;
+}
+
+h3{
+  font-family: Montserrat;
+  font-size:20px;
+  color:#232323;
+  font-weight:700;
+}
+
+.content .card.first {
+  margin-top: -80px;
+}
+
+.card{
+  position: relative;
+  background: #FBFBFB;
+  padding: 50px;
+  width: 600px;
+  margin: 20px auto 0 auto;
+}
+
+.card .text {
+  color:#232323;
+  margin-top:20px;
+  font-size:16px;
+  line-height:22px;
+}
+
+.left {
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+img {
+  width: 150px;
+}
+.partner-logo {
+  padding-top: 30px;
+}
+.collage {
+  display: flex;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  width: 600px;
+  justify-content: center;
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+.collage-item {
+  flex: 0 0 30%;
+  padding: 20px 0 20px 0;
+}
+.collage-item p {
+  padding-top:10px;
+}
+.chief .collage-item:nth-child(6) {
+  padding-left:100px;
+  margin-top:-15px;
+}
+.major .collage-item:nth-child(3) {
+  margin-top:-120px;
+  padding-left:370px;
+}
+.fullwidth {
+  flex: 0 0 90%;
+}
+.one_third {
+  flex: 0 0 30%;
+}
+.two_thirds {
+  flex: 0 0 60%;
+}
+
+button {
+  background: #4FBA6F;
+  border: #4FBA6F;
+  border-radius: 50%;
+  font-size: 0.9em;
+  color: #FBFBFB;
+  cursor: pointer;
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  background: #232323;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+button i {
+  font-size: 20px;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+button:hover i {
+  color: #4FBA6F;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
