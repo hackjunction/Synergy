@@ -11,6 +11,7 @@
   border-top: 20px solid #CC0000;
 }
 
+/*
 h1{
   text-align:center;
   font-family: Montserrat;
@@ -31,7 +32,7 @@ h3{
   font-size:20px;
   color:#232323;
   font-weight:700;
-}
+}*/
 
 .content .card.first {
   margin-top: -80px;
@@ -56,14 +57,16 @@ h3{
   text-align: left;
 }
 
+/*
 * {
   box-sizing: border-box;
 }
 img {
-  width: 150px;
 }
+*/
 .partner-logo {
   padding-top: 30px;
+  width: 100%;
 }
 .li {
   padding: 0;
@@ -105,6 +108,7 @@ img {
   flex: 0 0 60%;
 }
 
+/*
 button {
   background: #4FBA6F;
   border: #4FBA6F;
@@ -149,3 +153,4 @@ button:hover i {
   -ms-transition: 0.5s ease;
   transition: 0.5s ease;
 }
+*/
