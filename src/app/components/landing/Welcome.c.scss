@@ -90,7 +90,7 @@
   }
 }
 
-button {
+.apply_button {
   padding: 20px 40px;
   background: none;
   color: #fbfbfb;
@@ -101,8 +101,8 @@ button {
   letter-spacing: 3px;
   cursor: pointer;
 }
-button:after,
-button:before {
+.apply_button:after,
+.apply_button:before {
   content: '';
   position: absolute;
   top: 0;
@@ -115,17 +115,17 @@ button:before {
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
-button:after {
+.apply_button:after {
   -webkit-transform: translate(3px, 3px);
   transform: translate(3px, 3px);
   border-color: #35e2df;
 }
-button:before {
+.apply_button:before {
   -webkit-transform: translate(-3px, -3px);
   transform: translate(-3px, -3px);
 }
-button:hover:after,
-button:hover:before {
+.apply_button:hover:after,
+.apply_button:hover:before {
   -webkit-transform: translate(0);
   transform: translate(0);
   border: 2px solid transparent;
