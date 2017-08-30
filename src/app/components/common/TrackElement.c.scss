@@ -23,6 +23,7 @@
   .inside {
     h2 {
       padding-top: 15%;
+      text-shadow: 5px 5px 10px black;
     }
     transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 
@@ -39,13 +40,6 @@
       opacity: 1;
     }
   }
-}
-a {
-  text-decoration: none;
-}
-h2 {
-  text-decoration: none;
-  border-bottom: none;
 }
 
 .title {
