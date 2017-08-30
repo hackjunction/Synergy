@@ -61,7 +61,11 @@ class ChallengeElement extends Component {
           }
         </Col>
         <Col xs={3} md={3} lg={3}>
+          {
+          /*
           <button><i className="fa fa-arrow-right"></i></button>
+          */
+          }
         </Col>
       </Row>
     </Col>
