@@ -11,7 +11,7 @@
   padding-top: 0px !important;
 }
 .junction_hackthefuture {
-  margin-top: 200px;
+  margin-top: 5vh;
 }
 // Arrow Down
 
@@ -93,7 +93,7 @@
 button {
   padding: 20px 40px;
   background: none;
-  color: #FBFBFB;
+  color: #fbfbfb;
   border: none;
   position: relative;
   text-transform: uppercase;
@@ -101,14 +101,15 @@ button {
   letter-spacing: 3px;
   cursor: pointer;
 }
-button:after, button:before {
-  content: "";
+button:after,
+button:before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  border: 2px solid #EC008B;
+  border: 2px solid #ec008b;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -116,19 +117,19 @@ button:after, button:before {
 }
 button:after {
   -webkit-transform: translate(3px, 3px);
-          transform: translate(3px, 3px);
-  border-color: #35E2DF;
-
+  transform: translate(3px, 3px);
+  border-color: #35e2df;
 }
 button:before {
   -webkit-transform: translate(-3px, -3px);
-          transform: translate(-3px, -3px);
+  transform: translate(-3px, -3px);
 }
-button:hover:after, button:hover:before {
+button:hover:after,
+button:hover:before {
   -webkit-transform: translate(0);
-          transform: translate(0);
+  transform: translate(0);
   border: 2px solid transparent;
   background-color: transparent;
-  border-image: linear-gradient(to right, #EC008B, #35E2DF);
-  border-image-slice: 1
+  border-image: linear-gradient(to right, #ec008b, #35e2df);
+  border-image-slice: 1;
 }

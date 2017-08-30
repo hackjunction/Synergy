@@ -5,7 +5,7 @@ import ReactRotatingText from 'react-rotating-text';
 import styles from './Welcome.c.scss';
 import Block from '../viewBlocks/Block';
 
-const Welcome = () =>
+const Welcome = () => (
   <Scroll.Element name="welcome">
     <Block className={styles.block} contentClassName={styles.blockContent}>
       <Row center="xs">
@@ -35,7 +35,7 @@ const Welcome = () =>
           </h1>
           <br />
           <h2>24-26 November - Helsinki</h2>
-            <button>APPLY</button>
+          <button>APPLY</button>
         </Col>
         <Col xs={1} className="junction_welcome_bottom">
           <Scroll.Link to="about" smooth={true} duration={500}>
@@ -49,6 +49,7 @@ const Welcome = () =>
         </Col>
       </Row>
     </Block>
-  </Scroll.Element>;
+  </Scroll.Element>
+);
 
 export default Welcome;

@@ -13,11 +13,46 @@
     // padding: 0;
     font-size: 14px;
   }
+  .junction_welcome {
+    line-height: 40px;
+  }
+  .junction_welcome_bottom {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .text-tetriary {
+    font-size: 12px;
+    line-height: 30px;
+  }
   /* Styles */
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
+  .junction-description {
+    line-height: 30px;
+    font-size: 16px;
+  }
+  nav.junction_menu {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .faqQuestion {
+    // margin: 0;
+    // padding: 0;
+    font-size: 14px;
+  }
+  .junction_welcome {
+    line-height: 40px;
+  }
+  .junction_welcome_bottom {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .text-tetriary {
+    font-size: 12px;
+    line-height: 30px;
+  }
   /* Styles */
 }
 
