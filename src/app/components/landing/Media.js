@@ -16,7 +16,7 @@ const Media = () =>
       </Row>
       <BlockHeader title="STORIES FROM THE COMMUNITY">
         <p>
-          Keep up with the latest from our community of developers. Want to see your story here? Contact us at media@hackjunction.com
+          Keep up with the latest from our community. Want to see your story here? Contact us at media@hackjunction.com
         </p>
       </BlockHeader>
       <Row className="junction_media">
