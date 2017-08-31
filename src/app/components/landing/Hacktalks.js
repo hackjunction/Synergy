@@ -17,7 +17,7 @@ const Hacktalks = () =>
       </Row>
       <BlockHeader title="FREQUENTLY ASKED QUESTIONS">
         <p>
-          Got questions? Don’t worry, we have the anwers.
+          Got questions? Don’t worry, we have the answers.
       </p>
       </BlockHeader>
       <Row>
