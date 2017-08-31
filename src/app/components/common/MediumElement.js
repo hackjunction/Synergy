@@ -11,7 +11,7 @@ export default class MediumElement extends Component {
     return (
       <Col xs={12} sm={6} md={4} lg={4} className={styles.block}>
         <div className={styles.fixed}>
-        <a href={post.link} className="medium_post_link">
+        <a href={post.link}>
           <img src={post.images} className={styles.content} />
         </a>
         </div>
@@ -26,9 +26,7 @@ export default class MediumElement extends Component {
             {post.content}
           </p>
         </div>
-        <a href={post.link} className="medium_post_link">
-          READ MORE
-        </a>
+        <p className={styles.medium_link}><a href={post.link}>READ MORE</a></p>
       </Col>
     );
   }
