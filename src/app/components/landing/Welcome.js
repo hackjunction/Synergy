@@ -29,7 +29,7 @@ const Welcome = () => (
                 'HEALTHTECH',
                 'LOGISTICS',
                 'ENTERTAINMENT',
-                'MULTIMODAL MOBILITY',
+                'MOBILITY',
                 'INDUSTRIAL INTERNET',
                 'FINTECH',
               ]}
