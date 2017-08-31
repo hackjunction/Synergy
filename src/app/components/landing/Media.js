@@ -14,12 +14,10 @@ const Media = () =>
           <h4>MEDIA</h4>
         </Col>
       </Row>
-      <BlockHeader title="STAY UP TO DATE WITH US">
+      <BlockHeader title="WHAT ARE WE UP TO?">
         <p>
-          We often share our wisdom, from our path to build this amazing
-        Hackathon. Be part of the conversation and learn first all the
-        intriguing doings of Junction.
-      </p>
+          Keep up with the latest from us!
+        </p>
       </BlockHeader>
       <Row className="junction_media">
         <Col xs>

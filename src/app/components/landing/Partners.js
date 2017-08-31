@@ -13,16 +13,13 @@ const Partners = () =>
           <h4>PARTNERS</h4>
         </Col>
       </Row>
-      <BlockHeader title="WHY TO PARTNER WITH US">
+      <BlockHeader title="WHY PARTNER WITH US">
         <p>
-          A unique opportunity to the front row of Engineering, Design and
-        Business Development, happens once a year before Slush. <br />
-          <br />You would not want to miss out. Contact our Head of Partnerships,
-        Mikko for more info:
-        <br />mikko.kuusisto-at-hackjunction.com
-      </p>
+          Junction is a unique opportunity to the front row of Engineering, Design and Business Development. Want to be the first one to see what the future of tech holds?<br />
+        <br />You don’t want to miss out. For partnership inquiries, contact us at partnerships@hackjunction.com and we will be more than happy to tell you more about our one-of-a-kind-community.
+        </p>
       </BlockHeader>
-      <Row className="junction_partners">
+      <Row className="junction_partners" center="xs">
         <Col xs={6} md={4}>
           <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/08/elisa.png"
@@ -49,7 +46,19 @@ const Partners = () =>
         </Col>
         <Col xs={6} md={4}>
           <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/smartly.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={6} md={4}>
+          <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/08/outotec.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={6} md={4}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/stara.png"
             className="responsive"
           />
         </Col>
@@ -82,6 +91,12 @@ const Partners = () =>
         </Col>
         <Col xs={4} md={3}>
           <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/aalto.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/08/fleetboard.png"
             className="responsive"
           />
@@ -92,6 +107,12 @@ const Partners = () =>
             className="responsive"
           />
           </Col>
+          <Col xs={4} md={3}>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2017/08/kone.png"
+              className="responsive"
+            />
+            </Col>
           <Col xs={4} md={3}>
             <img
               src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suneffects.png"

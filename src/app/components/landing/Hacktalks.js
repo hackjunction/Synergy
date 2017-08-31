@@ -17,9 +17,7 @@ const Hacktalks = () =>
       </Row>
       <BlockHeader title="FREQUENTLY ASKED QUESTIONS">
         <p>
-          Anything you want to know about the event, we got you covered. While we
-        can argue we have all the answers, if you feel something is missing,
-        feel free to contact us.
+          Got questions? Don’t worry, we have the anwers.
       </p>
       </BlockHeader>
       <Row>
@@ -213,7 +211,7 @@ const Hacktalks = () =>
         <Col style={{display:'none'}} xs={12} md={6} className={styles.faqCell}>
           <FaqSection question="Fruu cqnan kn j fnkbrcn ydiiun?">
             <p>
-            /lrljmj  
+            /lrljmj
             </p>
           </FaqSection>
         </Col>
