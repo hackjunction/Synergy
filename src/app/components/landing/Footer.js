@@ -16,7 +16,7 @@ const Footer = () =>
       <Col smOffset={1} xs={12} sm={3}>
         <h2>For Media</h2>
         <p>
-          Official <a href="https://www.flickr.com/people/151708924@N07/" className={styles.footer_link}>Junction photos</a>
+          <a href="https://www.flickr.com/people/151708924@N07/" className={styles.footer_link}>Official Junction photos</a>
         </p>
       </Col>
       <Col smOffset={1} xs={12} sm={3}>
