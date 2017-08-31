@@ -13,10 +13,10 @@ const Partners = () =>
           <h4>PARTNERS</h4>
         </Col>
       </Row>
-      <BlockHeader title="WHY PARTNER WITH US">
+      <BlockHeader title="PARTNER WITH US">
         <p>
-          Junction is a unique opportunity to the front row of Engineering, Design and Business Development. Want to be the first one to see what the future of tech holds?<br />
-        <br />You don’t want to miss out. For partnership inquiries, contact us at partnerships@hackjunction.com and we will be more than happy to tell you more about our one-of-a-kind-community.
+          Our partners are industry leaders, all looking to support young developers and co-create the innovations of tomorrow. Our partners will be there every step of the way providing teams with mentoring and coaching when needed.<br />
+        <br />Want to see your logo here? Contact us at partnerships@hackjunction.com to get on board with the Junction community.
         </p>
       </BlockHeader>
       <Row className="junction_partners" center="xs">
