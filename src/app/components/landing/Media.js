@@ -14,9 +14,9 @@ const Media = () =>
           <h4>MEDIA</h4>
         </Col>
       </Row>
-      <BlockHeader title="WHAT ARE WE UP TO?">
+      <BlockHeader title="STORIES FROM THE COMMUNITY">
         <p>
-          Keep up with the latest from us!
+          Keep up with the latest from our community of developers. Want to see your story here? Contact us at media@hackjunction.com
         </p>
       </BlockHeader>
       <Row className="junction_media">

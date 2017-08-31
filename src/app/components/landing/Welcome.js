@@ -37,7 +37,7 @@ const Welcome = () => (
           </h1>
           <br />
           <h2>24-26 November - Helsinki</h2>
-          <h4>Applications open September 1st</h4>
+          <a href="https://register.hackjunction.com/"><button className={styles.apply_button}>APPLY</button></a>
         </Col>
         <Col xs={1} className="junction_welcome_bottom">
           <Scroll.Link to="about" smooth={true} duration={500}>

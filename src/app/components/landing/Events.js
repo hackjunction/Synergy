@@ -17,7 +17,7 @@ const Events = () =>
     </Row>
     <BlockHeader title="NOT JUST A HACKATHON">
       <p>
-        Junction is much more than your standard hackathon. We are a worldwide community of ambitious creators. Check out our Speaker Day Hack\Talks and our local-events around the world.
+        Junction is much more than your standard hackathon. We are a worldwide community of ambitious creators. Check out our Speaker Day Hack\Talks and local-events around the world.
       </p>
     </BlockHeader>
     <Row>

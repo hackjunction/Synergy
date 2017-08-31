@@ -15,7 +15,7 @@ const Partners = () =>
       </Row>
       <BlockHeader title="PARTNER WITH US">
         <p>
-          Our partners are industry leaders, all looking to support young developers and co-create the innovations of tomorrow. Our partners will be there every step of the way providing teams with mentoring and coaching when needed.<br />
+          Our partners are a mix of industry leaders and agile startups, all looking to support young developers and co-create the innovations of tomorrow.<br />
         <br />Want to see your logo here? Contact us at partnerships@hackjunction.com to get on board with the Junction community.
         </p>
       </BlockHeader>

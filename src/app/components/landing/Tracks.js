@@ -28,7 +28,7 @@ class Tracks extends Component {
           </Row>
           <BlockHeader title="BUILDING FOR TOMORROW">
             <p>
-              We have put together everything you need for you to build your next project. Junction 2017 is divided into multiple tracks, each including several challenges set by our amazing partners. You can pick and choose your favorite ones!
+              We have put together everything you need for you to build your next project. Junction 2017 is divided into multiple tracks, each including several challenges set by our amazing partners.
             </p>
           </BlockHeader>
           {grid.map(row => {

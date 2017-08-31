@@ -92,6 +92,7 @@
 
 .apply_button {
   padding: 20px 40px;
+  margin-top: 5%;
   background: none;
   color: #fbfbfb;
   border: none;
@@ -100,6 +101,9 @@
   font-weight: bold;
   letter-spacing: 3px;
   cursor: pointer;
+}
+.apply_button:focus {
+  outline: none;
 }
 .apply_button:after,
 .apply_button:before {

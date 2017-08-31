@@ -18,21 +18,21 @@ class Landing extends React.Component {
           <Row>
             <div className="social-media">
               <a href="https://www.facebook.com/hackjunction">
-                <img src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/3-128.png" />
+                <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/fb.png" />
               </a>
             </div>
           </Row>
           <Row className="social-media">
             <div className="social-media">
               <a href="https://www.instagram.com/hackjunction/">
-                <img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c521.png" />
+                <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/ig.png" />
               </a>
             </div>
           </Row>
           <Row className="social-media">
             <div className="social-media">
               <a href="https://blog.hackjunction.com/">
-                <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Medium-128.png" />
+                <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/md.png" />
               </a>
             </div>
           </Row>
