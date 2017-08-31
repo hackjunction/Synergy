@@ -151,6 +151,8 @@ h1 {
 nav.junction_menu {
   // Temp solution to hide nav on small devices - TODO: Make is responsive
   visibility: hidden;
+  -webkit-transition: all ease 0.1s;
+  transition: all ease 0.1s;
 
   a:not(.active) {
     visibility: hidden;
@@ -181,8 +183,8 @@ nav.junction_menu {
     a {
       font-size: 14px;
       text-decoration: none;
-      color: $accent;
       vertical-align: bottom;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
       font-weight: 600;
       &:before {
         position: relative;
@@ -211,6 +213,13 @@ nav.junction_menu {
       margin: 10px 0;
       transition: linear 0.3s;
       direction: rtl;
+    }
+    li:hover {
+      a {
+        visibility: visible;
+        -webkit-transition: all ease 0.1s;
+        transition: all ease 0.1s;
+      }
     }
   }
   ul li a:before {

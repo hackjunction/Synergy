@@ -15,9 +15,7 @@ export default class Track extends Component {
     };
     return (
       <div>
-        <h1>
-          {trackConfig.title}
-        </h1>
+        <h1>{trackConfig.title}</h1>
         <img src={trackConfig.image} />
         {trackConfig.chiefPartners.map((object, i) => (
           <Partner

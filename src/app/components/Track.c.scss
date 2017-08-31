@@ -1,29 +1,46 @@
 $color3: white;
 
 .track_page {
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
 }
 .hero {
   padding-left: 0;
   padding-right: 0;
 }
-.background_top{
-  height:40vh;
+.background_top {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    height: 20vh;
+
+    /* Styles */
+  }
+  @media only screen and (min-width: 321px) and (max-device-width: 1024px) {
+    height: 40vh;
+  }
+  height: 40vh;
 }
 .track_header {
-  margin-top: -100px!important;
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    margin-top: 0px !important;
+    width: 100%;
+    /* Styles */
+  }
+  @media only screen and (min-width: 321px) and (max-device-width: 1024px) {
+    margin-top: -50px !important;
+    width: 100%;
+  }
+  margin-top: -100px !important;
   position: relative;
-  background: #FBFBFB;
+  background: #fbfbfb;
   color: #232323;
   padding: 20px 50px 50px 50px;
-  width: 700px;
+  width: 50%;
   margin: 20px auto 0 auto;
-  .track_content{
-    color:#232323;
-    margin-top:20px;
-    font-size:16px;
+  .track_content {
+    color: #232323;
+    margin-top: 20px;
+    font-size: 16px;
     font-weight: 300;
-    line-height:22px;
+    line-height: 22px;
   }
 }
 

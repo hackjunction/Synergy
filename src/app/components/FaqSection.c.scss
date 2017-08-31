@@ -8,6 +8,11 @@ $answer-padding: $question-padding;
   position: relative;
   width: 100%;
   height: auto;
+  @media only screen and (min-width: 1224px) {
+    min-height: 0;
+
+    /* Styles */
+  }
   min-height: 10vh;
   background-color: rgba(255, 255, 255, 0.1);
 }
