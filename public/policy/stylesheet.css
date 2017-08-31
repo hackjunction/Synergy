@@ -1,0 +1,38 @@
+body {
+  background-color: #232323;
+  color: #fbfbfb;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 50%;
+}
+
+h1 {
+  text-align: center;
+  color: #5ABECF;
+  font-family: Montserrat, sans-serif;
+}
+
+h2 {
+  font-family: Montserrat, sans-serif;
+  padding-top: 1.5em;
+}
+
+h3 {
+  color: #5ABECF;
+  font-family: Montserrat, sans-serif;
+}
+
+span {
+  color: #EC008B;
+}
+
+#content {
+   max-width: 600px;
+   margin: auto;
+   padding: 30px;
+}
