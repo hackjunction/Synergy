@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
 import Challenge from './common/ChallengeElement';
@@ -32,10 +32,12 @@ class Track extends Component {
         <Grid className={styles.hero} fluid>
           <Row style={style} className={styles.background_top} center="xs">
             <Col>
-              <img
-                className={styles.junction_logo}
-                src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
-              />
+              <Link to="/">
+                <img
+                  className={styles.junction_logo}
+                  src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
+                />
+              </Link>
             </Col>
           </Row>
 
