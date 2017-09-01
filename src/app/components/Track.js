@@ -24,7 +24,7 @@ class Track extends Component {
     } else track = {};
 
     var style = {
-      'background-image': `url(${track.image})`,
+      'backgroundImage': `url(${track.image})`,
     };
 
     return (
@@ -33,7 +33,7 @@ class Track extends Component {
           <Row
             style={style}
             className={styles.background_top}
-            center="xs sm md"
+            center="xs"
           >
             <Col>
               <img
@@ -43,7 +43,7 @@ class Track extends Component {
             </Col>
           </Row>
 
-          <Row center="xs sm md" className={styles.track_header}>
+          <Row center="xs" className={styles.track_header}>
             <Col className={styles.track_name} xs={12} sm={12} md={12}>
               <h1>{track.title}</h1>
             </Col>

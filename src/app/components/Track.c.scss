@@ -1,33 +1,26 @@
 $color3: white;
-
 .track_page {
   background-color: #fbfbfb;
 }
+
 .hero {
   padding-left: 0;
   padding-right: 0;
 }
-.background_top {
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    height: 20vh;
 
-    /* Styles */
-  }
-  @media only screen and (min-width: 321px) and (max-device-width: 1024px) {
-    height: 40vh;
-  }
+.background_top {
   height: 40vh;
+  width: 100.3%;
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    height: 20vh;
+    width: 100%;
+  }
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    width: 100.9%;
+  }
 }
+
 .track_header {
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    margin-top: 0px !important;
-    width: 100%;
-    /* Styles */
-  }
-  @media only screen and (min-width: 321px) and (max-device-width: 1024px) {
-    margin-top: -50px !important;
-    width: 100%;
-  }
   margin-top: -100px !important;
   position: relative;
   background: #fbfbfb;
@@ -42,8 +35,17 @@ $color3: white;
     font-weight: 300;
     line-height: 22px;
   }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    margin-top: 0px !important;
+    width: 100%;
+  }
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    margin-top: -50px !important;
+    width: 100%;
+  }
 }
 
 .junction_website {
   background: none;
 }
+
