@@ -11,12 +11,15 @@ $color3: white;
 .background_top {
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     height: 20vh;
+    width: 100%;
     /* Styles */
   }
   @media only screen and (min-width: 321px) and (max-device-width: 1024px) {
     height: 40vh;
+    width: 100.9%;
   }
   height: 40vh;
+  width: 100.3%;
 }
 
 .track_header {
