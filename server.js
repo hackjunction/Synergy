@@ -8,6 +8,12 @@ const index_path = __dirname + '/public/index.html';
 
 app.use(public_path);
 app.use('/api', apiProxy);
+
+const register = (req, res) => {
+  res.redirect('https://register.hackjunction.com');
+}
+app.use('/apply', register);
+app.use('/register', register);
 app.get('*', function(request, response) {
   response.sendFile(index_path, function(error) {
     if (error) {
