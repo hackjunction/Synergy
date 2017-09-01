@@ -22,13 +22,13 @@ const Footer = () =>
       <Col smOffset={1} xs={12} sm={3}>
         <h2>Social</h2>
         <p><a href="https://www.facebook.com/hackjunction">
-          <img className={styles.junction_footer_social_image} src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/3-128.png" width="24px;" />
+          <img className={styles.junction_footer_social_image} src="https://staging.hackjunction.com/wp-content/uploads/2017/08/fb.png" />
           Facebook</a></p>
         <p><a href="https://www.instagram.com/hackjunction/">
-          <img className={styles.junction_footer_social_image} src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c521.png" width="24px;" />
+          <img className={styles.junction_footer_social_image} src="https://staging.hackjunction.com/wp-content/uploads/2017/08/ig.png" />
           Instagram</a></p>
         <p><a href="https://blog.hackjunction.com/">
-          <img className={styles.junction_footer_social_image} src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Medium-128.png" width="24px;" />
+          <img className={styles.junction_footer_social_image} src="https://staging.hackjunction.com/wp-content/uploads/2017/08/md.png" />
           Medium</a></p>
       </Col>
     </Row>
