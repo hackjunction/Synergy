@@ -23,7 +23,7 @@ class ChallengeElement extends Component {
     <div>
     <Col className={styles.chief + " " + styles.collage} xs={12}>
       <Row center="xs">
-        <Col xs={4} md={4}>
+        <Col xs={8} md={4}>
           {data.image &&
             <img className={styles["partner-logo"]} src={data.image} />
           }
