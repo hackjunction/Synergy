@@ -63,7 +63,7 @@ Tracks.propTypes = {
 
 // export the connected class
 function mapStateToProps(state) {
-  console.log('tracks', state.tracks);
+  //console.log('tracks', state.tracks);
   return {
     tracks: state.tracks || [],
   };

@@ -50,7 +50,7 @@ ChallengesList.propTypes = {
 
 // export the connected class
 function mapStateToProps(state) {
-  console.log('challenges', state.challenges);
+  //console.log('challenges', state.challenges);
   return {
     challenges: state.challenges || [],
   };

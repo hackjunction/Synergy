@@ -49,7 +49,7 @@ EventList.propTypes = {
 
 // export the connected class
 function mapStateToProps(state) {
-  console.log("events", state.events);
+  //console.log("events", state.events);
   return {
     events: state.events || [],
   };

@@ -20,7 +20,7 @@ export default class ApiPosts {
     return clientApi.get('/posts?_embed&categories=4');
   }
   static getChallenge(id) {
-    console.log("id: ", id);
+    //console.log("id: ", id);
     return api.get('/challenge?id='+id);
   }
 }

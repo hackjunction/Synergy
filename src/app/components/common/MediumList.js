@@ -42,7 +42,7 @@ MediumList.propTypes = {
 
 // export the connected class
 function mapStateToProps(state) {
-  console.log('mediumPosts', state.mediumPosts);
+  //console.log('mediumPosts', state.mediumPosts);
   return {
     mediumPosts: state.mediumPosts || [],
   };
