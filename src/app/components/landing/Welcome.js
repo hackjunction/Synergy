@@ -21,23 +21,27 @@ const Welcome = () => (
           <h1>
             HACK THE FUTURE OF <br />
             <br />
-            <ReactRotatingText
-              color="#35E2DF"
-              items={[
-                'GAMING',
-                'INTELLIGENT BUILDINGS',
-                'HEALTHTECH',
-                'LOGISTICS',
-                'ENTERTAINMENT',
-                'MOBILITY',
-                'INDUSTRIAL INTERNET',
-                'FINTECH',
-              ]}
-            />
+            <div className={styles.rotating_text}>
+              <ReactRotatingText
+                color="#35E2DF"
+                items={[
+                  'GAMING',
+                  'INTELLIGENT BUILDINGS',
+                  'HEALTHTECH',
+                  'LOGISTICS',
+                  'ENTERTAINMENT',
+                  'MOBILITY',
+                  'INDUSTRIAL INTERNET',
+                  'FINTECH',
+                ]}
+              />
+            </div>
           </h1>
           <br />
           <h2>24-26 November - Helsinki</h2>
-          <a href="https://register.hackjunction.com/"><button className={styles.apply_button}>APPLY</button></a>
+          <a href="https://register.hackjunction.com/">
+            <button className={styles.apply_button}>APPLY</button>
+          </a>
         </Col>
         <Col xs={1} className="junction_welcome_bottom">
           <Scroll.Link to="about" smooth={true} duration={500}>

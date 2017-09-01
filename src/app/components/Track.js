@@ -24,20 +24,16 @@ class Track extends Component {
     } else track = {};
 
     var style = {
-      'backgroundImage': `url(${track.image})`,
+      backgroundImage: `url(${track.image})`,
     };
 
     return (
       <div className={styles.track_page}>
         <Grid className={styles.hero} fluid>
-          <Row
-            style={style}
-            className={styles.background_top}
-            center="xs"
-          >
+          <Row style={style} className={styles.background_top} center="xs">
             <Col>
               <img
-                className="junction_logo"
+                className={styles.junction_logo}
                 src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
               />
             </Col>
@@ -47,7 +43,7 @@ class Track extends Component {
             <Col className={styles.track_name} xs={12} sm={12} md={12}>
               <h1>{track.title}</h1>
             </Col>
-            <Col className={styles.track_content} xs={12} sm={9} md={9}>
+            <Col className={styles.track_content} xs={12} sm={12} md={12}>
               <div dangerouslySetInnerHTML={{ __html: track.content }} />
             </Col>
 

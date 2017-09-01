@@ -8,6 +8,15 @@ $color3: white;
   padding-right: 0;
 }
 
+.junction_logo {
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    margin-top: 25%;
+    /* Styles */
+  }
+  width: 200px;
+  padding-top: 15%;
+}
+
 .background_top {
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     height: 20vh;
@@ -16,10 +25,11 @@ $color3: white;
   }
   @media only screen and (min-width: 321px) and (max-device-width: 1024px) {
     height: 40vh;
-    width: 100.9%;
+    width: 100%;
   }
   height: 40vh;
-  width: 100.3%;
+  width: 100%;
+  margin: 0;
 }
 
 .track_header {
@@ -41,8 +51,9 @@ $color3: white;
   margin: 20px auto 0 auto;
   .track_content {
     color: #232323;
-    margin-top: 20px;
-    font-size: 16px;
+    margin: 5% 0;
+
+    font-size: 20px;
     font-weight: 300;
     line-height: 22px;
   }

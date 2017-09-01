@@ -1,7 +1,7 @@
 .trackCell {
   height: 180px;
   text-decoration: none;
-
+  background-repeat: no-repeat;
   position: relative;
   color: white;
   background-size: 100%;
@@ -23,6 +23,10 @@
 
   .inside {
     h2 {
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        /* Styles */
+        padding-top: 25%;
+      }
       padding-top: 15%;
       text-shadow: 5px 5px 10px black;
     }
@@ -34,7 +38,7 @@
   }
 
   &:hover {
-    background-size: 120%;
+    background-size: 110%;
 
     .inside {
       transition: all 0.5s ease;

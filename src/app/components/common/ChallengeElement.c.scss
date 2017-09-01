@@ -1,14 +1,20 @@
-.wrapper{
+.wrapper {
   position: relative;
-  clear:both;
+  clear: both;
   margin: 0 auto 75px auto;
   width: 100%;
   overflow: hidden;
 }
-.top{
-  background: #FF4444;
+.top {
+  background: #ff4444;
   height: 180px;
-  border-top: 20px solid #CC0000;
+  border-top: 20px solid #cc0000;
+}
+.challenge_content {
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    text-align: center;
+  }
+  text-align: left;
 }
 
 /*
@@ -38,21 +44,24 @@ h3{
   margin-top: -80px;
 }
 
-.card{
+.card {
   position: relative;
-  background: #FBFBFB;
+  background: #fbfbfb;
   padding: 50px;
   margin: 20px auto 0 auto;
 }
 
 .card .text {
-  color:#232323;
-  margin-top:20px;
-  font-size:16px;
-  line-height:22px;
+  color: #232323;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .left {
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    text-align: center;
+  }
   text-align: left;
 }
 
@@ -72,8 +81,8 @@ img {
 }
 .collage {
   display: flex;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #ffffff;
   flex-wrap: wrap;
   justify-content: center;
@@ -85,15 +94,15 @@ img {
   padding: 20px 0 20px 0;
 }
 .collage-item p {
-  padding-top:10px;
+  padding-top: 10px;
 }
 .chief .collage-item:nth-child(6) {
-  padding-left:100px;
-  margin-top:-15px;
+  padding-left: 100px;
+  margin-top: -15px;
 }
 .major .collage-item:nth-child(3) {
-  margin-top:-120px;
-  padding-left:370px;
+  margin-top: -120px;
+  padding-left: 370px;
 }
 .fullwidth {
   flex: 0 0 90%;
