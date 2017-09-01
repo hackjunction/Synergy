@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-flexbox-grid';
 import Scroll from 'react-scroll';
 import ReactRotatingText from 'react-rotating-text';
@@ -10,10 +11,12 @@ const Welcome = () => (
     <Block className={styles.block} contentClassName={styles.blockContent}>
       <Row center="xs">
         <Col>
-          <img
-            className="junction_logo"
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
-          />
+          <Link to="/">
+            <img
+              className="junction_logo"
+              src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
+            />
+          </Link>
         </Col>
       </Row>
       <Row center="xs" className="junction_welcome">
