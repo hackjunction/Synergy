@@ -4,27 +4,27 @@ import { connect } from 'react-redux';
 import { Link, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
-import Challenge from './common/ChallengeElement';
 
-class Track extends Component {
+class Challenge extends Component {
   componentWillMount() {
-    if (this.props.tracks.length == 0) {
-      this.props.getTracks();
+    if (this.props.challenges.length == 0) {
+      this.props.getChallenges();
     }
   }
+
   render() {
     var match = this.props.match;
     if (!match.params || !match.params.track) return <Redirect to="/" />;
-    if (this.props.tracks.length > 0) {
-      var track = this.props.tracks.filter(
-        track => track.slug === match.params.track,
+    if (this.props.challenges.length > 0) {
+      var challenge = this.props.challenges.filter(
+        challenge => challenge.slug === match.params.track,
       );
-      if (track.length === 0) return <Redirect to="/" />;
-      else track = track[0];
-    } else track = {};
+      if (challenge.length === 0) return <Redirect to="/" />;
+      else challenge = challenge[0];
+    } else challenge = {};
 
     var style = {
-      backgroundImage: `url(${track.image})`,
+      backgroundImage: `url(${challenge.image})`,
     };
 
     return (
@@ -32,34 +32,22 @@ class Track extends Component {
         <Grid className={styles.hero} fluid>
           <Row style={style} className={styles.background_top} center="xs">
             <Col>
-              <a href="/#tracks">
+              <Link to="/#challenges">
                 <img
                   className={styles.junction_logo}
                   src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
                 />
-              </a>
+              </Link>
             </Col>
           </Row>
 
           <Row center="xs" className={styles.track_header}>
             <Col className={styles.track_name} xs={12} sm={12} md={12}>
-              <h1>{track.title}</h1>
+              <h1>{challenge.title}</h1>
             </Col>
             <Col className={styles.track_content} xs={12} sm={12} md={12}>
-              <div dangerouslySetInnerHTML={{ __html: track.content }} />
+              <div dangerouslySetInnerHTML={{ __html: challenge.content }} />
             </Col>
-
-            {track.challenges &&
-              track.challenges.map(challenge => {
-                return (
-                  <Challenge
-                    key={challenge.id}
-                    title={challenge.title}
-                    content={challenge.content}
-                    post_id={challenge.id}
-                  />
-                );
-              })}
           </Row>
         </Grid>
       </div>
@@ -67,25 +55,25 @@ class Track extends Component {
   }
 }
 
-Track.propTypes = {
+Challenge.propTypes = {
   params: PropTypes.object,
-  tracks: PropTypes.array,
-  getTracks: PropTypes.func,
+  challenges: PropTypes.array,
+  getChallenges: PropTypes.func,
   match: PropTypes.object,
 };
 
 function mapStateToProps(state) {
-  //console.log('tracks', state.tracks);
+  //console.log('challenges', state.challenges);
   return {
-    tracks: state.tracks || [],
+    challenges: state.challenges || [],
   };
 }
 function mapDispatchToProps(dispatch) {
   return {
-    getTracks() {
+    getChallenges() {
       dispatch({ type: 'GET_TRACKS' });
     },
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Track);
+export default connect(mapStateToProps, mapDispatchToProps)(Challenge);

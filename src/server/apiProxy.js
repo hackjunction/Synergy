@@ -25,6 +25,11 @@ apiRouter.get('/challenge', (req, res) => {
     res.json(data);
   });
 });
+apiRouter.get('/challenges', (req, res) => {
+  wordpressApi.getChallenges().then(data => {
+    res.json(data);
+  });
+});
 
 apiRouter.get('/fb/posts', (req, res) => {
   facebookClient.api(`/${FACEBOOK_PAGE}`, fbRes => {

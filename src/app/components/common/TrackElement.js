@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-//import classNames from 'classnames';
-//import { Grid, Row, Col } from "react-flexbox-grid";
 
 import styles from './TrackElement.c.scss';
 
@@ -17,7 +15,7 @@ export default class TrackElement extends Component {
       };
 
       return (
-        <Link to={`/${post.slug}`}>
+        <Link to={`/tracks/${post.slug}`}>
           <div className={`responsive ${styles.trackCell}`} style={style}>
             <div className={styles.awesome_overlay}>
               <div className={styles.inside}>

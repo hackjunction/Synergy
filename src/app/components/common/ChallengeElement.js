@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col } from 'react-flexbox-grid';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+
 import styles from './ChallengeElement.c.scss';
 
 class ChallengeElement extends Component {
@@ -17,10 +19,11 @@ class ChallengeElement extends Component {
 
     if (this.props.challenges[post_id]) {
       data = this.props.challenges[post_id];
+      console.log(data);
     }
 
     return (
-      <div>
+      <Link to={`/challenges/${data.id}`}>
         <Col className={styles.chief + ' ' + styles.collage} xs={12}>
           <Row center="xs" middle="xs">
             <Col xs={8} md={4}>
@@ -65,7 +68,7 @@ class ChallengeElement extends Component {
             </Col>
           </Row>
         </Col>
-      </div>
+      </Link>
     );
   }
 }
