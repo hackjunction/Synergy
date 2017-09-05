@@ -1,12 +1,13 @@
 import React from "react";
 import { Row, Col } from "react-flexbox-grid";
 import Scroll from 'react-scroll';
+import styles from "./About.c.scss";
 import Block from "../viewBlocks/Block";
 import BlockHeader from "../viewBlocks/BlockHeader";
 
 const About = () =>
   <Scroll.Element name="about">
-    <Block>
+    <Block className={styles.block}>
       <Row>
         <Col xs={12} className="bold text-secondary">
           <h4>ABOUT</h4>

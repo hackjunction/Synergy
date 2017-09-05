@@ -1,14 +1,13 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import Scroll from 'react-scroll';
-import styles from './Media.c.scss';
 import Block from '../viewBlocks/Block';
 import BlockHeader from '../viewBlocks/BlockHeader';
 import Mediumlist from '../common/MediumList';
 
 const Media = () =>
   <Scroll.Element name="media">
-    <Block className={styles.block}>
+    <Block>
       <Row>
         <Col xs={12} className="bold text-secondary">
           <h4>MEDIA</h4>

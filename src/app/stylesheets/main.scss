@@ -183,6 +183,7 @@ nav.junction_menu {
     a {
       text-decoration: none;
       vertical-align: bottom;
+      color: #FBFBFB;
       text-shadow: 0px 0px 3px rgba(35, 35, 35, 0.9);
       font-weight: 600;
       &:before {
@@ -197,13 +198,17 @@ nav.junction_menu {
       }
       &:hover {
         cursor: pointer;
+        color: #FBFBFB;
         &:before {
+          color: #FBFBFB;
           box-shadow: 0 0 3px darken($accent, 10%);
         }
       }
       &.active {
+        color: #FBFBFB;
         transition: linear 0.3s;
         &:before {
+          color: #FBFBFB;
           background-color: $accent;
         }
       }

@@ -41,10 +41,10 @@ class Landing extends React.Component {
           <ul>
             <li><Scroll.Link activeClass="active" to="welcome" spy={true} smooth={true} duration={500}>Welcome</Scroll.Link></li>
             <li><Scroll.Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>About</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="events" spy={true} smooth={true} duration={500}>Special Events</Scroll.Link></li>
             <li><Scroll.Link activeClass="active" to="tracks" spy={true} smooth={true} duration={500}>Tracks</Scroll.Link></li>
             <li><Scroll.Link activeClass="active" to="partners" spy={true} smooth={true} duration={500}>Partners</Scroll.Link></li>
             <li><Scroll.Link activeClass="active" to="hacktalks" spy={true} smooth={true} duration={500}>FAQ</Scroll.Link></li>
+            <li><Scroll.Link activeClass="active" to="events" spy={true} smooth={true} duration={500}>Special Events</Scroll.Link></li>
             <li><Scroll.Link activeClass="active" to="media" spy={true} smooth={true} duration={500}>Media</Scroll.Link></li>
           </ul>
         </nav>
@@ -54,9 +54,6 @@ class Landing extends React.Component {
         <div id="about">
           <About />
         </div>
-        <div id="events">
-          <Events />
-        </div>
         <div id="tracks">
           <Tracks />
         </div>
@@ -65,6 +62,9 @@ class Landing extends React.Component {
         </div>
         <div id="hacktalks">
           <Hacktalks />
+        </div>
+        <div id="events">
+          <Events />
         </div>
         <div id="media">
           <Media />

@@ -32,7 +32,7 @@ const Footer = () =>
           Medium</a></p>
       </Col>
     </Row>
-    <Row center="xs">
+    <Row center="xs" className={styles.base}>
       <p>Designed and developed by the amazing Junction Team</p>
     </Row>
   </Block>;

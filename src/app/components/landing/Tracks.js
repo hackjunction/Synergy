@@ -20,7 +20,7 @@ class Tracks extends Component {
 
     return (
       <Scroll.Element name="tracks">
-        <Block>
+        <Block className={styles.block}>
           <Row>
             <Col xs={12} className="bold text-secondary">
               <h4>TRACKS</h4>
