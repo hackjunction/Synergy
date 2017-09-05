@@ -55,9 +55,11 @@ export const getChallenge = id => {
         prize: challenge.acf.prize,
         partner: challenge.acf.partner,
         content: challenge.acf.content,
+        challenge_bg: challenge.acf.challenge_bg
       };
     });
 };
+
 export const getChallenges = () => {
   return wordpressApiClient
     .get('/posts?_embed&categories=4')
@@ -73,6 +75,7 @@ export const getChallenges = () => {
           prize: challenge.acf.prize,
           partner: challenge.acf.partner,
           content: challenge.acf.content,
+          challenge_bg: challenge.acf.challenge_bg
         };
       });
     });
