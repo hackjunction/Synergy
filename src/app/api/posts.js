@@ -17,7 +17,7 @@ export default class ApiPosts {
   }
 
   static getChallenges() {
-    return clientApi.get('/challenges');
+    return api.get('/challenges');
   }
   static getChallenge(id) {
     //console.log("id: ", id);

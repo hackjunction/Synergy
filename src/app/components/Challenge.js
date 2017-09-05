@@ -14,13 +14,13 @@ class Challenge extends Component {
 
   render() {
     var match = this.props.match;
-    if (!match.params || !match.params.track) return <Redirect to="/" />;
+    console.log(this.props.challenges);
+    if (!match.params || !match.params.challenge) return <Redirect to="/" />;
     if (this.props.challenges.length > 0) {
       var challenge = this.props.challenges.filter(
-        challenge => challenge.slug === match.params.track,
+        challenge => challenge.id == match.params.challenge,
       );
-      if (challenge.length === 0) return <Redirect to="/" />;
-      else challenge = challenge[0];
+      challenge = challenge[0];
     } else challenge = {};
 
     var style = {
@@ -60,6 +60,7 @@ Challenge.propTypes = {
   challenges: PropTypes.array,
   getChallenges: PropTypes.func,
   match: PropTypes.object,
+  post_id: PropTypes.number,
 };
 
 function mapStateToProps(state) {
@@ -71,7 +72,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     getChallenges() {
-      dispatch({ type: 'GET_TRACKS' });
+      dispatch({ type: 'GET_CHALLENGES' });
     },
   };
 }

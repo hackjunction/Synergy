@@ -7,7 +7,6 @@ const wordpressApiClient = axios.create({
 });
 
 wordpressApiClient.interceptors.request.use(config => {
-  console.log(config);
   return config;
 });
 

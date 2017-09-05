@@ -23,7 +23,7 @@ class ChallengeElement extends Component {
     }
 
     return (
-      <Link to={`/challenges/${data.id}`}>
+      <Link to={`/challenges/${data.id}`} key={data.id}>
         <Col className={styles.chief + ' ' + styles.collage} xs={12}>
           <Row center="xs" middle="xs">
             <Col xs={8} md={4}>
@@ -46,7 +46,12 @@ class ChallengeElement extends Component {
               {data.prize && (
                 <div>
                   {data.prize.split('|').map(text => {
-                    return <p className={styles.left}> {text} </p>;
+                    return (
+                      <p className={styles.left} key={text}>
+                        {' '}
+                        {text}{' '}
+                      </p>
+                    );
                   })}
                 </div>
               )}
@@ -56,7 +61,12 @@ class ChallengeElement extends Component {
               {data.criteria && (
                 <div>
                   {data.criteria.split('|').map(text => {
-                    return <p className={styles.left}> {text} </p>;
+                    return (
+                      <p className={styles.left} key={text}>
+                        {' '}
+                        {text}{' '}
+                      </p>
+                    );
                   })}
                 </div>
               )}
