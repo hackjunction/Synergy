@@ -24,6 +24,20 @@ h1 {
 .challenge_content{
   text-align: left !important;
 }
+.challenge_content{
+  a:link {
+    color: #35E2DF;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #35E2DF;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #35E2DF;
+    text-decoration: none;
+  }
+}
 .hero {
   padding-left: 0;
   padding-right: 0;
