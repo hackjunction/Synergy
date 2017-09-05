@@ -23,7 +23,7 @@ class Challenge extends Component {
     } else challenge = {};
 
     var style = {
-      backgroundImage: `url(${challenge.image})`,
+      backgroundImage: `url(${challenge.challenge_bg})`,
     };
 
     return (
