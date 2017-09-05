@@ -63,7 +63,7 @@ const Hacktalks = () => (
           <FaqSection question="When and where can I apply?">
             <p>
               The application period will open on 1st September and close on
-              15th October 2017. Make sure to apply HERE!
+              15th October 2017. Make sure to apply <a href="https://register.hackjunction.com/">HERE</a>!
             </p>
           </FaqSection>
         </Col>
@@ -154,7 +154,7 @@ const Hacktalks = () => (
               <li>No code written before the event.</li>
               <li>No remote team members.</li>
               <li>Maximum 5 team members</li>
-              <li>Follow the MLH Code of Conduct</li>
+              <li>Follow the MLH <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a></li>
               <li>Participants can only submit their project in one team</li>
             </ol>
           </FaqSection>
