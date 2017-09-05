@@ -25,6 +25,8 @@ class Track extends Component {
 
     var style = {
       backgroundImage: `url(${track.image})`,
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover"
     };
 
     return (
