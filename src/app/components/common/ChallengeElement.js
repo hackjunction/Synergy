@@ -19,7 +19,6 @@ class ChallengeElement extends Component {
 
     if (this.props.challenges[post_id]) {
       data = this.props.challenges[post_id];
-      console.log(data);
     }
 
     return (

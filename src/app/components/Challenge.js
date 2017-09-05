@@ -14,7 +14,6 @@ class Challenge extends Component {
 
   render() {
     var match = this.props.match;
-    console.log(this.props.challenges);
     if (!match.params || !match.params.challenge) return <Redirect to="/" />;
     if (this.props.challenges.length > 0) {
       var challenge = this.props.challenges.filter(
