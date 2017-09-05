@@ -44,7 +44,7 @@ class Challenge extends Component {
             <Col className={styles.track_name} xs={12} sm={12} md={12}>
               <h1>{challenge.title}</h1>
             </Col>
-            <Col className={styles.track_content} xs={12} sm={12} md={12}>
+            <Col className={[styles.track_content],[styles.challenge_content]} xs={12} sm={12} md={12}>
               <div dangerouslySetInnerHTML={{ __html: challenge.content }} />
             </Col>
           </Row>
