@@ -53,6 +53,8 @@ class Landing extends React.Component {
         </div>
         <div id="about">
           <About />
+        </div>
+        <div id="events">
           <Events />
         </div>
         <div id="tracks">
