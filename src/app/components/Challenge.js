@@ -24,6 +24,8 @@ class Challenge extends Component {
 
     var style = {
       backgroundImage: `url(${challenge.challenge_bg})`,
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover"
     };
 
     return (
