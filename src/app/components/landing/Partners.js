@@ -109,7 +109,7 @@ const Partners = () =>
         </Col>
         <Col xs={4} md={3}>
           <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/qt.png"
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/qt.png"
             className="responsive"
           />
           </Col>

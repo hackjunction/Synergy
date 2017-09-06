@@ -25,7 +25,7 @@ const About = () =>
       <Row>
         <Col xs={12} className="junction-description">
           {" "}<span className="text-tetriary">
-            * We really mean; an incredible event, awesome people and crazy parties.
+            * We really mean; a hackathon experience like no other with awesome people.
         </span>
         </Col>
       </Row>
