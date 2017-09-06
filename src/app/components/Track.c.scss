@@ -22,6 +22,9 @@ h1 {
   font-family: 'Montserrat';
   padding: 25px 0 5px 0;
 }
+.challenge_partner_inline img{
+  width:50%;
+}
 .challenge_content{
   text-align: left !important;
 }
@@ -110,6 +113,7 @@ h1 {
   font-weight: bold;
   letter-spacing: 3px;
   cursor: pointer;
+  margin-top:50px;
 }
 .apply_button:focus {
   outline: none;
