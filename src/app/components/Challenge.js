@@ -6,6 +6,10 @@ import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
 
 class Challenge extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   componentWillMount() {
     if (this.props.challenges.length == 0) {
       this.props.getChallenges();
@@ -77,6 +81,7 @@ function mapStateToProps(state) {
     challenges: state.challenges || [],
   };
 }
+
 function mapDispatchToProps(dispatch) {
   return {
     getChallenges() {
