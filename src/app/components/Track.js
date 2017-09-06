@@ -7,11 +7,16 @@ import styles from './Track.c.scss';
 import Challenge from './common/ChallengeElement';
 
 class Track extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   componentWillMount() {
     if (this.props.tracks.length == 0) {
       this.props.getTracks();
     }
   }
+
   render() {
     var match = this.props.match;
     if (!match.params || !match.params.track) return <Redirect to="/" />;
@@ -62,9 +67,9 @@ class Track extends Component {
                   />
                 );
               })}
-              <a href="https://register.hackjunction.com/">
-                <button className={styles.apply_button}>APPLY</button>
-              </a>
+            <a href="https://register.hackjunction.com/">
+              <button className={styles.apply_button}>APPLY</button>
+            </a>
           </Row>
         </Grid>
       </div>
@@ -85,6 +90,7 @@ function mapStateToProps(state) {
     tracks: state.tracks || [],
   };
 }
+
 function mapDispatchToProps(dispatch) {
   return {
     getTracks() {
