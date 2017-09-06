@@ -22,7 +22,7 @@ class Challenge extends Component {
       challenge = challenge[0];
     } else challenge = {};
 
-    console.log(challenge)
+    console.log(challenge);
     var style = {
       backgroundImage: `url(${challenge.challenge_bg})`,
       backgroundRepeat: "no-repeat",
