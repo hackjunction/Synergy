@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Row, Col } from 'react-flexbox-grid';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import FontAwesome from 'react-fontawesome';
 
 import styles from './ChallengeElement.c.scss';
 
@@ -22,62 +23,62 @@ class ChallengeElement extends Component {
     }
 
     return (
-      <Link to={`/challenges/${data.id}`} key={data.id}>
-        <Col className={styles.chief + ' ' + styles.collage} xs={12}>
-          <Row center="xs" middle="xs">
-            <Col xs={8} md={4}>
-              {data.image && (
-                <img className={styles['partner-logo']} src={data.image} />
-              )}
-            </Col>
-            <Col xs={12} md={8}>
-              <h2 className={styles.left}> {title} </h2>
-              <p className={styles.left}>{content}</p>
-            </Col>
-          </Row>
+      <Col className={styles.chief + ' ' + styles.collage} xs={12}>
+        <Row center="xs" middle="xs">
+          <Col xs={8} md={4}>
+            {data.image && (
+              <img className={styles['partner-logo']} src={data.image} />
+            )}
+          </Col>
+          <Col xs={12} md={8}>
+            <h2 className={styles.left}> {title} </h2>
+            <p className={styles.left}>{content}</p>
+          </Col>
+        </Row>
 
-          <Row className={styles.fullwidth}>
-            <hr className={styles.fullwidth} />
-          </Row>
-          <Row className={styles.fullwidth}>
-            <Col xs={12} md={3} lg={3}>
-              <h3 className={styles.left}> Prize </h3>
-              {data.prize && (
-                <div>
-                  {data.prize.split('|').map(text => {
-                    return (
-                      <p className={styles.left} key={text}>
-                        {' '}
-                        {text}{' '}
-                      </p>
-                    );
-                  })}
-                </div>
-              )}
-            </Col>
-            <Col xs={12} md={6} lg={6}>
-              <h3 className={styles.left}> Criteria </h3>
-              {data.criteria && (
-                <div>
-                  {data.criteria.split('|').map(text => {
-                    return (
-                      <p className={styles.left} key={text}>
-                        {' '}
-                        {text}{' '}
-                      </p>
-                    );
-                  })}
-                </div>
-              )}
-            </Col>
-            <Col xs={12} md={3} lg={3}>
-              {/*
-          <button><i className="fa fa-arrow-right"></i></button>
-          */}
-            </Col>
-          </Row>
-        </Col>
-      </Link>
+        <Row className={styles.fullwidth}>
+          <hr className={styles.fullwidth} />
+        </Row>
+        <Row className={styles.fullwidth}>
+          <Col xs={12} md={3} lg={3}>
+            <h3 className={styles.left}> Prize </h3>
+            {data.prize && (
+              <div>
+                {data.prize.split('|').map(text => {
+                  return (
+                    <p className={styles.left} key={text}>
+                      {' '}
+                      {text}{' '}
+                    </p>
+                  );
+                })}
+              </div>
+            )}
+          </Col>
+          <Col xs={12} md={6} lg={6}>
+            <h3 className={styles.left}> Criteria </h3>
+            {data.criteria && (
+              <div>
+                {data.criteria.split('|').map(text => {
+                  return (
+                    <p className={styles.left} key={text}>
+                      {' '}
+                      {text}{' '}
+                    </p>
+                  );
+                })}
+              </div>
+            )}
+          </Col>
+          <Col xs={12} md={3} lg={3} className={styles.goToParent}>
+            <Link to={`/challenges/${data.id}`} key={data.id}>
+              <button className={styles.goTo}>
+                <FontAwesome name="arrow-right" size="2x" />
+              </button>
+            </Link>
+          </Col>
+        </Row>
+      </Col>
     );
   }
 }

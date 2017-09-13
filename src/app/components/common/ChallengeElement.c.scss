@@ -113,50 +113,49 @@ img {
 .two_thirds {
   flex: 0 0 60%;
 }
-
-/*
-button {
-  background: #4FBA6F;
-  border: #4FBA6F;
+.goToParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goTo {
+  background: #4fba6f;
+  border: #4fba6f;
   border-radius: 50%;
-  font-size: 0.9em;
-  color: #FBFBFB;
+  color: #fbfbfb;
+  min-width: 40%;
+  min-height: 40%;
+  padding: 20px;
+  margin: 20px;
   cursor: pointer;
-  width: 85px;
-  height: 85px;
-  position: absolute;
-  text-align: center;
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   -ms-transition: 0.5s ease;
   transition: 0.5s ease;
-}
 
-button:hover {
-  background: #232323;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  -ms-transition: 0.5s ease;
-  transition: 0.5s ease;
+  &:hover {
+    background: #232323;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .fa {
+    color: #fbfbfb;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  &:hover {
+    color: #4fba6f;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
 }
-
-button i {
-  font-size: 20px;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  -ms-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-button:hover i {
-  color: #4FBA6F;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  -ms-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-*/
