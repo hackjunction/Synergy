@@ -5,6 +5,7 @@ import Post from './Post';
 import About from './About';
 import Track from './Track';
 import Challenge from './Challenge';
+import AllTracks from './AllTracks';
 
 class App extends React.Component {
   render() {
@@ -24,6 +25,7 @@ class App extends React.Component {
           <Route exact path="/about" component={About} />
           <Route path="/tracks/:track" component={Track} />
           <Route path="/challenges/:challenge" component={Challenge} />
+          <Route path="/all-tracks" component={AllTracks} />
         </div>
       </div>
     );

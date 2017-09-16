@@ -55,7 +55,7 @@ export const getChallenge = id => {
         prize: challenge.acf.prize,
         partner: challenge.acf.partner,
         content: challenge.acf.content,
-        challenge_bg: challenge.acf.challenge_bg
+        challenge_bg: challenge.acf.challenge_bg,
       };
     });
 };
@@ -75,7 +75,7 @@ export const getChallenges = () => {
           prize: challenge.acf.prize,
           partner: challenge.acf.partner,
           content: challenge.acf.content,
-          challenge_bg: challenge.acf.challenge_bg
+          challenge_bg: challenge.acf.challenge_bg,
         };
       });
     });
