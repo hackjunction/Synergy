@@ -37,9 +37,6 @@ class AllTracks extends Component {
                   <Col className={styles.track_name} xs={12} sm={12} md={12}>
                     <h1>{track.title}</h1>
                   </Col>
-                  <Col className={styles.track_content} xs={12} sm={12} md={12}>
-                    <div dangerouslySetInnerHTML={{ __html: track.content }} />
-                  </Col>
 
                   {track.challenges &&
                     track.challenges.map(challenge => {
@@ -52,9 +49,6 @@ class AllTracks extends Component {
                         />
                       );
                     })}
-                  <a href="https://register.hackjunction.com/">
-                    <button className={styles.apply_button}>APPLY</button>
-                  </a>
                 </Row>
               </Grid>
             </div>
