@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
 // import Challenge from './challenges/Challenge';
-import Challenge from './common/ChallengeElement';
+import SimpleChallenge from './common/SimpleChallengeElement';
 
 class AllTracks extends Component {
   componentWillMount() {
@@ -18,30 +18,28 @@ class AllTracks extends Component {
     const { tracks } = this.props;
     return (
       <div>
+        <Grid className={styles.hero} fluid>
+          <Row className={styles.background_top} center="xs">
+            <Col>
+              <a href="/#tracks">
+                <img
+                  className={styles.junction_logo}
+                  src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
+                />
+              </a>
+            </Col>
+          </Row>
         {tracks.map(track => {
           return (
             <div className={styles.track_page} key={track.id}>
-              <Grid className={styles.hero} fluid>
-                <Row className={styles.background_top} center="xs">
-                  <Col>
-                    <a href="/#tracks">
-                      <img
-                        className={styles.junction_logo}
-                        src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
-                      />
-                    </a>
-                  </Col>
-                </Row>
-
-                <Row center="xs" className={styles.track_header}>
+                <Row className={styles.track_header}>
                   <Col className={styles.track_name} xs={12} sm={12} md={12}>
                     <h1>{track.title}</h1>
                   </Col>
-
                   {track.challenges &&
                     track.challenges.map(challenge => {
                       return (
-                        <Challenge
+                        <SimpleChallenge
                           key={challenge.id}
                           title={challenge.title}
                           content={challenge.content}
@@ -50,10 +48,11 @@ class AllTracks extends Component {
                       );
                     })}
                 </Row>
-              </Grid>
+
             </div>
           );
         })}
+        </Grid>
       </div>
     );
   }

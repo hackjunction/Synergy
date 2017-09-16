@@ -8,6 +8,7 @@ import Tracks from './landing/Tracks';
 import Partners from './landing/Partners';
 import Hacktalks from './landing/Hacktalks';
 import Media from './landing/Media';
+import Volunteer from './landing/Volunteer';
 import Footer from './landing/Footer';
 
 class Landing extends React.Component {
@@ -68,6 +69,9 @@ class Landing extends React.Component {
         </div>
         <div id="media">
           <Media />
+        </div>
+        <div id="volunteer">
+          <Volunteer />
         </div>
         <div id="footer">
           <Footer />
