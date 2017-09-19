@@ -142,10 +142,13 @@
 }
 
 .mlh {
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
   display:block;
   max-width:100px;
   min-width:60px;
-  position:fixed;
+  position:absolute;
   right:30px;
   top:0;
   width:10%;
