@@ -10,7 +10,6 @@ import Hacktalks from './landing/Hacktalks';
 import Media from './landing/Media';
 import Volunteer from './landing/Volunteer';
 import Footer from './landing/Footer';
-import Volunteer from './landing/Volunteer';
 
 class Landing extends React.Component {
   render() {
