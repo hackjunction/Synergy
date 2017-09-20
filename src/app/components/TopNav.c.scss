@@ -15,6 +15,7 @@ a {
 
 .header_wrapper {
   padding: 2em;
+  width: 80vw;
 }
 
 .header {
@@ -36,14 +37,14 @@ a {
 
   a {
     display: block;
-    padding: .7em;
+    padding: 0.7em;
     text-align: center;
-    color: #FBFBFB!important;
+    color: #fbfbfb !important;
     font-size: 1.2em;
-    border-bottom: 1px solid #FBFBFB;
-    transition: background-color .3s, color .3s;
+    border-bottom: 1px solid #fbfbfb;
+    transition: background-color 0.3s, color 0.3s;
     &:hover {
-      color: #35E2DF!important;;
+      color: #35e2df !important;
     }
   }
 }
@@ -59,7 +60,8 @@ a {
 
 @media only screen and (min-width: 700px) {
   .header {
-    flex-direction: row;}
+    flex-direction: row;
+  }
   .logo {
     margin-bottom: 0;
   }
@@ -72,15 +74,15 @@ a {
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     display: none;
   }
-  display:block;
-  max-width:100px;
-  min-width:60px;
-  position:absolute;
-  right:30px;
-  top:0;
-  width:10%;
-  z-index:10000;
-  img{
-    width:100%;
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  position: absolute;
+  right: 30px;
+  top: 0;
+  width: 10%;
+  z-index: 10000;
+  img {
+    width: 100%;
   }
 }
