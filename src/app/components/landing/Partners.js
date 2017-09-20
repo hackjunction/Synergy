@@ -118,7 +118,25 @@ const Partners = () =>
               src="https://staging.hackjunction.com/wp-content/uploads/2017/08/kone.png"
               className="responsive"
             />
-            </Col>
+          </Col>
+          <Col xs={4} md={3}>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2017/09/trimble.png"
+              className="responsive"
+            />
+          </Col>
+          <Col xs={4} md={3}>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2017/09/kamu.png"
+              className="responsive"
+            />
+          </Col>
+          <Col xs={4} md={3}>
+              <img
+                src="https://staging.hackjunction.com/wp-content/uploads/2017/09/trueface.png"
+                className="responsive"
+              />
+          </Col>
           <Col xs={4} md={3}>
             <img
               src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suneffects.png"
