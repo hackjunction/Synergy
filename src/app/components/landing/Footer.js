@@ -33,7 +33,7 @@ const Footer = () =>
       </Col>
     </Row>
     <Row center="xs" className={styles.base}>
-      <p>Designed and developed by the amazing Junction Team</p>
+      <p>Designed and developed by the amazing Junction Team</p> <br />
     </Row>
   </Block>;
 
