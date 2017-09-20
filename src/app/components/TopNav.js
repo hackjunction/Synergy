@@ -9,7 +9,7 @@ class TopNav extends React.Component {
         <header className={styles.header}>
           <Link to="/">
             <img
-              className={[styles.logo],[styles.junction_logo]}
+              className={styles.junction_logo}
               src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
             />
           </Link>

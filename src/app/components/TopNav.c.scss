@@ -10,7 +10,7 @@ a {
 .site_nav ul {
   display: flex;
   flex-direction: column;
-  padding-right: 100px;
+  padding-right: 120px;
 }
 
 .header_wrapper {
@@ -22,16 +22,9 @@ a {
   margin: 0 auto;
 }
 
-.logo {
-  margin-bottom: 1em;
-  align-self: center;
-  color: #FBFBFB!important;
-  font-size: 2em;
-}
-
 .junction_logo {
   width: 200px;
-  padding-top: 15%;
+  padding-top: 5%;
 }
 
 .site_nav {
@@ -54,12 +47,6 @@ a {
     }
   }
 }
-
-.site_content {
-  min-height: 600px;
-  background: burlywood;
-}
-
 @media only screen and (min-width: 500px) {
   .site_nav ul {
     flex-direction: row;
