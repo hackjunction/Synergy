@@ -1,7 +1,6 @@
 $color3: white;
 .track_page {
   background-color: #fbfbfb;
-  padding-top: 60px;
 }
 a:link {
   color: black;
@@ -56,7 +55,6 @@ h1 {
   width: 200px;
   padding-top: 15%;
 }
-
 .background_top {
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     height: 20vh;
@@ -98,11 +96,9 @@ h1 {
     line-height: 22px;
   }
 }
-
 .junction_website {
   background: none;
 }
-
 .apply_button {
   padding: 20px 40px;
   margin-top: 5%;
@@ -151,11 +147,9 @@ h1 {
   border-image: linear-gradient(to right, #ec008b, #35e2df);
   border-image-slice: 1;
 }
-
 .separator {
   border-top: 1px solid rgba(0,0,0, 0.2);
 }
-
 .block {
   background: #FBFBFB;
   color: #232323;
