@@ -6,11 +6,9 @@ import About from './About';
 import Track from './Track';
 import Challenge from './Challenge';
 import AllTracks from './AllTracks';
-<<<<<<< HEAD
 import AllPartners from './AllPartners';
-=======
 import Volunteer from './Volunteer';
->>>>>>> 5fbe1479a823b370594388fc62c85afa22618f31
+
 
 class App extends React.Component {
   render() {
