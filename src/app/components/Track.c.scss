@@ -151,3 +151,12 @@ h1 {
   border-image: linear-gradient(to right, #ec008b, #35e2df);
   border-image-slice: 1;
 }
+
+.separator {
+  border-top: 1px solid rgba(0,0,0, 0.2);
+}
+
+.block {
+  background: #FBFBFB;
+  color: #232323;
+}
