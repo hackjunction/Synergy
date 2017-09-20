@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header,
+.site_nav ul {
+  display: flex;
+  flex-direction: column;
+  padding-right: 100px;
+}
+
+.header_wrapper {
+  padding: 2em;
+}
+
+.header {
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-bottom: 1em;
+  align-self: center;
+  color: #FBFBFB!important;
+  font-size: 2em;
+}
+
+.junction_logo {
+  width: 200px;
+  padding-top: 15%;
+}
+
+.site_nav {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    padding: .7em;
+    text-align: center;
+    color: #FBFBFB!important;
+    font-size: 1.2em;
+    border-bottom: 1px solid #FBFBFB;
+    transition: background-color .3s, color .3s;
+    &:hover {
+      color: #35E2DF!important;;
+    }
+  }
+}
+
+.site_content {
+  min-height: 600px;
+  background: burlywood;
+}
+
+@media only screen and (min-width: 500px) {
+  .site_nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+    a {
+      border-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .header {
+    flex-direction: row;}
+  .logo {
+    margin-bottom: 0;
+  }
+  .site_nav {
+    margin-left: auto;
+  }
+}
+
+.mlh {
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    display: none;
+  }
+  display:block;
+  max-width:100px;
+  min-width:60px;
+  position:absolute;
+  right:30px;
+  top:0;
+  width:10%;
+  z-index:10000;
+  img{
+    width:100%;
+  }
+}
