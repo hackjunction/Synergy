@@ -14,11 +14,11 @@ class TopNav extends React.Component {
             />
           </Link>
           <nav className={styles.site_nav}>
-            <ul>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+            <ul center="xs">
+              <li><a href="/">HOME</a></li>
+              <li><a href="/all-tracks">TRACKS</a></li>
+              <li><a href="/partners">PARTNERS</a></li>
+              <li><a href="/partners">APPLY</a></li>
             </ul>
           </nav>
           <a className={styles.mlh} href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=gray">
