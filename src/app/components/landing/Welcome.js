@@ -7,7 +7,6 @@ import Block from '../viewBlocks/Block';
 import TopNav from '../TopNav';
 
 const Welcome = () => (
-<<<<<<< HEAD
   <Scroll.Element name="welcome" className={styles.block}>
     <TopNav />
     <Row center="xs">
@@ -24,11 +23,6 @@ const Welcome = () => (
       </Col>
     </Row>
     <Block contentClassName={styles.blockContent}>
-=======
-  <Scroll.Element name="welcome">
-    <Block className={styles.block} contentClassName={styles.blockContent}>
-      <TopNav />
->>>>>>> 85fae86084369dc2374d2a557c1419909e6cd1c0
       <Row center="xs" className="junction_welcome">
         <Col xs={12} className={styles.junction_hackthefuture}>
           <h1>
