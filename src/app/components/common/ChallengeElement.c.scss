@@ -61,6 +61,8 @@ h3{
 .left {
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   text-align: left;
 }
@@ -157,5 +159,13 @@ img {
     -o-transition: 0.5s ease;
     -ms-transition: 0.5s ease;
     transition: 0.5s ease;
+  }
+}
+.simple_challenge_logo {
+  width:150px !important;
+  margin-right:100px;
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

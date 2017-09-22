@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Col } from 'react-flexbox-grid';
+import { Col, Row } from 'react-flexbox-grid';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import styles from './ChallengeElement.c.scss';
 
@@ -13,7 +14,7 @@ class SimpleChallenge extends Component {
   }
   // render
   render() {
-    const { title, post_id } = this.props;
+    const { title, post_id, } = this.props;
     var data = {};
 
     if (this.props.challenges[post_id]) {
@@ -21,21 +22,30 @@ class SimpleChallenge extends Component {
     }
 
     return (
-      <Col xs={12} md={8}>
-        <h2 className={styles.left}> {title} </h2>
-        {data.prize && (
-          <div>
-            {data.prize.split('|').map(text => {
-              return (
-                <p className={styles.left} key={text}>
-                  Prize: {' '}
-                  {text}{' '}
-                </p>
-              );
-            })}
-          </div>
-        )}
-      </Col>
+      <Link to={`/challenges/${data.id}`} key={data.id}>
+        <Row center="xs">
+          <Col xs={12} md={4}>
+                {data.image && (
+                  <img className={styles.simple_challenge_logo} src={data.image} />
+                )}
+          </Col>
+          <Col xs={12} md={8}>
+            <h2 className={styles.left}> {title} </h2>
+            {data.prize && (
+              <div>
+                {data.prize.split('|').map(text => {
+                  return (
+                    <p className={styles.left} key={text}>
+                      Prize: {' '}
+                      {text}{' '}
+                    </p>
+                  );
+                })}
+              </div>
+            )}
+          </Col>
+        </Row>
+      </Link>
 
     );
   }

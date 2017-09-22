@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
 // import Challenge from './challenges/Challenge';
 import SimpleChallenge from './common/SimpleChallengeElement';
+import TopNav from './TopNav';
 
 class AllTracks extends Component {
   componentWillMount() {
@@ -17,21 +18,13 @@ class AllTracks extends Component {
   render() {
     const { tracks } = this.props;
     return (
-      <div>
         <Grid className={styles.hero} fluid>
           <Row className={styles.background_top} center="xs">
-            <Col>
-              <a href="/#tracks">
-                <img
-                  className={styles.junction_logo}
-                  src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
-                />
-              </a>
-            </Col>
+            <TopNav />
           </Row>
         {tracks.map(track => {
           return (
-            <div className={styles.track_page} key={track.id}>
+            <div className={[styles.track_page],[styles.all_tracks]} key={track.id}>
                 <Row className={styles.track_header}>
                   <Col className={styles.track_name} xs={12} sm={12} md={12}>
                     <h1>{track.title}</h1>
@@ -48,12 +41,10 @@ class AllTracks extends Component {
                       );
                     })}
                 </Row>
-
             </div>
           );
         })}
         </Grid>
-      </div>
     );
   }
 }

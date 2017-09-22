@@ -16,7 +16,7 @@ const AllPartners = () =>
           </a>
         </Col>
       </Row>
-      <div className={styles.track_page}>
+      <div className={[styles.track_page],[styles.all_tracks]}>
           <Row className={styles.track_header}>
             <Col className={styles.track_name} xs={12} sm={12} md={12}>
               <h1>JUNCTION PARTNERS</h1>
