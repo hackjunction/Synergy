@@ -2,19 +2,13 @@ import React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import styles from './Track.c.scss';
 import Block from "./viewBlocks/Block";
+import TopNav from './TopNav';
 
 const AllPartners = () =>
   <div>
     <Grid className={styles.hero} fluid>
+      <TopNav />
       <Row className={styles.background_top} center="xs">
-        <Col>
-          <a href="/#partners">
-            <img
-              className={styles.junction_logo}
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
-            />
-          </a>
-        </Col>
       </Row>
       <div className={[styles.track_page],[styles.all_tracks]}>
           <Row className={styles.track_header}>

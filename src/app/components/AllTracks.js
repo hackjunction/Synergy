@@ -19,8 +19,8 @@ class AllTracks extends Component {
     const { tracks } = this.props;
     return (
         <Grid className={styles.hero} fluid>
+          <TopNav />
           <Row className={styles.background_top} center="xs">
-            <TopNav />
           </Row>
         {tracks.map(track => {
           return (

@@ -8,6 +8,7 @@ import Challenge from './Challenge';
 import AllTracks from './AllTracks';
 import AllPartners from './AllPartners';
 import Volunteer from './Volunteer';
+import Junction2017 from './Junction2017';
 
 class App extends React.Component {
   render() {
@@ -30,6 +31,7 @@ class App extends React.Component {
           <Route path="/challenges/:challenge" component={Challenge} />
           <Route path="/all-tracks" component={AllTracks} />
           <Route path="/partners" component={AllPartners} />
+          <Route path="/junction2017" component={Junction2017} />
         </div>
       </div>
     );
