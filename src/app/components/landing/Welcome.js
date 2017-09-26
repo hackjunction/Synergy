@@ -4,12 +4,18 @@ import Scroll from 'react-scroll';
 import ReactRotatingText from 'react-rotating-text';
 import styles from './Welcome.c.scss';
 import Block from '../viewBlocks/Block';
-import TopNav from '../TopNav';
 
 const Welcome = () => (
   <Scroll.Element name="welcome" className={styles.block}>
-    <TopNav />
     <Row center="xs">
+      <Col>
+        <a href="/#tracks">
+          <img
+            className="junction_logo"
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
+          />
+      </a>
+      </Col>
       <Col>
         <a
           className={styles.mlh}
