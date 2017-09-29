@@ -19,7 +19,7 @@ const Welcome = () => (
       <Col>
         <a
           className={styles.mlh}
-          href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=gray"
+          href="https://mlh.io/seasons/eu-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=gray"
         >
           <img
             src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/gray.svg"

@@ -104,6 +104,21 @@ const Hacktalks = () => (
           </FaqSection>
         </Col>
         <Col xs={12} md={6} className={styles.faqCell}>
+          <FaqSection question="Can I get help with my Visa application?">
+            <p>
+              Yes, we understand some participants coming to Junction,
+              need a Visa application and we are more than happy to help
+              with a Visa invitation letter. To proceed with this we will
+              need some information for the letter that you can
+              <a href="https://hackjunction.typeform.com/to/Oq2fDR">submit here</a>
+            </p>
+            <p>
+              Note: We can only send Visa invitations to accepted participants
+              who have confirmed they are coming to our event.
+            </p>
+          </FaqSection>
+        </Col>
+        <Col xs={12} md={6} className={styles.faqCell}>
           <FaqSection question="How can I form my team?">
             <p>
               If you don’t yet have a team we will also help with matching
@@ -186,6 +201,15 @@ const Hacktalks = () => (
             <p>
               We’ll have a wide variety of hardware at the event - more info to
               come soon! 😊
+            </p>
+          </FaqSection>
+        </Col>
+        <Col xs={12} md={6} className={styles.faqCell}>
+          <FaqSection question="What about the schedule?">
+            <p>
+              Doors to the venue will open on November 24th 16.30 and Junction 2017
+              officially ends on November 26th 18.00. Check here again for a link
+              with the detailed program soon.
             </p>
           </FaqSection>
         </Col>
