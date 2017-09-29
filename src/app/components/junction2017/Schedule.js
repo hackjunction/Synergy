@@ -1,12 +1,10 @@
 import React from "react";
 import { Row, Col } from "react-flexbox-grid";
-import Scroll from 'react-scroll';
 import styles from "./Schedule.c.scss";
 import Block from "../viewBlocks/Block";
 import BlockHeader from "../viewBlocks/BlockHeader";
 
-const About = () =>
-  <Scroll.Element name="schedule">
+const Schedule = () =>
     <Block className={styles.block}>
       <Row>
         <Col xs={12} className="bold text-secondary">
@@ -151,7 +149,6 @@ const About = () =>
         </tr>
       </table>
 
-    </Block>
-  </Scroll.Element>;
+    </Block>;
 
-export default About;
+export default Schedule;

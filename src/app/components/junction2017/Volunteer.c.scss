@@ -1,7 +1,11 @@
-.separator {
-  border-top: 1px solid rgba(0,0,0, 0.2);
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.paragraph{
+  text-align: center;
+}
 .volunteer_button {
   padding: 20px 40px;
   margin-top: 5%;

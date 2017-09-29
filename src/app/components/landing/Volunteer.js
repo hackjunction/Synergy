@@ -5,7 +5,7 @@ import Block from '../viewBlocks/Block';
 import BlockHeader from '../viewBlocks/BlockHeader';
 import styles from './Volunteer.c.scss';
 
-const Media = () =>
+const Volunteer = () =>
   <Scroll.Element name="volunteer">
     <Block className={styles.block}>
       <Row>
@@ -24,4 +24,4 @@ const Media = () =>
     </Block>
   </Scroll.Element>;
 
-export default Media;
+export default Volunteer;

@@ -160,4 +160,16 @@ h1 {
   align-items: center !important;
   display: flex !important;
   justify-content: space-between !important;
+  a:link {
+    color: black;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+    text-decoration: none;
+  }
 }
