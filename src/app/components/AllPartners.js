@@ -3,29 +3,15 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 import styles from './Track.c.scss';
 import Block from "./viewBlocks/Block";
 import TopNav from './TopNav';
+import TitleMod from './TitleMod';
 
 const AllPartners = () =>
   <div>
     <Grid className={styles.hero} fluid>
       <TopNav />
       <Row className={styles.background_top} center="xs">
+      <TitleMod />
       </Row>
-      <div className={[styles.track_page],[styles.all_tracks]}>
-          <Row className={styles.track_header}>
-            <Col className={styles.track_name} xs={12} sm={12} md={12}>
-              <h1>JUNCTION PARTNERS</h1>
-            </Col>
-            <Col>
-              <p>
-                Our partners help us shape the experience of Junction into this global event.
-              </p>
-              <p>
-                Are you are interested in being one of them? Contact us at partnerships@hackjunction.com
-                and help in shaping the future of Junction.
-              </p>
-            </Col>
-          </Row>
-      </div>
     </Grid>
     <Block className={styles.block}>
     <Row center="xs">

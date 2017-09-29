@@ -3,6 +3,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
+import TitleMod from './TitleMod';
 // import Challenge from './challenges/Challenge';
 import SimpleChallenge from './common/SimpleChallengeElement';
 import TopNav from './TopNav';
@@ -21,6 +22,7 @@ class AllTracks extends Component {
         <Grid className={styles.hero} fluid>
           <TopNav />
           <Row className={styles.background_top} center="xs">
+          <TitleMod />
           </Row>
         {tracks.map(track => {
           return (

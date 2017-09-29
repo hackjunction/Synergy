@@ -10,7 +10,7 @@ class Junction2017 extends React.Component {
   render() {
     return (
       <div>
-        <div id="volunteer">
+        <div id="title">
           <Volunteer />
         </div>
         <div id="schedule">
