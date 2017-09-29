@@ -21,9 +21,34 @@ table.table { width: 100%; }
   padding-top: 50px;
 }
 
-.table_title {
+.table_title_first_col {
   font-family: 'Montserrat';
   font-weight: 700;
+  width: 15%;
+}
+
+.table_title_second_col {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  width: 70%;
+}
+
+.table_title_third_col {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  width: 15%;
+}
+
+.table_row_first_col {
+  width: 15%;
+}
+
+.table_row_second_col {
+  width: 70%;
+}
+
+.table_row_third_col {
+  width: 15%;
 }
 
 @media screen and (max-width: 800px) {
