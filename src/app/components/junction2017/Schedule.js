@@ -25,127 +25,127 @@ const Schedule = () =>
       <h2 className={styles.days}>FRIDAY</h2>
       <table className={styles.table}>
         <tr>
-          <th className={styles.table_title}>TIME</th>
-          <th className={styles.table_title}>EVENT</th>
-          <th className={styles.table_title}>LOCATION</th>
+          <th className={styles.table_title_first_col}>TIME</th>
+          <th className={styles.table_title_second_col}>EVENT</th>
+          <th className={styles.table_title_third_col}>LOCATION</th>
         </tr>
         <tr>
-          <td>16:30</td>
-          <td>Doors Open</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>16:30</td>
+          <td className={styles.table_row_second_col}>Doors Open</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>18:00</td>
-          <td>Opening Ceremony</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>18:00</td>
+          <td className={styles.table_row_second_col}>Opening Ceremony</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>18:20</td>
-          <td>Opening Keynote</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>18:20</td>
+          <td className={styles.table_row_second_col}>Opening Keynote</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>18:45</td>
-          <td>Program: Partner challenge intros</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>18:45</td>
+          <td className={styles.table_row_second_col}>Program: Partner challenge intros</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>18:45</td>
-          <td>Team Building</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>18:45</td>
+          <td className={styles.table_row_second_col}>Team Building</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
       </table>
 
       <h2 className={styles.days}>SATURDAY</h2>
       <table className={styles.table}>
         <tr>
-          <th className={styles.table_title}>TIME</th>
-          <th className={styles.table_title}>EVENT</th>
-          <th className={styles.table_title}>LOCATION</th>
+          <th className={styles.table_title_first_col}>TIME</th>
+          <th className={styles.table_title_second_col}>EVENT</th>
+          <th className={styles.table_title_third_col}>LOCATION</th>
         </tr>
         <tr>
-          <td>09:00</td>
-          <td>Breakfast</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>09:00</td>
+          <td className={styles.table_row_second_col}>Breakfast</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>10:00</td>
-          <td>Program: API Demos, Workshops, Yoga and other</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>10:00</td>
+          <td className={styles.table_row_second_col}>Program: API Demos, Workshops, Yoga and other</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>12:00</td>
-          <td>Lunch</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>12:00</td>
+          <td className={styles.table_row_second_col}>Lunch</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>13:45</td>
-          <td>Program: Workouts, Lighting Talks, Demos, Meetups, Meditation</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>13:45</td>
+          <td className={styles.table_row_second_col}>Program: Workouts, Lighting Talks, Demos, Meetups, Meditation</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>17:00</td>
-          <td>Dinner</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>17:00</td>
+          <td className={styles.table_row_second_col}>Dinner</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>18:30</td>
-          <td>Program: Keynotes, Demos, Karaoke</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>18:30</td>
+          <td className={styles.table_row_second_col}>Program: Keynotes, Demos, Karaoke</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
       </table>
 
       <h2 className={styles.days}>SUNDAY</h2>
       <table className={styles.table}>
         <tr>
-          <th className={styles.table_title}>TIME</th>
-          <th className={styles.table_title}>EVENT</th>
-          <th className={styles.table_title}>LOCATION</th>
+          <th className={styles.table_title_first_col}>TIME</th>
+          <th className={styles.table_title_second_col}>EVENT</th>
+          <th className={styles.table_title_third_col}>LOCATION</th>
         </tr>
         <tr>
-          <td>09:00</td>
-          <td>Breakfast</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>09:00</td>
+          <td className={styles.table_row_second_col}>Breakfast</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>10:00</td>
-          <td>Seating, Challenge & Track Deadline	</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>10:00</td>
+          <td className={styles.table_row_second_col}>Seating, Challenge & Track Deadline	</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>12:00</td>
-          <td>Devpost Closes</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>12:00</td>
+          <td className={styles.table_row_second_col}>Devpost Closes</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>12:30</td>
-          <td>Demo EXPO opens</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>12:30</td>
+          <td className={styles.table_row_second_col}>Demo EXPO opens</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>14:30</td>
-          <td>Demo EXPO ends</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>14:30</td>
+          <td className={styles.table_row_second_col}>Demo EXPO ends</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>15:00</td>
-          <td>Prize Ceremony starts</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>15:00</td>
+          <td className={styles.table_row_second_col}>Prize Ceremony starts</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>16:00</td>
-          <td>Track Winner Demos</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>16:00</td>
+          <td className={styles.table_row_second_col}>Track Winner Demos</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>17:30</td>
-          <td>Closing ceremony</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>17:30</td>
+          <td className={styles.table_row_second_col}>Closing ceremony</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
         <tr>
-          <td>18:00</td>
-          <td>After Party starts!</td>
-          <td>Dipoli</td>
+          <td className={styles.table_row_first_col}>18:00</td>
+          <td className={styles.table_row_second_col}>After Party starts!</td>
+          <td className={styles.table_row_third_col}>Dipoli</td>
         </tr>
       </table>
 
