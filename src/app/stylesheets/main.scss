@@ -237,12 +237,7 @@ nav.junction_menu {
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
-  z-index: 900;
+  display: none;
 }
 
 /* Color/shape of burger icon bars */
