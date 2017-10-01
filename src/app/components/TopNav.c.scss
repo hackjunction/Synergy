@@ -4,16 +4,16 @@ body {
 
 a {
   text-decoration: none;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 300;
-  font-size: 16px!important;
+  font-size: 16px !important;
 }
 a:link {
-  color: #FBFBFB;
+  color: #fbfbfb;
   text-decoration: none;
 }
 a:visited {
-  color: #FBFBFB;
+  color: #fbfbfb;
   text-decoration: none;
 }
 a:hover {
@@ -75,9 +75,9 @@ a:active {
       text-decoration: none;
     }
   }
-  li  {
-  display: inline-block;
-}
+  li {
+    display: inline-block;
+  }
 }
 @media only screen and (min-width: 500px) {
   .site_nav ul {
@@ -114,7 +114,6 @@ a:active {
   right: 30px;
   top: 0;
   width: 10%;
-  z-index: 10000;
   img {
     width: 100%;
   }
