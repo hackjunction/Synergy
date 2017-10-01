@@ -6,8 +6,7 @@ import BlockHeader from "../viewBlocks/BlockHeader";
 
 const Venue = () =>
 
-    <Block className={styles.block}>
-      <div className={styles.content}>
+    <Block className={styles.block} contentClassName={styles.content}>
       <Row>
         <Col xs={12} className="bold text-secondary">
           <h4>HARDWARE</h4>
@@ -120,7 +119,6 @@ const Venue = () =>
               </ul>
             </p>
       </Row>
-    </div>
     </Block>
     ;
 

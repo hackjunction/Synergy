@@ -10,7 +10,6 @@ import TopNav from './TopNav';
 
 class AllTracks extends Component {
   componentWillMount() {
-    console.log('coucou');
     if (this.props.tracks.length == 0) {
       this.props.getTracks();
     }

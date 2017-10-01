@@ -5,7 +5,7 @@ import Block from "../viewBlocks/Block";
 import BlockHeader from "../viewBlocks/BlockHeader";
 
 const Schedule = () =>
-    <Block className={styles.block}>
+    <Block className={styles.block} contentClassName={styles.content}>
       <Row>
         <Col xs={12} className="bold text-secondary">
           <h4>SCHEDULE</h4>

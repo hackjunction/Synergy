@@ -6,7 +6,7 @@ import BlockHeader from "../viewBlocks/BlockHeader";
 
 const Venue = () =>
 
-    <Block className={styles.block}>
+    <Block className={styles.block} contentClassName={styles.content}>
       <Row>
         <Col xs={12} className="bold text-secondary">
           <h4>VENUE</h4>
@@ -14,7 +14,7 @@ const Venue = () =>
       </Row>
       <BlockHeader title="HAVE YOU EVER HACKED IN A BUNKER?" />
       <Row>
-        <Col xs={12}>
+        <Col xs={12} md={8}>
         <p>
           One thing is guaranteed with Junction and that is not being bored, ever.
           This year we take our venue one step further where we are going to be
