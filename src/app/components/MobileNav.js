@@ -1,13 +1,35 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import Media from "react-media";
-import styles from "./TopNav.c.scss";
+import styles from "./MobileNav.c.scss";
 
 class MobileNav extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      isMenuOpen: false,
+    };
+    window.openNavigationMenu = this.openMenu;
+  }
+
+  openMenu = () => {
+    this.setState({ isMenuOpen: true });
+  };
+
+  menuStateChanged = menuState => {
+    this.setState({ isMenuOpen: menuState.isOpen });
+  };
+
   render() {
     return (
-      <Media query="(max-width: 1000px)">
-        <Menu pageWrapId={"junction_website"} outerContainerId={"app"} right>
+      <Media query="(max-width: 900px)">
+        <Menu
+          pageWrapId={"junction_website"}
+          outerContainerId={"app"}
+          right
+          onStateChange={this.menuStateChanged}
+          isOpen={this.state.isMenuOpen}
+        >
           <nav className={styles.site_nav}>
             <ul center="xs">
               <li>

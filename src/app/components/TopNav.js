@@ -14,7 +14,7 @@ class TopNav extends React.Component {
               src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
             />
           </Link>
-          <Media query="(min-width: 1001px)">
+          <Media query="(min-width: 901px)">
             <nav className={styles.site_nav}>
               <ul center="xs">
                 <li>
@@ -34,6 +34,9 @@ class TopNav extends React.Component {
                 </li>
               </ul>
             </nav>
+          </Media>
+          <Media query="(max-width: 900px)">
+            <span onClick={window.openNavigationMenu}>BURGER</span>
           </Media>
           <a
             className={styles.mlh}
