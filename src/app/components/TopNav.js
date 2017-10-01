@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Media from "react-media";
 import styles from "./TopNav.c.scss";
 
 class TopNav extends React.Component {
@@ -13,25 +14,27 @@ class TopNav extends React.Component {
               src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
             />
           </Link>
-          <nav className={styles.site_nav}>
-            <ul center="xs">
-              <li>
-                <a href="/">HOME</a>
-              </li>
-              <li>
-                <a href="/junction2017">JUNCTION2017</a>
-              </li>
-              <li>
-                <a href="/all-tracks">TRACKS</a>
-              </li>
-              <li>
-                <a href="/partners">PARTNERS</a>
-              </li>
-              <li>
-                <a href="https://register.hackjunction.com/">APPLY</a>
-              </li>
-            </ul>
-          </nav>
+          <Media query="(min-width: 1001px)">
+            <nav className={styles.site_nav}>
+              <ul center="xs">
+                <li>
+                  <a href="/">HOME</a>
+                </li>
+                <li>
+                  <a href="/junction2017">JUNCTION2017</a>
+                </li>
+                <li>
+                  <a href="/all-tracks">TRACKS</a>
+                </li>
+                <li>
+                  <a href="/partners">PARTNERS</a>
+                </li>
+                <li>
+                  <a href="https://register.hackjunction.com/">APPLY</a>
+                </li>
+              </ul>
+            </nav>
+          </Media>
           <a
             className={styles.mlh}
             href="https://mlh.io/seasons/eu-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=gray"
