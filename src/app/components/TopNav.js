@@ -36,7 +36,7 @@ class TopNav extends React.Component {
             </nav>
           </Media>
           <Media query="(max-width: 900px)">
-            <span onClick={window.openNavigationMenu}>BURGER</span>
+            <span onClick={window.openNavigationMenu}>MENU</span>
           </Media>
           <a
             className={styles.mlh}
