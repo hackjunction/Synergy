@@ -12,13 +12,16 @@ const Venue = () =>
           <h4>VENUE</h4>
         </Col>
       </Row>
-      <BlockHeader title="HAVE YOU EVER HACKED IN A BUNKER?" />
+      <BlockHeader title="BACK TO THE ROOTS" />
       <Row>
         <Col xs={12} md={8}>
         <p>
-          One thing is guaranteed with Junction and that is not being bored, ever.
-          This year we take our venue one step further where we are going to be
-          hacking in an underground bunker. Does it get better than that?
+          unction is meant to be seen, heard and most importantly felt.
+          This year, we’re taking Junction back to its roots to Espoo
+          and creating a new world of hackathons inside Aalto University’s
+          newly renovated main building, Dipoli. Like the years before,
+          our unique venue designs guarantee an extraordinary experience
+          for everyone stepping inside Junction.
         </p>
       </Col>
       </Row>
