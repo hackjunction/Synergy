@@ -29,7 +29,7 @@ const AllPartners = () =>
       </Col>
       <Col xs={6} md={4}>
         <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/nordea.png"
+          src="https://staging.hackjunction.com/wp-content/uploads/2017/09/N_L1_B4_RGB-1.png"
           className="responsive"
         />
       </Col>
