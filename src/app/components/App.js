@@ -2,7 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 import Landing from "./Landing";
 import Post from "./Post";
-import About from "./About";
+import Community from "./Community";
 import Track from "./Track";
 import Challenge from "./Challenge";
 import AllTracks from "./AllTracks";
@@ -28,7 +28,7 @@ class App extends React.Component {
           <div>
             <Route exact path="/" component={Landing} />
             <Route exact path="/post" component={Post} />
-            <Route exact path="/about" component={About} />
+            <Route exact path="/community" component={Community} />
             <Route exact path="/volunteer" component={Volunteer} />
             <Route path="/tracks/:track" component={Track} />
             <Route path="/challenges/:challenge" component={Challenge} />

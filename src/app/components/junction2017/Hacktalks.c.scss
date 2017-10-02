@@ -1,4 +1,23 @@
 .faqCell {
   margin-top: 16px;
   margin-bottom: 16px;
+  a:link {
+    color: #35e2df !important;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #35e2df !important;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #35e2df !important;
+    text-decoration: none;
+  }
+  a {
+    border-bottom: 1px solid #35e2df !important;
+    display: inline-block;
+    line-height: 25px;
+    margin: 20px 0;
+    text-decoration: none;
+  }
 }

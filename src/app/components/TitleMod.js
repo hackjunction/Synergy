@@ -4,7 +4,7 @@ import Block from './viewBlocks/Block';
 import styles from './TitleMod.c.scss';
 
 const TitleMod = () =>
-    <Block className={styles.block}>
+    <Block className={styles.block} contentClassName={styles.content}>
       <Row className={styles.block}>
       <h1>WANT TO BUILD JUNCTION WITH US?</h1>
         <p className={styles.paragraph}>

@@ -10,7 +10,7 @@ const Volunteer = () =>
     <Block className={styles.block}>
       <Row>
         <Col xs={12} className="bold text-secondary">
-          <h4>COMMUNITY</h4>
+          <h4>VOLUNTEER</h4>
         </Col>
       </Row>
       <BlockHeader title="WANT TO BUILD JUNCTION WITH US?">

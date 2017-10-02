@@ -67,37 +67,7 @@ const Partners = () =>
         </Col>
         <Col xs={4} md={3}>
           <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suunto.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/sitra.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/08/helvar.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/procountor.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/finnid.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/aalto.png"
             className="responsive"
           />
         </Col>
@@ -109,48 +79,29 @@ const Partners = () =>
         </Col>
         <Col xs={4} md={3}>
           <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/qt.png"
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/nitor.png"
             className="responsive"
           />
-          </Col>
-          <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/09/nitor.png"
-              className="responsive"
-            />
-          </Col>
-          <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/08/kone.png"
-              className="responsive"
-            />
-          </Col>
-          <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/09/trimble.png"
-              className="responsive"
-            />
-          </Col>
-          <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/09/kamu.png"
-              className="responsive"
-            />
-          </Col>
-          <Col xs={4} md={3}>
-              <img
-                src="https://staging.hackjunction.com/wp-content/uploads/2017/09/trueface.png"
-                className="responsive"
-              />
-          </Col>
-          <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suneffects.png"
-              className="responsive"
-            />
-          </Col>
-
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/kone.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/trimble.png"
+            className="responsive"
+          />
+        </Col>
       </Row>
+      <Col className={styles.all_partners}>
+        <a href="https://hackjunction.com/partners">
+          <button className={styles.apply_button}>SEE ALL</button>
+        </a>
+      </Col>
+
     </Block>
   </Scroll.Element>;
 

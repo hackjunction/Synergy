@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
+import TopNav from './TopNav';
 
 class Challenge extends Component {
   componentDidMount() {
@@ -36,13 +37,8 @@ class Challenge extends Component {
       <div className={styles.track_page}>
         <Grid className={styles.hero} fluid>
           <Row style={style} className={styles.background_top} center="xs">
-            <Col>
-              <a href="/#tracks">
-                <img
-                  className={styles.junction_logo}
-                  src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
-                />
-            </a>
+            <Col className={styles.track_name} xs={12} sm={12} md={12} lg={12}>
+              <TopNav />
             </Col>
           </Row>
 

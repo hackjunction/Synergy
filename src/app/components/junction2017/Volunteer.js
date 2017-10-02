@@ -8,7 +8,7 @@ import TopNav from '../TopNav';
 const Volunteer = () =>
   <Scroll.Element name="junction 2017">
     <TopNav />
-    <Block className={styles.block}>
+    <Block className={styles.block} contentClassName={styles.content}>
       <Row className={styles.block}>
       <h1>WANT TO BUILD JUNCTION WITH US?</h1>
         <p className={styles.paragraph}>

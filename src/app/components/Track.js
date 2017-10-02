@@ -5,6 +5,7 @@ import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
 import Challenge from './common/ChallengeElement';
+import TopNav from './TopNav';
 
 class Track extends Component {
   componentDidMount() {
@@ -31,23 +32,17 @@ class Track extends Component {
     var style = {
       backgroundImage: `url(${track.image})`,
       backgroundRepeat: "no-repeat",
-      backgroundSize: "cover"
+      backgroundSize: "cover",
     };
 
     return (
       <div className={styles.track_page}>
         <Grid className={styles.hero} fluid>
-          <Row style={style} className={styles.background_top} center="xs">
-            <Col>
-              <a href="/#tracks">
-                <img
-                  className={styles.junction_logo}
-                  src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
-                />
-              </a>
+          <Row style={style} className={styles.background_top}>
+            <Col className={styles.track_name} xs={12} sm={12} md={12} lg={12}>
+              <TopNav />
             </Col>
           </Row>
-
           <Row center="xs" className={styles.track_header}>
             <Col className={styles.track_name} xs={12} sm={12} md={12}>
               <h1>{track.title}</h1>

@@ -16,9 +16,12 @@ class TopNav extends React.Component {
           </Link>
           <Media query="(min-width: 901px)">
             <nav className={styles.site_nav}>
-              <ul center="xs">
+              <ul>
                 <li>
                   <a href="/">HOME</a>
+                </li>
+                <li>
+                  <a href="/community">COMMUNITY</a>
                 </li>
                 <li>
                   <a href="/junction2017">JUNCTION2017</a>

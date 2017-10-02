@@ -1,6 +1,9 @@
 $color3: white;
 .track_page {
   background-color: #fbfbfb;
+  .top_nav_tracks{
+    background-color: #232323 !important;
+  }
 }
 a:link {
   color: black;
@@ -15,7 +18,14 @@ a:hover {
   text-decoration: none;
 }
 h1 {
-  line-height: 3rem;
+  @media only screen and (min-width: 320px) {
+      font-size: 24px;
+      line-height: 28px;
+  }
+  @media only screen and (min-width: 500px) {
+      font-size: 32px;
+      line-height: 45px;
+  }
 }
 .challenge_content h2 {
   text-align: left !important;
@@ -50,7 +60,6 @@ h1 {
 .junction_logo {
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     margin-top: 25%;
-    /* Styles */
   }
   width: 200px;
   padding-top: 15%;
@@ -59,7 +68,6 @@ h1 {
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     min-height: 20vh;
     width: 100%;
-    /* Styles */
   }
   @media only screen and (min-width: 321px) and (max-device-width: 1024px) {
     min-height: 40vh;
@@ -155,6 +163,18 @@ h1 {
   color: #232323;
 }
 .all_tracks{
+  h1 {
+    @media only screen and (min-width: 320px) {
+        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    @media only screen and (min-width: 500px) {
+        text-align: left;
+        font-size: 32px;
+        line-height: 45px;
+    }
+  }
   background-color: #fbfbfb;
   padding-top:120px !important;
   align-items: center !important;
