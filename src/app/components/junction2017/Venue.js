@@ -16,7 +16,7 @@ const Venue = () =>
       <Row>
         <Col xs={12} md={8}>
         <p>
-          unction is meant to be seen, heard and most importantly felt.
+          Junction is meant to be seen, heard and most importantly felt.
           This year, we’re taking Junction back to its roots to Espoo
           and creating a new world of hackathons inside Aalto University’s
           newly renovated main building, Dipoli. Like the years before,
