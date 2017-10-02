@@ -14,7 +14,7 @@ const Venue = () =>
       </Row>
       <BlockHeader title="BACK TO THE ROOTS" />
       <Row>
-        <Col xs={12} md={8}>
+        <Col xs={12}>
         <p>
           Junction is meant to be seen, heard and most importantly felt.
           This year, we’re taking Junction back to its roots to Espoo
