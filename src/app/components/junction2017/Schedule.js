@@ -11,7 +11,7 @@ const Schedule = () =>
           <h4>SCHEDULE</h4>
         </Col>
       </Row>
-      <BlockHeader title="2 DAYS OF AWESOMENESS!" />
+      <BlockHeader title="3 DAYS OF AWESOMENESS!" />
       <Row>
         <Col xs={12}>
         <p>

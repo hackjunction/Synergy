@@ -57,8 +57,8 @@ const Community = () =>
           Helsinki, Finland Junction is the place to design and develop
           your ideas into actual projects together with like-minded hackers.
         </p>
-        <a href="https://register.hackjunction.com/">
-          <button className={styles.apply_button}>APPLY</button>
+        <a href="/volunteer">
+          <button className={styles.apply_button}>VOLUNTEER</button>
         </a>
       </Col>
     </Row>
