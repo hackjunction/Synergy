@@ -53,7 +53,7 @@ const AllPartners = () =>
       </Col>
       <Col xs={6} md={4}>
         <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/stara.png"
+          src="https://staging.hackjunction.com/wp-content/uploads/2017/10/stara.png"
           className="responsive"
         />
       </Col>
