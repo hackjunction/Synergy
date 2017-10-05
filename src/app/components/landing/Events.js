@@ -24,11 +24,11 @@ const Events = () =>
       <Col xs={12}>
         <a href="https://blog.hackjunction.com/dear-linus-can-you-please-reply-to-my-messages-f596b929d09f"><img
           className="junction_events_hacktalks responsive"
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/hacktalks.jpg"
+          src="http://hacktalks.hackjunction.com"
         /></a>
       <h3>HACK\TALKS</h3>
       <p>Hack\Talks is all about inspiring you. The evening will consist of intriguing keynotes and deep-tech learnings from industry experts. This is something you don’t want to miss. Speaker announcements coming soon!</p>
-      <p className={styles.hacktalks_link}><a href="https://blog.hackjunction.com/dear-linus-can-you-please-reply-to-my-messages-f596b929d09f">ATTEND</a></p>
+      <p className={styles.hacktalks_link}><a href="http://hacktalks.hackjunction.com">ATTEND</a></p>
       </Col>
     </Row>
     <EventList />

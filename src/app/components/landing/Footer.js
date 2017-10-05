@@ -33,7 +33,13 @@ const Footer = () =>
       </Col>
     </Row>
     <Row center="xs" className={styles.base}>
-      <p>Designed and developed by the amazing Junction Team</p> <br />
+      <p>
+        Designed and developed with 💕 &amp; ☕ by the amazing Junction Team
+        <br />
+        Released as <a href="https://github.com/hackjunction/Synergy">Open Source project under the MIT License</a>.
+
+      </p>
+
     </Row>
   </Block>;
 
