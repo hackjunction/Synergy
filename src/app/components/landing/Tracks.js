@@ -15,7 +15,7 @@ class Tracks extends Component {
     this.props.dispatch({ type: 'GET_TRACKS' });
   }
   render() {
-    var grid = [[6, 6], [6, 6], [6, 6], [6, 6], [6, 6],[6, 6]];
+    var grid = [[6, 6], [6, 6], [6, 6], [6, 6], [6, 6], [6, 6]];
     var i = 0;
 
     return (
@@ -28,7 +28,7 @@ class Tracks extends Component {
           </Row>
           <BlockHeader title="BUILDING FOR TOMORROW">
             <p>
-              We have put together everything you need for you to build your next project. Junction 2017 is divided into multiple tracks, each including several challenges set by our amazing partners.
+              Junction 2017 is divided into multiple tracks, each including several challenges set by our amazing partners. The best project will be awarded with the main prize of <span className={styles.text_highlight}>20k€</span>.
             </p>
           </BlockHeader>
           {grid.map(row => {

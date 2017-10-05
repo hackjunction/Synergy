@@ -17,7 +17,7 @@ const About = () =>
       <Row className="junction_about">
         <Col xs={12} className="junction-description">
           Junction is a{" "}
-          <span className="text-secondary">global converging point*</span> for
+          <span className="text-secondary">meeting point*</span> for
         thousands of developers, designers, and entrepreneurs from around the
         world.
       </Col>
@@ -25,7 +25,7 @@ const About = () =>
       <Row>
         <Col xs={12} className="junction-description">
           {" "}<span className="text-tetriary">
-            * We really mean; a hackathon experience like no other with awesome people.
+            * of 77 nationalities to be exact and a hackathon experience like no other.
         </span>
         </Col>
       </Row>

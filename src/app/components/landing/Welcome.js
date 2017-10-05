@@ -13,26 +13,22 @@ const Welcome = () => (
       <Row center="xs" className="junction_welcome">
         <Col xs={12} className={styles.junction_hackthefuture}>
           <h1>
-            HACK THE FUTURE OF <br />
+            {" EUROPE'S BIGGEST HACKATHON "} <br />
             <br />
             <div className={styles.rotating_text}>
               <ReactRotatingText
                 color="#35E2DF"
                 items={[
-                  'GAMING',
-                  'INTELLIGENT BUILDINGS',
-                  'HEALTHTECH',
-                  'LOGISTICS',
-                  'ENTERTAINMENT',
-                  'MOBILITY',
-                  'INDUSTRIAL INTERNET',
-                  'FINTECH',
+                  '1300 HACKERS',
+                  '80 NATIONALITIES',
+                  '60+ PARTNER COMPANIES',
+                  '20.000€ MAIN PRIZE',
                 ]}
               />
             </div>
           </h1>
           <br />
-          <h2>24-26 November - Helsinki</h2>
+          <h2 className={styles.event_dates}>24-26 November - Helsinki</h2>
           <a href="https://register.hackjunction.com/">
             <button className={styles.apply_button}>APPLY</button>
           </a>
