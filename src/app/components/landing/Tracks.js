@@ -31,12 +31,12 @@ class Tracks extends Component {
               Junction 2017 is divided into multiple tracks, each including several challenges set by our amazing partners. The best project will be awarded with the main prize of <span className={styles.text_highlight}>20k€</span>.
             </p>
           </BlockHeader>
-          {grid.map(row => {
+          {grid.map((row, rowI) => {
             return (
-              <Row height={1} className={styles.track_row} center="xs">
-                {row.map(width => {
+              <Row height={1} key={rowI} className={styles.track_row} center="xs">
+                {row.map((width, colI) => {
                   var element = (
-                    <Col xs={width * 2} md={width} lg={width}>
+                    <Col xs={width * 2} key={colI} md={width} lg={width}>
                       {this.props.tracks[i] ? (
                         <TrackElement key={i} post={this.props.tracks[i]} />
                       ) : (
