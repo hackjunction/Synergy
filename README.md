@@ -16,7 +16,7 @@ npm install -g yarn
 yarn
 ```
 
-3. Copy `dotenv` as `.env` to get your local configuration in place. *Use `src/lib/config.js` to import configuration to other script files!*
+3. Add `.env` to get your local configuration in place (Ask for the keys). *Use `src/lib/config.js` to import configuration to other script files!*
 
 4. Launch the internal server
 ```
