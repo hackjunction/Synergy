@@ -16,7 +16,7 @@ export const getPartners = () => wordpressApiClient.get('/posts');
 
 export const getTracks = () => {
   return wordpressApiClient
-    .get('/posts?_embed&categories=2')
+    .get('/posts?_embed&categories=2&per_page=100')
     .then(tracks => tracks.data)
     .then(tracks => {
       return tracks.map(track => {
