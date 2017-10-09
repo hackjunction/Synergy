@@ -52,7 +52,12 @@ class Track extends Component {
             </Col>
 
             {track.challenges &&
-              track.challenges.map(challenge => {
+              track.challenges.sort((challenge1, challenge2) => {
+                if(this.props.challenges[challenge1.id] && this.props.challenges[challenge2.id])
+                  return Number(this.props.challenges[challenge2.id].challenge_type) -
+                         Number(this.props.challenges[challenge1.id].challenge_type);
+                else return 0;
+              }).map(challenge => {
                 return (
                   <Challenge
                     key={challenge.id}
@@ -75,6 +80,7 @@ class Track extends Component {
 Track.propTypes = {
   params: PropTypes.object,
   tracks: PropTypes.array,
+  challenges: PropTypes.array,
   getTracks: PropTypes.func,
   match: PropTypes.object,
 };
@@ -83,6 +89,7 @@ function mapStateToProps(state) {
   //console.log('tracks', state.tracks);
   return {
     tracks: state.tracks || [],
+    challenges: state.challenges
   };
 }
 

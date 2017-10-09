@@ -56,6 +56,7 @@ export const getChallenge = id => {
         partner: challenge.acf.partner,
         content: challenge.acf.content,
         challenge_bg: challenge.acf.challenge_bg,
+        challenge_type: challenge.acf.challenge_type,
       };
     });
 };
@@ -76,6 +77,7 @@ export const getChallenges = () => {
           partner: challenge.acf.partner,
           content: challenge.acf.content,
           challenge_bg: challenge.acf.challenge_bg,
+          challenge_type: challenge.acf.challenge_type,
         };
       });
     });
