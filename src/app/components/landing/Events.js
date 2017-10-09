@@ -35,7 +35,7 @@ const Events = () =>
           className="junction_events_hacktalks responsive"
           src="https://staging.hackjunction.com/wp-content/uploads/2017/10/terminal.jpg"
         /></a>
-      <h3>HACK\TALKS</h3>
+      <h3>TERMINAL 2.0</h3>
       <p>
         Want to make your Junction experience last for a whole week?<br />
         Terminal 2.0. offers you an once in a life-time chance to spend a free
