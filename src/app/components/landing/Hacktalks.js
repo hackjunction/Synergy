@@ -194,6 +194,14 @@ const Hacktalks = () => (
               to make sure you have a room to sleep in, book a room at our
               partner hotel or hostel. More information this to come.
             </p>
+            <p>
+              If you want to make sure you have a room to sleep in,
+              book a room at our partner hotels using the discount code
+              (“Junction2017”). See hotels:
+            </p>
+            <p>
+              Cheapsleep {'(https://www.cheapsleep.fi/)'}, discount code valid from 20.11. - 04.12.2017
+            </p>
           </FaqSection>
         </Col>
         <Col xs={12} md={6} className={styles.faqCell}>
