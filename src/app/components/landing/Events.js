@@ -38,6 +38,8 @@ const Events = () =>
       <h3>TERMINAL 2.0</h3>
       <p>
         Want to make your Junction experience last for a whole week?<br />
+      </p>
+      <p>
         Terminal 2.0. offers you an once in a life-time chance to spend a free
         week in Helsinki with fellow Junction hackers while meeting top-notch
         tech companies looking for fresh recruits!
