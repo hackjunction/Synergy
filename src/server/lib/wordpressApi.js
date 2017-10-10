@@ -10,9 +10,9 @@ wordpressApiClient.interceptors.request.use(config => {
   return config;
 });
 
-export const getPosts = () => wordpressApiClient.get('/posts');
+export const getPosts = () => wordpressApiClient.get('/posts&per_page=100');
 
-export const getPartners = () => wordpressApiClient.get('/posts');
+export const getPartners = () => wordpressApiClient.get('/posts&per_page=100');
 
 export const getTracks = () => {
   return wordpressApiClient
@@ -63,7 +63,7 @@ export const getChallenge = id => {
 
 export const getChallenges = () => {
   return wordpressApiClient
-    .get('/posts?_embed&categories=4')
+    .get('/posts?_embed&categories=4&per_page=100')
     .then(challenges => challenges.data)
     .then(challenges => {
       return challenges.map(challenge => {
