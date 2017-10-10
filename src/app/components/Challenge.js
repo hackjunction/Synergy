@@ -12,8 +12,13 @@ class Challenge extends Component {
   }
 
   componentWillMount() {
-    if (this.props.challenges.length == 0) {
-      this.props.getChallenges();
+    var match = this.props.match;
+    if (!match.params || !match.params.challenge)
+      return;
+    var id = match.params.challenge;
+
+    if (!this.props.challenges[id]) {
+      this.props.getChallenge(id);
     }
   }
 
@@ -65,7 +70,7 @@ class Challenge extends Component {
 Challenge.propTypes = {
   params: PropTypes.object,
   challenges: PropTypes.array,
-  getChallenges: PropTypes.func,
+  getChallenge: PropTypes.func,
   match: PropTypes.object,
   post_id: PropTypes.number,
 };
@@ -79,8 +84,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    getChallenges() {
-      dispatch({ type: 'GET_CHALLENGES' });
+    getChallenge(id) {
+      dispatch({ type: 'GET_CHALLENGE', id });
     },
   };
 }
