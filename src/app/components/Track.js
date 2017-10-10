@@ -61,6 +61,7 @@ class Track extends Component {
                 return (
                   <Challenge
                     key={challenge.id}
+                    slug={challenge.slug}
                     title={challenge.title}
                     content={challenge.content}
                     post_id={challenge.id}

@@ -71,7 +71,7 @@ class ChallengeElement extends Component {
             )}
           </Col>
           <Col xs={12} md={3} lg={3} className={styles.goToParent}>
-            <Link to={`/challenges/${data.id}`} key={data.id}>
+            <Link to={`/challenges/${data.slug}`} key={data.id}>
               <button className={styles.goTo}>
                 <FontAwesome name="arrow-right" size="2x" />
               </button>

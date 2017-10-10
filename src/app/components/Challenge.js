@@ -27,10 +27,14 @@ class Challenge extends Component {
     if (!match.params || !match.params.challenge) return <Redirect to="/" />;
     if (this.props.challenges.length > 0) {
       var challenge = this.props.challenges.filter(
-        challenge => challenge.id == match.params.challenge,
+        challenge => challenge.id == match.params.challenge || challenge.slug === match.params.challenge,
       );
       challenge = challenge[0];
     } else challenge = {};
+    if(challenge.slug && !isNaN(match.params.challenge)){
+      return <Redirect to={`/challenges/${challenge.slug}`} />;
+    }
+
 
     var style = {
       backgroundImage: `url(${challenge.challenge_bg})`,

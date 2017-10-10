@@ -43,11 +43,12 @@ export const getTracks = () => {
 
 export const getChallenge = id => {
   return wordpressApiClient
-    .get('/posts/' + id)
-    .then(challenge => challenge.data)
+    .get('/posts' + (isNaN(id) ? '?slug=' : '/') + id)
+    .then(challenge => isNaN(id) ? challenge.data[0] : challenge.data)
     .then(challenge => {
       return {
         id: challenge.id,
+        slug: challenge.slug,
         title: challenge.title.rendered,
         description: challenge.acf.description,
         image: challenge.acf.image,
@@ -69,6 +70,7 @@ export const getChallenges = () => {
       return challenges.map(challenge => {
         return {
           id: challenge.id,
+          slug: challenge.slug,
           title: challenge.title.rendered,
           description: challenge.acf.description,
           image: challenge.acf.image,
