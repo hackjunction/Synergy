@@ -168,6 +168,18 @@ const Partners = () =>
               />
           </Col>
           <Col xs={4} md={3}>
+              <img
+                src="https://staging.hackjunction.com/wp-content/uploads/2017/10/keha.png"
+                className="responsive"
+              />
+          </Col>
+          <Col xs={4} md={3}>
+              <img
+                src="https://staging.hackjunction.com/wp-content/uploads/2017/10/lv.png"
+                className="responsive"
+              />
+          </Col>
+          <Col xs={4} md={3}>
             <img
               src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suneffects.png"
               className="responsive"
