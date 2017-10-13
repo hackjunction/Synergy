@@ -157,6 +157,18 @@ const Partners = () =>
           </Col>
           <Col xs={4} md={3}>
               <img
+                src="https://staging.hackjunction.com/wp-content/uploads/2017/10/castrensnellman.png"
+                className="responsive"
+              />
+          </Col>
+          <Col xs={4} md={3}>
+              <img
+                src="https://staging.hackjunction.com/wp-content/uploads/2017/10/icebreaker.png"
+                className="responsive"
+              />
+          </Col>
+          <Col xs={4} md={3}>
+              <img
                 src="https://staging.hackjunction.com/wp-content/uploads/2017/10/kira_digi.png"
                 className="responsive"
               />
