@@ -24,7 +24,7 @@ class TopNav extends React.Component {
                   <a href="/community">COMMUNITY</a>
                 </li>
                 <li>
-                  <a href="/junction2017">JUNCTION2017</a>
+                  <a href="/junction2017">JUNCTION&nbsp;2017</a>
                 </li>
                 <li>
                   <a href="/all-tracks">TRACKS</a>
