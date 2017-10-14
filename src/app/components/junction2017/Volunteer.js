@@ -10,13 +10,13 @@ const Volunteer = () =>
     <TopNav />
     <Block className={styles.block} contentClassName={styles.content}>
       <Row className={styles.block}>
-      <h1>WANT TO BUILD JUNCTION WITH US?</h1>
-        <p className={styles.paragraph}>
-          Junction could not exist without our year-round volunteer team, which grows up to 300 people closer to the main event. Our volunteer applications are now open, join the family!
-        </p>
-        <a href="/volunteer">
-          <button className={styles.volunteer_button}>VOLUNTEER</button>
-        </a>
+        <h1>BUILDING FOR TOMORROW</h1>
+          <p className={styles.paragraph}>
+            Junction 2017 is divided into multiple tracks, each including several challenges set by our amazing partners. The best project will be awarded with the main prize of 20k€.
+          </p>
+          <a href="/register">
+            <button className={styles.volunteer_button}>APPLY</button>
+          </a>
       </Row>
     </Block>
   </Scroll.Element>;

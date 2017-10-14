@@ -41,6 +41,9 @@ class AllTracks extends Component {
                         />
                       );
                     })}
+                    <Col xs={12} md={12}>
+                      <hr className={styles.separator}></hr>
+                    </Col>
                 </Row>
             </div>
           );
