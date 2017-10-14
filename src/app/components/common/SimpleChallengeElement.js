@@ -38,6 +38,7 @@ class SimpleChallenge extends Component {
                     <p className={styles.left} key={text}>
                       Prize: {' '}
                       {text}{' '}
+                      <br /><a href={`/challenges/${data.id}`}><span className={styles.text_highlight}>READ MORE</span></a>
                     </p>
                   );
                 })}
