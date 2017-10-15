@@ -30,6 +30,8 @@ class Challenge extends Component {
         challenge => challenge.id == match.params.challenge || challenge.slug === match.params.challenge,
       );
       challenge = challenge[0];
+      if(challenge && challenge.status === 404)
+        return <Redirect to="/404" />;
     } else challenge = {};
     if(challenge.slug && !isNaN(match.params.challenge)){
       return <Redirect to={`/challenges/${challenge.slug}`} />;
@@ -58,7 +60,7 @@ class Challenge extends Component {
             <Col className={styles.challenge_partner_inline} xs={12} sm={12} md={12}>
               <img src={challenge.image} />
             </Col>
-            <Col className={[styles.track_content],[styles.challenge_content]} xs={12} sm={12} md={12}>
+            <Col className={`${styles.track_content},${styles.challenge_content}`} xs={12} sm={12} md={12}>
               <div dangerouslySetInnerHTML={{ __html: challenge.content }} />
             </Col>
             <a href="https://register.hackjunction.com/">

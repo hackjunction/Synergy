@@ -25,7 +25,7 @@ class Track extends Component {
       var track = this.props.tracks.filter(
         track => track.slug === match.params.track,
       );
-      if (track.length === 0) return <Redirect to="/" />;
+      if (track.length === 0) return <Redirect to="/404" />;
       else track = track[0];
     } else track = {};
 

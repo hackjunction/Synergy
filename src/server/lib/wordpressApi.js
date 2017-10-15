@@ -46,6 +46,13 @@ export const getChallenge = id => {
     .get('/posts' + (isNaN(id) ? '?slug=' : '/') + id)
     .then(challenge => isNaN(id) ? challenge.data[0] : challenge.data)
     .then(challenge => {
+      console.log(challenge);
+      if(challenge.status === 404){
+        return {
+          id,
+          status: 404
+        }
+      }
       return {
         id: challenge.id,
         slug: challenge.slug,
@@ -59,6 +66,14 @@ export const getChallenge = id => {
         challenge_bg: challenge.acf.challenge_bg,
         challenge_type: challenge.acf.challenge_type,
       };
+    }).catch(error => {
+      console.log("error:", error);
+      if(error.response && error.response.status === 404){
+        return {
+          id,
+          status: 404
+        }
+      }
     });
 };
 
