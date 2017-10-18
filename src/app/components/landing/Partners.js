@@ -62,6 +62,12 @@ const Partners = () =>
             className="responsive"
           />
         </Col>
+        <Col xs={6} md={4}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/esa.png"
+            className="responsive"
+          />
+        </Col>
         <Col xs={12} md={12}>
           <hr className={styles.separator}></hr>
         </Col>
