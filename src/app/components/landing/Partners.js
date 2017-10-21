@@ -79,6 +79,24 @@ const Partners = () =>
         </Col>
         <Col xs={4} md={3}>
           <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/finnair.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/legaltechsummit.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/nordcloud.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suunto.png"
             className="responsive"
           />
