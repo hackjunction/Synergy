@@ -19,7 +19,7 @@ const Footer = () =>
           <a href="https://www.flickr.com/people/151708924@N07/" className={styles.footer_link}>Official Junction photos</a>
         </p>
         <p>
-          <a href="https://drive.google.com/open?id=0B2AGGlwAtVYLYTdsSE9tZGtoTE0" className={styles.footer_link}>Presskit</a>
+          <a href="https://drive.google.com/open?id=0B2AGGlwAtVYLYTdsSE9tZGtoTE0" className={styles.footer_link}>Press kit</a>
         </p>
       </Col>
       <Col smOffset={1} xs={12} sm={3}>
@@ -36,7 +36,7 @@ const Footer = () =>
       </Col>
     </Row>
     <Row center="xs" className={styles.base}>
-      <p>Designed and developed by the amazing Junction Team</p> <br />
+      <p>Designed and developed by the incredible Junction Team</p> <br />
     </Row>
   </Block>;
 
