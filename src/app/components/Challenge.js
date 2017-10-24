@@ -60,7 +60,7 @@ class Challenge extends Component {
             <Col className={styles.challenge_partner_inline} xs={12} sm={12} md={12}>
               <img src={challenge.image} />
             </Col>
-            <Col className={`${styles.track_content},${styles.challenge_content}`} xs={12} sm={12} md={12}>
+            <Col className={[styles.track_content],[styles.challenge_content]} xs={12} sm={12} md={12}>
               <div dangerouslySetInnerHTML={{ __html: challenge.content }} />
             </Col>
             <a href="https://register.hackjunction.com/">
