@@ -5,8 +5,6 @@ import styles from "./Events.c.scss";
 import Block from "../viewBlocks/Block";
 import BlockHeader from "../viewBlocks/BlockHeader";
 
-import EventList from "../common/EventList";
-
 const Events = () =>
 <Scroll.Element name="events">
   <Block className={styles.block}>
@@ -47,7 +45,6 @@ const Events = () =>
       <p className={styles.hacktalks_link}><a href="http://terminal.hackjunction.com">READ MORE</a></p>
       </Col>
     </Row>
-    <EventList />
   </Block>
   </Scroll.Element>;
 

@@ -91,58 +91,10 @@ const Partners = () =>
         </Col>
         <Col xs={4} md={3}>
           <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/nordcloud.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suunto.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/sitra.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/helvar.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/procountor.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/finnid.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/aalto.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/08/fleetboard.png"
             className="responsive"
           />
         </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/qt.png"
-            className="responsive"
-          />
-          </Col>
           <Col xs={4} md={3}>
             <img
               src="https://staging.hackjunction.com/wp-content/uploads/2017/08/kone.png"
@@ -157,51 +109,9 @@ const Partners = () =>
           </Col>
           <Col xs={4} md={3}>
             <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/10/fortum.png"
-              className="responsive"
-            />
-          </Col>
-          <Col xs={4} md={3}>
-            <img
               src="https://staging.hackjunction.com/wp-content/uploads/2017/10/microsoft.png"
               className="responsive"
             />
-          </Col>
-          <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/10/storaenso.png"
-              className="responsive"
-            />
-          </Col>
-          <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/10/siili.png"
-              className="responsive"
-            />
-          </Col>
-          <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/10/kyyti.png"
-              className="responsive"
-            />
-          </Col>
-          <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/10/atalent.png"
-              className="responsive"
-            />
-          </Col>
-          <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/09/kamu.png"
-              className="responsive"
-            />
-          </Col>
-          <Col xs={4} md={3}>
-              <img
-                src="https://staging.hackjunction.com/wp-content/uploads/2017/09/trueface.png"
-                className="responsive"
-              />
           </Col>
           <Col xs={4} md={3}>
               <img
@@ -210,40 +120,9 @@ const Partners = () =>
               />
           </Col>
           <Col xs={4} md={3}>
-              <img
-                src="https://staging.hackjunction.com/wp-content/uploads/2017/10/icebreaker.png"
-                className="responsive"
-              />
-          </Col>
-          <Col xs={4} md={3}>
-              <img
-                src="https://staging.hackjunction.com/wp-content/uploads/2017/10/kira_digi.png"
-                className="responsive"
-              />
-          </Col>
-          <Col xs={4} md={3}>
-              <img
-                src="https://staging.hackjunction.com/wp-content/uploads/2017/10/fira.png"
-                className="responsive"
-              />
-          </Col>
-          <Col xs={4} md={3}>
-              <img
-                src="https://staging.hackjunction.com/wp-content/uploads/2017/10/keha.png"
-                className="responsive"
-              />
-          </Col>
-          <Col xs={4} md={3}>
-              <img
-                src="https://staging.hackjunction.com/wp-content/uploads/2017/10/lv.png"
-                className="responsive"
-              />
-          </Col>
-          <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suneffects.png"
-              className="responsive"
-            />
+            <a href="https://hackjunction.com/partners">
+              <button className={styles.apply_button}>SEE ALL</button>
+            </a>
           </Col>
       </Row>
     </Block>

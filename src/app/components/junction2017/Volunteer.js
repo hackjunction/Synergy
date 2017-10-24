@@ -14,9 +14,6 @@ const Volunteer = () =>
           <p className={styles.paragraph}>
             Junction 2017 is divided into multiple tracks, each including several challenges set by our amazing partners. The best project will be awarded with the main prize of 20k€.
           </p>
-          <a href="/register">
-            <button className={styles.volunteer_button}>APPLY</button>
-          </a>
       </Row>
     </Block>
   </Scroll.Element>;

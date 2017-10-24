@@ -4,6 +4,7 @@ import styles from './Track.c.scss';
 import Block from "./viewBlocks/Block";
 import TopNav from './TopNav';
 import TitleMod from './TitleMod';
+import Footer from './junction2017/Footer';
 
 const AllPartners = () =>
   <div>
@@ -242,7 +243,7 @@ const AllPartners = () =>
         </Col>
       </Row>
     </Block>
-
+    <Footer />
   </div>;
 
 export default AllPartners;

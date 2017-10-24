@@ -68,9 +68,6 @@ class Track extends Component {
                   />
                 );
               })}
-            <a href="https://register.hackjunction.com/">
-              <button className={styles.apply_button}>APPLY</button>
-            </a>
           </Row>
         </Grid>
       </div>

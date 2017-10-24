@@ -63,9 +63,6 @@ class Challenge extends Component {
             <Col className={[styles.track_content],[styles.challenge_content]} xs={12} sm={12} md={12}>
               <div dangerouslySetInnerHTML={{ __html: challenge.content }} />
             </Col>
-            <a href="https://register.hackjunction.com/">
-              <button className={styles.apply_button}>APPLY</button>
-            </a>
           </Row>
         </Grid>
       </div>
