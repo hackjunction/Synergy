@@ -30,7 +30,7 @@ const Welcome = () => (
           <br />
           <h2 className={styles.event_dates}>24-26 November - Helsinki</h2>
           <a href="https://register.hackjunction.com/">
-            <button className={styles.apply_button}>LOGIN TO YOUR DASHBOARD</button>
+            <button className={styles.apply_button}>YOUR DASHBOARD</button>
           </a>
         </Col>
         <Col xs={1} className="junction_welcome_bottom">
