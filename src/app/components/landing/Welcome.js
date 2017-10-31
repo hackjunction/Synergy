@@ -9,8 +9,9 @@ import TopNav from '../TopNav';
 const Welcome = () => (
   <Scroll.Element name="welcome" className={styles.block}>
     <TopNav />
-    <video autoPlay loop muted playsInline className={styles.video}>
-      <source src="https://staging.hackjunction.com/wp-content/uploads/2017/08/vidmp4.mp4" type="video/mp4" />
+    <video autoPlay loop muted playsInline poster="https://staging.hackjunction.com/wp-content/uploads/2017/08/front.jpg" className={styles.video}>
+      <source src="https://staging.hackjunction.com/wp-content/uploads/2017/08/vidmp4.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+      <source src="https://staging.hackjunction.com/wp-content/uploads/2017/08/vidwebm.webm" type='video/webm; codecs="vp8, vorbis"' />
     </video>
     <Block contentClassName={styles.blockContent}>
       <Row center="xs" className="junction_welcome">
