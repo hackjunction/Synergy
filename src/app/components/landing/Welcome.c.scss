@@ -1,10 +1,16 @@
 .block {
   min-height: 100vh;
-  background: url('https://staging.hackjunction.com/wp-content/uploads/2017/08/front.jpg');
-  background-repeat: no-repeat;
-  background-color: #232323;
-  background-size: cover;
-  background-position: 50% 50%;
+}
+
+.video {  
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
 }
 
 .blockContent {

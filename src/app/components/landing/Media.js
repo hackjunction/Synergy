@@ -4,10 +4,11 @@ import Scroll from 'react-scroll';
 import Block from '../viewBlocks/Block';
 import BlockHeader from '../viewBlocks/BlockHeader';
 import Mediumlist from '../common/MediumList';
+import styles from './Media.c.scss';
 
 const Media = () =>
   <Scroll.Element name="media">
-    <Block>
+    <Block className={styles.block}>
       <Row>
         <Col xs={12} className="bold text-secondary">
           <h4>MEDIA</h4>

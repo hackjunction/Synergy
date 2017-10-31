@@ -9,7 +9,7 @@ import FaqSection from './FaqSection';
 
 const Hacktalks = () => (
   <Scroll.Element name="hacktalks">
-    <Block>
+    <Block className={styles.block}>
       <Row>
         <Col xs={12} className="bold text-secondary">
           <h4>ABOUT THE EVENT</h4>
