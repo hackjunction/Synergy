@@ -93,6 +93,18 @@ const AllPartners = () =>
       </Col>
       <Col xs={4} md={3}>
         <img
+          src="https://staging.hackjunction.com/wp-content/uploads/2017/10/bitville.png"
+          className="responsive"
+        />
+      </Col>
+      <Col xs={4} md={3}>
+        <img
+          src="https://staging.hackjunction.com/wp-content/uploads/2017/10/eficode.png"
+          className="responsive"
+        />
+      </Col>
+      <Col xs={4} md={3}>
+        <img
           src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suunto.png"
           className="responsive"
         />
