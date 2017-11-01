@@ -1,105 +1,40 @@
 import React from "react";
-import Slider from "react-slick";
-import { Grid, Row, Col } from "react-flexbox-grid";
+import Scroll from "react-scroll";
+import { Row, Col } from "react-flexbox-grid";
+import Block from "../viewBlocks/Block";
+import BlockHeader from "../viewBlocks/BlockHeader";
+import styles from "./Pictures.c.scss";
 
-const settings = {
-  dots: true,
-  infinite: false,
-  speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  initialSlide: 0,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-};
+const images = [
+  "http://lorempixel.com/400/200/",
+  "http://lorempixel.com/400/200/",
+  "http://lorempixel.com/400/200/",
+  "http://lorempixel.com/400/200/",
+  "http://lorempixel.com/400/200/",
+  "http://lorempixel.com/400/200/",
+  "http://lorempixel.com/400/200/",
+  "http://lorempixel.com/400/200/",
+  "http://lorempixel.com/400/200/",
+  "http://lorempixel.com/400/200/",
+  "http://lorempixel.com/400/200/",
+  "http://lorempixel.com/400/200/",
+];
 
-const Pictures = () =>
-  <Grid fluid>
-    <Row start="xs" className="junction_media">
-      <Col xsOffset={1} xs={5}>
-        <h1 className="text-underline">IN PICTURES</h1>
-      </Col>
-    </Row>
-    <Row start="xs">
-      <Col xsOffset={1} xs={9}>
-        <div className="picture_container">
-          <Slider {...settings}>
+const Pictures = () => (
+  <Scroll.Element name="pictures">
+    <Block className={styles.block}>
+      <BlockHeader title="IN PICTURES" />
+      <Row start="xs">
+        {images.map((url, index) => (
+          <Col xs={6} sm={4} md={2} key={index}>
             <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
+              <img src={url} className={styles.image} />
             </div>
-            <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
-            </div>
-            <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
-            </div>
-            <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
-            </div>
-            <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
-            </div>
-            <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
-            </div>
-            <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
-            </div>
-            <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
-            </div>
-          </Slider>
-        </div>
-      </Col>
-    </Row>
-  </Grid>;
+          </Col>
+        ))}
+      </Row>
+    </Block>
+  </Scroll.Element>
+);
 
 export default Pictures;

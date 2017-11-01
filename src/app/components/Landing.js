@@ -1,15 +1,16 @@
-import React from 'react';
-import Scroll from 'react-scroll';
-import { Row } from 'react-flexbox-grid';
-import Welcome from './landing/Welcome';
-import About from './landing/About';
-import Events from './landing/Events';
-import Tracks from './landing/Tracks';
-import Partners from './landing/Partners';
-import Hacktalks from './landing/Hacktalks';
-import Media from './landing/Media';
-import Volunteer from './landing/Volunteer';
-import Footer from './landing/Footer';
+import React from "react";
+import Scroll from "react-scroll";
+import { Row } from "react-flexbox-grid";
+import Welcome from "./landing/Welcome";
+import About from "./landing/About";
+import Events from "./landing/Events";
+import Tracks from "./landing/Tracks";
+import Partners from "./landing/Partners";
+import Hacktalks from "./landing/Hacktalks";
+import Media from "./landing/Media";
+import Volunteer from "./landing/Volunteer";
+import Footer from "./landing/Footer";
+import Pictures from "./landing/Pictures";
 
 class Landing extends React.Component {
   render() {
@@ -40,13 +41,83 @@ class Landing extends React.Component {
         </nav>
         <nav className="junction_menu">
           <ul>
-            <li><Scroll.Link activeClass="active" to="welcome" spy={true} smooth={true} duration={500}>Welcome</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>About</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="tracks" spy={true} smooth={true} duration={500}>Tracks</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="partners" spy={true} smooth={true} duration={500}>Partners</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="hacktalks" spy={true} smooth={true} duration={500}>FAQ</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="events" spy={true} smooth={true} duration={500}>Special Events</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="media" spy={true} smooth={true} duration={500}>Media</Scroll.Link></li>
+            <li>
+              <Scroll.Link
+                activeClass="active"
+                to="welcome"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Welcome
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                About
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link
+                activeClass="active"
+                to="tracks"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Tracks
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link
+                activeClass="active"
+                to="partners"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Partners
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link
+                activeClass="active"
+                to="hacktalks"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                FAQ
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link
+                activeClass="active"
+                to="events"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Special Events
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link
+                activeClass="active"
+                to="media"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Media
+              </Scroll.Link>
+            </li>
           </ul>
         </nav>
         <div id="welcome">
@@ -72,6 +143,9 @@ class Landing extends React.Component {
         </div>
         <div id="volunteer">
           <Volunteer />
+        </div>
+        <div id="picture">
+          <Pictures />
         </div>
         <div id="footer">
           <Footer />
