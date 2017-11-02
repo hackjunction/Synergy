@@ -125,7 +125,7 @@ const Partners = () =>
                 className="responsive"
               />
           </Col>
-          <Col xs={4} md={3}>
+          <Col xs={12} md={12}>
             <a href="https://hackjunction.com/partners">
               <button className={styles.apply_button}>SEE ALL</button>
             </a>
