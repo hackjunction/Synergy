@@ -28,7 +28,7 @@ class AllTracks extends Component {
             <div className={[styles.track_page],[styles.all_tracks]} key={track.id}>
                 <Row className={styles.track_header}>
                   <Col className={styles.track_name} xs={12} sm={12} md={12}>
-                    <h1>{track.title}</h1>
+                    <a href={`tracks/${track.slug}`}><h1>{track.title}</h1></a>
                   </Col>
                   {track.challenges &&
                     track.challenges.map(challenge => {
