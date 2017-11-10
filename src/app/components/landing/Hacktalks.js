@@ -62,8 +62,9 @@ const Hacktalks = () => (
         <Col xs={12} md={6} className={styles.faqCell}>
           <FaqSection question="When and where can I apply?">
             <p>
-              The application period will open on 1st September and close on
-              15th October 2017. Make sure to apply <a href="https://register.hackjunction.com/">HERE</a>!
+              Registration are closed already but do keep an eye
+              on our facebook page and other social media for
+              future events! We hope to see you there 🙂
             </p>
           </FaqSection>
         </Col>

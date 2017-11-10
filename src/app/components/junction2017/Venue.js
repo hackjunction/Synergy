@@ -51,10 +51,13 @@ const Venue = () =>
       <Row>
         <h4>FROM CITY CENTER</h4>
           <p>
-            Buses 102(T) or 103(T) towards Otaniemi can be taken from Kamppi
-            Shopping Center almost directly to the venue. Get off at the Alvar
-            Aallon puisto buss stop and walk to the end of Otakaari and then
-            towards a big dark gray building, Dipoli.
+            You can take the metro from Helsinki to Otaniemi station and walk
+            to Dipoli, which is near by the station. We will have signs to
+            guide you in the right direction. Also buses 102(T) or 103(T)
+            towards Otaniemi can be taken from Kamppi Shopping Center almost
+            directly to the venue. Get off at the Alvar Aallon puisto bus
+            stop and walk to the end of Otakaari and then towards a big
+            dark gray building, Dipoli.
           </p>
       </Row>
       <Row>

@@ -37,8 +37,8 @@ const Welcome = () => (
               <ReactRotatingText
                 color="#35E2DF"
                 items={[
-                  "1300 HACKERS",
-                  "80 NATIONALITIES",
+                  "1500 HACKERS",
+                  "96 NATIONALITIES",
                   "60+ PARTNER COMPANIES",
                   "20.000€ MAIN PRIZE",
                 ]}

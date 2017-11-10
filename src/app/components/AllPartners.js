@@ -58,6 +58,12 @@ const AllPartners = () =>
           className="responsive"
         />
       </Col>
+      <Col xs={4} md={3}>
+        <img
+          src="https://staging.hackjunction.com/wp-content/uploads/2017/10/finnair.png"
+          className="responsive"
+        />
+      </Col>
       <Col xs={6} md={4}>
         <img
           src="https://staging.hackjunction.com/wp-content/uploads/2017/10/esa.png"
@@ -76,12 +82,6 @@ const AllPartners = () =>
       <Col xs={4} md={3}>
         <img
           src="https://staging.hackjunction.com/wp-content/uploads/2017/11/blackrock.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/10/finnair.png"
           className="responsive"
         />
       </Col>
@@ -267,7 +267,37 @@ const AllPartners = () =>
         </Col>
         <Col xs={4} md={3}>
             <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/10/lv.png"
+              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/tyomarkkinatori.png"
+              className="responsive"
+            />
+        </Col>
+        <Col xs={4} md={3}>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/hsl.png"
+              className="responsive"
+            />
+        </Col>
+        <Col xs={4} md={3}>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/ruuvi.png"
+              className="responsive"
+            />
+        </Col>
+        <Col xs={4} md={3}>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/lvm.png"
+              className="responsive"
+            />
+        </Col>
+        <Col xs={4} md={3}>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/liikenev.png"
+              className="responsive"
+            />
+        </Col>
+        <Col xs={4} md={3}>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/trafi.png"
               className="responsive"
             />
         </Col>
