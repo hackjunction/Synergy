@@ -14,7 +14,7 @@ class SimpleChallenge extends Component {
   }
   // render
   render() {
-    const { title, post_id, } = this.props;
+    const { title, content, post_id, } = this.props;
     var data = {};
 
     if (this.props.challenges[post_id]) {
@@ -31,12 +31,13 @@ class SimpleChallenge extends Component {
           </Col>
           <Col xs={12} md={8}>
             <h2 className={styles.left}> {title} </h2>
+            <p className={styles.left}> {content} </p>
             {data.prize && (
               <div>
                 {data.prize.split('|').map(text => {
                   return (
                     <p className={styles.left} key={text}>
-                      Prize: {' '}
+                      <b>Prize:</b> {' '}
                       {text}{' '}
                       <br /><a href={`/challenges/${data.id}`}><span className={styles.text_highlight}>READ MORE</span></a>
                     </p>

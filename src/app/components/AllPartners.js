@@ -81,6 +81,24 @@ const AllPartners = () =>
       </Col>
       <Col xs={4} md={3}>
         <img
+          src="https://staging.hackjunction.com/wp-content/uploads/2017/11/supercell.png"
+          className="responsive"
+        />
+      </Col>
+      <Col xs={4} md={3}>
+        <img
+          src="https://staging.hackjunction.com/wp-content/uploads/2017/11/dot.png"
+          className="responsive"
+        />
+      </Col>
+      <Col xs={4} md={3}>
+        <img
+          src="https://staging.hackjunction.com/wp-content/uploads/2017/11/fgj.png"
+          className="responsive"
+        />
+      </Col>
+      <Col xs={4} md={3}>
+        <img
           src="https://staging.hackjunction.com/wp-content/uploads/2017/11/blackrock.png"
           className="responsive"
         />
@@ -255,9 +273,21 @@ const AllPartners = () =>
         </Col>
         <Col xs={4} md={3}>
             <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/mindfullness.png"
+              className="responsive"
+            />
+        </Col>
+        <Col xs={4} md={3}>
+            <img
               src="https://staging.hackjunction.com/wp-content/uploads/2017/10/fira.png"
               className="responsive"
             />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suneffects.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
             <img
@@ -302,10 +332,10 @@ const AllPartners = () =>
             />
         </Col>
         <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suneffects.png"
-            className="responsive"
-          />
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/ed.png"
+              className="responsive"
+            />
         </Col>
       </Row>
     </Block>
