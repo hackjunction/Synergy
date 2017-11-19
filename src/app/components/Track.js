@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
-import Challenge from './common/ChallengeElement';
 import TopNav from './TopNav';
+import TrackChallenges from './TrackChallenges';
 
 class Track extends Component {
   componentDidMount() {
@@ -51,23 +51,7 @@ class Track extends Component {
               <div dangerouslySetInnerHTML={{ __html: track.content }} />
             </Col>
 
-            {track.challenges &&
-              track.challenges.sort((challenge1, challenge2) => {
-                if(this.props.challenges[challenge1.id] && this.props.challenges[challenge2.id])
-                  return Number(this.props.challenges[challenge2.id].challenge_type) -
-                         Number(this.props.challenges[challenge1.id].challenge_type);
-                else return 0;
-              }).map(challenge => {
-                return (
-                  <Challenge
-                    key={challenge.id}
-                    slug={challenge.slug}
-                    title={challenge.title}
-                    content={challenge.content}
-                    post_id={challenge.id}
-                  />
-                );
-              })}
+            <TrackChallenges track={track}/>
           </Row>
         </Grid>
       </div>
