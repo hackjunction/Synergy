@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Grid, Row } from 'react-flexbox-grid';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
 import TitleMod from './TitleMod';
 // import Challenge from './challenges/Challenge';
-import SimpleChallenge from './common/SimpleChallengeElement';
+import AllTracksTrack from './AllTracksTrack';
 import TopNav from './TopNav';
 
 class AllTracks extends Component {
@@ -23,30 +23,8 @@ class AllTracks extends Component {
           <Row className={styles.background_top} center="xs">
           <TitleMod />
           </Row>
-        {tracks.map(track => {
-          return (
-            <div className={[styles.track_page],[styles.all_tracks]} key={track.id}>
-                <Row className={styles.track_header}>
-                  <Col className={styles.track_name} xs={12} sm={12} md={12}>
-                    <a href={`tracks/${track.slug}`}><h1>{track.title}</h1></a>
-                  </Col>
-                  {track.challenges &&
-                    track.challenges.map(challenge => {
-                      return (
-                        <SimpleChallenge
-                          key={challenge.id}
-                          title={challenge.title}
-                          content={challenge.content}
-                          post_id={challenge.id}
-                        />
-                      );
-                    })}
-                    <Col xs={12} md={12}>
-                      <hr className={styles.separator}></hr>
-                    </Col>
-                </Row>
-            </div>
-          );
+        {tracks.map((track, i) => {
+          return <AllTracksTrack key={i} track={track}/>;
         })}
         </Grid>
     );
@@ -57,11 +35,15 @@ AllTracks.propTypes = {
   params: PropTypes.object,
   tracks: PropTypes.array,
   getTracks: PropTypes.func,
+  getChallenges: PropTypes.func,
+  challenges: PropTypes.array,
 };
+
 
 function mapStateToProps(state) {
   return {
     tracks: state.tracks || [],
+    challenges: state.challenges
   };
 }
 
@@ -69,6 +51,9 @@ function mapDispatchToProps(dispatch) {
   return {
     getTracks() {
       dispatch({ type: 'GET_TRACKS' });
+    },
+    getChallenges() {
+      dispatch({ type: 'GET_CHALLENGES' });
     },
   };
 }
