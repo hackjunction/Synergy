@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
-import TitleMod from './TitleMod';
 // import Challenge from './challenges/Challenge';
 import SimpleChallenge from './common/SimpleChallengeElement';
 
@@ -15,22 +14,25 @@ class AllTracksTrack extends Component {
         if(!this.props.challenges[challenge.id]){
           this.props.getChallenge(challenge.id);
         }
-      })
+      });
     }
   }
 
   render() {
             /*              track.challenges.filter(challenge => (this.props.challenges[challenge.id] ? this.props.challenges[challenge.id].challenge_type === 3 : true))
 */
+    var track = this.props.track;
     return (
-      return (
       <div className={[styles.track_page],[styles.all_tracks]} key={track.id}>
           <Row className={styles.track_header}>
             <Col className={styles.track_name} xs={12} sm={12} md={12}>
               <a href={`tracks/${track.slug}`}><h1>{track.title}</h1></a>
             </Col>
             {track.challenges &&
-              track.challenges.sort((challenge1, challenge2) => {
+              track.challenges.filter(challenge => {
+                return (this.props.challenges[challenge.id] ? this.props.challenges[challenge.id].challenge_type !== "1" : true);
+              })
+              .sort((challenge1, challenge2) => {
                 if(this.props.challenges[challenge1.id] && this.props.challenges[challenge2.id])
                   return Number(this.props.challenges[challenge2.id].challenge_type) -
                          Number(this.props.challenges[challenge1.id].challenge_type);
@@ -55,7 +57,8 @@ class AllTracksTrack extends Component {
   }
 }
 
-AllTracks.propTypes = {
+AllTracksTrack.propTypes = {
+  track: PropTypes.object,
   params: PropTypes.object,
   tracks: PropTypes.array,
   getChallenge: PropTypes.func,
@@ -76,4 +79,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(AllTracks);
+export default connect(mapStateToProps, mapDispatchToProps)(AllTracksTrack);

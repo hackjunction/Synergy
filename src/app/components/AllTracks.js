@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Grid, Row } from 'react-flexbox-grid';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
 import TitleMod from './TitleMod';
 // import Challenge from './challenges/Challenge';
-import SimpleChallenge from './common/SimpleChallengeElement';
 import AllTracksTrack from './AllTracksTrack';
 import TopNav from './TopNav';
 
@@ -14,7 +13,6 @@ class AllTracks extends Component {
     if (this.props.tracks.length == 0) {
       this.props.getTracks();
     }
-    this.props.getChallenges();
   }
 
   render() {
@@ -25,8 +23,8 @@ class AllTracks extends Component {
           <Row className={styles.background_top} center="xs">
           <TitleMod />
           </Row>
-        {tracks.map(track => {
-          <AllTracksTrack track={track}/>
+        {tracks.map((track, i) => {
+          return <AllTracksTrack key={i} track={track}/>;
         })}
         </Grid>
     );
@@ -40,6 +38,7 @@ AllTracks.propTypes = {
   getChallenges: PropTypes.func,
   challenges: PropTypes.array,
 };
+
 
 function mapStateToProps(state) {
   return {
