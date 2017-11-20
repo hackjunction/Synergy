@@ -60,9 +60,7 @@ class Track extends Component {
 }
 
 Track.propTypes = {
-  params: PropTypes.object,
   tracks: PropTypes.array,
-  challenges: PropTypes.array,
   getTracks: PropTypes.func,
   match: PropTypes.object,
 };

@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import styles from './Track.c.scss';
 import TitleMod from './TitleMod';
-// import Challenge from './challenges/Challenge';
 import AllTracksTrack from './AllTracksTrack';
 import TopNav from './TopNav';
 
@@ -32,18 +31,14 @@ class AllTracks extends Component {
 }
 
 AllTracks.propTypes = {
-  params: PropTypes.object,
   tracks: PropTypes.array,
   getTracks: PropTypes.func,
-  getChallenges: PropTypes.func,
-  challenges: PropTypes.array,
 };
 
 
 function mapStateToProps(state) {
   return {
     tracks: state.tracks || [],
-    challenges: state.challenges
   };
 }
 
@@ -51,9 +46,6 @@ function mapDispatchToProps(dispatch) {
   return {
     getTracks() {
       dispatch({ type: 'GET_TRACKS' });
-    },
-    getChallenges() {
-      dispatch({ type: 'GET_CHALLENGES' });
     },
   };
 }

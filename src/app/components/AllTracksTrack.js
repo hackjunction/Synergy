@@ -59,8 +59,6 @@ class AllTracksTrack extends Component {
 
 AllTracksTrack.propTypes = {
   track: PropTypes.object,
-  params: PropTypes.object,
-  tracks: PropTypes.array,
   getChallenge: PropTypes.func,
   challenges: PropTypes.array,
 };
