@@ -99,6 +99,12 @@ const AllPartners = () =>
         </Col>
         <Col xs={4} md={3}>
           <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/eve-tech.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/11/blackrock.png"
             className="responsive"
           />
@@ -154,6 +160,12 @@ const AllPartners = () =>
         <Col xs={4} md={3}>
           <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/10/sc5.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/mapbox.png"
             className="responsive"
           />
         </Col>
@@ -370,6 +382,12 @@ const AllPartners = () =>
         <Col xs={4} md={3}>
           <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/11/ed.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/semper.png"
             className="responsive"
           />
         </Col>
