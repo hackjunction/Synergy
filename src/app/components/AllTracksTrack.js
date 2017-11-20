@@ -24,11 +24,11 @@ class AllTracksTrack extends Component {
     var track = this.props.track;
     return (
       <div className={[styles.track_page],[styles.all_tracks]} key={track.id}>
-          <Row className={styles.track_header}>
-            <Col className={styles.track_name} xs={12} sm={12} md={12}>
-              <a href={`tracks/${track.slug}`}><h1>{track.title}</h1></a>
-            </Col>
-            {track.challenges &&
+        <Row className={styles.track_header}>
+          <Col className={styles.track_name} xs={12} sm={12} md={12}>
+            <a href={`tracks/${track.slug}`}><h1>{track.title}</h1></a>
+          </Col>
+          {track.challenges &&
               track.challenges.filter(challenge => {
                 return (this.props.challenges[challenge.id] ? this.props.challenges[challenge.id].challenge_type !== "1" : true);
               })
@@ -48,10 +48,10 @@ class AllTracksTrack extends Component {
                   />
                 );
               })}
-              <Col xs={12} md={12}>
-                <hr className={styles.separator}></hr>
-              </Col>
-          </Row>
+          <Col xs={12} md={12}>
+            <hr className={styles.separator} />
+          </Col>
+        </Row>
       </div>
     );
   }

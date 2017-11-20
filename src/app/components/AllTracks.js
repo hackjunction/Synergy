@@ -18,15 +18,15 @@ class AllTracks extends Component {
   render() {
     const { tracks } = this.props;
     return (
-        <Grid className={styles.hero} fluid>
-          <TopNav />
-          <Row className={styles.background_top} center="xs">
+      <Grid className={styles.hero} fluid>
+        <TopNav />
+        <Row className={styles.background_top} center="xs">
           <TitleMod />
-          </Row>
+        </Row>
         {tracks.map((track, i) => {
-          return <AllTracksTrack key={i} track={track}/>;
+          return <AllTracksTrack key={i} track={track} />;
         })}
-        </Grid>
+      </Grid>
     );
   }
 }

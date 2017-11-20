@@ -5,11 +5,11 @@ import PropTypes from "prop-types";
 import styles from "./Block.c.scss";
 
 const Block = ({ className, contentClassName, children }) =>
-  <div className={classNames([styles.container, className])}>
+  (<div className={classNames([styles.container, className])}>
     <Grid fluid className={classNames([styles.content, contentClassName])}>
       {children}
     </Grid>
-  </div>;
+  </div>);
 
 Block.propTypes = {
   className: PropTypes.string,

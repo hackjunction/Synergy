@@ -4,7 +4,7 @@ import Block from '../viewBlocks/Block';
 import styles from "./Footer.c.scss";
 
 const Footer = () =>
-  <Block className={styles.block} contentClassName={styles.blockContent}>
+  (<Block className={styles.block} contentClassName={styles.blockContent}>
     <Row>
       <Col xs={12} sm={3}>
         <h2>Event</h2>
@@ -26,13 +26,19 @@ const Footer = () =>
         <h2>Social</h2>
         <p><a href="https://www.facebook.com/hackjunction">
           <img className={styles.junction_footer_social_image} src="https://staging.hackjunction.com/wp-content/uploads/2017/08/fb.png" />
-          Facebook</a></p>
+          Facebook
+        </a>
+        </p>
         <p><a href="https://www.instagram.com/hackjunction/">
           <img className={styles.junction_footer_social_image} src="https://staging.hackjunction.com/wp-content/uploads/2017/08/ig.png" />
-          Instagram</a></p>
+          Instagram
+        </a>
+        </p>
         <p><a href="https://blog.hackjunction.com/">
           <img className={styles.junction_footer_social_image} src="https://staging.hackjunction.com/wp-content/uploads/2017/08/md.png" />
-          Medium</a></p>
+          Medium
+        </a>
+        </p>
       </Col>
     </Row>
     <Row center="xs" className={styles.base}>
@@ -44,6 +50,6 @@ const Footer = () =>
       </p>
 
     </Row>
-  </Block>;
+  </Block>);
 
 export default Footer;

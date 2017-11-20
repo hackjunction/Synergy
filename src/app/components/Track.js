@@ -51,7 +51,7 @@ class Track extends Component {
               <div dangerouslySetInnerHTML={{ __html: track.content }} />
             </Col>
 
-            <TrackChallenges track={track}/>
+            <TrackChallenges track={track} />
           </Row>
         </Grid>
       </div>

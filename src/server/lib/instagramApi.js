@@ -6,6 +6,6 @@ var ig = new Instagram({
   clientId: INSTAGRAM_CLIENT_ID,
   clientSecret: INSTAGRAM_CLIENT_SECRET,
   accessToken: INSTAGRAM_ACCESS_TOKEN
-})
+});
 
 export default ig;

@@ -7,179 +7,179 @@ import TitleMod from './TitleMod';
 import Footer from './junction2017/Footer';
 
 const AllPartners = () =>
-  <div>
+  (<div>
     <Grid className={styles.hero} fluid>
       <TopNav />
       <Row className={styles.background_top} center="xs">
-      <TitleMod />
+        <TitleMod />
       </Row>
     </Grid>
     <Block className={styles.block}>
-    <Row center="xs">
-      <Col xs={6} md={4}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/elisa.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={6} md={4}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/veikkaus.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={6} md={4}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/09/N_L1_B4_RGB-1.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={6} md={4}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/planmeca.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={6} md={4}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/smartly.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={6} md={4}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/outotec.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={6} md={4}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/10/stara.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/10/finnair.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={6} md={4}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/10/esa.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={12} md={12}>
-        <hr className={styles.separator}></hr>
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/10/spotify.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/11/supercell.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/11/dot.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/11/fgj.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/11/blackrock.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/10/legaltechsummit.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/10/nordcloud.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/11/bitville.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/10/eficode.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suunto.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/09/sitra.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/helvar.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/procountor.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/10/sc5.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/finnid.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/aalto.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/08/fleetboard.png"
-          className="responsive"
-        />
-      </Col>
-      <Col xs={4} md={3}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2017/09/qt.png"
-          className="responsive"
-        />
+      <Row center="xs">
+        <Col xs={6} md={4}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/elisa.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={6} md={4}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/veikkaus.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={6} md={4}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/N_L1_B4_RGB-1.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={6} md={4}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/planmeca.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={6} md={4}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/smartly.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={6} md={4}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/outotec.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={6} md={4}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/stara.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/finnair.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={6} md={4}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/esa.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={12} md={12}>
+          <hr className={styles.separator} />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/spotify.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/supercell.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/dot.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/fgj.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/blackrock.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/legaltechsummit.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/nordcloud.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/bitville.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/eficode.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suunto.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/sitra.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/helvar.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/procountor.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/sc5.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/finnid.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/aalto.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/fleetboard.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/qt.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
           <img
@@ -248,70 +248,70 @@ const AllPartners = () =>
           />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/09/trueface.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/trueface.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/10/castrensnellman.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/castrensnellman.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/10/bankify.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/bankify.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/10/icebreaker.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/icebreaker.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/10/kira_digi.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/kira_digi.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/mindfullness.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/mindfullness.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/jimms.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/jimms.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/waltti.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/waltti.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/nysse.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/nysse.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/foli.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/foli.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/10/fira.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/fira.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
           <img
@@ -320,56 +320,56 @@ const AllPartners = () =>
           />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/10/keha.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/keha.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/tyomarkkinatori.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/tyomarkkinatori.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/hsl.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/hsl.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/ruuvi.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/ruuvi.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/lvm.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/lvm.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/liikenev.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/liikenev.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/trafi.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/trafi.png"
+            className="responsive"
+          />
         </Col>
         <Col xs={4} md={3}>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2017/11/ed.png"
-              className="responsive"
-            />
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/ed.png"
+            className="responsive"
+          />
         </Col>
       </Row>
     </Block>
     <Footer />
-  </div>;
+  </div>);
 
 export default AllPartners;

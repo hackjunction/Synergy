@@ -40,13 +40,13 @@ class Landing extends React.Component {
         </nav>
         <nav className="junction_menu">
           <ul>
-            <li><Scroll.Link activeClass="active" to="welcome" spy={true} smooth={true} duration={500}>Welcome</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>About</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="tracks" spy={true} smooth={true} duration={500}>Tracks</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="partners" spy={true} smooth={true} duration={500}>Partners</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="hacktalks" spy={true} smooth={true} duration={500}>FAQ</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="events" spy={true} smooth={true} duration={500}>Special Events</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="media" spy={true} smooth={true} duration={500}>Media</Scroll.Link></li>
+            <li><Scroll.Link activeClass="active" to="welcome" spy smooth duration={500}>Welcome</Scroll.Link></li>
+            <li><Scroll.Link activeClass="active" to="about" spy smooth duration={500}>About</Scroll.Link></li>
+            <li><Scroll.Link activeClass="active" to="tracks" spy smooth duration={500}>Tracks</Scroll.Link></li>
+            <li><Scroll.Link activeClass="active" to="partners" spy smooth duration={500}>Partners</Scroll.Link></li>
+            <li><Scroll.Link activeClass="active" to="hacktalks" spy smooth duration={500}>FAQ</Scroll.Link></li>
+            <li><Scroll.Link activeClass="active" to="events" spy smooth duration={500}>Special Events</Scroll.Link></li>
+            <li><Scroll.Link activeClass="active" to="media" spy smooth duration={500}>Media</Scroll.Link></li>
           </ul>
         </nav>
         <div id="welcome">

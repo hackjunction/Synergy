@@ -22,15 +22,15 @@ class EventList extends Component {
     return (
       <Row>
         {events.map(event =>
-          <Col xs={12} sm={12} md={4} lg={4} className={styles.event}>
+          (<Col xs={12} sm={12} md={4} lg={4} className={styles.event}>
             <a href={`http://www.facebook.com/events/${event.id}`}>
               <img src={event.cover.source} className="responsive" />
             </a>
-              <h3 className={[styles.event_link, styles.event_title]}>
-                {event.name}
-              </h3>
-              <p className={styles.event_link}><a href={`http://www.facebook.com/events/${event.id}`}>ATTEND</a></p>
-          </Col>,
+            <h3 className={[styles.event_link, styles.event_title]}>
+              {event.name}
+            </h3>
+            <p className={styles.event_link}><a href={`http://www.facebook.com/events/${event.id}`}>ATTEND</a></p>
+          </Col>),
         )}
         {!events.length &&
           <Col>

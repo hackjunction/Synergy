@@ -52,7 +52,7 @@ const Welcome = () => (
           </a>
         </Col>
         <Col xs={1} className="junction_welcome_bottom">
-          <Scroll.Link to="about" smooth={true} duration={500}>
+          <Scroll.Link to="about" smooth duration={500}>
             <div className={styles.arrow}>
               <ul>
                 <li />

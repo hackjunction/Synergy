@@ -27,9 +27,9 @@ class PostList extends Component {
       <Grid fluid>
         <Row>
           {posts.map((post, index) =>
-            <Col xs={3}>
+            (<Col xs={3}>
               <PostElement key={index} post={post} />,
-            </Col>,
+            </Col>),
           )}
         </Row>
       </Grid>
