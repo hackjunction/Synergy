@@ -24,8 +24,8 @@ class MobileNav extends React.Component {
     return (
       <Media query="(max-width: 900px)">
         <Menu
-          pageWrapId={"junction_website"}
-          outerContainerId={"app"}
+          pageWrapId="junction_website"
+          outerContainerId="app"
           right
           onStateChange={this.menuStateChanged}
           isOpen={this.state.isMenuOpen}

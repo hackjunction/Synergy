@@ -24,11 +24,11 @@ class AllTracksTrack extends Component {
     var track = this.props.track;
     return (
       <div className={[styles.track_page],[styles.all_tracks]} key={track.id}>
-          <Row className={styles.track_header}>
-            <Col className={styles.track_name} xs={12} sm={12} md={12}>
-              <a href={`tracks/${track.slug}`}><h1>{track.title}</h1></a>
-            </Col>
-            {track.challenges &&
+        <Row className={styles.track_header}>
+          <Col className={styles.track_name} xs={12} sm={12} md={12}>
+            <a href={`tracks/${track.slug}`}><h1>{track.title}</h1></a>
+          </Col>
+          {track.challenges &&
               track.challenges.filter(challenge => {
                 return (this.props.challenges[challenge.id] ? this.props.challenges[challenge.id].challenge_type !== "1" : true);
               })
@@ -60,8 +60,6 @@ class AllTracksTrack extends Component {
 
 AllTracksTrack.propTypes = {
   track: PropTypes.object,
-  params: PropTypes.object,
-  tracks: PropTypes.array,
   getChallenge: PropTypes.func,
   challenges: PropTypes.array,
 };

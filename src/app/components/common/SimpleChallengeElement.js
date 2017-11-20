@@ -25,8 +25,8 @@ class SimpleChallenge extends Component {
       <Link to={`/challenges/${data.id}`} key={data.id}>
         <Row center="xs">
           <Col xs={12} md={4}>
-                {data.image && (
-                  <img className={styles.simple_challenge_logo} src={data.image} />
+            {data.image && (
+            <img className={styles.simple_challenge_logo} src={data.image} />
                 )}
           </Col>
           <Col xs={12} md={8}>

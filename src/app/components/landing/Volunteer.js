@@ -6,7 +6,7 @@ import BlockHeader from '../viewBlocks/BlockHeader';
 import styles from './Volunteer.c.scss';
 
 const Volunteer = () =>
-  <Scroll.Element name="volunteer">
+  (<Scroll.Element name="volunteer">
     <Block className={styles.block}>
       <Row>
         <Col xs={12} className="bold text-secondary">
@@ -22,6 +22,6 @@ const Volunteer = () =>
         </a>
       </BlockHeader>
     </Block>
-  </Scroll.Element>;
+  </Scroll.Element>);
 
 export default Volunteer;

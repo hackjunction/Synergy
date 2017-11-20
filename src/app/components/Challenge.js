@@ -71,11 +71,9 @@ class Challenge extends Component {
 }
 
 Challenge.propTypes = {
-  params: PropTypes.object,
   challenges: PropTypes.array,
   getChallenge: PropTypes.func,
   match: PropTypes.object,
-  post_id: PropTypes.number,
 };
 
 function mapStateToProps(state) {

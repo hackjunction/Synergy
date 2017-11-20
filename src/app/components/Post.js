@@ -6,11 +6,11 @@ import ChallengesList from './common/ChallengesList';
 import TracksList from './common/TracksList';
 
 const Post = () =>
-  <Grid fluid>
+  (<Grid fluid>
     <PostList />
     <MediumList />
     <ChallengesList />
     <TracksList />
-  </Grid>;
+  </Grid>);
 
 export default Post;

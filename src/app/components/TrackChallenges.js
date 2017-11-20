@@ -47,18 +47,16 @@ class TrackChallenges extends Component {
 }
 
 TrackChallenges.propTypes = {
-  params: PropTypes.object,
   track: PropTypes.object,
   challenges: PropTypes.array,
   getChallenge: PropTypes.func,
-  match: PropTypes.object,
 };
 
 function mapStateToProps(state) {
   //console.log('tracks', state.tracks);
   return {
     tracks: state.tracks || [],
-    challenges: state.challenges
+    challenges: state.challenges,
   };
 }
 

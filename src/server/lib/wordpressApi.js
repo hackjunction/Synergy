@@ -51,7 +51,7 @@ export const getChallenge = id => {
         return {
           id,
           status: 404
-        }
+        };
       }
       return {
         id: challenge.id,
@@ -72,7 +72,7 @@ export const getChallenge = id => {
         return {
           id,
           status: 404
-        }
+        };
       }
     });
 };

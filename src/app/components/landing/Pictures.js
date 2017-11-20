@@ -38,7 +38,7 @@ const settings = {
 };
 
 const Pictures = () =>
-  <Grid fluid>
+  (<Grid fluid>
     <Row start="xs" className="junction_media">
       <Col xsOffset={1} xs={5}>
         <h1 className="text-underline">IN PICTURES</h1>
@@ -100,6 +100,6 @@ const Pictures = () =>
         </div>
       </Col>
     </Row>
-  </Grid>;
+  </Grid>);
 
 export default Pictures;

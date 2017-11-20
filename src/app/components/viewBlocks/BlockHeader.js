@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import styles from "./BlockHeader.c.scss";
 
 const BlockHeader = ({ title, children: description }) =>
-  <Row>
+  (<Row>
     <Col xs={12} md={5}>
       <h1 className={styles.title}>
         {title}
@@ -14,7 +14,7 @@ const BlockHeader = ({ title, children: description }) =>
       <Col xs={12} md={9}>
         {description}
       </Col>}
-  </Row>;
+  </Row>);
 
 BlockHeader.propTypes = {
   title: PropTypes.string,
