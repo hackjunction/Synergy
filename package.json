@@ -4,7 +4,8 @@
   "description": "Junction 2017 platform",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --fix --ext js --ext jsx src",
+    "lint": "eslint --ext js --ext jsx src",
+    "lint:fix": "yarn lint -- --fix",
     "test": "echo \"Error: no test specified\" && exit 0",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev && true",
     "start:dev": "NODE_ENV=development babel-watch -w src server.js",
