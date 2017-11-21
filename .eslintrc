@@ -27,12 +27,15 @@
     "react/require-default-props": "off",
     "react/sort-comp": "off",
     "semi": "error",
+    "prettier/prettier": ["error", {
+      "printWidth": 120,
+      "singleQuote": true,
+      "parser": "babylon"
+    }]
   },
   "env": {
     "node": true,
     "browser": true
   },
-  "plugins": [
-    "react"
-  ]
+  "plugins": ["react", "json", "prettier"]
 }
