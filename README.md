@@ -29,6 +29,20 @@ yarn watch
 And it should be running on localhost:3000
 
 
+## Additional scripts
+
+While developing, you will probably rely mostly on `yarn start` and `yarn watch`; however, there are additional scripts at your disposal:
+
+|`npm run or yarn <script>`|Description|
+|--------------------------|-----------|
+|`start`|Run your app in development mode if NODE_ENV is development or else in production.|
+|`watch`|Run your app in development mode and watch your changes.|
+|`start:dev`|Run your app in development mode.|
+|`start:prod`|Run your app in production mode.|
+|`build:webpack"`|Compiles the application to the build folder in productiopn mode.|
+|`lint`|Check for lint errors and runs the fixes for all `.js`, `.jsx` and `.json` files.|
+
+
 ## Design
 
 Website Prototype (Updating constantly):
