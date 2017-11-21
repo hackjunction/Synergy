@@ -11,7 +11,7 @@ export default class TrackElement extends Component {
 
     if (post) {
       const style = {
-        'background-image': `url(${post.image})`,
+        'background-image': `url(${post.image})`
       };
 
       return (
@@ -35,5 +35,5 @@ export default class TrackElement extends Component {
 
 // prop checks
 TrackElement.propTypes = {
-  post: PropTypes.object.isRequired,
+  post: PropTypes.object.isRequired
 };

@@ -8,6 +8,6 @@ export function* getEvents() {
   // save the posts in state
   yield put({
     type: 'GET_EVENTS_SAVE',
-    events: events.data,
+    events: events.data
   });
 }

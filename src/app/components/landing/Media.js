@@ -6,8 +6,8 @@ import BlockHeader from '../viewBlocks/BlockHeader';
 import Mediumlist from '../common/MediumList';
 import styles from './Media.c.scss';
 
-const Media = () =>
-  (<Scroll.Element name="media">
+const Media = () => (
+  <Scroll.Element name="media">
     <Block className={styles.block}>
       <Row>
         <Col xs={12} className="bold text-secondary">
@@ -25,6 +25,7 @@ const Media = () =>
         </Col>
       </Row>
     </Block>
-  </Scroll.Element>);
+  </Scroll.Element>
+);
 
 export default Media;

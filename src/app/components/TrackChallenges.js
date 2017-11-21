@@ -10,9 +10,9 @@ class TrackChallenges extends Component {
 
   componentWillMount() {
     var track = this.props.track;
-    if(track.challenges){
+    if (track.challenges) {
       track.challenges.forEach(challenge => {
-        if(!this.props.challenges[challenge.id]){
+        if (!this.props.challenges[challenge.id]) {
           this.props.getChallenge(challenge.id);
         }
       });
@@ -25,22 +25,26 @@ class TrackChallenges extends Component {
     return (
       <div>
         {track.challenges &&
-          track.challenges.sort((challenge1, challenge2) => {
-            if(this.props.challenges[challenge1.id] && this.props.challenges[challenge2.id])
-              return Number(this.props.challenges[challenge2.id].challenge_type) -
-                     Number(this.props.challenges[challenge1.id].challenge_type);
-            else return 0;
-          }).map(challenge => {
-            return (
-              <Challenge
-                key={challenge.id}
-                slug={challenge.slug}
-                title={challenge.title}
-                content={challenge.content}
-                post_id={challenge.id}
-              />
-            );
-          })}
+          track.challenges
+            .sort((challenge1, challenge2) => {
+              if (this.props.challenges[challenge1.id] && this.props.challenges[challenge2.id])
+                return (
+                  Number(this.props.challenges[challenge2.id].challenge_type) -
+                  Number(this.props.challenges[challenge1.id].challenge_type)
+                );
+              else return 0;
+            })
+            .map(challenge => {
+              return (
+                <Challenge
+                  key={challenge.id}
+                  slug={challenge.slug}
+                  title={challenge.title}
+                  content={challenge.content}
+                  post_id={challenge.id}
+                />
+              );
+            })}
       </div>
     );
   }
@@ -49,14 +53,14 @@ class TrackChallenges extends Component {
 TrackChallenges.propTypes = {
   track: PropTypes.object,
   challenges: PropTypes.array,
-  getChallenge: PropTypes.func,
+  getChallenge: PropTypes.func
 };
 
 function mapStateToProps(state) {
   //console.log('tracks', state.tracks);
   return {
     tracks: state.tracks || [],
-    challenges: state.challenges,
+    challenges: state.challenges
   };
 }
 
@@ -64,7 +68,7 @@ function mapDispatchToProps(dispatch) {
   return {
     getChallenge(id) {
       dispatch({ type: 'GET_CHALLENGE', id });
-    },
+    }
   };
 }
 

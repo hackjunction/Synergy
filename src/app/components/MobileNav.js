@@ -1,13 +1,13 @@
-import React from "react";
-import { slide as Menu } from "react-burger-menu";
-import Media from "react-media";
-import styles from "./MobileNav.c.scss";
+import React from 'react';
+import { slide as Menu } from 'react-burger-menu';
+import Media from 'react-media';
+import styles from './MobileNav.c.scss';
 
 class MobileNav extends React.Component {
   constructor() {
     super();
     this.state = {
-      isMenuOpen: false,
+      isMenuOpen: false
     };
     window.openNavigationMenu = this.openMenu;
   }

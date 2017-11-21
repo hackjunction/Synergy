@@ -1,11 +1,11 @@
-import React from "react";
-import { Row, Col } from "react-flexbox-grid";
-import styles from "./Schedule.c.scss";
-import Block from "../viewBlocks/Block";
-import BlockHeader from "../viewBlocks/BlockHeader";
+import React from 'react';
+import { Row, Col } from 'react-flexbox-grid';
+import styles from './Schedule.c.scss';
+import Block from '../viewBlocks/Block';
+import BlockHeader from '../viewBlocks/BlockHeader';
 
-const Schedule = () =>
-  (<Block className={styles.block} contentClassName={styles.content}>
+const Schedule = () => (
+  <Block className={styles.block} contentClassName={styles.content}>
     <Row>
       <Col xs={12} className="bold text-secondary">
         <h4>SCHEDULE</h4>
@@ -15,10 +15,8 @@ const Schedule = () =>
     <Row>
       <Col xs={12}>
         <p>
-          From food and drinks, to keynotes, workshops and satelite happenings,
-          for all your needs and purposes, we got it. <br />Keep checking
-          the schedule for changes and additions to our hectic program for the
-          weekend!
+          From food and drinks, to keynotes, workshops and satelite happenings, for all your needs and purposes, we got
+          it. <br />Keep checking the schedule for changes and additions to our hectic program for the weekend!
         </p>
       </Col>
     </Row>
@@ -193,7 +191,7 @@ const Schedule = () =>
         <td className={styles.table_row_third_col}>Secret!</td>
       </tr>
     </table>
-
-  </Block>);
+  </Block>
+);
 
 export default Schedule;

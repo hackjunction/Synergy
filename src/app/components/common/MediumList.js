@@ -26,25 +26,21 @@ class MediumList extends Component {
     }
 
     // show the list of posts
-    return (
-      <Row>
-        {posts.map((post, index) => <MediumElement key={index} post={post} />)}
-      </Row>
-    );
+    return <Row>{posts.map((post, index) => <MediumElement key={index} post={post} />)}</Row>;
   }
 }
 
 // prop checks
 MediumList.propTypes = {
   dispatch: PropTypes.func,
-  mediumPosts: PropTypes.array,
+  mediumPosts: PropTypes.array
 };
 
 // export the connected class
 function mapStateToProps(state) {
   //console.log('mediumPosts', state.mediumPosts);
   return {
-    mediumPosts: state.mediumPosts || [],
+    mediumPosts: state.mediumPosts || []
   };
 }
 

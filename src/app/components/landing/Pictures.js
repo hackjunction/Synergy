@@ -1,6 +1,6 @@
-import React from "react";
-import Slider from "react-slick";
-import { Grid, Row, Col } from "react-flexbox-grid";
+import React from 'react';
+import Slider from 'react-slick';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 const settings = {
   dots: true,
@@ -16,29 +16,29 @@ const settings = {
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true,
-      },
+        dots: true
+      }
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        initialSlide: 2,
-      },
+        initialSlide: 2
+      }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
+        slidesToScroll: 1
+      }
+    }
+  ]
 };
 
-const Pictures = () =>
-  (<Grid fluid>
+const Pictures = () => (
+  <Grid fluid>
     <Row start="xs" className="junction_media">
       <Col xsOffset={1} xs={5}>
         <h1 className="text-underline">IN PICTURES</h1>
@@ -49,57 +49,34 @@ const Pictures = () =>
         <div className="picture_container">
           <Slider {...settings}>
             <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
+              <img className="responsive picture_container_image" src="http://lorempixel.com/400/200/" alt="" />
             </div>
             <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
+              <img className="responsive picture_container_image" src="http://lorempixel.com/400/200/" alt="" />
             </div>
             <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
+              <img className="responsive picture_container_image" src="http://lorempixel.com/400/200/" alt="" />
             </div>
             <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
+              <img className="responsive picture_container_image" src="http://lorempixel.com/400/200/" alt="" />
             </div>
             <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
+              <img className="responsive picture_container_image" src="http://lorempixel.com/400/200/" alt="" />
             </div>
             <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
+              <img className="responsive picture_container_image" src="http://lorempixel.com/400/200/" alt="" />
             </div>
             <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
+              <img className="responsive picture_container_image" src="http://lorempixel.com/400/200/" alt="" />
             </div>
             <div>
-              <img
-                className="responsive picture_container_image"
-                src="http://lorempixel.com/400/200/"
-              />
+              <img className="responsive picture_container_image" src="http://lorempixel.com/400/200/" alt="" />
             </div>
           </Slider>
         </div>
       </Col>
     </Row>
-  </Grid>);
+  </Grid>
+);
 
 export default Pictures;

@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Media from "react-media";
-import styles from "./TopNav.c.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Media from 'react-media';
+import styles from './TopNav.c.scss';
 
 class TopNav extends React.Component {
   render() {
@@ -12,6 +12,7 @@ class TopNav extends React.Component {
             <img
               className={styles.junction_logo}
               src="https://staging.hackjunction.com/wp-content/uploads/2017/08/junction_logo-1.png"
+              alt="Logo"
             />
           </Link>
           <Media query="(min-width: 901px)">

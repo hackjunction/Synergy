@@ -14,7 +14,7 @@ class SimpleChallenge extends Component {
   }
   // render
   render() {
-    const { title, content, post_id, } = this.props;
+    const { title, content, post_id } = this.props;
     var data = {};
 
     if (this.props.challenges[post_id]) {
@@ -25,9 +25,7 @@ class SimpleChallenge extends Component {
       <Link to={`/challenges/${data.id}`} key={data.id}>
         <Row center="xs">
           <Col xs={12} md={4}>
-            {data.image && (
-            <img className={styles.simple_challenge_logo} src={data.image} />
-                )}
+            {data.image && <img className={styles.simple_challenge_logo} src={data.image} alt="" />}
           </Col>
           <Col xs={12} md={8}>
             <h2 className={styles.left}> {title} </h2>
@@ -37,9 +35,10 @@ class SimpleChallenge extends Component {
                 {data.prize.split('|').map(text => {
                   return (
                     <p className={styles.left} key={text}>
-                      <b>Prize:</b> {' '}
-                      {text}{' '}
-                      <br /><a href={`/challenges/${data.id}`}><span className={styles.text_highlight}>READ MORE</span></a>
+                      <b>Prize:</b> {text} <br />
+                      <a href={`/challenges/${data.id}`}>
+                        <span className={styles.text_highlight}>READ MORE</span>
+                      </a>
                     </p>
                   );
                 })}
@@ -48,7 +47,6 @@ class SimpleChallenge extends Component {
           </Col>
         </Row>
       </Link>
-
     );
   }
 }
@@ -59,19 +57,19 @@ SimpleChallenge.propTypes = {
   content: PropTypes.string,
   post_id: PropTypes.number,
   challenges: PropTypes.array,
-  getChallenge: PropTypes.func,
+  getChallenge: PropTypes.func
 };
 
 function mapStateToProps(state) {
   return {
-    challenges: state.challenges || [],
+    challenges: state.challenges || []
   };
 }
 function mapDispatchToProps(dispatch) {
   return {
     getChallenge(id) {
       dispatch({ type: 'GET_CHALLENGE', id });
-    },
+    }
   };
 }
 

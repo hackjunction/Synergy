@@ -26,9 +26,7 @@ class ChallengeElement extends Component {
       <Col className={styles.chief + ' ' + styles.collage} xs={12}>
         <Row center="xs" middle="xs">
           <Col xs={8} md={4}>
-            {data.image && (
-              <img className={styles['partner-logo']} src={data.image} />
-            )}
+            {data.image && <img className={styles['partner-logo']} src={data.image} alt="" />}
           </Col>
           <Col xs={12} md={8}>
             <h2 className={styles.left}> {title} </h2>
@@ -89,19 +87,19 @@ ChallengeElement.propTypes = {
   content: PropTypes.string,
   post_id: PropTypes.number,
   challenges: PropTypes.array,
-  getChallenge: PropTypes.func,
+  getChallenge: PropTypes.func
 };
 
 function mapStateToProps(state) {
   return {
-    challenges: state.challenges || [],
+    challenges: state.challenges || []
   };
 }
 function mapDispatchToProps(dispatch) {
   return {
     getChallenge(id) {
       dispatch({ type: 'GET_CHALLENGE', id });
-    },
+    }
   };
 }
 

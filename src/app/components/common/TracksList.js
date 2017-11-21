@@ -31,11 +31,7 @@ class TracksList extends Component {
               <th>Content</th>
             </tr>
           </thead>
-          <tbody>
-            {tracks.map((post, index) =>
-              <TrackElement key={index} post={post} />,
-            )}
-          </tbody>
+          <tbody>{tracks.map((post, index) => <TrackElement key={index} post={post} />)}</tbody>
         </table>
       </div>
     );
@@ -45,14 +41,14 @@ class TracksList extends Component {
 // prop checks
 TracksList.propTypes = {
   dispatch: PropTypes.func,
-  tracks: PropTypes.array,
+  tracks: PropTypes.array
 };
 
 // export the connected class
 function mapStateToProps(state) {
   //console.log('tracks', state.tracks);
   return {
-    tracks: state.tracks || [],
+    tracks: state.tracks || []
   };
 }
 

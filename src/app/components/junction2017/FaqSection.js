@@ -6,23 +6,23 @@ import styles from './FaqSection.c.scss';
 class FaqSection extends React.Component {
   static propTypes = {
     question: PropTypes.string,
-    children: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+    children: PropTypes.oneOfType([PropTypes.object, PropTypes.array])
   };
 
   state = {
-    isOpen: false,
+    isOpen: false
   };
 
   toggle = () => {
     this.setState({
-      isOpen: !this.state.isOpen,
+      isOpen: !this.state.isOpen
     });
   };
 
   render() {
     const containerClasses = classNames({
       [styles.faqSection]: true,
-      [styles.open]: this.state.isOpen,
+      [styles.open]: this.state.isOpen
     });
 
     return (

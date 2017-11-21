@@ -3,7 +3,7 @@ import { WORDPRESS_BASE_URL } from '../config';
 
 const wordpressApiClient = axios.create({
   baseURL: `${WORDPRESS_BASE_URL}/wp-json/wp/v2`,
-  timeout: 50000,
+  timeout: 50000
 });
 
 wordpressApiClient.interceptors.request.use(config => {
@@ -29,13 +29,13 @@ export const getTracks = () => {
                 return {
                   title: challenge.post_title,
                   content: challenge.post_content,
-                  id: challenge.ID,
+                  id: challenge.ID
                 };
               })
             : [],
           main_partners: track.main_partners,
           partners: track.partners,
-          slug: track.slug,
+          slug: track.slug
         };
       });
     });
@@ -44,10 +44,10 @@ export const getTracks = () => {
 export const getChallenge = id => {
   return wordpressApiClient
     .get('/posts' + (isNaN(id) ? '?slug=' : '/') + id)
-    .then(challenge => isNaN(id) ? challenge.data[0] : challenge.data)
+    .then(challenge => (isNaN(id) ? challenge.data[0] : challenge.data))
     .then(challenge => {
       console.log(challenge);
-      if(challenge.status === 404){
+      if (challenge.status === 404) {
         return {
           id,
           status: 404
@@ -64,11 +64,12 @@ export const getChallenge = id => {
         partner: challenge.acf.partner,
         content: challenge.acf.content,
         challenge_bg: challenge.acf.challenge_bg,
-        challenge_type: challenge.acf.challenge_type,
+        challenge_type: challenge.acf.challenge_type
       };
-    }).catch(error => {
-      console.log("error:", error);
-      if(error.response && error.response.status === 404){
+    })
+    .catch(error => {
+      console.log('error:', error);
+      if (error.response && error.response.status === 404) {
         return {
           id,
           status: 404
@@ -94,7 +95,7 @@ export const getChallenges = () => {
           partner: challenge.acf.partner,
           content: challenge.acf.content,
           challenge_bg: challenge.acf.challenge_bg,
-          challenge_type: challenge.acf.challenge_type,
+          challenge_type: challenge.acf.challenge_type
         };
       });
     });
