@@ -111,6 +111,12 @@ const AllPartners = () =>
         </Col>
         <Col xs={4} md={3}>
           <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/futurice.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/10/legaltechsummit.png"
             className="responsive"
           />
