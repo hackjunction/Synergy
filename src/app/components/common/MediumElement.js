@@ -12,21 +12,19 @@ export default class MediumElement extends Component {
       <Col xs={12} sm={6} md={4} lg={4} className={styles.block}>
         <div className={styles.fixed}>
           <a href={post.link}>
-            <img src={post.images} className={styles.content} />
+            <img src={post.images} className={styles.content} alt="" />
           </a>
         </div>
 
         <div className="medium_post_title">
-          <h3 className={styles.medium_title}>
-            {post.title}
-          </h3>
+          <h3 className={styles.medium_title}>{post.title}</h3>
         </div>
         <div className="medium_post_content">
-          <p>
-            {post.content}
-          </p>
+          <p>{post.content}</p>
         </div>
-        <p className={styles.medium_link}><a href={post.link}>READ MORE</a></p>
+        <p className={styles.medium_link}>
+          <a href={post.link}>READ MORE</a>
+        </p>
       </Col>
     );
   }
@@ -34,5 +32,5 @@ export default class MediumElement extends Component {
 
 // prop checks
 MediumElement.propTypes = {
-  post: PropTypes.object.isRequired,
+  post: PropTypes.object.isRequired
 };

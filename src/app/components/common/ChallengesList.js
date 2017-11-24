@@ -31,11 +31,7 @@ class ChallengesList extends Component {
               <th>Content</th>
             </tr>
           </thead>
-          <tbody>
-            {challenges.map((post, index) =>
-              <ChallengeElement key={index} post={post} />,
-            )}
-          </tbody>
+          <tbody>{challenges.map((post, index) => <ChallengeElement key={index} post={post} />)}</tbody>
         </table>
       </div>
     );
@@ -45,14 +41,14 @@ class ChallengesList extends Component {
 // prop checks
 ChallengesList.propTypes = {
   dispatch: PropTypes.func,
-  challenges: PropTypes.array,
+  challenges: PropTypes.array
 };
 
 // export the connected class
 function mapStateToProps(state) {
   //console.log('challenges', state.challenges);
   return {
-    challenges: state.challenges || [],
+    challenges: state.challenges || []
   };
 }
 

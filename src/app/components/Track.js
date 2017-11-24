@@ -22,17 +22,15 @@ class Track extends Component {
     var match = this.props.match;
     if (!match.params || !match.params.track) return <Redirect to="/" />;
     if (this.props.tracks.length > 0) {
-      var track = this.props.tracks.filter(
-        track => track.slug === match.params.track,
-      );
+      var track = this.props.tracks.filter(track => track.slug === match.params.track);
       if (track.length === 0) return <Redirect to="/404" />;
       else track = track[0];
     } else track = {};
 
     var style = {
       backgroundImage: `url(${track.image})`,
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover'
     };
 
     return (
@@ -62,7 +60,7 @@ class Track extends Component {
 Track.propTypes = {
   tracks: PropTypes.array,
   getTracks: PropTypes.func,
-  match: PropTypes.object,
+  match: PropTypes.object
 };
 
 function mapStateToProps(state) {
@@ -77,7 +75,7 @@ function mapDispatchToProps(dispatch) {
   return {
     getTracks() {
       dispatch({ type: 'GET_TRACKS' });
-    },
+    }
   };
 }
 

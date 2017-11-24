@@ -1,16 +1,16 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
-import Landing from "./Landing";
-import Post from "./Post";
-import Community from "./Community";
-import Track from "./Track";
-import Challenge from "./Challenge";
-import AllTracks from "./AllTracks";
-import AllPartners from "./AllPartners";
-import Volunteer from "./Volunteer";
-import Junction2017 from "./Junction2017";
-import NotFound from "./NotFound";
-import MobileNav from "./MobileNav";
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Landing from './Landing';
+import Post from './Post';
+import Community from './Community';
+import Track from './Track';
+import Challenge from './Challenge';
+import AllTracks from './AllTracks';
+import AllPartners from './AllPartners';
+import Volunteer from './Volunteer';
+import Junction2017 from './Junction2017';
+import NotFound from './NotFound';
+import MobileNav from './MobileNav';
 
 class App extends React.Component {
   render() {
@@ -18,14 +18,8 @@ class App extends React.Component {
       <div>
         <MobileNav />
         <div className="junction_website" id="junction_website">
-          <link
-            href="https://fonts.googleapis.com/css?family=Montserrat:300,700,900"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Lato:300,400"
-            rel="stylesheet"
-          />
+          <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700,900" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" />
           <div>
             <Switch>
               <Route exact path="/" component={Landing} />

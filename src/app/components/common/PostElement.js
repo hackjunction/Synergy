@@ -9,13 +9,9 @@ export default class PostElement extends Component {
 
     return (
       <div className="junction_posts">
-        <img src={post.acf.image} />
-        <h2>
-          {post.title.rendered}
-        </h2>
-        <p>
-          {post.acf.description}
-        </p>
+        <img src={post.acf.image} alt="" />
+        <h2>{post.title.rendered}</h2>
+        <p>{post.acf.description}</p>
       </div>
     );
   }
@@ -23,5 +19,5 @@ export default class PostElement extends Component {
 
 // prop checks
 PostElement.propTypes = {
-  post: PropTypes.object.isRequired,
+  post: PropTypes.object.isRequired
 };

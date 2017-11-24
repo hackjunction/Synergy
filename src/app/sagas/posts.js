@@ -8,7 +8,7 @@ export function* getAllPost() {
   // save the posts in state
   yield put({
     type: 'GET_POSTS_SAVE',
-    posts: posts.data,
+    posts: posts.data
   });
 }
 
@@ -18,6 +18,6 @@ export function* getMediumPosts() {
 
   yield put({
     type: 'GET_MEDIUM_POSTS_SAVE',
-    posts: mediumPosts.data,
+    posts: mediumPosts.data
   });
 }

@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Row, Col } from "react-flexbox-grid";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import { Row, Col } from 'react-flexbox-grid';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import styles from './EventList.c.scss';
 
 class EventList extends Component {
@@ -11,7 +11,7 @@ class EventList extends Component {
 
   componentWillMount() {
     // the first time we load the app, we need that posts list
-    this.props.dispatch({ type: "GET_EVENTS" });
+    this.props.dispatch({ type: 'GET_EVENTS' });
   }
 
   // render
@@ -21,21 +21,22 @@ class EventList extends Component {
     // show the list of posts
     return (
       <Row>
-        {events.map(event =>
-          (<Col xs={12} sm={12} md={4} lg={4} className={styles.event}>
+        {events.map(event => (
+          <Col xs={12} sm={12} md={4} lg={4} className={styles.event}>
             <a href={`http://www.facebook.com/events/${event.id}`}>
-              <img src={event.cover.source} className="responsive" />
+              <img src={event.cover.source} className="responsive" alt="" />
             </a>
-            <h3 className={[styles.event_link, styles.event_title]}>
-              {event.name}
-            </h3>
-            <p className={styles.event_link}><a href={`http://www.facebook.com/events/${event.id}`}>ATTEND</a></p>
-          </Col>),
-        )}
-        {!events.length &&
+            <h3 className={[styles.event_link, styles.event_title]}>{event.name}</h3>
+            <p className={styles.event_link}>
+              <a href={`http://www.facebook.com/events/${event.id}`}>ATTEND</a>
+            </p>
+          </Col>
+        ))}
+        {!events.length && (
           <Col>
             <h3>No events</h3>
-          </Col>}
+          </Col>
+        )}
       </Row>
     );
   }
@@ -44,14 +45,14 @@ class EventList extends Component {
 // prop checks
 EventList.propTypes = {
   dispatch: PropTypes.func,
-  events: PropTypes.array,
+  events: PropTypes.array
 };
 
 // export the connected class
 function mapStateToProps(state) {
   //console.log("events", state.events);
   return {
-    events: state.events || [],
+    events: state.events || []
   };
 }
 

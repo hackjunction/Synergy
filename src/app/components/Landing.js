@@ -19,34 +19,62 @@ class Landing extends React.Component {
           <Row>
             <div className="social-media">
               <a href="https://www.facebook.com/hackjunction">
-                <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/fb.png" />
+                <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/fb.png" alt="" />
               </a>
             </div>
           </Row>
           <Row className="social-media">
             <div className="social-media">
               <a href="https://www.instagram.com/hackjunction/">
-                <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/ig.png" />
+                <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/ig.png" alt="" />
               </a>
             </div>
           </Row>
           <Row className="social-media">
             <div className="social-media">
               <a href="https://blog.hackjunction.com/">
-                <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/md.png" />
+                <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/md.png" alt="" />
               </a>
             </div>
           </Row>
         </nav>
         <nav className="junction_menu">
           <ul>
-            <li><Scroll.Link activeClass="active" to="welcome" spy smooth duration={500}>Welcome</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="about" spy smooth duration={500}>About</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="tracks" spy smooth duration={500}>Tracks</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="partners" spy smooth duration={500}>Partners</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="hacktalks" spy smooth duration={500}>FAQ</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="events" spy smooth duration={500}>Special Events</Scroll.Link></li>
-            <li><Scroll.Link activeClass="active" to="media" spy smooth duration={500}>Media</Scroll.Link></li>
+            <li>
+              <Scroll.Link activeClass="active" to="welcome" spy smooth duration={500}>
+                Welcome
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link activeClass="active" to="about" spy smooth duration={500}>
+                About
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link activeClass="active" to="tracks" spy smooth duration={500}>
+                Tracks
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link activeClass="active" to="partners" spy smooth duration={500}>
+                Partners
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link activeClass="active" to="hacktalks" spy smooth duration={500}>
+                FAQ
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link activeClass="active" to="events" spy smooth duration={500}>
+                Special Events
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link activeClass="active" to="media" spy smooth duration={500}>
+                Media
+              </Scroll.Link>
+            </li>
           </ul>
         </nav>
         <div id="welcome">

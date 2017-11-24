@@ -7,7 +7,7 @@ const PUBLICATION_NAME = 'hack-junction';
 
 const mediumFeedClient = axios.create({
   baseURL: 'https://medium.com/feed',
-  timeout: 5000,
+  timeout: 5000
 });
 
 const transformPublicationPosts = R.pipe(
@@ -18,7 +18,7 @@ const transformPublicationPosts = R.pipe(
       nativeType: true,
       alwaysArray: true,
       ignoreComment: true,
-      alwaysChildren: false,
+      alwaysChildren: false
     });
   },
   R.view(R.lensPath(['rss', '0', 'channel', '0', 'item'])),
@@ -34,18 +34,12 @@ const transformPublicationPosts = R.pipe(
       publishedAt: R.path(['pubDate', '0', '_text', '0'], post),
       updatedAt: R.path(['atom:updated', '0', '_text', '0'], post),
       content: myDiv.text().substring(0, 150) + '.....',
-      images: $(R.path(['content:encoded', '0', '_cdata', '0'], post)).find(
-        'img',
-      )[0].attribs.src,
-      categories: R.pipe(R.path(['category']), R.map(R.path(['_cdata', '0'])))(
-        post,
-      ),
+      images: $(R.path(['content:encoded', '0', '_cdata', '0'], post)).find('img')[0].attribs.src,
+      categories: R.pipe(R.path(['category']), R.map(R.path(['_cdata', '0'])))(post)
     };
-  }),
+  })
 );
 
 export const getPosts = () => {
-  return mediumFeedClient
-    .get(`/${PUBLICATION_NAME}`)
-    .then(({ data }) => transformPublicationPosts(data));
+  return mediumFeedClient.get(`/${PUBLICATION_NAME}`).then(({ data }) => transformPublicationPosts(data));
 };

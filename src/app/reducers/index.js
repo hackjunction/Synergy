@@ -13,7 +13,7 @@ const reducers = combineReducers({
   mediumPosts: mediumPosts,
   challenges: challenges,
   tracks: tracks,
-  events: events,
+  events: events
 });
 
 export default reducers;

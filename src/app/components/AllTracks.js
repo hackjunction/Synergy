@@ -32,13 +32,12 @@ class AllTracks extends Component {
 
 AllTracks.propTypes = {
   tracks: PropTypes.array,
-  getTracks: PropTypes.func,
+  getTracks: PropTypes.func
 };
-
 
 function mapStateToProps(state) {
   return {
-    tracks: state.tracks || [],
+    tracks: state.tracks || []
   };
 }
 
@@ -46,7 +45,7 @@ function mapDispatchToProps(dispatch) {
   return {
     getTracks() {
       dispatch({ type: 'GET_TRACKS' });
-    },
+    }
   };
 }
 

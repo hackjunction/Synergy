@@ -8,21 +8,14 @@ export default class TrackOverview extends Component {
     const trackOverviewConfig = {
       title: this.props.title,
       image: this.props.image,
-      partners: this.props.partners,
+      partners: this.props.partners
     };
     return (
       <div>
-        <h1>
-          {trackOverviewConfig.title}
-        </h1>
-        <img src={trackOverviewConfig.image} />
+        <h1>{trackOverviewConfig.title}</h1>
+        <img src={trackOverviewConfig.image} alt="" />
         {trackOverviewConfig.partners.map((object, i) => (
-          <Partner
-            key={i}
-            name={object.name}
-            description={object.description}
-            logo={object.logo}
-          />
+          <Partner key={i} name={object.name} description={object.description} logo={object.logo} />
         ))}
       </div>
     );
@@ -33,5 +26,5 @@ export default class TrackOverview extends Component {
 TrackOverview.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  partners: PropTypes.object.isRequired,
+  partners: PropTypes.object.isRequired
 };

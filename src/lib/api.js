@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
   baseURL: '/api',
-  timeout: 20000,
+  timeout: 20000
 });
 
 export const getEvents = () => {

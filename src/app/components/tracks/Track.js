@@ -11,27 +11,17 @@ export default class Track extends Component {
       image: this.props.image,
       chiefPartners: this.props.chiefPartners,
       partners: this.props.partners,
-      challenges: this.props.challenges,
+      challenges: this.props.challenges
     };
     return (
       <div>
         <h1>{trackConfig.title}</h1>
-        <img src={trackConfig.image} />
+        <img src={trackConfig.image} alt="" />
         {trackConfig.chiefPartners.map((object, i) => (
-          <Partner
-            key={i}
-            name={object.name}
-            description={object.description}
-            logo={object.logo}
-          />
+          <Partner key={i} name={object.name} description={object.description} logo={object.logo} />
         ))}
         {trackConfig.partners.map((object, i) => (
-          <Partner
-            key={i}
-            name={object.name}
-            description={object.description}
-            logo={object.logo}
-          />
+          <Partner key={i} name={object.name} description={object.description} logo={object.logo} />
         ))}
         {trackConfig.challenges.map((object, i) => (
           <Challenge
@@ -56,5 +46,5 @@ Track.propTypes = {
   image: PropTypes.string.isRequired,
   partners: PropTypes.object.isRequired,
   chiefPartners: PropTypes.object.isRequired,
-  challenges: PropTypes.object.isRequired,
+  challenges: PropTypes.object.isRequired
 };

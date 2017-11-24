@@ -41,19 +41,11 @@ apiRouter.get('/fb/events', (req, res) => {
   facebookClient.api(
     `/${FACEBOOK_PAGE}/events`,
     {
-      fields: [
-        'id',
-        'name',
-        'description',
-        'cover',
-        'place',
-        'start_time',
-        'end_time',
-      ],
+      fields: ['id', 'name', 'description', 'cover', 'place', 'start_time', 'end_time']
     },
     fbRes => {
       res.json(fbRes.data);
-    },
+    }
   );
 });
 
@@ -64,9 +56,9 @@ apiRouter.get('/ig/images', (req, res) => {
         return {
           url: picture.images.standard_resolution.url,
           //  caption:picture.caption.text,
-          link: picture.link,
+          link: picture.link
         };
-      }),
+      })
     );
   });
 });

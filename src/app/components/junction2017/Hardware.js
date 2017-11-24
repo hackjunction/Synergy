@@ -1,12 +1,11 @@
-import React from "react";
-import { Row, Col } from "react-flexbox-grid";
-import styles from "./Venue.c.scss";
-import Block from "../viewBlocks/Block";
-import BlockHeader from "../viewBlocks/BlockHeader";
+import React from 'react';
+import { Row, Col } from 'react-flexbox-grid';
+import styles from './Venue.c.scss';
+import Block from '../viewBlocks/Block';
+import BlockHeader from '../viewBlocks/BlockHeader';
 
-const Venue = () =>
-
-  (<Block className={styles.block} contentClassName={styles.content}>
+const Venue = () => (
+  <Block className={styles.block} contentClassName={styles.content}>
     <Row>
       <Col xs={12} className="bold text-secondary">
         <h4>HARDWARE</h4>
@@ -16,18 +15,14 @@ const Venue = () =>
     <Row>
       <Col xs={12}>
         <p>
-          We will provide the hackers the latest and greatest gadgets from
-          the tech world. Our partners want to offer you a good deal of
-          different technologies to play with. The table will be updated as
-          more devices are confirmed. Hardware can be reserved through our
-          HW Lab reservation platform!
+          We will provide the hackers the latest and greatest gadgets from the tech world. Our partners want to offer
+          you a good deal of different technologies to play with. The table will be updated as more devices are
+          confirmed. Hardware can be reserved through our HW Lab reservation platform!
         </p>
         <p>
-          In addition to what is seen here, we will have soldering equipments,
-          scopes and passive components from Microsoft Flux and student group
-          Elepaja. 3D printers will be also supplied. Let us know what else
-          you’d like to see at Junction to hardware@hackjunction.com and
-          we’ll do our best to provide that for you!
+          In addition to what is seen here, we will have soldering equipments, scopes and passive components from
+          Microsoft Flux and student group Elepaja. 3D printers will be also supplied. Let us know what else you’d like
+          to see at Junction to hardware@hackjunction.com and we’ll do our best to provide that for you!
         </p>
       </Col>
     </Row>
@@ -140,7 +135,7 @@ const Venue = () =>
         </ul>
       </p>
     </Row>
-  </Block>)
-    ;
+  </Block>
+);
 
 export default Venue;

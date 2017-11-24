@@ -7,17 +7,13 @@ export default class Partner extends Component {
     const partnerConfig = {
       name: this.props.name,
       logo: this.props.logo,
-      description: this.props.description,
+      description: this.props.description
     };
     return (
       <div>
-        <h1>
-          {partnerConfig.name}
-        </h1>
-        <img src={partnerConfig.logo} />
-        <p>
-          {partnerConfig.description}
-        </p>
+        <h1>{partnerConfig.name}</h1>
+        <img src={partnerConfig.logo} alt="" />
+        <p>{partnerConfig.description}</p>
       </div>
     );
   }
@@ -27,5 +23,5 @@ export default class Partner extends Component {
 Partner.propTypes = {
   name: PropTypes.string.isRequired,
   logo: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
 };

@@ -4,14 +4,20 @@
   "description": "Junction 2017 platform",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext js --ext jsx src",
-    "lint:fix": "yarn lint -- --fix",
+    "lint": "eslint --fix --ext js --ext jsx --ext json src",
     "test": "yarn lint",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev && true",
     "start:dev": "NODE_ENV=development babel-watch -w src server.js",
     "start:prod": "npm run build:webpack && node server.js",
     "watch": "webpack --watch --config webpack.dev.config.js",
-    "build:webpack": "NODE_ENV=production webpack --config webpack.prod.config.js"
+    "build:webpack": "NODE_ENV=production webpack --config webpack.prod.config.js",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,json}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -45,16 +51,21 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-json": "^1.2.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.5.1",
     "express": "^4.15.4",
     "extract-text-webpack-plugin": "^3.0.0",
     "fb": "^2.0.0",
     "history": "^4.7.2",
+    "husky": "^0.14.3",
     "if-env": "^1.0.0",
+    "lint-staged": "^5.0.0",
     "medium-sdk": "^0.0.4",
     "node-instagram": "^3.0.0",
     "node-sass": "^4.5.3",
+    "prettier": "^1.8.2",
     "prop-types": "^15.5.10",
     "ramda": "^0.24.1",
     "react": "^15.6.1",

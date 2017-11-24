@@ -13,8 +13,7 @@ class Challenge extends Component {
 
   componentWillMount() {
     var match = this.props.match;
-    if (!match.params || !match.params.challenge)
-      return;
+    if (!match.params || !match.params.challenge) return;
     var id = match.params.challenge;
 
     if (!this.props.challenges[id]) {
@@ -27,21 +26,19 @@ class Challenge extends Component {
     if (!match.params || !match.params.challenge) return <Redirect to="/" />;
     if (this.props.challenges.length > 0) {
       var challenge = this.props.challenges.filter(
-        challenge => challenge.id == match.params.challenge || challenge.slug === match.params.challenge,
+        challenge => challenge.id == match.params.challenge || challenge.slug === match.params.challenge
       );
       challenge = challenge[0];
-      if(challenge && challenge.status === 404)
-        return <Redirect to="/404" />;
+      if (challenge && challenge.status === 404) return <Redirect to="/404" />;
     } else challenge = {};
-    if(challenge.slug && !isNaN(match.params.challenge)){
+    if (challenge.slug && !isNaN(match.params.challenge)) {
       return <Redirect to={`/challenges/${challenge.slug}`} />;
     }
 
-
     var style = {
       backgroundImage: `url(${challenge.challenge_bg})`,
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover"
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover'
     };
 
     return (
@@ -58,9 +55,9 @@ class Challenge extends Component {
               <h1>{challenge.title}</h1>
             </Col>
             <Col className={styles.challenge_partner_inline} xs={12} sm={12} md={12}>
-              <img src={challenge.image} />
+              <img src={challenge.image} alt="" />
             </Col>
-            <Col className={[styles.track_content],[styles.challenge_content]} xs={12} sm={12} md={12}>
+            <Col className={([styles.track_content], [styles.challenge_content])} xs={12} sm={12} md={12}>
               <div dangerouslySetInnerHTML={{ __html: challenge.content }} />
             </Col>
           </Row>
@@ -73,13 +70,13 @@ class Challenge extends Component {
 Challenge.propTypes = {
   challenges: PropTypes.array,
   getChallenge: PropTypes.func,
-  match: PropTypes.object,
+  match: PropTypes.object
 };
 
 function mapStateToProps(state) {
   //console.log('challenges', state.challenges);
   return {
-    challenges: state.challenges || [],
+    challenges: state.challenges || []
   };
 }
 
@@ -87,7 +84,7 @@ function mapDispatchToProps(dispatch) {
   return {
     getChallenge(id) {
       dispatch({ type: 'GET_CHALLENGE', id });
-    },
+    }
   };
 }
 

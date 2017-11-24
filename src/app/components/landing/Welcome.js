@@ -1,10 +1,10 @@
-import React from "react";
-import { Row, Col } from "react-flexbox-grid";
-import Scroll from "react-scroll";
-import ReactRotatingText from "react-rotating-text";
-import styles from "./Welcome.c.scss";
-import Block from "../viewBlocks/Block";
-import TopNav from "../TopNav";
+import React from 'react';
+import { Row, Col } from 'react-flexbox-grid';
+import Scroll from 'react-scroll';
+import ReactRotatingText from 'react-rotating-text';
+import styles from './Welcome.c.scss';
+import Block from '../viewBlocks/Block';
+import TopNav from '../TopNav';
 
 const Welcome = () => (
   <Scroll.Element name="welcome" className={styles.block}>
@@ -36,12 +36,7 @@ const Welcome = () => (
             <div className={styles.rotating_text}>
               <ReactRotatingText
                 color="#35E2DF"
-                items={[
-                  "1500 HACKERS",
-                  "96 NATIONALITIES",
-                  "60+ PARTNER COMPANIES",
-                  "20.000€ MAIN PRIZE",
-                ]}
+                items={['1500 HACKERS', '96 NATIONALITIES', '60+ PARTNER COMPANIES', '20.000€ MAIN PRIZE']}
               />
             </div>
           </h1>

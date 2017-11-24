@@ -7,13 +7,13 @@ export function* getAllChallenges() {
   // save the challenges in state
   yield put({
     type: 'GET_CHALLENGES_SAVE',
-    challenges: challenges.data,
+    challenges: challenges.data
   });
 }
 export function* getChallenge(action) {
   const challenge = yield call(ApiPosts.getChallenge, action.id);
   yield put({
     type: 'GET_CHALLENGE_SAVE',
-    challenge: challenge.data,
+    challenge: challenge.data
   });
 }

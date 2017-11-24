@@ -26,11 +26,11 @@ class PostList extends Component {
     return (
       <Grid fluid>
         <Row>
-          {posts.map((post, index) =>
-            (<Col xs={3}>
+          {posts.map((post, index) => (
+            <Col xs={3}>
               <PostElement key={index} post={post} />,
-            </Col>),
-          )}
+            </Col>
+          ))}
         </Row>
       </Grid>
     );
@@ -40,14 +40,14 @@ class PostList extends Component {
 // prop checks
 PostList.propTypes = {
   dispatch: PropTypes.func,
-  posts: PropTypes.array,
+  posts: PropTypes.array
 };
 
 // export the connected class
 function mapStateToProps(state) {
   //console.log('posts', state.posts);
   return {
-    posts: state.posts || [],
+    posts: state.posts || []
   };
 }
 
