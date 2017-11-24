@@ -75,6 +75,12 @@ const AllPartners = () =>
         </Col>
         <Col xs={4} md={3}>
           <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/mlh.png"
+            className="responsive"
+          />
+        </Col>
+        <Col xs={4} md={3}>
+          <img
             src="https://staging.hackjunction.com/wp-content/uploads/2017/10/spotify.png"
             className="responsive"
           />
