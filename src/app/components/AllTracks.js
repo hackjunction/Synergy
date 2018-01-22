@@ -20,7 +20,7 @@ class AllTracks extends Component {
       <Grid className={styles.hero} fluid>
         <TopNav />
         <Row className={styles.background_top} center="xs">
-          <TitleMod />
+          <TitleMod title={"TRACKS FROM 2017"}/>
         </Row>
         {tracks.map((track, i) => {
           return <AllTracksTrack key={i} track={track} />;

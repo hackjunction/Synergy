@@ -24,9 +24,11 @@ class TopNav extends React.Component {
                 <li>
                   <a href="/community">COMMUNITY</a>
                 </li>
+                {/*
                 <li>
                   <a href="http://live.hackjunction.com">JUNCTION&nbsp;2017</a>
                 </li>
+                */}
                 <li>
                   <a href="/all-tracks">TRACKS</a>
                 </li>
