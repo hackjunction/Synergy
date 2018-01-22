@@ -11,7 +11,7 @@ const AllPartners = () => (
     <Grid className={styles.hero} fluid>
       <TopNav />
       <Row className={styles.background_top} center="xs">
-        <TitleMod />
+        <TitleMod title={"PARTNERS FROM 2017"} content={["Want to see your logo here? Contact us at partnerships@hackjunction.com to get on board with the Junction community.","Check out our partners from 2017:"]}/>
       </Row>
     </Grid>
     <Block className={styles.block}>

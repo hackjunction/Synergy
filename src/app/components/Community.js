@@ -10,7 +10,7 @@ const Community = () => (
   <div>
     <TopNav />
     <Row className={styles.background_top} center="xs">
-      <TitleMod />
+      <TitleMod title={"JUNCTION COMMUNITY"}/>
     </Row>
     <Block className={styles.block} contentClassName={styles.content}>
       <Row className={styles.community}>

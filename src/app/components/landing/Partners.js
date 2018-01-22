@@ -10,7 +10,7 @@ const Partners = () => (
     <Block className={styles.block}>
       <Row>
         <Col xs={12} className="bold text-secondary">
-          <h4>PARTNERS</h4>
+          <h4>2017 PARTNERS</h4>
         </Col>
       </Row>
       <BlockHeader title="PARTNER WITH US">
