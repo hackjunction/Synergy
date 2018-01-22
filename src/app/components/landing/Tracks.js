@@ -23,13 +23,14 @@ class Tracks extends Component {
         <Block className={styles.block}>
           <Row>
             <Col xs={12} className="bold text-secondary">
-              <h4>TRACKS</h4>
+              <h4>TRACKS FROM LAST YEAR</h4>
             </Col>
           </Row>
           <BlockHeader title="BUILDING FOR TOMORROW">
             <p>
-              Junction 2017 is divided into multiple tracks, each including several challenges set by our amazing
-              partners. The best project will be awarded with the main prize of{' '}
+              Junction 2017 was divided into multiple tracks, each including
+              several challenges set by our amazing partners. The best project
+              was awarded with the main prize of{" "}
               <span className={styles.text_highlight}>20k€</span>.
             </p>
           </BlockHeader>

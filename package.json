@@ -87,7 +87,7 @@
     "redux-saga": "^0.15.6",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
-    "webpack": "^3.1.0",
+    "webpack": "^3.4.1",
     "xml-js": "^1.4.1",
     "yargs": "^8.0.2"
   },

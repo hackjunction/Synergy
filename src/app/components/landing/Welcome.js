@@ -41,9 +41,9 @@ const Welcome = () => (
             </div>
           </h1>
           <br />
-          <h2 className={styles.event_dates}>24-26 November - Helsinki</h2>
-          <a href="https://live.hackjunction.com/">
-            <button className={styles.apply_button}>GO TO LIVE WEBSITE</button>
+          <h2 className={styles.event_dates}>Thank you for 2017 and see you soon!</h2>
+          <a href="https://www.facebook.com/hackjunction">
+            <button className={styles.apply_button}> GET THE LATEST UPDATES</button>
           </a>
         </Col>
         <Col xs={1} className="junction_welcome_bottom">
