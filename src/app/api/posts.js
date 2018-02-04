@@ -23,4 +23,8 @@ export default class ApiPosts {
     //console.log("id: ", id);
     return api.get('/challenge?id=' + id);
   }
+
+  static getJobs() {
+    return api.get('/jobs');
+  }
 }

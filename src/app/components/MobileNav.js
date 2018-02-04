@@ -48,6 +48,9 @@ class MobileNav extends React.Component {
                 <a href="/partners">PARTNERS</a>
               </li>
               <li>
+                <a href="/jobs">JOBS</a>
+              </li>
+              <li>
                 <a href="https://register.hackjunction.com/login">LOGIN</a>
               </li>
             </ul>

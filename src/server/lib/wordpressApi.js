@@ -46,7 +46,6 @@ export const getChallenge = id => {
     .get('/posts' + (isNaN(id) ? '?slug=' : '/') + id)
     .then(challenge => (isNaN(id) ? challenge.data[0] : challenge.data))
     .then(challenge => {
-      console.log(challenge);
       if (challenge.status === 404) {
         return {
           id,
@@ -96,6 +95,22 @@ export const getChallenges = () => {
           content: challenge.acf.content,
           challenge_bg: challenge.acf.challenge_bg,
           challenge_type: challenge.acf.challenge_type
+        };
+      });
+    });
+};
+
+export const getJobs = () => {
+  return wordpressApiClient
+    .get('/posts?_embed&categories=7&per_page=100')
+    .then(jobs => jobs.data)
+    .then(jobs => {
+      return jobs.map(job => {
+        return {
+          title: job.title.rendered,
+          description: job.acf.description,
+          partner: job.acf.partner,
+          application_end_date: job.acf.application_end_date
         };
       });
     });
