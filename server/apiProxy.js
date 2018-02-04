@@ -69,4 +69,10 @@ apiRouter.get('/medium/posts', (req, res) => {
   });
 });
 
+apiRouter.get('/jobs', (req, res) => {
+  wordpressApi.getJobs().then(jobs => {
+    res.json(jobs);
+  });
+});
+
 export default apiRouter;

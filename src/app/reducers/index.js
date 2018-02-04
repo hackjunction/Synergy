@@ -5,6 +5,7 @@ import { posts, mediumPosts } from './posts';
 import challenges from './challenges';
 import tracks from './tracks';
 import events from './events';
+import jobs from './jobs';
 
 const reducers = combineReducers({
   routing: routerReducer,
@@ -13,7 +14,8 @@ const reducers = combineReducers({
   mediumPosts: mediumPosts,
   challenges: challenges,
   tracks: tracks,
-  events: events
+  events: events,
+  jobs: jobs
 });
 
 export default reducers;
