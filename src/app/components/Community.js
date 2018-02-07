@@ -4,7 +4,7 @@ import styles from './Community.c.scss';
 import Block from './viewBlocks/Block';
 import TopNav from './TopNav';
 import TitleMod from './TitleMod';
-import Footer from './junction2017/Footer';
+import Footer from './landing/Footer';
 
 const Community = () => (
   <div>
