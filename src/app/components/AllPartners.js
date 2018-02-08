@@ -4,14 +4,20 @@ import styles from './Track.c.scss';
 import Block from './viewBlocks/Block';
 import TopNav from './TopNav';
 import TitleMod from './TitleMod';
-import Footer from './junction2017/Footer';
+import Footer from './landing/Footer';
 
 const AllPartners = () => (
   <div>
     <Grid className={styles.hero} fluid>
       <TopNav />
       <Row className={styles.background_top} center="xs">
-        <TitleMod title={"PARTNERS FROM 2017"} content={["Want to see your logo here? Contact us at partnerships@hackjunction.com to get on board with the Junction community.","Check out our partners from 2017:"]}/>
+        <TitleMod
+          title="PARTNERS FROM 2017"
+          content={[
+            'Want to see your logo here? Contact us at partnerships@hackjunction.com to get on board with the Junction community.',
+            'Check out our partners from 2017:'
+          ]}
+        />
       </Row>
     </Grid>
     <Block className={styles.block}>
@@ -83,10 +89,7 @@ const AllPartners = () => (
           <hr className={styles.separator} />
         </Col>
         <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/mlh.png"
-            className="responsive"
-          />
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/mlh.png" className="responsive" />
         </Col>
         <Col xs={4} md={3}>
           <img
@@ -131,16 +134,10 @@ const AllPartners = () => (
           />
         </Col>
         <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/futurice.png"
-            className="responsive"
-          />
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/futurice.png" className="responsive" />
         </Col>
         <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/dexter.png"
-            className="responsive"
-          />
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/dexter.png" className="responsive" />
         </Col>
         <Col xs={4} md={3}>
           <img
@@ -470,10 +467,7 @@ const AllPartners = () => (
           />
         </Col>
         <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/finefoods.png"
-            className="responsive"
-          />
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/finefoods.png" className="responsive" />
         </Col>
         <Col xs={4} md={3}>
           <img
@@ -482,22 +476,13 @@ const AllPartners = () => (
           />
         </Col>
         <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/lindahls.png"
-            className="responsive"
-          />
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/lindahls.png" className="responsive" />
         </Col>
         <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/linkosuo.png"
-            className="responsive"
-          />
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/linkosuo.png" className="responsive" />
         </Col>
         <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/forsman.png"
-            className="responsive"
-          />
+          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/forsman.png" className="responsive" />
         </Col>
       </Row>
     </Block>

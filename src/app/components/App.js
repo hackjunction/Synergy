@@ -9,7 +9,6 @@ import AllTracks from './AllTracks';
 import AllPartners from './AllPartners';
 import AllJobs from './AllJobs';
 import Volunteer from './Volunteer';
-import Junction2017 from './Junction2017';
 import NotFound from './NotFound';
 import MobileNav from './MobileNav';
 
@@ -32,7 +31,6 @@ class App extends React.Component {
               <Route path="/all-tracks" component={AllTracks} />
               <Route path="/partners" component={AllPartners} />
               <Route path="/jobs" component={AllJobs} />
-              <Route path="/junction2017" component={Junction2017} />
               <Route path="/404" component={NotFound} />
               <Route component={NotFound} />
             </Switch>

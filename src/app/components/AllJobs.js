@@ -6,7 +6,6 @@ import styles from './Job.c.scss';
 import Job from './Job';
 import TitleMod from './TitleMod';
 import TopNav from './TopNav';
-import Footer from './junction2017/Footer';
 
 class AllJobs extends Component {
   componentWillMount() {
@@ -25,7 +24,6 @@ class AllJobs extends Component {
           {jobs.map((job, i) => {
             return <Job job={job} key={i} />;
           })}
-          <Footer />
         </Grid>
       </div>
     );

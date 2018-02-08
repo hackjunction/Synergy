@@ -4,13 +4,13 @@ import styles from './Community.c.scss';
 import Block from './viewBlocks/Block';
 import TopNav from './TopNav';
 import TitleMod from './TitleMod';
-import Footer from './junction2017/Footer';
+import Footer from './landing/Footer';
 
 const Community = () => (
   <div>
     <TopNav />
     <Row className={styles.background_top} center="xs">
-      <TitleMod title={"JUNCTION COMMUNITY"}/>
+      <TitleMod title="JUNCTION COMMUNITY" />
     </Row>
     <Block className={styles.block} contentClassName={styles.content}>
       <Row className={styles.community}>
