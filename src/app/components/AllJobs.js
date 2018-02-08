@@ -23,7 +23,7 @@ class AllJobs extends Component {
           <TopNav />
           <TitleMod />
           {jobs.map((job, i) => {
-            return <Job title={job.title} description={job.description} key={i} />;
+            return <Job job={job} key={i} />;
           })}
           <Footer />
         </Grid>

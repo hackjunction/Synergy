@@ -107,10 +107,20 @@ export const getJobs = () => {
     .then(jobs => {
       return jobs.map(job => {
         return {
-          title: job.title.rendered,
-          description: job.acf.description,
+          title: job.acf.title,
+          description_paragraphs: job.acf.description
+            .replace(/<br \/>/g, '\r\n')
+            .split('\r\n')
+            .filter(p => p !== ''),
           partner: job.acf.partner,
-          application_end_date: job.acf.application_end_date
+          application_end_date: job.acf.application_end_date,
+          partner_logo: job.acf.partner_logo,
+          // Example input: 'HTML<br />\r\nCSS<br />\r\nJavaScript<br />\r\n'
+          // Example output: 'HTML|CSS|Javscript'
+          skills: job.acf.skills
+            .split('<br />\r\n')
+            .filter(sk => sk !== '')
+            .join('|')
         };
       });
     });
