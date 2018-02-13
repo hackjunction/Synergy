@@ -24,7 +24,6 @@ module.exports.module.loaders[1] = {
   }),
   exclude: /\.c\.scss$/
 };
-/*
 // compress the js file
 module.exports.plugins.push(
   new webpack.optimize.UglifyJsPlugin({
@@ -35,6 +34,7 @@ module.exports.plugins.push(
   })
 );
 
+/*
 // export css to a separate file
 module.exports.module.loaders[1] = {
   test: /\.scss$/,

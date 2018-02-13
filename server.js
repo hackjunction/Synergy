@@ -1,5 +1,10 @@
-import express from 'express';
-import apiProxy from 'src/server/apiProxy';
+var express = require('express');
+var apiProxy;
+if(process.env.NODE_ENV === 'development'){
+  apiProxy = require('./server/apiProxy');
+} else {
+  apiProxy = require('./build/apiProxy').default;
+}
 
 const app = express();
 const port = process.env.PORT || 3000;
