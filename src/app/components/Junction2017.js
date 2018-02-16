@@ -1,0 +1,88 @@
+import React from 'react';
+import { Row, Col } from 'react-flexbox-grid';
+import styles from './Junction2017.c.scss';
+import Block from './viewBlocks/Block';
+import TopNav from './TopNav';
+import TitleMod from './TitleMod';
+import Footer from './landing/Footer';
+import ElementGrid from './common/ElementGrid';
+import ElementGridElement from './common/ElementGridElement';
+
+const Junction2017 = () => (
+  <div>
+    <TopNav />
+    <Row className={styles.background_top} center="xs">
+      <TitleMod title={"JUNCTION 2017"} content={["Junction 2017 was a blast! Altogether 1500 participant from 90 different nationalities gathered to Aalto University’s main building Dipoli during the cold and slushy November in Finland. Based on the feedback we gathered from you guys, the best parts of Junction still remained the same: the unique atmosphere, sharing your passion with 1499 other people. Also the almighty Junction Midnight Karaoke. Throughout the weekend we saw some crazy project ideas with impressive outcomes. You can see every track winner down below – we hope you find them as interesting as we do!"]}/>
+    </Row>
+    <Block className={styles.block} contentClassName={null}>
+      <ElementGrid
+        grid={[[12], [4, 4, 4],[6, 6],[4, 4, 4],[6, 6], [4, 4, 4], [12]]}
+        elements={[
+          {title: "WINNER OF JUNCTION 2017",
+           team: "GLADOS",
+           link: "https://devpost.com/software/glados",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/09/big_data.jpg"},
+          {title: "ENTERTAINMENT TRACK WINNER",
+           team: "SPOTIFY CROWD",
+           link: "https://devpost.com/software/spotify-crowd",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/08/entertainment.jpg"},
+          {title: "GAME JAM WINNER",
+           team: "DISCO MELTHEM",
+           link: "https://devpost.com/software/discomelthem",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/08/game_jam.jpg"},
+          {title: "LOGISTICS TRACK WINNER",
+           team: "FLEETBOARD CRYPTOTRUCK",
+           link: "https://devpost.com/software/fleetboard-cryptotruck",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/08/logistics.jpg"},
+          {title: "ARTIFICIAL INTELLIGENCE TRACK WINNER",
+           team: "AD VENTURE",
+           link: "https://devpost.com/software/ad-venture",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/09/artificial_intelligence.jpg"},
+          {title: "FINTECH TRACK WINNER",
+           team: "KOMPIS",
+           link: "https://devpost.com/software/kompis",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/08/fintech.jpg"},
+          {title: "INTELLIGENT BUILDINGS TRACK WINNER",
+           team: "SÄHKÖDINO",
+           link: "https://devpost.com/software/sahkodino",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/08/intelligent_buildings.jpg"},
+          {title: "LEGALTECH TRACK WINNER",
+           team: "DISCOVER",
+           link: "https://devpost.com/software/discover-dn430a",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/10/legal.jpg"},
+          {title: "HEALTHTECH TRACK WINNER",
+           team: "NE’E",
+           link: "https://devpost.com/software/ne-e",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/08/healthtech.jpg"},
+          {title: "PRODUCTIVITY TRACK WINNER",
+           team: "DUUNITIN",
+           link: "https://staging.hackjunction.com/wp-content/uploads/2017/10/productivity-1.jpg",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/10/legal.jpg"},
+          {title: "SPACE TRACK WINNER",
+           team: "BIOPLANNER",
+           link: "https://devpost.com/software/bioplanner",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/10/space.png"},
+          {title: "INDUSTRIAL INTERNET TRACK WINNER",
+           team: "ECO-MPERE",
+           link: "https://devpost.com/software/eco-mpere",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/08/industrial_internet.jpg"},
+           {title: "BIG DATA TRACK WINNER",
+           team: "GLADOS",
+           link: "https://devpost.com/software/glados",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/09/big_data.jpg"},
+           {title: "",
+           team: "MORE PROJECTS",
+           link: "https://junction2017.devpost.com/",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/10/legal.jpg"}
+         ].map(winner => {
+             return <ElementGridElement link={winner.link} content={<div><h3>{winner.title}</h3><h2>{winner.team}</h2></div>}
+             background={winner.background}
+             outside />
+           })}
+        />
+    </Block>
+    <Footer />
+  </div>
+);
+
+export default Junction2017;

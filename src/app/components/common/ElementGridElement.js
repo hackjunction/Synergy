@@ -7,7 +7,7 @@ import styles from './ElementGrid.c.scss';
 export default class ElementGridElement extends Component {
   // render
   render() {
-    const { link, background, content } = this.props;
+    const { link, background, content, outside } = this.props;
 
     var style;
     if(background){
@@ -15,17 +15,28 @@ export default class ElementGridElement extends Component {
         'backgroundImage': `url(${background})`
       };
     }
-          return (
-      <Link to={link}>
-        <div className={`responsive ${styles.trackCell}`} style={style}>
-          <div className={styles.awesome_overlay}>
-            <div className={styles.inside}>
-              {content}
-            </div>
+    var element = (
+      <div className={`responsive ${styles.trackCell}`} style={style}>
+        <div className={styles.awesome_overlay}>
+          <div className={styles.inside}>
+            {content}
           </div>
         </div>
-      </Link>
-    );
+      </div>
+    )
+    if(!outside)
+      return (
+        <Link to={link}>
+          {element}
+        </Link>
+      );
+    else {
+      return (
+        <a href={link}>
+          {element}
+        </a>
+      );
+    }
   }
 }
 
