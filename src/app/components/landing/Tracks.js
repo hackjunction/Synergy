@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Row, Col } from 'react-flexbox-grid';
 import Scroll from 'react-scroll';
+import ElementGrid from '../common/ElementGrid';
 import TrackElement from '../common/TrackElement';
 import Block from '../viewBlocks/Block';
 import BlockHeader from '../viewBlocks/BlockHeader';
@@ -34,21 +35,10 @@ class Tracks extends Component {
               <span className={styles.text_highlight}>20k€</span>.
             </p>
           </BlockHeader>
-          {grid.map((row, rowI) => {
-            return (
-              <Row height={1} key={rowI} className={styles.track_row} center="xs">
-                {row.map((width, colI) => {
-                  var element = (
-                    <Col xs={12} key={colI} md={width} lg={width}>
-                      {this.props.tracks[i] ? <TrackElement key={i} post={this.props.tracks[i]} /> : <div />}
-                    </Col>
-                  );
-                  i += 1;
-                  return element;
-                })}
-              </Row>
-            );
-          })}
+          <ElementGrid
+            grid={[[4, 4, 4], [6, 6], [4, 4, 4], [6, 6], [4, 4, 4]]}
+            elements= {this.props.tracks.map((track, i) => <TrackElement key={i} post={track} /> )}
+          />
         </Block>
       </Scroll.Element>
     );
