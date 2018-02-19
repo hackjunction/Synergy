@@ -15,7 +15,7 @@ const Junction2017 = () => (
     <TitleMod title={"JUNCTION 2017"} content={["Junction 2017 was a blast! Altogether 1500 participant from 90 different nationalities gathered to Aalto University’s main building Dipoli during the cold and slushy November in Finland. Based on the feedback we gathered from you guys, the best parts of Junction still remained the same: the unique atmosphere, sharing your passion with 1499 other people. Also the almighty Junction Midnight Karaoke. Throughout the weekend we saw some crazy project ideas with impressive outcomes. You can see every track winner down below – we hope you find them as interesting as we do!"]}/>
     <Block className={styles.block} contentClassName={null}>
       <ElementGrid
-        grid={[[12], [4, 4, 4],[6, 6],[4, 4, 4],[6, 6], [6, 6], [6, 6]]}
+        grid={[[12], [4, 4, 4],[6, 6],[4, 4, 4],[6, 6], [4, 4, 4]]}
         elements={[
           {title: "WINNER OF JUNCTION 2017",
            team: "GLADOS",
@@ -68,7 +68,11 @@ const Junction2017 = () => (
            {title: "BIG DATA TRACK WINNER",
            team: "GLADOS",
            link: "https://devpost.com/software/glados",
-           background: "https://staging.hackjunction.com/wp-content/uploads/2017/09/big_data.jpg"}
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/09/big_data.jpg"},
+           {title: "MOBILITY TRACK WINNER",
+           team: "SAFETYFIRST",
+           link: "https://devpost.com/software/safetyfirst-lfb47g",
+           background: "https://staging.hackjunction.com/wp-content/uploads/2017/08/multimodal_mobility.jpg"}
          ].map(winner => {
              return <ElementGridElement link={winner.link} content={<div><h3>{winner.title}</h3><h2>{winner.team}</h2></div>}
              background={winner.background}
