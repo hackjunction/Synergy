@@ -20,7 +20,7 @@ class Volunteer extends Component {
           width="100%"
           height="100%"
           frameBorder="0"
-          src="https://hackjunction.typeform.com/to/mRVe5P"
+          src="https://docs.google.com/forms/d/e/1FAIpQLScu-QdWo6rv4TVZ4mj7b29pS2wwjYwMKA0w-5tfO856Pumq4A/viewform"
         />
         <script type="text/javascript" src="https://embed.typeform.com/embed.js" />
       </div>

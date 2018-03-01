@@ -6,6 +6,7 @@ import styles from './Job.c.scss';
 import Job from './Job';
 import TitleMod from './TitleMod';
 import TopNav from './TopNav';
+import Footer from './landing/Footer';
 
 class AllJobs extends Component {
   componentWillMount() {
@@ -20,10 +21,11 @@ class AllJobs extends Component {
       <div>
         <Grid className={styles.hero} fluid>
           <TopNav />
-          <TitleMod />
+          <TitleMod title="Open positions from our partners" content={['']} />
           {jobs.map((job, i) => {
             return <Job job={job} key={i} />;
           })}
+          <Footer />
         </Grid>
       </div>
     );

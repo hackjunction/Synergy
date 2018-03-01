@@ -7,10 +7,11 @@
     "lint": "eslint --fix --ext js --ext jsx --ext json src",
     "test": "yarn lint",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev && true",
-    "start:dev": "NODE_ENV=development babel-watch -w src server.js",
-    "start:prod": "npm run build:webpack && node server.js",
+    "start:dev": "NODE_ENV=development && npx babel --watch -d build server | npm run watch | node server.js",
+    "start:prod": "npm run build:server && npm run build:webpack && node ./server.js",
     "watch": "webpack --watch --config webpack.dev.config.js",
     "build:webpack": "NODE_ENV=production webpack --config webpack.prod.config.js",
+    "build:server": "npx babel -d ./build ./server",
     "precommit": "lint-staged"
   },
   "lint-staged": {
@@ -32,6 +33,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "babel": "6.23.0",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.25.0",
     "babel-eslint": "8.0.2",
     "babel-loader": "^7.1.2",
@@ -66,6 +68,7 @@
     "moment": "^2.20.1",
     "node-instagram": "^3.0.0",
     "node-sass": "^4.5.3",
+    "npx": "^9.7.1",
     "prettier": "^1.8.2",
     "prop-types": "^15.5.10",
     "ramda": "^0.24.1",
