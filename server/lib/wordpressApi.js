@@ -120,7 +120,8 @@ export const getJobs = () => {
           skills: job.acf.skills
             .split('<br />\r\n')
             .filter(sk => sk !== '')
-            .join('|')
+            .join('|'),
+          link: job.acf.link
         };
       });
     });

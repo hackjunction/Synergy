@@ -18,6 +18,7 @@
 
   .intermediate_text {
     font-size: 18px;
+    margin-top: 1em;
   }
 
   .deadline .intermediate_text {
@@ -26,6 +27,7 @@
 
   .application_end_date {
     text-align: center;
+    margin-top: 0.2em;
   }
 
   .application_end_date span {
@@ -64,6 +66,26 @@
     margin-top: 5px;
     margin-bottom: 10px;
     display: inline-block;
+  }
+}
+.link {
+  a:link {
+    color: #35e2df;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #35e2df;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #35e2df;
+    text-decoration: none;
+  }
+  a {
+    border-bottom: 1px solid #35e2df;
+    display: inline-block;
+    line-height: 25px;
+    text-decoration: none;
   }
 }
 

@@ -22,9 +22,18 @@ function Job(props) {
         </div>
       </div>
       <div className={styles.right}>
-        <div className={styles.skill_heading}>SKILLS</div>
-        <div className={styles.skills}>{props.job.skills}</div>
+        {props.job.skills ? (
+          <div>
+            <div className={styles.skill_heading}>SKILLS</div>
+            <div className={styles.skills}>{props.job.skills}</div>
+          </div>
+        ) : null}
         {props.job.description_paragraphs.map(paragraph => <p>{paragraph}</p>)}
+        {props.job.link ? (
+          <p className={styles.link}>
+            <a href={props.job.link}> Read more </a>
+          </p>
+        ) : null}
       </div>
     </Row>
   );
