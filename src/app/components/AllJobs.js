@@ -21,7 +21,12 @@ class AllJobs extends Component {
       <div>
         <Grid className={styles.hero} fluid>
           <TopNav />
-          <TitleMod title="Open positions from our partners" content={['']} />
+          <TitleMod
+            title="Open positions from our partners"
+            content={[
+              'Want to see your job listing here? Contact us at partnerships@hackjunction.com to get on board!'
+            ]}
+          />
           {jobs.map((job, i) => {
             return <Job job={job} key={i} />;
           })}
