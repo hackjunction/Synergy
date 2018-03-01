@@ -31,7 +31,7 @@ function Job(props) {
               <div className={styles.skills}>{props.job.skills}</div>
             </div>
           ) : null}
-          {props.job.description_paragraphs.map(paragraph => <p>{paragraph}</p>)}
+          <div dangerouslySetInnerHTML={{ __html: props.job.content }} />
           {props.job.link ? (
             <p className={styles.link}>
               <a href={props.job.link}> Read more </a>

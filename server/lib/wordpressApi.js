@@ -108,10 +108,7 @@ export const getJobs = () => {
       return jobs.map(job => {
         return {
           title: job.acf.title,
-          description_paragraphs: job.acf.description
-            .replace(/<br \/>/g, '\r\n')
-            .split('\r\n')
-            .filter(p => p !== ''),
+          content: job.content.rendered,
           partner: job.acf.partner,
           application_end_date: job.acf.application_end_date,
           partner_logo: job.acf.partner_logo,
@@ -120,7 +117,7 @@ export const getJobs = () => {
           skills: job.acf.skills
             .split('<br />\r\n')
             .filter(sk => sk !== '')
-            .join('|'),
+            .join(' | '),
           link: job.acf.link
         };
       });
