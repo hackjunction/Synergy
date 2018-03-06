@@ -13,7 +13,8 @@ const Community = () => (
       <TitleMod
         title="What is JUNCTIONx?"
         content={[
-          'JUNCTIONx is the low-barrier entrypoint on your path to creating your own hackathon. We want to provide you with the necessary tools, guidelines, and especially our brand to make everything as easy as possible for you. This way you can concentrate on making your own Junction unique for participants, partners and especially for your organising team.'
+          'JUNCTIONx is the low-barrier entrypoint on your path to creating your own hackathon. We want to provide you with the necessary tools, guidelines, and especially our brand to make everything as easy as possible for you. This way you can concentrate on making your own Junction unique for participants, partners and especially for your organising team.',
+          'Want to hear more? Shoot us a message at global@hackjunction.com!'
         ]}
       />
     </Row>
@@ -39,10 +40,6 @@ const Community = () => (
             src="https://staging.hackjunction.com/wp-content/uploads/2018/03/timeline_jucntionx.png"
             className="responsive"
           />
-        </Col>
-        <Col>
-          <br />
-          <p>Want to hear more? Shoot us a message at global@hackjunction.com!</p>
         </Col>
       </Row>
     </Block>
