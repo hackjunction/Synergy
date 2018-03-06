@@ -28,7 +28,7 @@ class TopNav extends React.Component {
                   <a href="/2017">JUNCTION&nbsp;2017</a>
                 </li>
                 <li>
-                  <a href="/junctionx">JUNCTION&nbsp;X</a>
+                  <a href="/junctionx">JUNCTIONX</a>
                 </li>
                 <li>
                   <a href="/jobs">JOBS</a>
