@@ -1,6 +1,5 @@
 import React from 'react';
 import Scroll from 'react-scroll';
-import { Row } from 'react-flexbox-grid';
 import Welcome from './landing/Welcome';
 import About from './landing/About';
 import Events from './landing/Events';
@@ -15,29 +14,6 @@ class Landing extends React.Component {
   render() {
     return (
       <div>
-        <nav className="junction_fixed_social">
-          <Row>
-            <div className="social-media">
-              <a href="https://www.facebook.com/hackjunction">
-                <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/fb.png" alt="" />
-              </a>
-            </div>
-          </Row>
-          <Row className="social-media">
-            <div className="social-media">
-              <a href="https://www.instagram.com/hackjunction/">
-                <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/ig.png" alt="" />
-              </a>
-            </div>
-          </Row>
-          <Row className="social-media">
-            <div className="social-media">
-              <a href="https://blog.hackjunction.com/">
-                <img src="https://staging.hackjunction.com/wp-content/uploads/2017/08/md.png" alt="" />
-              </a>
-            </div>
-          </Row>
-        </nav>
         <nav className="junction_menu">
           <ul>
             <li>
