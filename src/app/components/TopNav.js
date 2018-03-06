@@ -28,16 +28,10 @@ class TopNav extends React.Component {
                   <a href="/2017">JUNCTION&nbsp;2017</a>
                 </li>
                 <li>
-                  <a href="/all-tracks">TRACKS</a>
-                </li>
-                <li>
-                  <a href="/partners">PARTNERS</a>
+                  <a href="/junctionx">JUNCTION&nbsp;X</a>
                 </li>
                 <li>
                   <a href="/jobs">JOBS</a>
-                </li>
-                <li>
-                  <a href="https://register.hackjunction.com/login">LOGIN</a>
                 </li>
               </ul>
             </nav>

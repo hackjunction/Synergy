@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .block_dark {
@@ -38,6 +37,9 @@ h4 {
 }
 .apply_button_light {
   color: #FBFBFB;
+}
+.apply_button_fullwidth {
+  width: 90%;
 }
 .apply_button:focus {
   outline: none;
