@@ -5,6 +5,7 @@
 
 .job_style {
   width: 70%;
+  min-width: 250px;
   max-width: 1000px;
   margin: 30px auto;
   padding: 25px;
@@ -31,6 +32,7 @@
   .application_end_date {
     text-align: center;
     margin-top: 0.2em;
+    margin-bottom: 2em;
   }
 
   .application_end_date span {
@@ -88,4 +90,7 @@
     line-height: 25px;
     text-decoration: none;
   }
+}
+p {
+  word-wrap: break-word;
 }
