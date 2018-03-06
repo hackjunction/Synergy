@@ -42,7 +42,7 @@ class MobileNav extends React.Component {
                 <a href="/2017">JUNCTION 2017</a>
               </li>
               <li>
-                <a href="/2017">JUNCTION X</a>
+                <a href="/junctionx">JUNCTION X</a>
               </li>
               <li>
                 <a href="/jobs">JOBS</a>
