@@ -97,8 +97,8 @@ const Junction2017 = () => (
           },
           {
             title: 'BIG DATA TRACK WINNER',
-            team: 'GLADOS',
-            link: 'https://devpost.com/software/glados',
+            team: 'SMART CITY MAINTENANCE',
+            link: 'https://devpost.com/software/polku',
             background: 'https://staging.hackjunction.com/wp-content/uploads/2017/09/big_data.jpg'
           },
           {
@@ -139,7 +139,7 @@ const Junction2017 = () => (
           </a>
         </Col>
         <Col xs={12} md={4}>
-          <a href="/tracks">
+          <a href="/all-tracks">
             <button className={`${styles.apply_button} ${styles.apply_button_fullwidth}`}>
               SEE TRACKS FROM<br />2017
             </button>
