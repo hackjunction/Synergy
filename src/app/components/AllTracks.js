@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Row } from 'react-flexbox-grid';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import styles from './Track.c.scss';
+import styles from './AllTracks.c.scss';
 import TitleMod from './TitleMod';
 import AllTracksTrack from './AllTracksTrack';
 import TopNav from './TopNav';
@@ -20,7 +20,7 @@ class AllTracks extends Component {
       <Grid className={styles.hero} fluid>
         <TopNav />
         <Row className={styles.background_top} center="xs">
-          <TitleMod title={"TRACKS FROM 2017"}/>
+          <TitleMod title="TRACKS FROM 2017" />
         </Row>
         {tracks.map((track, i) => {
           return <AllTracksTrack key={i} track={track} />;

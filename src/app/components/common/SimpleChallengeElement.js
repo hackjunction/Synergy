@@ -22,31 +22,33 @@ class SimpleChallenge extends Component {
     }
 
     return (
-      <Link to={`/challenges/${data.id}`} key={data.id}>
-        <Row center="xs">
-          <Col xs={12} md={4}>
-            {data.image && <img className={styles.simple_challenge_logo} src={data.image} alt="" />}
-          </Col>
-          <Col xs={12} md={8}>
-            <h2 className={styles.left}> {title} </h2>
-            <p className={styles.left}> {content} </p>
-            {data.prize && (
-              <div>
-                {data.prize.split('|').map(text => {
-                  return (
-                    <p className={styles.left} key={text}>
-                      <b>Prize:</b> {text} <br />
-                      <a href={`/challenges/${data.id}`}>
-                        <span className={styles.text_highlight}>READ MORE</span>
-                      </a>
-                    </p>
-                  );
-                })}
-              </div>
-            )}
-          </Col>
-        </Row>
-      </Link>
+      <Col xs={12} md={12}>
+        <Link to={`/challenges/${data.id}`} key={data.id}>
+          <Row center="xs">
+            <Col xs={12} md={4}>
+              {data.image && <img className={styles.simple_challenge_logo} src={data.image} alt="" />}
+            </Col>
+            <Col xs={12} md={8}>
+              <h2 className={styles.left}> {title} </h2>
+              <p className={styles.left}> {content} </p>
+              {data.prize && (
+                <div>
+                  {data.prize.split('|').map(text => {
+                    return (
+                      <p className={styles.left} key={text}>
+                        <b>Prize:</b> {text} <br />
+                        <a href={`/challenges/${data.id}`}>
+                          <span className={styles.text_highlight}>READ MORE</span>
+                        </a>
+                      </p>
+                    );
+                  })}
+                </div>
+              )}
+            </Col>
+          </Row>
+        </Link>
+      </Col>
     );
   }
 }

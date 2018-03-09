@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import styles from './Track.c.scss';
+import styles from './AllTracks.c.scss';
 // import Challenge from './challenges/Challenge';
 import SimpleChallenge from './common/SimpleChallengeElement';
 
