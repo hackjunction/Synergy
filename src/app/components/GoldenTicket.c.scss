@@ -7,11 +7,34 @@
   justify-content: center;
   text-align: center;
 }
-.title {
+.grid {
   width: 100%;
+  min-height: 100%;
+  background: black;
+  color: rgb(165, 122, 0);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .content {
-  width:100%;
+  width: 80%;
+  margin:auto;
+}
+.title {
+  width: 100%;
+  padding-top: 4em;
+}
+.paragraph {
+  margin:auto;
+  padding-top: 3em;
+}
+.logo {
+  padding-top: 5em;
+}
+.logoImage {
+  width: 300px;
+  max-width: 100%;
+  margin:auto;
 }
 
 h2, h4 {
