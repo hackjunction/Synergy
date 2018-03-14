@@ -27,11 +27,11 @@ const Community = () => (
           </p>
         </Col>
         <Col>
-          <h4>JUNCTION 2017 – 48 HOURS TO BUILD THE FUTURE</h4>
+          <h4>JUNCTION – 48 HOURS TO BUILD THE FUTURE</h4>
           <p>
             Hackathons are all about taking something you love, combining it with tech and learning something in the
-            process. Junction 2017 brings together hackers, designers, the coolest partners and hardware for one weekend
-            of hacking. It’s a place where creators can let go of their inhibitions and create cool inspiring projects.
+            process. Junction brings together hackers, designers, the coolest partners and hardware for one weekend of
+            hacking. It’s a place where creators can let go of their inhibitions and create cool inspiring projects.
           </p>
         </Col>
         <Col>
@@ -44,10 +44,6 @@ const Community = () => (
             Junction 2017 to the roots of it all: overtaking the newly renovated main building of Aalto University,
             Dipoli, to shine light to the importance of our mission of inspiring people to learn and create with
             technology.
-          </p>
-          <p>
-            Held Friday through Sunday on November 24-26th, 2016 in Helsinki, Finland Junction is the place to design
-            and develop your ideas into actual projects together with like-minded hackers.
           </p>
           <a href="/volunteer">
             <button className={styles.apply_button}>VOLUNTEER</button>
