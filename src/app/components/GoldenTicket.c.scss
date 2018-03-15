@@ -11,7 +11,7 @@
   width: 100%;
   min-height: 100%;
   background: black;
-  color: rgb(165, 122, 0);
+  color: rgb(165, 122, 0) !important;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -37,11 +37,25 @@
   max-width: 100%;
   margin:auto;
 }
+.links {
+  margin-top: 2em;
+  position:relative;
+}
+.verticalAlign {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
 
 h2, h4 {
   font-family: 'Montserrat';
   font-weight: 700;
   color: rgb(165, 122, 0);
+}
+a,
+a:hover {
+  color: rgb(165, 122, 0) !important;
+  font-family: "Lato", sans-serif !important;
 }
 
 .title h2:before {
