@@ -25,7 +25,7 @@ const GoldenTicket = () => {
         </Row>
         <Row className={styles.links}>
           <Col md={4} xs={12}>
-            <Link to="/">
+            <Link className={styles.a} to="/">
               <img
                 src="https://farm5.staticflickr.com/4555/38092639235_3bd70878b9_o_d.jpg"
                 className="responsive"
@@ -35,7 +35,7 @@ const GoldenTicket = () => {
             </Link>
           </Col>
           <Col md={4} xs={12}>
-            <a href="https://hacktalks.hackjunction.com">
+            <a className={styles.a} href="https://hacktalks.hackjunction.com">
               <img
                 src="https://staging.hackjunction.com/wp-content/uploads/2018/03/2018-03-15-16.03.31.jpg"
                 className="responsive"
