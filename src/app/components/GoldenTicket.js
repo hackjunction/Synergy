@@ -36,11 +36,24 @@ const GoldenTicket = () => (
         <h2>
           <span>Confirm your Golden Ticket</span>
         </h2>
+        <Col className={styles.paragraph} xs={12} md={8}>
+          The last step in claiming your ticket is to confirm your secret code from the link below. After confirming you
+          will still have to register once the system opens in the fall, but don’t worry, we’ll keep you updated!
+        </Col>
+        <Col className={styles.paragraph} xs={12} md={8}>
+          <a href="https://hackjunction.typeform.com/to/mV6NB8">
+            {' '}
+            <div className={styles.confirm}>CONFIRM</div>
+          </a>
+        </Col>
       </Row>
       <Row className={styles.title}>
         <h2>
           <span>Hackathon organiser?</span>
         </h2>
+        <Col className={styles.paragraph} xs={12} md={8}>
+          Want to grant Golden Tickets in your event? Please contact at hello(at)hackjunction.com
+        </Col>
       </Row>
     </div>
   </Grid>
