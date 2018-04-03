@@ -1,0 +1,31 @@
+.block {
+  background: #FBFBFB;
+  color: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 800px;
+}
+
+.name {
+  font-weight: 600;
+}
+.title {
+
+}
+.email {
+  font-size: 10pt;
+}
+
+.card {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.img {
+  border-radius: 50%;
+  max-width: 100%;
+}
