@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Landing from './Landing';
 import Post from './Post';
-import Community from './Community';
+import Contact from './Contact';
 import Track from './Track';
 import Challenge from './Challenge';
 import AllTracks from './AllTracks';
@@ -27,7 +27,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/" component={Landing} />
               <Route exact path="/post" component={Post} />
-              <Route exact path="/community" component={Community} />
+              <Route exact path="/contact" component={Contact} />
               <Route exact path="/volunteer" component={Volunteer} />
               <Route path="/tracks/:track" component={Track} />
               <Route path="/challenges/:challenge" component={Challenge} />

@@ -10,6 +10,7 @@ import './stylesheets/media_queries.scss';
 
 const target = document.querySelector('#app');
 
+console.log(Provider, store);
 render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
