@@ -19,19 +19,19 @@ class TopNav extends React.Component {
             <nav className={styles.site_nav}>
               <ul>
                 <li>
-                  <a href="/">HOME</a>
+                  <Link to="/">HOME</Link>
                 </li>
                 <li>
-                  <a href="/community">COMMUNITY</a>
+                  <Link to="/community">COMMUNITY</Link>
                 </li>
                 <li>
-                  <a href="/2017">JUNCTION&nbsp;2017</a>
+                  <Link to="/2017">JUNCTION&nbsp;2017</Link>
                 </li>
                 <li>
-                  <a href="/junctionx">JUNCTIONX</a>
+                  <Link to="/junctionx">JUNCTIONX</Link>
                 </li>
                 <li>
-                  <a href="/jobs">JOBS</a>
+                  <Link to="/jobs">JOBS</Link>
                 </li>
               </ul>
             </nav>
