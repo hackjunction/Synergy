@@ -27,7 +27,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/" component={Landing} />
               <Route exact path="/post" component={Post} />
-              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/team" component={Contact} />
               <Route exact path="/volunteer" component={Volunteer} />
               <Route path="/tracks/:track" component={Track} />
               <Route path="/challenges/:challenge" component={Challenge} />

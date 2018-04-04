@@ -22,7 +22,7 @@ class TopNav extends React.Component {
                   <Link to="/">HOME</Link>
                 </li>
                 <li>
-                  <Link to="/contact">CONTACT</Link>
+                  <Link to="/team">TEAM</Link>
                 </li>
                 <li>
                   <Link to="/2017">JUNCTION&nbsp;2017</Link>
