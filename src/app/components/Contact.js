@@ -51,7 +51,7 @@ const Contact = () => (
         />
         <ContactCard
           name="Teemu Lemetti"
-          email="parnerships(at)hackjunction.com"
+          email="teemu.lemetti(at)hackjunction.com"
           title="Finance"
           image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-teemu.jpg"
         />
