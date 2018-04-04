@@ -27,7 +27,7 @@ const Contact = () => (
         />
         <ContactCard
           name="Henri Heliö"
-          email="parnerships(at)hackjunction.com"
+          email="partnerships(at)hackjunction.com"
           title="Partnerships"
           image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-henri.jpg"
         />
