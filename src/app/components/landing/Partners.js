@@ -4,6 +4,7 @@ import Scroll from 'react-scroll';
 import styles from './Partners.c.scss';
 import Block from '../viewBlocks/Block';
 import BlockHeader from '../viewBlocks/BlockHeader';
+import PartnerSection from './PartnerSection';
 
 const Partners = () => (
   <Scroll.Element name="partners">
@@ -21,70 +22,11 @@ const Partners = () => (
           Junction community.
         </p>
       </BlockHeader>
+      <PartnerSection
+        categories={[{ priority: 300, size_md: 4, size_xs: 6 }, { priority: 200, size_md: 3, size_xs: 4 }]}
+        year="2017"
+      />
       <Row className="junction_partners" center="xs">
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/elisa.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/veikkaus.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/N_L1_B4_RGB-1.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/planmeca.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/smartly.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/outotec.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/stara.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/finnair.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/esa.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
         <Col xs={12} md={12}>
           <hr className={styles.separator} />
         </Col>

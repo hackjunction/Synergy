@@ -30,6 +30,11 @@ apiRouter.get('/challenges', (req, res) => {
     res.json(data);
   });
 });
+apiRouter.get('/partners', (req, res) => {
+  wordpressApi.getPartners(req.query.year).then(data => {
+    res.json(data);
+  });
+});
 
 apiRouter.get('/fb/posts', (req, res) => {
   facebookClient.api(`/${FACEBOOK_PAGE}`, fbRes => {
