@@ -23,7 +23,7 @@ const GoldenTicket = () => {
             <span>Golden Ticket grants you</span>
           </h2>
         </Row>
-        <Row className={styles.links}>
+        <Row className={styles.links} middle="xs">
           <Col md={4} xs={12}>
             <Link className={styles.a} to="/">
               <img
@@ -45,7 +45,7 @@ const GoldenTicket = () => {
             </a>
           </Col>
           <Col md={4} xs={12}>
-            <p className={styles.verticalAlign}>... And other little surprises that will be announced later.</p>
+            <p>... And other little surprises that will be announced later.</p>
           </Col>
         </Row>
         <Row className={styles.title}>
