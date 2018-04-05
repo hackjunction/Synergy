@@ -27,4 +27,8 @@ export default class ApiPosts {
   static getJobs() {
     return api.get('/jobs');
   }
+
+  static getPartners(year) {
+    return api.get('/partners' + (year ? '?year=' + year : ''));
+  }
 }

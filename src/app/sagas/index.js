@@ -5,6 +5,7 @@ import { getAllChallenges, getChallenge } from './challenges';
 import { getAllTracks } from './tracks';
 import { getEvents } from './events';
 import { getJobs } from './jobs';
+import { getPartners } from './partners';
 
 // main saga generators
 export default function* sagas() {
@@ -15,4 +16,5 @@ export default function* sagas() {
   yield [fork(takeLatest, 'GET_TRACKS', getAllTracks)];
   yield [fork(takeLatest, 'GET_EVENTS', getEvents)];
   yield [fork(takeLatest, 'GET_JOBS', getJobs)];
+  yield [fork(takeLatest, 'GET_PARTNERS', getPartners)];
 }

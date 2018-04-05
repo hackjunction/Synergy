@@ -12,8 +12,6 @@ wordpressApiClient.interceptors.request.use(config => {
 
 export const getPosts = () => wordpressApiClient.get('/posts&per_page=100');
 
-export const getPartners = () => wordpressApiClient.get('/posts&per_page=100');
-
 export const getTracks = () => {
   return wordpressApiClient
     .get('/posts?_embed&categories=2&per_page=100')
@@ -121,5 +119,29 @@ export const getJobs = () => {
           link: job.acf.link
         };
       });
+    });
+};
+
+export const getPartners = year => {
+  return wordpressApiClient
+    .get('/posts?_embed&categories=3&per_page=100')
+    .then(partners => partners.data)
+    .then(partners => {
+      return partners.map(partner => {
+        return {
+          name: partner.title.rendered,
+          logo: partner.acf.logo,
+          url: partner.acf.url,
+          year: partner.acf.year,
+          priority: partner.acf.priority
+        };
+      });
+    })
+    .then(partners => {
+      if (year) {
+        return partners.filter(partner => partner.year === year);
+      } else {
+        return partners;
+      }
     });
 };
