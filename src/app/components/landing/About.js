@@ -23,9 +23,7 @@ const About = () => (
       <Row>
         <Col xs={12} className="junction-description">
           {' '}
-          <span className="text-tetriary">
-            * of 77 nationalities to be exact and a hackathon experience like no other.
-          </span>
+          <span className="text-tetriary">* of people from 86 countries to be exact.</span>
         </Col>
       </Row>
     </Block>
