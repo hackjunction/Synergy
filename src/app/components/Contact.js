@@ -9,8 +9,12 @@ import ContactCard from './ContactCard';
 
 const Contact = () => (
   <div>
-    <TopNav />
-    <TitleMod title="THE TEAM" content={['Drop us a line at', 'hello(at)hackjunction.com']} />
+    <TitleMod
+      title="THE TEAM"
+      content={['Drop us a line at', 'hello(at)hackjunction.com']}
+      image="https://staging.hackjunction.com/wp-content/uploads/2018/04/tiimikuva2017.jpg"
+      header={<TopNav />}
+    />
     <Block className={styles.block} contentClassName={null}>
       <Row>
         <ContactCard

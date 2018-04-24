@@ -6,8 +6,8 @@ import styles from './Contact.c.scss';
 
 function ContactCard(props) {
   return (
-    <Col xs={12} md={3} className={styles.card}>
-      <img className={styles.img} src={props.image} />
+    <Col xs={12} sm={6} md={3} className={styles.card}>
+      <img className={styles.img} src={props.image} alt="" />
       <p className={styles.name}>{props.name}</p>
       <p className={styles.title}>{props.title}</p>
       <p className={styles.email}>{props.email}</p>

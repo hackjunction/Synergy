@@ -5,7 +5,14 @@ import Block from './viewBlocks/Block';
 import styles from './TitleMod.c.scss';
 
 const TitleMod = props => (
-  <Block className={styles.block} contentClassName={styles.content}>
+  <Block
+    className={styles.block}
+    contentClassName={styles.content}
+    style={{
+      backgroundImage: `url(${props.image})`
+    }}
+    header={props.header}
+  >
     <Row className={styles.block}>
       <Col>
         <h1>{props.title ? props.title : 'JUNCTION'}</h1>
@@ -20,7 +27,9 @@ const TitleMod = props => (
 );
 TitleMod.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.array
+  content: PropTypes.array,
+  image: PropTypes.string,
+  header: PropTypes.object
 };
 
 export default TitleMod;
