@@ -21,6 +21,7 @@ const TitleMod = props => (
         ) : (
           <p className={styles.paragraph} />
         )}
+        {props.children}
       </Col>
     </Row>
   </Block>
@@ -29,7 +30,8 @@ TitleMod.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.array,
   image: PropTypes.string,
-  header: PropTypes.object
+  header: PropTypes.object,
+  children: PropTypes.array
 };
 
 export default TitleMod;
