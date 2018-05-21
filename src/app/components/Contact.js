@@ -20,7 +20,7 @@ const Contact = () => (
         <ContactCard
           name="Iiro Nurmi"
           email="iiro.nurmi(at)hackjunction.com"
-          title="Main Organiser"
+          title="Director"
           image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-iiro.jpg"
         />
         <ContactCard
