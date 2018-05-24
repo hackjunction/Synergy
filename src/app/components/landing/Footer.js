@@ -63,6 +63,17 @@ const Footer = () => (
     </Row>
     <Row center="xs" className={styles.base}>
       <p>
+        <a href="https://staging.hackjunction.com/wp-content/uploads/2018/05/Junction-Oy-Privacy-Policy-24052018.pdf">
+          Privacy Policy
+        </a>
+        <br />
+        <a href="https://staging.hackjunction.com/wp-content/uploads/2018/05/Junction-Oy-Terms-of-Service-24052018.pdf">
+          Terms of Service
+        </a>
+      </p>
+    </Row>
+    <Row center="xs">
+      <p>
         Designed and developed with 💕 &amp; ☕ by the amazing Junction Team
         <br />
         Released as <a href="https://github.com/hackjunction/Synergy">Open Source project under the MIT License</a>.

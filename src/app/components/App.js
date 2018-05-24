@@ -118,6 +118,31 @@ class App extends React.Component {
               </div>
             </Col>
           </Row>
+          <Row>
+            <Col xs={12}>
+              <div
+                style={{
+                  maxWidth: '80%',
+                  margin: 'auto'
+                }}
+              >
+                View our updated{' '}
+                <a
+                  style={{ color: '#35E2DF' }}
+                  href="https://staging.hackjunction.com/wp-content/uploads/2018/05/Junction-Oy-Privacy-Policy-24052018.pdf"
+                >
+                  Privacy Policy
+                </a>{' '}
+                and{' '}
+                <a
+                  style={{ color: '#35E2DF' }}
+                  href="https://staging.hackjunction.com/wp-content/uploads/2018/05/Junction-Oy-Terms-of-Service-24052018.pdf"
+                >
+                  Terms of Service
+                </a>{' '}
+              </div>
+            </Col>
+          </Row>
         </CookieConsent>
       </div>
     );
