@@ -42,9 +42,34 @@ const Welcome = () => (
           </h1>
           <br />
           <h2 className={styles.event_dates}>Thank you for 2017 and see you soon!</h2>
-          <a href="https://www.facebook.com/hackjunction">
-            <button className={styles.apply_button}> GET THE LATEST UPDATES</button>
-          </a>
+          <button
+            className={styles.apply_button}
+            onClick={() => {
+              var mailchimpConfig = {
+                baseUrl: 'mc.us15.list-manage.com',
+                uuid: '6dd99fd74845dfb3f1307127a',
+                lid: '292fbaaccd'
+              };
+              // No edits below this line are required
+              var chimpPopup = document.createElement('script');
+              chimpPopup.appendChild(
+                document.createTextNode(
+                  'require(["mojo/signup-forms/Loader"], function (L) { L.start({"baseUrl": "' +
+                    mailchimpConfig.baseUrl +
+                    '", "uuid": "' +
+                    mailchimpConfig.uuid +
+                    '", "lid": "' +
+                    mailchimpConfig.lid +
+                    '"})});document.cookie = "MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;";'
+                )
+              );
+
+              document.body.appendChild(chimpPopup);
+            }}
+          >
+            {' '}
+            GET THE LATEST UPDATES
+          </button>
         </Col>
         <Col xs={1} className="junction_welcome_bottom">
           <Scroll.Link to="about" smooth duration={500}>
