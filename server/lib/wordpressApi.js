@@ -101,25 +101,33 @@ export const getChallenges = () => {
 };
 
 export const getJobs = () => {
+  var currentTime = new Date();
+  currentTime.setUTCHours(0, 0, 0, 0);
   return wordpressApiClient
     .get('/posts?_embed&categories=7&per_page=100')
     .then(jobs => jobs.data)
     .then(jobs => {
-      return jobs.map(job => {
-        return {
-          title: job.acf.title,
-          content: job.content.rendered,
-          partner: job.acf.partner,
-          application_end_date: job.acf.application_end_date,
-          partner_logo: job.acf.partner_logo,
-          // Example input: 'HTML<br />\r\nCSS<br />\r\nJavaScript<br />\r\n'
-          // Example output: 'HTML|CSS|Javscript'
-          skills: job.acf.skills
-            .split('<br />\r\n')
-            .filter(sk => sk !== '')
-            .join(' | '),
-          link: job.acf.link
-        };
-      });
+      return jobs
+        .map(job => {
+          return {
+            title: job.acf.title,
+            content: job.content.rendered,
+            partner: job.acf.partner,
+            application_end_date: job.acf.application_end_date,
+            partner_logo: job.acf.partner_logo,
+            // Example input: 'HTML<br />\r\nCSS<br />\r\nJavaScript<br />\r\n'
+            // Example output: 'HTML|CSS|Javscript'
+            skills: job.acf.skills
+              .split('<br />\r\n')
+              .filter(sk => sk !== '')
+              .join(' | '),
+            link: job.acf.link
+          };
+        })
+        .filter(job => {
+          var jobDate = new Date(job.application_end_date);
+          jobDate.setUTCHours(0, 0, 0, 0);
+          return currentTime <= jobDate;
+        });
     });
 };
