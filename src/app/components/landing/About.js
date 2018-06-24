@@ -8,12 +8,7 @@ import BlockHeader from '../viewBlocks/BlockHeader';
 const About = () => (
   <Scroll.Element name="about">
     <Block className={styles.block}>
-      <Row>
-        <Col xs={12} className="bold text-secondary">
-          <h4>ABOUT</h4>
-        </Col>
-      </Row>
-      <BlockHeader title="JUNCTION?" />
+      <BlockHeader title="ABOUT" />
       <Row className="junction_about">
         <Col xs={12} className="junction-description">
           Junction is a <span className="text-secondary">meeting point*</span> for thousands of developers, designers,

@@ -1,7 +1,7 @@
 $question-height: 40px;
 $question-line-height: 20px;
 $question-padding: ($question-height - $question-line-height) / 2;
-$open-button-color: #5abecf;
+$open-button-color: #2afd9c;
 $answer-padding: $question-padding;
 
 .faqSection {
@@ -14,7 +14,8 @@ $answer-padding: $question-padding;
     /* Styles */
   }
   min-height: 10vh;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 1.0);
+  color: black;
 }
 
 .faqSection.open {
