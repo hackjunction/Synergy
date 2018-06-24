@@ -1,3 +1,5 @@
+@import '../stylesheets/variables';
+
 .hero {
   padding-left: 0;
   padding-right: 0;
@@ -73,19 +75,19 @@
 }
 .link {
   a:link {
-    color: #35e2df;
+    color: $accent;
     text-decoration: none;
   }
   a:visited {
-    color: #35e2df;
+    color: $accent;
     text-decoration: none;
   }
   a:hover {
-    color: #35e2df;
+    color: $accent;
     text-decoration: none;
   }
   a {
-    border-bottom: 1px solid #35e2df;
+    border-bottom: 1px solid $accent;
     display: inline-block;
     line-height: 25px;
     text-decoration: none;

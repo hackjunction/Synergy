@@ -1,3 +1,5 @@
+@import '../../stylesheets/variables';
+
 .block {
   background: #FBFBFB;
   color: #232323;
@@ -39,7 +41,7 @@
 .volunteer_button:after {
   -webkit-transform: translate(3px, 3px);
   transform: translate(3px, 3px);
-  border-color: #35e2df;
+  border-color: $accent;
 }
 .volunteer_button:before {
   -webkit-transform: translate(-3px, -3px);
@@ -51,6 +53,6 @@
   transform: translate(0);
   border: 2px solid transparent;
   background-color: transparent;
-  border-image: linear-gradient(to right, #ec008b, #35e2df);
+  border-image: linear-gradient(to right, #ec008b, $accent);
   border-image-slice: 1;
 }

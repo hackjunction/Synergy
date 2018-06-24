@@ -1,3 +1,5 @@
+@import '../stylesheets/variables';
+
 body {
   margin: 0;
 }
@@ -17,11 +19,11 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  color: #35e2df;
+  color: $accent;
   text-decoration: none;
 }
 a:active {
-  color: #35e2df;
+  color: $accent;
   text-decoration: none;
 }
 
@@ -67,10 +69,10 @@ a:active {
     font-size: 1.2em;
     transition: background-color 0.3s, color 0.3s;
     &:hover {
-      color: #35e2df !important;
+      color: $accent !important;
     }
     &:active {
-      color: #35e2df !important;
+      color: $accent !important;
       text-decoration: none;
     }
   }

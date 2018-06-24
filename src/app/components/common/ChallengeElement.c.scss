@@ -1,3 +1,5 @@
+@import '../../stylesheets/variables';
+
 .wrapper {
   position: relative;
   clear: both;
@@ -20,8 +22,8 @@
 .text_highlight {
   font-family: 'Montserrat';
   font-weight: 600;
-  color: #35E2DF;
-  border-bottom: 1px solid #35E2DF;
+  color: $accent;
+  border-bottom: 1px solid $accent;
   display: inline-block;
   line-height: 25px;
   margin: 12px 0;

@@ -1,18 +1,20 @@
+@import '../../stylesheets/variables';
+
 .event_link {
   a:link{
-    color:#35E2DF;
+    color:$accent;
     text-decoration: none;
   }
   a:visited{
-    color:#35E2DF;
+    color:$accent;
     text-decoration: none;
   }
   a:hover{
-    color:#35E2DF;
+    color:$accent;
     text-decoration: none;
   }
   a {
-    border-bottom: 1px solid #35E2DF;
+    border-bottom: 1px solid $accent;
     display: inline-block;
     line-height: 25px;
     margin: 20px 0;

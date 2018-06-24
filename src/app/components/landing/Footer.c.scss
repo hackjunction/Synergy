@@ -1,3 +1,5 @@
+@import '../../stylesheets/variables';
+
 .block {
   background: #161616;
   padding-top:70px;
@@ -14,15 +16,15 @@
 
 .block {
   a:link {
-    color: #35e2df;
+    color: $accent;
     text-decoration: none;
   }
   a:visited {
-    color: #35e2df;
+    color: $accent;
     text-decoration: none;
   }
   a:hover {
-    color: #35e2df;
+    color: $accent;
     text-decoration: none;
   }
 }

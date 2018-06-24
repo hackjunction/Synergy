@@ -1,3 +1,5 @@
+@import '../stylesheets/variables';
+
 $color3: white;
 .track_page {
   background-color: #fbfbfb;
@@ -30,7 +32,7 @@ h1 {
 .text_highlight {
   font-family: 'Montserrat';
   font-weight: 300;
-  color: #35E2DF;
+  color: $accent;
   display: inline-block;
   line-height: 25px;
   margin: 12px 0;
@@ -49,15 +51,15 @@ h1 {
 }
 .challenge_content{
   a:link {
-    color: #35E2DF;
+    color: $accent;
     text-decoration: none;
   }
   a:visited {
-    color: #35E2DF;
+    color: $accent;
     text-decoration: none;
   }
   a:hover {
-    color: #35E2DF;
+    color: $accent;
     text-decoration: none;
   }
 }
@@ -149,7 +151,7 @@ h1 {
 .apply_button:after {
   -webkit-transform: translate(3px, 3px);
   transform: translate(3px, 3px);
-  border-color: #35e2df;
+  border-color: $accent;
 }
 .apply_button:before {
   -webkit-transform: translate(-3px, -3px);
@@ -161,7 +163,7 @@ h1 {
   transform: translate(0);
   border: 2px solid transparent;
   background-color: transparent;
-  border-image: linear-gradient(to right, #ec008b, #35e2df);
+  border-image: linear-gradient(to right, #ec008b, $accent);
   border-image-slice: 1;
 }
 .separator {

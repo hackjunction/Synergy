@@ -1,3 +1,5 @@
+@import '../stylesheets/variables';
+
 .site_nav {
   ul {
     list-style: none;
@@ -14,10 +16,10 @@
     font-size: 1.2em;
     transition: background-color 0.3s, color 0.3s;
     &:hover {
-      color: #35e2df !important;
+      color: $accent !important;
     }
     &:active {
-      color: #35e2df !important;
+      color: $accent !important;
       text-decoration: none;
     }
   }
