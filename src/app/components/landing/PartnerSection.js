@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Row, Col } from 'react-flexbox-grid';
-import styles from './Partners.c.scss';
 
 class PartnerSection extends Component {
   componentWillMount() {
@@ -28,29 +27,22 @@ class PartnerSection extends Component {
         var prio = Math.floor(Number(category.priority) / 100);
         var partners = groups.get(prio);
         if (!partners) return null;
-        return [
-          i !== 0 ? (
-            <Col xs={12} md={12}>
-              <hr className={styles.separator} />
-            </Col>
-          ) : null,
-          partners.map(partner => {
-            return (
-              <Col xs={category.size_xs} md={category.size_md}>
-                <a href={partner.url}>
-                  <img src={partner.logo} className="responsive" alt={partner.name} />
-                </a>
-              </Col>
-            );
-          })
-        ];
+        return (
+          <Row id={i} className="junction_partners" center="xs">
+            {partners.map(partner => {
+              return (
+                <Col xs={category.size_xs} md={category.size_md}>
+                  <a href={partner.url}>
+                    <img src={partner.logo} className="responsive" alt={partner.name} />
+                  </a>
+                </Col>
+              );
+            })}
+          </Row>
+        );
       })
       .flatten();
-    return (
-      <Row className="junction_partners" center="xs">
-        {elems}
-      </Row>
-    );
+    return <div>{elems}</div>;
   }
 }
 
