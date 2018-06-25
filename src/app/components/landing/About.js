@@ -18,11 +18,7 @@ const About = () => (
       <Row>
         <Col xs={12} className="junction-description">
           {' '}
-<<<<<<< HEAD
-          <span className="text-tetriary">* of people from 86 countries to be exact.</span>
-=======
           <span className="text-tetriary">* of people from 86 countries to be exact</span>
->>>>>>> initial style and content changes
         </Col>
       </Row>
     </Block>

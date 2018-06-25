@@ -17,12 +17,8 @@ const Welcome = () => (
       className={styles.video}
     >
       <source
-        src="https://staging.hackjunction.com/wp-content/uploads/2017/08/vidmp4.mp4"
+        src="https://staging.hackjunction.com/wp-content/uploads/2018/06/Junction_brandmovie.mp4"
         type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"
-      />
-      <source
-        src="https://staging.hackjunction.com/wp-content/uploads/2017/08/vidwebm.webm"
-        type="video/webm; codecs=&quot;vp8, vorbis&quot;"
       />
     </video>
     <div className={styles.videoOverlay} />
@@ -30,20 +26,12 @@ const Welcome = () => (
       <Row center="xs" className="junction_welcome">
         <Col xs={12} className={styles.junction_hackthefuture}>
           <h1>
-            {" EUROPE'S BIGGEST HACKATHON "} <br />
+            {"EUROPE'S BIGGEST HACKATHON"}
             <br />
+            23. - 25.11.<br />
+            2018
           </h1>
           <br />
-        </Col>
-        <Col xs={1} className="junction_welcome_bottom">
-          <Scroll.Link to="about" smooth duration={500}>
-            <div className={styles.arrow}>
-              <ul>
-                <li />
-                <li />
-              </ul>
-            </div>
-          </Scroll.Link>
         </Col>
       </Row>
     </Block>
