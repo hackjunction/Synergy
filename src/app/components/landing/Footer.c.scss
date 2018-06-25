@@ -1,33 +1,51 @@
-@import '../../stylesheets/variables';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .block {
   background: #161616;
+  color: #ffffff;
+  font-family: 'Montserrat';
+  text-align: center;
   padding-top:70px;
+  a:link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
 }
+
 .blockContent {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
 
-.junction_footer_social_image {
-  vertical-align: bottom;
-  margin-right: 10px;
+.footer_email {
+  padding: 15px;
 }
 
-.block {
-  a:link {
-    color: $accent;
-    text-decoration: none;
-  }
-  a:visited {
-    color: $accent;
-    text-decoration: none;
-  }
-  a:hover {
-    color: $accent;
-    text-decoration: none;
-  }
+.footer_button {
+  display: block;
+  vertical-align: bottom;
+  margin: 30px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #ffffff;
+  padding: 10px;
 }
+
+.footer_social_image {
+  vertical-align: bottom;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .base {
-  padding-top:10px;
+  padding-top:50px;
+  padding-bottom: 10px;
 }
