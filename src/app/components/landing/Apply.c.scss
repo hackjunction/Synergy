@@ -1,14 +1,24 @@
 @import '../../stylesheets/variables';
 
 .block {
-  background-color: #fbfbfb;
-  color: black;
+  background-color: black;
+  color: #fbfbfb !important;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
+.text_section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
 .text_highlight {
   font-family: "Montserrat";
   font-weight: 700;
   color: $accent;
+}
+
+.title {
+  color: #fbfbfb;
 }
 
 @-webkit-keyframes bouncey {
@@ -44,7 +54,7 @@
 .apply_button {
   padding: 20px 40px;
   background: none;
-  color: black;
+  color: #fbfbfb;
   border: none;
   position: relative;
   text-transform: uppercase;

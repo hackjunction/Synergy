@@ -12,17 +12,24 @@ class Tracks extends Component {
   render() {
     return (
       <Scroll.Element name="tracks">
-        <Block className={styles.block}>
-          <BlockHeader title="READY TO START YOUR JUNCTION JOURNEY?" />
+        <Block className={styles.block} contentClassName={styles.block}>
           <Row>
-            <Col xs={12} md={6} className="bold text-secondary">
+            <Col xs={12} md={6} className={styles.text_section}>
+              <BlockHeader className={styles.title} title="READY TO START YOUR JUNCTION JOURNEY?" />
               <a href="https://www.facebook.com/hackjunction">
                 <button className={styles.apply_button}> GET THE LATEST UPDATES</button>
               </a>
             </Col>
-            <Col>
-              <img className={styles.handsImage} src="" alt="" />
-            </Col>
+            <Col
+              xs={12}
+              md={6}
+              style={{
+                'background-image':
+                  'url(https://staging.hackjunction.com/wp-content/uploads/2018/06/junction2018_website_hands-01.svg)',
+                'background-size': 'auto 100%',
+                'background-repeat': 'no-repeat'
+              }}
+            />
           </Row>
         </Block>
       </Scroll.Element>
