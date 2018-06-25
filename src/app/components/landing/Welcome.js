@@ -28,8 +28,7 @@ const Welcome = () => (
           <h1>
             {"EUROPE'S BIGGEST HACKATHON"}
             <br />
-            23. - 25.11.<br />
-            2018
+            23. - 25.11. 2018 <br />
           </h1>
           <br />
         </Col>
