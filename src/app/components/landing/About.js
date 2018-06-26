@@ -11,14 +11,16 @@ const About = () => (
       <BlockHeader title="ABOUT" />
       <Row className="junction_about">
         <Col xs={12} className="junction-description">
-          Junction is a <span className="text-secondary">meeting point*</span> for thousands of developers, designers,
-          and entrepreneurs from around the world.
+          {'Europe’s biggest hackathon and a global community of hackers.'}
         </Col>
-      </Row>
-      <Row>
-        <Col xs={12} className="junction-description">
-          {' '}
-          <span className="text-tetriary">* of people from 86 countries to be exact</span>
+        <Col xs={12} className={styles.numbers}>
+          <span className="text-secondary">3</span> years<br />
+          <span className="text-secondary">14</span> countries<br />
+          <span className="text-secondary">103</span> nationalities <br />
+          <span className="text-secondary">162</span> partners<br />
+          <span className="text-secondary">1049</span> volunteers<br />
+          <span className="text-secondary">1102</span> new ideas into reality<br />
+          Over <span className="text-secondary">5000</span> participants in total<br />
         </Col>
       </Row>
     </Block>
