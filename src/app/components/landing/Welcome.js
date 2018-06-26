@@ -25,6 +25,12 @@ const Welcome = () => (
     <Block contentClassName={styles.blockContent}>
       <Row center="xs" className="junction_welcome">
         <Col xs={12} className={styles.junction_hackthefuture}>
+          <div>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2018/06/junction2018_website_logo-42-42.png"
+              className={styles.junLogo}
+            />
+          </div>
           <h1>
             {"EUROPE'S BIGGEST HACKATHON"}
             <br />

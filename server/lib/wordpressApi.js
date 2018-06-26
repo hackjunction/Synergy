@@ -98,6 +98,24 @@ export const getChallenges = () => {
     });
 };
 
+export const getFaqs = () => {
+  return wordpressApiClient
+    .get('/posts?_embed&categories=8&per_page=100')
+    .then(faqs => faqs.data)
+    .then(faqs => {
+      return faqs.map(faq => {
+        return {
+          id: faq.id,
+          slug: faq.slug,
+          title: faq.title.rendered,
+          question: faq.title.rendered,
+          answer: faq.content,
+          year: faq.acf.year
+        };
+      });
+    });
+};
+
 export const getJobs = () => {
   var currentTime = new Date();
   currentTime.setUTCHours(0, 0, 0, 0);

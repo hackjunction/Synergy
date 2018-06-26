@@ -3,9 +3,10 @@ import Welcome from './landing/Welcome';
 import About from './landing/About';
 import Apply from './landing/Apply';
 import Partners from './landing/Partners';
-import Hacktalks from './landing/Hacktalks';
+import Faqs from './landing/Faqs';
 import Stories from './landing/Stories';
 import Media from './landing/Media';
+import JunctionX from './landing/JunctionX';
 import Volunteer from './landing/Volunteer';
 import Footer from './landing/Footer';
 
@@ -25,11 +26,14 @@ class Landing extends React.Component {
         <div id="stories">
           <Stories />
         </div>
+        <div id="junctionx">
+          <JunctionX />
+        </div>
         <div id="partners">
           <Partners />
         </div>
-        <div id="hacktalks">
-          <Hacktalks />
+        <div id="faqs">
+          <Faqs />
         </div>
         <div id="media">
           <Media />

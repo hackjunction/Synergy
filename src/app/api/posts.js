@@ -16,6 +16,10 @@ export default class ApiPosts {
     return api.get('/tracks');
   }
 
+  static getFaqs() {
+    return api.get('/faqs');
+  }
+
   static getChallenges() {
     return api.get('/challenges');
   }

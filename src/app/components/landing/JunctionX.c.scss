@@ -1,57 +1,16 @@
 @import '../../stylesheets/variables';
 
 .block {
-  background-color: black;
-  color: #fbfbfb !important;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.text_section {
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-.text_highlight {
-  font-family: "Montserrat";
-  font-weight: 700;
-  color: $accent;
-}
-
-.title {
+  text-align: center;
+  background: #000000;
   color: #fbfbfb;
-  word-wrap: break-word;
-  white-space: normal;
+}
+.logo {
   max-width: 100%;
 }
 
-@-webkit-keyframes bouncey {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes bouncey {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+h3 {
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 .apply_button {
