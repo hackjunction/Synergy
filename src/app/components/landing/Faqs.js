@@ -20,10 +20,7 @@ class Faqs extends Component {
   // render
   render() {
     const { faqs } = this.props;
-    console.log(faqs);
     var elements = faqs.map((faq, i) => {
-      console.log(faq);
-      console.log(i);
       return (
         <Col key={i} xs={12} md={6} className={styles.faqCell}>
           <FaqSection question={faq.question}>
@@ -32,12 +29,6 @@ class Faqs extends Component {
         </Col>
       );
     });
-    console.log(elements);
-    console.log(
-      <BlockHeader title="FREQUENTLY ASKED QUESTIONS">
-        <p>Got questions? Don’t worry, we have the answers.</p>
-      </BlockHeader>
-    );
     return (
       <Scroll.Element name="faqs">
         <Block className={styles.block}>
