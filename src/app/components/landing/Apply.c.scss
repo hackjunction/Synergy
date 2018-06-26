@@ -19,6 +19,9 @@
 
 .title {
   color: #fbfbfb;
+  word-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
 }
 
 @-webkit-keyframes bouncey {
