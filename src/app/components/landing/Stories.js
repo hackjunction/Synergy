@@ -17,25 +17,25 @@ class Stories extends Component {
     var stories = [
       {
         link: 'https://www.hs.fi/teknologia/art-2000005464266.html',
-        image: 'https://staging.hackjunction.com/wp-content/uploads/2018/06/og-hs-1920px.0b32cfc071669751.png'
+        image: 'https://staging.hackjunction.com/wp-content/uploads/2018/06/Junction18-medialogos-02.png'
       },
       {
         link: 'https://www.huffingtonpost.com/erica-swallow/in-finland_b_8570578.html',
-        image: 'https://staging.hackjunction.com/wp-content/uploads/2018/06/HuffPost.svg_.png'
+        image: 'https://staging.hackjunction.com/wp-content/uploads/2018/06/Junction18-medialogos-05.png'
       },
       {
         link: 'https://www.kauppalehti.fi/uutiset/uutinen/SisaMTJe',
-        image: 'https://staging.hackjunction.com/wp-content/uploads/2018/06/1280px-Kauppalehti_logo.svg_.png'
+        image: 'https://staging.hackjunction.com/wp-content/uploads/2018/06/Junction18-medialogos-04.png'
       },
       {
         link:
           'https://www.tivi.fi/Kaikki_uutiset/maailman-suurin-hackathon-suomessa-1500-huippukoodaria-espoossa-6689191',
-        image: 'https://staging.hackjunction.com/wp-content/uploads/2018/06/logo_tivi.png'
+        image: 'https://staging.hackjunction.com/wp-content/uploads/2018/06/Junction18-medialogos-03.png'
       },
       {
         link:
           'https://nordic.businessinsider.com/finland-has-hackathons-for-everything--from-cultural-heritage-to-state-run-railway-operators-2016-12/',
-        image: 'https://staging.hackjunction.com/wp-content/uploads/2018/06/og-hs-1920px.0b32cfc071669751.png'
+        image: 'https://staging.hackjunction.com/wp-content/uploads/2018/06/Junction18-medialogos-01.png'
       }
     ];
 

@@ -23,20 +23,20 @@ class Landing extends React.Component {
         <div id="apply">
           <Apply />
         </div>
-        <div id="stories">
-          <Stories />
-        </div>
-        <div id="junctionx">
-          <JunctionX />
-        </div>
         <div id="partners">
           <Partners />
         </div>
         <div id="hacktalks">
           <Hacktalks />
         </div>
+        <div id="junctionx">
+          <JunctionX />
+        </div>
         <div id="media">
           <Media />
+        </div>
+        <div id="stories">
+          <Stories />
         </div>
         <div id="volunteer">
           <Volunteer />

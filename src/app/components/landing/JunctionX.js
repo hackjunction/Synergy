@@ -9,7 +9,7 @@ const JunctionX = () => (
   <Scroll.Element name="about">
     <Block className={styles.block}>
       <Row center="xs">
-        <Col xs={10} md={6}>
+        <Col xs={8} md={4}>
           <img
             className={styles.logo}
             src="https://staging.hackjunction.com/wp-content/uploads/2018/06/junctionx_globe.png"
