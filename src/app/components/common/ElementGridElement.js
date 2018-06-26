@@ -7,35 +7,24 @@ import styles from './ElementGrid.c.scss';
 export default class ElementGridElement extends Component {
   // render
   render() {
-    const { link, background, content, outside } = this.props;
+    const { link, background, content, outside, hoverStyle, insideStyle } = this.props;
 
     var style;
-    if(background){
+    if (background) {
       style = {
-        'backgroundImage': `url(${background})`
+        backgroundImage: `url(${background})`
       };
     }
     var element = (
       <div className={`responsive ${styles.trackCell}`} style={style}>
-        <div className={styles.awesome_overlay}>
-          <div className={styles.inside}>
-            {content}
-          </div>
+        <div className={`${hoverStyle ? hoverStyle : ''} ${styles.awesome_overlay}`}>
+          <div className={`${insideStyle ? insideStyle : ''} ${styles.inside}`}>{content}</div>
         </div>
       </div>
-    )
-    if(!outside)
-      return (
-        <Link to={link}>
-          {element}
-        </Link>
-      );
+    );
+    if (!outside) return <Link to={link}>{element}</Link>;
     else {
-      return (
-        <a href={link}>
-          {element}
-        </a>
-      );
+      return <a href={link}>{element}</a>;
     }
   }
 }
@@ -43,5 +32,9 @@ export default class ElementGridElement extends Component {
 // prop checks
 ElementGridElement.propTypes = {
   link: PropTypes.string.isRequired,
-  content: PropTypes.object.isRequired
+  content: PropTypes.object.isRequired,
+  outside: PropTypes.object,
+  hoverStyle: PropTypes.string,
+  insideStyle: PropTypes.string,
+  background: PropTypes.string
 };

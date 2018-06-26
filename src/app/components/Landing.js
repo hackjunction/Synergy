@@ -4,6 +4,7 @@ import About from './landing/About';
 import Apply from './landing/Apply';
 import Partners from './landing/Partners';
 import Hacktalks from './landing/Hacktalks';
+import Stories from './landing/Stories';
 import Media from './landing/Media';
 import Volunteer from './landing/Volunteer';
 import Footer from './landing/Footer';
@@ -20,6 +21,9 @@ class Landing extends React.Component {
         </div>
         <div id="apply">
           <Apply />
+        </div>
+        <div id="stories">
+          <Stories />
         </div>
         <div id="partners">
           <Partners />
