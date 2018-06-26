@@ -17,12 +17,37 @@ class Tracks extends Component {
             <Col xs={12} md={6} className={styles.text_section}>
               <BlockHeader className={styles.title} title="READY TO START YOUR JUNCTION JOURNEY?">
                 {
-                  'Winter is coming – and so is Junction 2018! This November Europe’s biggest hackathon will be even bigger and better in Helsinki, Finland. Applications will be launched soon, get ready!'
+                  'Winter is coming – and so is Junction 2018! This November Europe’s biggest hackathon will be even bigger and better in Helsinki, Finland. Application period will be announced soon, get ready!'
                 }
               </BlockHeader>
-              <a href="https://www.facebook.com/hackjunction">
-                <button className={styles.apply_button}> GET THE LATEST UPDATES</button>
-              </a>
+              <button
+                className={styles.apply_button}
+                onClick={() => {
+                  var mailchimpConfig = {
+                    baseUrl: 'mc.us15.list-manage.com',
+                    uuid: '6dd99fd74845dfb3f1307127a',
+                    lid: '292fbaaccd'
+                  };
+                  // No edits below this line are required
+                  var chimpPopup = document.createElement('script');
+                  chimpPopup.appendChild(
+                    document.createTextNode(
+                      'require(["mojo/signup-forms/Loader"], function (L) { L.start({"baseUrl": "' +
+                        mailchimpConfig.baseUrl +
+                        '", "uuid": "' +
+                        mailchimpConfig.uuid +
+                        '", "lid": "' +
+                        mailchimpConfig.lid +
+                        '"})});document.cookie = "MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;";'
+                    )
+                  );
+                  alert(chimpPopup);
+
+                  document.body.appendChild(chimpPopup);
+                }}
+              >
+                {'GET THE LATEST UPDATES'}
+              </button>
             </Col>
             <Col
               xs={12}
