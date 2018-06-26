@@ -16,7 +16,9 @@ class Tracks extends Component {
           <Row>
             <Col xs={12} md={6} className={styles.text_section}>
               <BlockHeader className={styles.title} title="READY TO START YOUR JUNCTION JOURNEY?">
-                Lorem ipsum dolorem sit amed ad sequitur ad nauseam alea jacta est. Veni, vidi vici.console.warn();
+                {
+                  'Winter is coming – and so is Junction 2018! This November Europe’s biggest hackathon will be even bigger and better in Helsinki, Finland. Applications will be launched soon, get ready!'
+                }
               </BlockHeader>
               <a href="https://www.facebook.com/hackjunction">
                 <button className={styles.apply_button}> GET THE LATEST UPDATES</button>
