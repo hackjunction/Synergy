@@ -41,7 +41,7 @@ class Tracks extends Component {
                         '"})});document.cookie = "MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;";'
                     )
                   );
-                  alert(chimpPopup);
+                  //alert(chimpPopup);
 
                   document.body.appendChild(chimpPopup);
                 }}
