@@ -17,7 +17,6 @@ export default class ApiPosts {
   }
 
   static getFaqs() {
-    console.log('kukkakauppias2');
     return api.get('/faqs');
   }
 

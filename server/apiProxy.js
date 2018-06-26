@@ -21,9 +21,7 @@ apiRouter.get('/tracks', (req, res) => {
 });
 
 apiRouter.get('/faqs', (req, res) => {
-  console.log('kukkakauppias3');
   wordpressApi.getFaqs().then(data => {
-    console.log('kukkakauppias4');
     return res.json(data);
   });
 });
