@@ -16,6 +16,11 @@ export default class ApiPosts {
     return api.get('/tracks');
   }
 
+  static getFaqs() {
+    console.log('kukkakauppias2');
+    return api.get('/faqs');
+  }
+
   static getChallenges() {
     return api.get('/challenges');
   }

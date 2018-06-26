@@ -20,16 +20,26 @@ apiRouter.get('/tracks', (req, res) => {
   });
 });
 
+apiRouter.get('/faqs', (req, res) => {
+  console.log('kukkakauppias3');
+  wordpressApi.getFaqs().then(data => {
+    console.log('kukkakauppias4');
+    return res.json(data);
+  });
+});
+
 apiRouter.get('/challenge', (req, res) => {
   wordpressApi.getChallenge(req.query.id).then(data => {
     res.json(data);
   });
 });
+
 apiRouter.get('/challenges', (req, res) => {
   wordpressApi.getChallenges().then(data => {
     res.json(data);
   });
 });
+
 apiRouter.get('/partners', (req, res) => {
   wordpressApi.getPartners(req.query.year).then(data => {
     res.json(data);

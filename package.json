@@ -7,6 +7,7 @@
     "lint": "eslint --fix --ext js --ext jsx --ext json src",
     "test": "yarn lint",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev && true",
+    "start:dev_windows": "set NODE_ENV=production&& npm run build:server |webpack --config webpack.dev.config.js  | node server.js",
     "start:dev": "NODE_ENV=development && npx babel --watch -d build server | npm run watch | node server.js",
     "start:prod": "npm run build:server && npm run build:webpack && node ./server.js",
     "watch": "webpack --watch --config webpack.dev.config.js",
