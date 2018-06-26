@@ -15,7 +15,9 @@ class Tracks extends Component {
         <Block className={styles.block} contentClassName={styles.block}>
           <Row>
             <Col xs={12} md={6} className={styles.text_section}>
-              <BlockHeader className={styles.title} title="READY TO START YOUR JUNCTION JOURNEY?" />
+              <BlockHeader className={styles.title} title="READY TO START YOUR JUNCTION JOURNEY?">
+                Lorem ipsum dolorem sit amed ad sequitur ad nauseam alea jacta est. Veni, vidi vici.console.warn();
+              </BlockHeader>
               <a href="https://www.facebook.com/hackjunction">
                 <button className={styles.apply_button}> GET THE LATEST UPDATES</button>
               </a>

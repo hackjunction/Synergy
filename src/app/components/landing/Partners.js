@@ -12,7 +12,7 @@ const Partners = () => (
       <Row>
         <Col xs={12} className="bold text-secondary" />
       </Row>
-      <BlockHeader title="OUR PARTNERS">
+      <BlockHeader title="OUR PARTNERS 2018">
         <p>
           Our partners are a mix of industry leaders and agile startups, all looking to support young developers and
           co-create the innovations of tomorrow.<br />
