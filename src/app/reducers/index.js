@@ -7,6 +7,7 @@ import partners from './partners';
 import tracks from './tracks';
 import events from './events';
 import jobs from './jobs';
+import faqs from './faqs';
 
 const reducers = combineReducers({
   routing: routerReducer,
@@ -17,7 +18,8 @@ const reducers = combineReducers({
   partners: partners,
   tracks: tracks,
   events: events,
-  jobs: jobs
+  jobs: jobs,
+  faqs: faqs
 });
 
 export default reducers;
