@@ -9,6 +9,7 @@ import Track from './Track';
 import Challenge from './Challenge';
 import AllTracks from './AllTracks';
 import AllPartners from './AllPartners';
+import OldPartners from './2017Partners';
 import AllJobs from './AllJobs';
 import Volunteer from './Volunteer';
 import Junction2017 from './Junction2017';
@@ -74,6 +75,7 @@ class App extends React.Component {
               <Route path="/challenges/:challenge" component={Challenge} />
               <Route path="/all-tracks" component={AllTracks} />
               <Route path="/partners" component={AllPartners} />
+              <Route path="/2017partners" component={OldPartners} />
               <Route path="/2017" component={Junction2017} />
               <Route path="/junctionx" component={JunctionX} />
               <Route path="/jobs" component={AllJobs} />

@@ -29,6 +29,13 @@ h1 {
       line-height: 45px;
   }
 }
+.video {
+  max-width: 100%;
+}
+.img {
+  border-radius: 50%;
+  max-width: 100%;
+}
 .text_highlight {
   font-family: 'Montserrat';
   font-weight: 300;
@@ -109,7 +116,6 @@ h1 {
   .track_content {
     color: #232323;
     margin: 5% 0;
-
     font-size: 20px;
     font-weight: 300;
     line-height: 22px;
@@ -169,8 +175,29 @@ h1 {
 .separator {
   border-top: 1px solid rgba(0,0,0, 0.2);
 }
+.textblock {
+  background: #fbfbfb;
+  color: #232323;
+}
+.textblock_black {
+  background: #232323;
+  color: #fbfbfb;
+  text-align: left;
+  h1 {
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  p {
+    padding-top: 0;
+    margin-bottom: 5px;
+  }
+}
 .block {
-  background: #FBFBFB;
+  background: #fbfbfb;
   color: #232323;
 }
 .all_tracks{

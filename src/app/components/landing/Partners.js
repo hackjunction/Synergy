@@ -27,7 +27,7 @@ const Partners = () => (
       <Row className="junction_partners" center="xs">
         <Col xs={12} md={12}>
           <a href="https://hackjunction.com/partners">
-            <button className={styles.apply_button}>LAST YEAR&#39;S PARTNERS</button>
+            <button className={styles.apply_button}>LEARN MORE ABOUT OUR PARTNERS</button>
           </a>
         </Col>
       </Row>

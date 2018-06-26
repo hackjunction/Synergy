@@ -132,7 +132,7 @@ const Junction2017 = () => (
           </a>
         </Col>
         <Col xs={12} md={4}>
-          <a href="/partners">
+          <a href="/2017partners">
             <button className={`${styles.apply_button} ${styles.apply_button_fullwidth}`}>
               SEE PARTNERS FROM<br />2017
             </button>

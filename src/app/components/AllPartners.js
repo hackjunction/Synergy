@@ -1,488 +1,98 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import ReactPlayer from 'react-player';
 import styles from './Track.c.scss';
 import Block from './viewBlocks/Block';
+import BlockHeader from './viewBlocks/BlockHeader';
 import TopNav from './TopNav';
-import TitleMod from './TitleMod';
+import PartnerSection from './landing/PartnerSection';
 import Footer from './landing/Footer';
 
 const AllPartners = () => (
   <div>
     <Grid className={styles.hero} fluid>
       <TopNav />
-      <Row className={styles.background_top} center="xs">
-        <TitleMod
-          title="PARTNERS FROM 2017"
-          content={[
-            'Want to see your logo here? Contact us at partnerships@hackjunction.com to get on board with the Junction community.',
-            'Check out our partners from 2017:'
-          ]}
-        />
-      </Row>
     </Grid>
+    <Block className={styles.textblock}>
+      <BlockHeader title="WHAT IS JUNCTION FOR PARTNERS">
+        <p>
+          Junction provides a unique opportunity to work and interact with thousands of developers.
+          <br />
+          <br />
+          In a mere three years, Junction has created a vibrant community of over 20 000 enthusiastic tech talents.
+          Along the journey we have connected our partners with new audiences and helped them to build their developer
+          community. Junction has grown into an access point to emerging top tech talents from all over the world.
+        </p>
+      </BlockHeader>
+    </Block>
+    <Block className={styles.textblock_black}>
+      <h1>Why partner with us?</h1>
+      <h2>HACKATHON EXPERIENCE</h2>
+      <p>
+        Junction is all about creating new projects by bringing together motivated developers and industry experts. 48
+        hours of fast prototyping gives unparalleled ideas and fresh concepts, resulting in finished projects solving
+        challenges set by our partners. Over 60 partners from a wide variety of different industries work together
+        during the weekend. This creates plenty of possibilities for new collaborations.
+      </p>
+      <h2>ACCELERATING PROJECTS</h2>
+      <p>
+        Junction is a birthplace for almost 400 teams consisting of a selected group of top tech talents. No other event
+        in Europe is able to accomplish the same. In 2018 we ensure that the teams will stay together after the event by
+        providing them access to early stage VCs, startup mentors and business coaches at Junction Launchpad area during
+        the event. Additionally, Junction will provide frameworks and concrete guidance for continuing the projects.
+      </p>
+      <h2>ENHANCED RECRUITING</h2>
+      <p>
+        In Junction 2017, our partners recruited tens of tech talents to their ranks and got hundreds of recruiting
+        leads. Hackathons are a great place to get first-hand experience on the teamworking, project management and
+        technical skills of the participants. Junction 2018 provides a powerful, specified matchmaking and meeting area
+        to boost up the interactions between participants and partners.
+      </p>
+      <h2>EMPLOYER BRANDING</h2>
+      <p>
+        Gain recognition among thousands of top tech talents, other creative partner companies and global media.
+        Participating in Junction is an excellent opportunity for a partner to steer their public image towards one that
+        is at the bleeding edge of technology
+      </p>
+      <h2>EMPLOYER RETENTION, LEARNING EXPERIENCE AND CULTURAL IMPACT</h2>
+      <p>
+        Junction creates a great opportunity for partner teams to experience an event which promotes learning and
+        self-development. It is also a great way for employees to get to know their own team and developers.By
+        participating in Junction, the working culture in partner companies can shift towards one of more energized,
+        rapid innovation.
+      </p>
+    </Block>
     <Block className={styles.block}>
-      <Row center="xs">
-        <Col xs={6} md={4}>
+      <h1>Partners from previous years</h1>
+      <p>
+        Our partners are a mix of industry leaders and agile startups, looking to support aspiring developers and
+        co-create the innovations of tomorrow.
+      </p>
+      <PartnerSection
+        categories={[{ priority: 300, size_md: 4, size_xs: 6 }, { priority: 200, size_md: 3, size_xs: 4 }]}
+        year="201"
+      />
+    </Block>
+    <Block className={styles.textblock_black}>
+      <h1>Case Video</h1>
+      <ReactPlayer url="https://www.youtube.com/watch?v=O0WFEAqeg7Y" className={styles.video} />
+    </Block>
+    <Block className={styles.textblock}>
+      <Row>
+        <Col xs={12} md={8}>
+          <h1>
+            Interested in partnering<br />with us?
+          </h1>
+          <p>Contact our team member handling participants</p>
+          <h3>Henri Heliö</h3>
+          <p>partnerships@hackjunction.com</p>
+        </Col>
+        <Col xs={12} md={4}>
           <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/elisa.png"
-            className="responsive"
-            alt=""
+            src="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-henri.jpg"
+            className={styles.img}
+            alt="Henri Heliö"
           />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/veikkaus.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/N_L1_B4_RGB-1.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/planmeca.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/smartly.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/outotec.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/stara.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/finnair.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={6} md={4}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/esa.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={12} md={12}>
-          <hr className={styles.separator} />
-        </Col>
-        <Col xs={4} md={3}>
-          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/mlh.png" className="responsive" />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/spotify.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/supercell.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/dot.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/fgj.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/eve-tech.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/blackrock.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/futurice.png" className="responsive" />
-        </Col>
-        <Col xs={4} md={3}>
-          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/dexter.png" className="responsive" />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/legaltechsummit.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/nordcloud.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/bitville.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/eficode.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suunto.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/sitra.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/helvar.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/procountor.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/sc5.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/mapbox.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/finnid.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/aalto.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/fleetboard.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/09/qt.png" className="responsive" alt="" />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/kone.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/trimble.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/46elks.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/holvi.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/fortum.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/microsoft.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/verkkokauppa.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/qvik.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/storaenso.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/siili.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/kyyti.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/atalent.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/kamu.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/09/trueface.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/castrensnellman.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/bankify.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/icebreaker.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/kira_digi.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/mindfullness.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/jimms.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/waltti.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/nysse.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/foli.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/fira.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/08/suneffects.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/10/keha.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/tyomarkkinatori.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/hsl.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/ruuvi.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/lvm.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/liikenev.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/trafi.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/ed.png" className="responsive" alt="" />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/semper.png"
-            className="responsive"
-            alt=""
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/finefoods.png" className="responsive" />
-        </Col>
-        <Col xs={4} md={3}>
-          <img
-            src="https://staging.hackjunction.com/wp-content/uploads/2017/11/hamppufarmi.png"
-            className="responsive"
-          />
-        </Col>
-        <Col xs={4} md={3}>
-          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/lindahls.png" className="responsive" />
-        </Col>
-        <Col xs={4} md={3}>
-          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/linkosuo.png" className="responsive" />
-        </Col>
-        <Col xs={4} md={3}>
-          <img src="https://staging.hackjunction.com/wp-content/uploads/2017/11/forsman.png" className="responsive" />
         </Col>
       </Row>
     </Block>
