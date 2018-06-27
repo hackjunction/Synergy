@@ -6,18 +6,18 @@ import styles from './Footer.c.scss';
 const Footer = () => (
   <Block className={styles.block} contentClassName={styles.blockContent}>
     <Row center="xs">
-      <Col xs={4}>
+      <Col xs={12} md={4}>
         <h2>CONTACT</h2>
         <p className={styles.footer_email}>hello@hackjunction.com</p>
         <p className={styles.footer_email}>partnerships@hackjunction.com</p>
       </Col>
-      <Col xs={4}>
+      <Col xs={12} md={4}>
         <h2>FOR MEDIA</h2>
         <a href="https://www.flickr.com/people/151708924@N07/" className={styles.footer_button}>
           OFFICIAL PHOTOS
         </a>
       </Col>
-      <Col xs={4}>
+      <Col xs={12} md={4}>
         <h2>SOCIAL</h2>
         <Row center="xs">
           <Col xs={4}>
