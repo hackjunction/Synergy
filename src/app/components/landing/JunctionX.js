@@ -19,7 +19,7 @@ const JunctionX = () => (
       </Row>
       <Row>
         <Col xs={12}>
-          <h1>Hack the globe</h1>
+          <h1>HACK THE GLOBE</h1>
           <p>
             {
               'JUNCTIONx is the entry point on your path to creating your own hackathon. We want people to join our community and to empower more people to use technology as a tool to solve problems and face challenges.'

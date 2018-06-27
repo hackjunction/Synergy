@@ -11,7 +11,7 @@ const About = () => (
       <BlockHeader title="ABOUT" />
       <Row className="junction_about">
         <Col xs={12} className="junction-description">
-          {'Europe’s biggest hackathon and a global community of hackers.'}
+          {'Junction is Europe’s biggest hackathon and a global community of hackers.'}
         </Col>
         <Col xs={12} className={styles.numbers}>
           <span className="text-secondary">3</span> years<br />

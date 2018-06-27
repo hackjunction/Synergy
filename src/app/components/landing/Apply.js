@@ -15,9 +15,13 @@ class Tracks extends Component {
         <Block className={styles.block} contentClassName={styles.block}>
           <Row>
             <Col xs={12} md={6} className={styles.text_section}>
-              <BlockHeader className={styles.title} titleStyle={styles.title} title="READY TO START YOUR JUNCTION JOURNEY?">
+              <BlockHeader
+                className={styles.title}
+                titleStyle={styles.title}
+                title="READY TO START YOUR JUNCTION JOURNEY?"
+              >
                 {
-                  'Winter is coming – and so is Junction 2018! This November Europe’s biggest hackathon will be even bigger and better in Helsinki, Finland. Application period will be announced soon, get ready!'
+                  'Winter is coming – and so is Junction 2018! This November Europe’s biggest hackathon will be back even bigger and better in Helsinki area, Finland. Application period will be announced soon, get ready!'
                 }
               </BlockHeader>
               <button
@@ -63,7 +67,6 @@ class Tracks extends Component {
         </Block>
       </Scroll.Element>
     );
-
   }
 }
 

@@ -11,14 +11,10 @@ const Media = () => (
     <Block className={styles.block}>
       <Row>
         <Col xs={12} className="bold text-secondary">
-          <h4>MEDIA</h4>
+          <h4>WHAT IS UP?</h4>
         </Col>
       </Row>
-      <BlockHeader title="STORIES FROM THE COMMUNITY">
-        <p>
-          Keep up with the latest from our community. Want to see your story here? Contact us at media@hackjunction.com
-        </p>
-      </BlockHeader>
+      <BlockHeader title="THE LATEST FROM US" />
       <Row className="junction_media">
         <Col xs>
           <Mediumlist />
