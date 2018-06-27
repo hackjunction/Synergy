@@ -33,7 +33,7 @@ const Footer = () => (
             <a href="https://blog.hackjunction.com/">
               <img
                 className={styles.footer_social_image}
-                src="https://staging.hackjunction.com/wp-content/uploads/2018/06/Monogram.svg"
+                src="https://staging.hackjunction.com/wp-content/uploads/2018/06/Monogram.png"
                 alt="Medium"
               />
             </a>
@@ -53,7 +53,7 @@ const Footer = () => (
             <a href="https://www.twitter.com/hackjunction">
               <img
                 className={styles.footer_social_image}
-                src="https://staging.hackjunction.com/wp-content/uploads/2018/06/Twitter_Logo_WhiteOnImage.svg"
+                src="https://staging.hackjunction.com/wp-content/uploads/2018/06/Twitter_Logo_WhiteOnImage.png"
                 alt="Twitter"
               />
             </a>
