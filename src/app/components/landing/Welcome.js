@@ -32,7 +32,7 @@ const Welcome = () => (
             />
           </div>
           <h1 className={styles.h1}>
-            {"EUROPE'S BIGGEST HACKATHON"}
+            {"EUROPE'S BIGGEST HACKATHON"}
             <br />
             23. - 25.11. 2018 <br />
           </h1>
