@@ -43,7 +43,7 @@ class Track extends Component {
           </Row>
           <Row center="xs" className={styles.track_header}>
             <Col className={styles.track_name} xs={12} sm={12} md={12}>
-              <h1>{track.title}</h1>
+              <h1 className={styles.h1}>{track.title}</h1>
             </Col>
             <Col className={styles.track_content} xs={12} sm={12} md={12}>
               <div dangerouslySetInnerHTML={{ __html: track.content }} />

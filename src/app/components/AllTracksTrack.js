@@ -26,8 +26,8 @@ class AllTracksTrack extends Component {
       <div className={([styles.track_page], [styles.all_tracks])} key={track.id}>
         <Row className={styles.track_header}>
           <Col className={styles.track_name} xs={12} sm={12} md={12}>
-            <a href={`tracks/${track.slug}`}>
-              <h1>{track.title}</h1>
+            <a className={styles.a} href={`tracks/${track.slug}`}>
+              <h1 className={styles.h1}>{track.title}</h1>
             </a>
           </Col>
           {track.challenges &&
@@ -56,7 +56,7 @@ class AllTracksTrack extends Component {
                 );
               })}
           <Col xs={12} md={12}>
-            <a href={`tracks/${track.slug}`}>
+            <a className={styles.a} href={`tracks/${track.slug}`}>
               <span className={styles.text_highlight}>SHOW ALL {track.title} CHALLENGES</span>
             </a>
             <hr className={styles.separator} />
