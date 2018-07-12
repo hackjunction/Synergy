@@ -31,8 +31,8 @@ class PartnerSection extends Component {
           <Row id={i} className="junction_partners" center="xs">
             {partners.map(partner => {
               return (
-                <Col xs={category.size_xs} md={category.size_md}>
-                  <a href={partner.url}>
+                <Col xs={category.size_xs} sm={category.size_sm} md={category.size_md}>
+                  <a target="_blank" rel="noopener noreferrer" href={partner.url}>
                     <img src={partner.logo} className="responsive" alt={partner.name} />
                   </a>
                 </Col>

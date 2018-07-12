@@ -69,7 +69,7 @@ const AllPartners = () => (
         co-create the innovations of tomorrow.
       </p>
       <PartnerSection
-        categories={[{ priority: 300, size_md: 4, size_xs: 6 }, { priority: 200, size_md: 3, size_xs: 4 }]}
+        categories={[{ priority: 300, size_md: 4, size_xs: 6 }, { priority: 200, size_md: 3, size_sm: 3, size_xs: 4 }]}
         year="201"
       />
     </Block>
@@ -79,7 +79,7 @@ const AllPartners = () => (
     </Block>
     <Block className={styles.textblock}>
       <Row>
-        <Col xs={12} md={8}>
+        <Col xs={12} sm={12} md={8}>
           <h1>
             Interested in partnering<br />with us?
           </h1>
@@ -87,7 +87,7 @@ const AllPartners = () => (
           <h3>Henri Heliö</h3>
           <p>partnerships@hackjunction.com</p>
         </Col>
-        <Col xs={12} md={4}>
+        <Col xs={10} sm={6} md={4}>
           <img
             src="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-henri.jpg"
             className={styles.img}

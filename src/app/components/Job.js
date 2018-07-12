@@ -34,7 +34,10 @@ function Job(props) {
           <div dangerouslySetInnerHTML={{ __html: props.job.content }} />
           {props.job.link ? (
             <p className={styles.link}>
-              <a href={props.job.link}> Read more </a>
+              <a target="_blank" rel="noopener noreferrer" href={props.job.link}>
+                {' '}
+                Read more{' '}
+              </a>
             </p>
           ) : null}
         </div>
