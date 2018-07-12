@@ -86,7 +86,7 @@ const Contact = () => (
         <ContactCard
           name="Patrik Holopainen"
           email="patrik.holopainen(at)hackjunction.com"
-          title="Judging"
+          title="Reviewing"
           image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-patrik.jpg"
         />
         <ContactCard
