@@ -98,26 +98,26 @@ export const getChallenges = () => {
     });
 };
 
-export const getCalendars = () => {
+export const getCalendarEvents = () => {
   return wordpressApiClient
     .get('/posts?_embed&categories=9&per_page=100')
-    .then(calendars => calendars.data)
-    .then(calendars => {
-      return calendars.map(calendar => {
+    .then(calendarEvents => calendarEvents.data)
+    .then(calendarEvents => {
+      return calendarEvents.map(calendarEvent => {
         return {
-          id: calendar.id,
-          slug: calendar.slug,
-          title: calendar.title.rendered,
-          logo: calendar.acf.logo,
-          category: calendar.acf.category,
-          start_date: calendar.acf.start_date,
-          start_time: calendar.acf.start_time,
-          end_date: calendar.acf.end_date,
-          end_time: calendar.acf.end_time,
-          partner: calendar.acf.partner,
-          content: calendar.content,
-          background_image: calendar.acf.background_image,
-          link: calendar.acf.link
+          id: calendarEvent.id,
+          slug: calendarEvent.slug,
+          title: calendarEvent.title.rendered,
+          logo: calendarEvent.acf.logo,
+          category: calendarEvent.acf.category,
+          start_date: calendarEvent.acf.start_date,
+          start_time: calendarEvent.acf.start_time,
+          end_date: calendarEvent.acf.end_date,
+          end_time: calendarEvent.acf.end_time,
+          partner: calendarEvent.acf.partner,
+          content: calendarEvent.content,
+          background_image: calendarEvent.acf.background_image,
+          link: calendarEvent.acf.link
         };
       });
     });

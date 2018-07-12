@@ -1,10 +1,10 @@
 import { call, put } from 'redux-saga/effects';
 import ApiPosts from '../api/posts';
 
-export function* getCalendars() {
-  const calendars = yield call(ApiPosts.getCalendars);
+export function* getCalendarEvents() {
+  const calendarEvents = yield call(ApiPosts.getCalendarEvents);
   yield put({
-    type: 'GET_CALENDARS_SAVE',
-    faqs: calendars.data
+    type: 'GET_CALENDAREVENTS_SAVE',
+    faqs: calendarEvents.data
   });
 }

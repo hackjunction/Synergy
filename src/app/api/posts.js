@@ -20,8 +20,8 @@ export default class ApiPosts {
     return api.get('/faqs');
   }
 
-  static getCalendars() {
-    return api.get('/calendars');
+  static getCalendarEvents() {
+    return api.get('/calendarEvents');
   }
 
   static getChallenges() {

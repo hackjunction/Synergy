@@ -38,8 +38,8 @@ apiRouter.get('/challenges', (req, res) => {
   });
 });
 
-apiRouter.get('/calendars', (req, res) => {
-  wordpressApi.getCalendars().then(data => {
+apiRouter.get('/calendarEvents', (req, res) => {
+  wordpressApi.getCalendarEvents().then(data => {
     res.json(data);
   });
 });

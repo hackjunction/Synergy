@@ -1,7 +1,7 @@
-export default function calendars(state = [], action) {
+export default function calendarEvents(state = [], action) {
   switch (action.type) {
-    case 'GET_CALENDARS_SAVE':
-      return action.calendars;
+    case 'GET_CALENDAREVENTS_SAVE':
+      return action.calendarEvents;
     default:
       return state;
   }
