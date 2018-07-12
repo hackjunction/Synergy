@@ -38,6 +38,12 @@ apiRouter.get('/challenges', (req, res) => {
   });
 });
 
+apiRouter.get('/calendars', (req, res) => {
+  wordpressApi.getCalendars().then(data => {
+    res.json(data);
+  });
+});
+
 apiRouter.get('/partners', (req, res) => {
   wordpressApi.getPartners(req.query.year).then(data => {
     res.json(data);
