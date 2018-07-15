@@ -98,6 +98,31 @@ export const getChallenges = () => {
     });
 };
 
+export const getCalendarEvents = () => {
+  return wordpressApiClient
+    .get('/posts?_embed&categories=9&per_page=100')
+    .then(calendarEvents => calendarEvents.data)
+    .then(calendarEvents => {
+      return calendarEvents.map(calendarEvent => {
+        return {
+          id: calendarEvent.id,
+          slug: calendarEvent.slug,
+          title: calendarEvent.title.rendered,
+          logo: calendarEvent.acf.logo,
+          category: calendarEvent.acf.category,
+          start_date: calendarEvent.acf.start_date,
+          start_time: calendarEvent.acf.start_time,
+          end_date: calendarEvent.acf.end_date,
+          end_time: calendarEvent.acf.end_time,
+          partner: calendarEvent.acf.partner,
+          content: calendarEvent.content,
+          background_image: calendarEvent.acf.background_image,
+          link: calendarEvent.acf.link
+        };
+      });
+    });
+};
+
 export const getFaqs = () => {
   return wordpressApiClient
     .get('/posts?_embed&categories=8&per_page=100')

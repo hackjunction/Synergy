@@ -1,0 +1,209 @@
+@import '../stylesheets/variables';
+
+$color3: white;
+.track_page {
+  background-color: #fbfbfb;
+  .top_nav_tracks{
+    background-color: #232323 !important;
+  }
+}
+.a:link {
+  color: black;
+  text-decoration: none;
+}
+.a:visited {
+  color: black;
+  text-decoration: none;
+}
+.a:hover {
+  color: black;
+  text-decoration: none;
+}
+.h1 {
+  @media only screen and (min-width: 320px) {
+      font-size: 24px;
+      line-height: 28px;
+  }
+  @media only screen and (min-width: 500px) {
+      font-size: 32px;
+      line-height: 45px;
+  }
+}
+.text_highlight {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  color: $accent;
+  display: inline-block;
+  line-height: 25px;
+  margin: 12px 0;
+  text-decoration: none;
+}
+.challenge_content h2 {
+  text-align: left !important;
+  font-family: 'Montserrat';
+  padding: 25px 0 5px 0;
+}
+.challenge_partner_inline img{
+  width:50%;
+}
+.challenge_content{
+  text-align: left !important;
+}
+.challenge_content{
+  a:link {
+    color: $accent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: $accent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $accent;
+    text-decoration: none;
+  }
+}
+.hero {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.junction_logo {
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    margin-top: 25%;
+  }
+  width: 200px;
+  padding-top: 15%;
+}
+.background_top {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    min-height: 20vh;
+    width: 100%;
+  }
+  @media only screen and (min-width: 321px) and (max-device-width: 1024px) {
+    min-height: 40vh;
+    width: 100%;
+  }
+  min-height: 40vh;
+  width: 100%;
+  margin: 0;
+}
+
+.track_header {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    margin-top: 0px !important;
+    width: 100%;
+    /* Styles */
+  }
+  @media only screen and (min-width: 321px) and (max-device-width: 1024px) {
+    margin-top: -50px !important;
+    width: 100%;
+  }
+  margin-top: -100px !important;
+  position: relative;
+  background: #fbfbfb;
+  color: #232323;
+  padding: 20px 50px 50px 50px;
+  width: 80%;
+  margin: 20px auto 0 auto;
+  .track_content {
+    color: #232323;
+    margin: 5% 0;
+
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+}
+.junction_website {
+  background: none;
+}
+.apply_button {
+  padding: 20px 40px;
+  margin-top: 5%;
+  background: none;
+  color: #232323;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+  margin-top:50px;
+}
+.apply_button:focus {
+  outline: none;
+}
+.apply_button:after,
+.apply_button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #ec008b;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.apply_button:after {
+  -webkit-transform: translate(3px, 3px);
+  transform: translate(3px, 3px);
+  border-color: $accent;
+}
+.apply_button:before {
+  -webkit-transform: translate(-3px, -3px);
+  transform: translate(-3px, -3px);
+}
+.apply_button:hover:after,
+.apply_button:hover:before {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  border: 2px solid transparent;
+  background-color: transparent;
+  border-image: linear-gradient(to right, #ec008b, $accent);
+  border-image-slice: 1;
+}
+.separator {
+  border-top: 1px solid rgba(0,0,0, 0.2);
+}
+.block {
+  background: #FBFBFB;
+  color: #232323;
+}
+.all_tracks{
+  h1 {
+    @media only screen and (min-width: 320px) {
+        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    @media only screen and (min-width: 500px) {
+        text-align: left;
+        font-size: 32px;
+        line-height: 45px;
+    }
+  }
+  .separator {
+    border-top: 1px solid rgba(0,0,0, 0.2);
+  }
+  background-color: #fbfbfb;
+  padding-top:120px !important;
+  align-items: center !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  a:link {
+    color: black;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+    text-decoration: none;
+  }
+}

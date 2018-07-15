@@ -5,6 +5,7 @@ import CookieConsent from 'react-cookie-consent';
 import Landing from './Landing';
 import Post from './Post';
 import Contact from './Contact';
+import Calendar from './Calendar';
 import Track from './Track';
 import Challenge from './Challenge';
 import AllTracks from './AllTracks';
@@ -75,6 +76,7 @@ class App extends React.Component {
               <Route path="/challenges/:challenge" component={Challenge} />
               <Route path="/all-tracks" component={AllTracks} />
               <Route path="/partners" component={AllPartners} />
+              <Route path="/calendar" component={Calendar} />
               <Route path="/2017partners" component={OldPartners} />
               <Route path="/2017" component={Junction2017} />
               <Route path="/junctionx" component={JunctionX} />
