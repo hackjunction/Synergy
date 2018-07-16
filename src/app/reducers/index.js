@@ -3,6 +3,7 @@ import { routerReducer } from 'react-router-redux';
 import { reducer as formReducer } from 'redux-form';
 import { posts, mediumPosts } from './posts';
 import challenges from './challenges';
+import calendarEvents from './calendarEvents';
 import partners from './partners';
 import tracks from './tracks';
 import events from './events';
@@ -15,6 +16,7 @@ const reducers = combineReducers({
   posts: posts,
   mediumPosts: mediumPosts,
   challenges: challenges,
+  calendarEvents: calendarEvents,
   partners: partners,
   tracks: tracks,
   events: events,

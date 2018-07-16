@@ -89,6 +89,7 @@
     "react-router-dom": "^4.1.2",
     "react-router-redux": "next",
     "react-scroll": "^1.5.4",
+    "react-scroll-to-component": "^1.0.2",
     "react-slick": "^0.14.11",
     "redux": "^3.7.2",
     "redux-form": "^7.0.3",

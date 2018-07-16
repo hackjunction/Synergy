@@ -6,6 +6,7 @@ import styles from './Calendar.c.scss';
 import TitleMod from './TitleMod';
 import CalendarEventElement from './CalendarEventElement';
 import TopNav from './TopNav';
+import Footer from './landing/Footer';
 
 class Calendar extends Component {
   componentWillMount() {
@@ -15,19 +16,37 @@ class Calendar extends Component {
   }
 
   render() {
+    console.log(this.props);
     const { calendarEvents } = this.props;
+
     return (
-      <Grid className={styles.hero} fluid>
-        <TopNav />
-        <Row className={styles.background_top} center="xs">
-          <TitleMod title="UPCOMING EVENTS" />
-        </Row>
-        <Row>
-          {calendarEvents.map((calendarEvent, i) => {
-            return <CalendarEventElement key={i} calendarEvent={calendarEvent} />;
-          })}
-        </Row>
-      </Grid>
+      <div>
+        <Grid className={styles.hero} fluid>
+          <TopNav />
+          <Row className={styles.background_top} center="xs">
+            <TitleMod title="CALENDAR" />
+          </Row>
+          <Row center="xs" height={1}>
+            {calendarEvents
+              .filter(calendarEvent => {
+                return calendarEvent.open;
+              })
+              .map((calendarEvent, i) => {
+                return <CalendarEventElement className={styles.calendarEvent} key={i} calendarEvent={calendarEvent} />;
+              })}
+          </Row>
+          <Row center="xs" height={1}>
+            {calendarEvents
+              .filter(calendarEvent => {
+                return !calendarEvent.open;
+              })
+              .map((calendarEvent, i) => {
+                return <CalendarEventElement className={styles.calendarEvent} key={i} calendarEvent={calendarEvent} />;
+              })}
+          </Row>
+        </Grid>
+        <Footer />
+      </div>
     );
   }
 }
@@ -39,14 +58,14 @@ Calendar.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    getCalendarEvents: state.calendarEvents || []
+    calendarEvents: state.calendarEvents || []
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
     getCalendarEvents() {
-      dispatch({ type: 'GET_CALENDAR_EVENTS' });
+      dispatch({ type: 'GET_CALENDAREVENTS' });
     }
   };
 }
