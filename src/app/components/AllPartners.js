@@ -83,7 +83,7 @@ const AllPartners = () => (
           <h1>
             Interested in partnering<br />with us?
           </h1>
-          <p>Contact our team member handling participants</p>
+          <p>Contact our team member handling partnerships</p>
           <h3>Henri Heliö</h3>
           <p>partnerships@hackjunction.com</p>
         </Col>
