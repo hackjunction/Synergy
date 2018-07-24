@@ -9,12 +9,15 @@ import styles from './Calendar.c.scss';
 class CalendarCategoryButton extends Component {
   render() {
     var category = this.props.category;
+    console.log(category);
+    var enabled = !!this.props.calendarCategories[category];
+    console.log(enabled);
     var toggle = function() {
       this.props.toggleCategory(category);
     }.bind(this);
 
     return (
-      <Col xs={4} md={3} onClick={toggle}>
+      <Col xs={4} md={3} onClick={toggle} className={enabled ? styles.categoryButtonSelected : styles.categoryButton}>
         <div>{category.toUpperCase()}</div>
       </Col>
     );
@@ -23,11 +26,14 @@ class CalendarCategoryButton extends Component {
 
 CalendarCategoryButton.propTypes = {
   category: PropTypes.string,
+  calendarCategories: PropTypes.object,
   toggleCategory: PropTypes.func
 };
 
-function mapStateToProps() {
-  return {};
+function mapStateToProps(state) {
+  return {
+    calendarCategories: state.calendarCategories || {}
+  };
 }
 
 function mapDispatchToProps(dispatch) {

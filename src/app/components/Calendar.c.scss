@@ -7,6 +7,16 @@ $color3: white;
     background-color: #232323 !important;
   }
 }
+.categoryButton {
+  border: 1px solid $accent;
+  color: $accent;
+  cursor: pointer;
+}
+.categoryButtonSelected {
+  background: $accent;
+  color: #fbfbfb;
+  cursor: pointer;
+}
 .calendarEvent {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;

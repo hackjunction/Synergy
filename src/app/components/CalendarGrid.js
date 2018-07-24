@@ -14,7 +14,6 @@ class CalendarGrid extends Component {
 
   render() {
     const { calendarEvents, categories } = this.props;
-    console.log('in grid', categories);
 
     return (
       <div>
