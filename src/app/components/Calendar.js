@@ -31,7 +31,7 @@ class Calendar extends Component {
 
     return (
       <div>
-        <Grid className={styles.hero} fluid>
+        <Grid className={styles.grid} fluid>
           <TopNav />
           <Row className={styles.background_top} center="xs">
             <TitleMod title="CALENDAR" />

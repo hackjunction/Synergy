@@ -23,6 +23,9 @@ $color3: white;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+.grid {
+  margin-bottom: 50px;
+}
 .h1 {
   @media only screen and (min-width: 320px) {
       font-size: 24px;
