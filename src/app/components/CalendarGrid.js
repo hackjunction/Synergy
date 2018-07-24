@@ -13,18 +13,23 @@ class CalendarGrid extends Component {
   }
 
   render() {
-    const { calendarEvents, categories } = this.props;
+    const { calendarEvents, categories, limit } = this.props;
+
+    var events = calendarEvents.filter(calendarEvent => {
+      return calendarEvent.category.some(cat => {
+        return categories[cat];
+      });
+    });
+    if (limit) {
+      events = events.slice(0, limit);
+    }
 
     return (
       <div>
         <Row center="xs" height={1}>
-          {calendarEvents
+          {events
             .filter(calendarEvent => {
-              return (
-                calendarEvent.category.some(cat => {
-                  return categories[cat];
-                }) && calendarEvent.open
-              );
+              return calendarEvent.open;
             })
             .map((calendarEvent, i) => {
               return <CalendarEventElement className={styles.calendarEvent} key={i} calendarEvent={calendarEvent} />;
@@ -32,13 +37,9 @@ class CalendarGrid extends Component {
         </Row>
 
         <Row center="xs" height={1}>
-          {calendarEvents
+          {events
             .filter(calendarEvent => {
-              return (
-                calendarEvent.category.some(cat => {
-                  return categories[cat];
-                }) && !calendarEvent.open
-              );
+              return !calendarEvent.open;
             })
             .map((calendarEvent, i) => {
               return <CalendarEventElement className={styles.calendarEvent} key={i} calendarEvent={calendarEvent} />;
@@ -52,7 +53,8 @@ class CalendarGrid extends Component {
 CalendarGrid.propTypes = {
   calendarEvents: PropTypes.array,
   categories: PropTypes.object,
-  getCalendarEvents: PropTypes.func
+  getCalendarEvents: PropTypes.func,
+  limit: PropTypes.number
 };
 
 function mapStateToProps(state) {

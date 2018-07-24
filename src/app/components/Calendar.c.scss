@@ -8,14 +8,19 @@ $color3: white;
   }
 }
 .categoryButton {
-  border: 1px solid $accent;
-  color: $accent;
   cursor: pointer;
+  padding: 0px 5px;
+  font-weight: bold;
 }
-.categoryButtonSelected {
+.inner {
+  margin: 5px;
+  color: #000000;
+  background: #fbfbfb;
+}
+.innerSelected {
+  margin: 5px;
+  color: #000000;
   background: $accent;
-  color: #fbfbfb;
-  cursor: pointer;
 }
 .calendarEvent {
   -webkit-transition: 0.5s;

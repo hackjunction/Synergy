@@ -24,6 +24,11 @@ class Tracks extends Component {
                   'Winter is coming – and so is Junction 2018! This November Europe’s biggest hackathon will be back even bigger and better in Helsinki area, Finland. Application period will be announced soon, get ready!'
                 }
               </BlockHeader>
+              <Col xs={12} md={12}>
+                <a href="https://2018.hackjunction.com">
+                  <button className={styles.apply_button}>LEARN MORE ABOUT JUNCTION 2018</button>
+                </a>
+              </Col>
               <button
                 className={styles.apply_button}
                 onClick={() => {
@@ -73,7 +78,7 @@ class Tracks extends Component {
 Tracks.propTypes = {};
 
 // export the connected class
-function mapStateToProps(state) {
+function mapStateToProps() {
   //console.log('tracks', state.tracks);
   return {};
 }

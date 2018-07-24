@@ -17,8 +17,8 @@ class CalendarCategoryButton extends Component {
     }.bind(this);
 
     return (
-      <Col xs={4} md={3} onClick={toggle} className={enabled ? styles.categoryButtonSelected : styles.categoryButton}>
-        <div>{category.toUpperCase()}</div>
+      <Col xs={4} md={3} onClick={toggle} className={styles.categoryButton}>
+        <div className={enabled ? styles.innerSelected : styles.inner}>{category.toUpperCase()}</div>
       </Col>
     );
   }

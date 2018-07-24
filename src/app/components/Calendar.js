@@ -18,7 +18,6 @@ class Calendar extends Component {
 
   render() {
     const { calendarEvents, calendarCategories } = this.props;
-    console.log(calendarCategories);
     var categories = [].concat.apply(
       [],
       calendarEvents.map(calendarEvent => {
