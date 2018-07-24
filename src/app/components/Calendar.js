@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import styles from './Calendar.c.scss';
 import TitleMod from './TitleMod';
-import CalendarEventElement from './CalendarEventElement';
+import CalendarGrid from './CalendarGrid';
+import CalendarCategoryButton from './CalendarCategoryButton';
 import TopNav from './TopNav';
 import Footer from './landing/Footer';
 
@@ -16,8 +17,17 @@ class Calendar extends Component {
   }
 
   render() {
-    console.log(this.props);
-    const { calendarEvents } = this.props;
+    const { calendarEvents, calendarCategories } = this.props;
+    console.log(calendarCategories);
+    var categories = [].concat.apply(
+      [],
+      calendarEvents.map(calendarEvent => {
+        return calendarEvent.category;
+      })
+    );
+    categories = Array.from(new Set(categories)); //remove duplicates
+    categories = categories.sort(); //remove duplicates
+    console.log(categories);
 
     return (
       <div>
@@ -26,24 +36,12 @@ class Calendar extends Component {
           <Row className={styles.background_top} center="xs">
             <TitleMod title="CALENDAR" />
           </Row>
-          <Row center="xs" height={1}>
-            {calendarEvents
-              .filter(calendarEvent => {
-                return calendarEvent.open;
-              })
-              .map((calendarEvent, i) => {
-                return <CalendarEventElement className={styles.calendarEvent} key={i} calendarEvent={calendarEvent} />;
-              })}
+          <Row center="xs">
+            {categories.map(category => {
+              return <CalendarCategoryButton category={category} />;
+            })}
           </Row>
-          <Row center="xs" height={1}>
-            {calendarEvents
-              .filter(calendarEvent => {
-                return !calendarEvent.open;
-              })
-              .map((calendarEvent, i) => {
-                return <CalendarEventElement className={styles.calendarEvent} key={i} calendarEvent={calendarEvent} />;
-              })}
-          </Row>
+          <CalendarGrid categories={calendarCategories} />
         </Grid>
         <Footer />
       </div>
@@ -53,12 +51,14 @@ class Calendar extends Component {
 
 Calendar.propTypes = {
   calendarEvents: PropTypes.array,
+  calendarCategories: PropTypes.object,
   getCalendarEvents: PropTypes.func
 };
 
 function mapStateToProps(state) {
   return {
-    calendarEvents: state.calendarEvents || []
+    calendarEvents: state.calendarEvents || [],
+    calendarCategories: state.calendarCategories || {}
   };
 }
 
@@ -66,6 +66,9 @@ function mapDispatchToProps(dispatch) {
   return {
     getCalendarEvents() {
       dispatch({ type: 'GET_CALENDAREVENTS' });
+    },
+    toggleCategory(category) {
+      dispatch({ type: 'CALENDARCATEGORY_TOGGLE', category });
     }
   };
 }
