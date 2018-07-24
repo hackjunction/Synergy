@@ -74,6 +74,7 @@
     "prop-types": "^15.5.10",
     "pure-react-carousel": "^1.13.2",
     "ramda": "^0.24.1",
+    "rc-menu": "^7.2.6",
     "react": "^15.6.1",
     "react-burger-menu": "^2.1.6",
     "react-cookie-consent": "^1.0.7",

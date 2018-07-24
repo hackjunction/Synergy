@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Media from 'react-media';
+import Menu, { SubMenu, Item as MenuItem } from 'rc-menu';
+import 'rc-menu/assets/index.css';
 import styles from './TopNav.c.scss';
 
 class TopNav extends React.Component {
@@ -16,25 +18,38 @@ class TopNav extends React.Component {
             />
           </Link>
           <Media query="(min-width: 901px)">
-            <nav className={styles.site_nav}>
-              <ul>
-                <li>
-                  <Link to="/">HOME</Link>
-                </li>
-                <li>
-                  <Link to="/team">TEAM</Link>
-                </li>
-                <li>
-                  <Link to="/2017">JUNCTION&nbsp;2017</Link>
-                </li>
-                <li>
-                  <Link to="/junctionx">JUNCTIONX</Link>
-                </li>
-                <li>
-                  <Link to="/jobs">JOBS</Link>
-                </li>
-              </ul>
-            </nav>
+            <Menu className={styles.menu} mode="horizontal" openAnimation="slide-up">
+              <SubMenu title={<Link to="/calendar">EVENTS</Link>} key="events">
+                <MenuItem key="junction2018">
+                  <a href="https://2018.hackjunction.com">Junction 2018</a>
+                </MenuItem>
+                <MenuItem key="global">
+                  <Link to="/junctionx">Global</Link>
+                </MenuItem>
+                <MenuItem key="calendar">
+                  <Link to="/calendar">Calendar</Link>
+                </MenuItem>
+              </SubMenu>
+              <SubMenu title={<Link to="/about">ABOUT</Link>} key="about">
+                <MenuItem key="what-is">
+                  <Link to="/about">What is Junction</Link>
+                </MenuItem>
+                <MenuItem key="team">
+                  <Link to="/team">Team</Link>
+                </MenuItem>
+              </SubMenu>
+              <SubMenu title={<Link to="/participate">JOIN</Link>} key="join">
+                <MenuItem key="participate">
+                  <Link to="/participate">Participate</Link>
+                </MenuItem>
+                <MenuItem key="partner">
+                  <Link to="/partner">Partner</Link>
+                </MenuItem>
+                <MenuItem key="volunteer">
+                  <Link to="/volunteer">Volunteer</Link>
+                </MenuItem>
+              </SubMenu>
+            </Menu>
           </Media>
           <Media query="(max-width: 900px)">
             <span onClick={window.openNavigationMenu}>MENU</span>
