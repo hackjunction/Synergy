@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Row, Col } from 'react-flexbox-grid';
 import CookieConsent from 'react-cookie-consent';
+import About from './About';
 import Landing from './Landing';
 import Post from './Post';
 import Participate from './Participate';
@@ -73,6 +74,7 @@ class App extends React.Component {
               <Route exact path="/post" component={Post} />
               <Route exact path="/team" component={Contact} />
               <Route exact path="/volunteer" component={Volunteer} />
+              <Route exact path="/about" component={About} />
               <Route exact path="/participate" component={Participate} />
               <Route path="/tracks/:track" component={Track} />
               <Route path="/challenges/:challenge" component={Challenge} />

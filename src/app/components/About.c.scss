@@ -1,16 +1,36 @@
 @import '../stylesheets/variables';
 
+.background_top {
+  max-width: 100%;
+}
 .block {
   background: #FBFBFB;
-  color: #232323;
-  display: flex;
+  color: #000000 !important;
+  /*display: flex;*/
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
+.dark_block {
+  background: #000000;
+  color: #fbfbfb !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  font-weight: 900;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
 .community {
-  p, h1, h2, h3, h4 {text-align: left;}
+  p, h1, h2, h3, h4 {text-align: center;}
+}
+.video {
+  margin-top: 2em;
+}
+.bottomRow {
+  margin-top: 50px;
 }
 
 .content {
