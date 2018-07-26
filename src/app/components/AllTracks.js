@@ -15,7 +15,8 @@ class AllTracks extends Component {
   }
 
   render() {
-    const { tracks } = this.props;
+    var { tracks } = this.props;
+    tracks = tracks.filter(track => track.year === '2017');
     return (
       <Grid className={styles.hero} fluid>
         <TopNav />
