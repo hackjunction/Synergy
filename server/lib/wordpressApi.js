@@ -118,7 +118,10 @@ export const getCalendarEvents = () => {
           partner: calendarEvent.acf.partner,
           content: calendarEvent.content,
           background_image: calendarEvent.acf.background_image,
-          link: calendarEvent.acf.link
+          link_1: calendarEvent.acf.link_1,
+          link_2: calendarEvent.acf.link_2,
+          link_1_text: calendarEvent.acf.link_1_text,
+          link_2_text: calendarEvent.acf.link_2_text
         };
       });
     });

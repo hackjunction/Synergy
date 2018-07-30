@@ -28,6 +28,22 @@ class CalendarEventElement extends Component {
       };
     }
     console.log('style:', style);
+    console.log('calendarEvent:', calendarEvent);
+    var link1 = calendarEvent.link_1 ? (
+      <Col xs={12} md={4}>
+        <a href={calendarEvent.link_1}>
+          <button className={styles.apply_button}>{calendarEvent.link_1_text}</button>
+        </a>
+      </Col>
+    ) : null;
+    var link2 = calendarEvent.link_2 ? (
+      <Col xs={12} md={4}>
+        <a href={calendarEvent.link_1}>
+          <button className={styles.apply_button}>{calendarEvent.link_2_text}</button>
+        </a>
+      </Col>
+    ) : null;
+    console.log(calendarEvent.link_1, link1);
     return calendarEvent.open ? (
       <Col xs={12} md={12} className={styles.open_container}>
         <ScrollElement name={calendarEvent.slug} />
@@ -38,8 +54,8 @@ class CalendarEventElement extends Component {
           <div className={styles.text_content} dangerouslySetInnerHTML={{ __html: calendarEvent.content.rendered }} />
         </Row>
         <Row center="xs">
-          {calendarEvent.link ? <Col className={styles.link}>EVENT</Col> : null}
-          {calendarEvent.link ? <Col className={styles.link}>READ MORE</Col> : null}
+          {link1}
+          {link2}
         </Row>
         <Row center="xs" onClick={toggle} className={styles.arrow}>
           <div className="fa fa-chevron-up" />
