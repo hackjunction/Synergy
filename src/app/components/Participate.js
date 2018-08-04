@@ -20,7 +20,7 @@ const Participate = () => (
       </p>
       <p>
         {
-          'If you’re start starting your coding journey, check out our beginner workshops and annual Stupid Hack, where only ideas and excitement matter! For someone who wants to really test their skills, we have several technical events during the fall around Europe: TechRace and HackTour. If you want to try out a hackathon, why not test our our community organized JUNCTIONx-hackathons (which are pretty awesome!).'
+          'If you’re starting your coding journey, check out our beginner workshops and annual Stupid Hack, where only ideas and excitement matter! For someone who wants to really test their skills, we have several technical events during the fall around Europe: TechRace and HackTour. If you want to try out a hackathon, why not test our our community organized JUNCTIONx-hackathons (which are pretty awesome!).'
         }
       </p>
       <p>
@@ -92,7 +92,7 @@ const Participate = () => (
           <img
             src="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-erika.jpg"
             className={styles.img}
-            alt="Antti Hämmäinen"
+            alt="Erika Ojanperä"
           />
         </Col>
       </Row>
