@@ -43,7 +43,7 @@ class TopNav extends React.Component {
                   <Link to="/participate">Participate</Link>
                 </MenuItem>
                 <MenuItem key="partner">
-                  <Link to="/partner">Partner</Link>
+                  <Link to="/partners">Partner</Link>
                 </MenuItem>
                 <MenuItem key="volunteer">
                   <Link to="/volunteer">Volunteer</Link>
