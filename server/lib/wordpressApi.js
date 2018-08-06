@@ -23,6 +23,7 @@ export const getTracks = () => {
           content: track.content.rendered,
           description: track.acf.description,
           image: track.acf.image,
+          year: track.acf.year,
           challenges: track.acf.challenges
             ? track.acf.challenges.map(challenge => {
                 return {
