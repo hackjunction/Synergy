@@ -5,6 +5,7 @@ import styles from './Track.c.scss';
 import Block from './viewBlocks/Block';
 import BlockHeader from './viewBlocks/BlockHeader';
 import TopNav from './TopNav';
+import Carousel from './Carousel';
 import PartnerSection from './landing/PartnerSection';
 import Footer from './landing/Footer';
 
@@ -13,14 +14,15 @@ const AllPartners = () => (
     <Grid className={styles.hero} fluid>
       <TopNav />
     </Grid>
+    <Carousel />
     <Block className={styles.textblock}>
       <BlockHeader title="WHAT IS JUNCTION FOR PARTNERS">
         <p>
-          Junction provides a unique opportunity to work and interact with thousands of developers.
+          Junction provides a unique opportunity to work and interact with thousands of developers for your company.
           <br />
           <br />
-          In a mere three years, Junction has created a vibrant community of over 20 000 enthusiastic tech talents.
-          Along the journey we have connected our partners with new audiences and helped them to build their developer
+          In a mere three years Junction has created a vibrant community of over 20 000 enthusiastic tech talents. Along
+          the journey we have connected our partners with new audiences and helped them to build their own developer
           community. Junction has grown into an access point to emerging top tech talents from all over the world.
         </p>
       </BlockHeader>
@@ -63,7 +65,7 @@ const AllPartners = () => (
       </p>
     </Block>
     <Block className={styles.block}>
-      <h1>Partners from previous years</h1>
+      <h1>Some of our partners from previous years</h1>
       <p>
         Our partners are a mix of industry leaders and agile startups, looking to support aspiring developers and
         co-create the innovations of tomorrow.
@@ -83,7 +85,7 @@ const AllPartners = () => (
           <h1>
             Interested in partnering<br />with us?
           </h1>
-          <p>Contact our team member handling partnerships</p>
+          <p>Henri would be happy to tell you more about partnership opportunities at Junction!</p>
           <h3>Henri Heliö</h3>
           <p>partnerships@hackjunction.com</p>
         </Col>

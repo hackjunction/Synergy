@@ -1,0 +1,45 @@
+
+.carouseltext {
+  width: 80%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+
+  @media only screen and (min-width: 320px) {
+      font-size: 20px;
+      line-height: 22px;
+  }
+  @media only screen and (min-width: 500px) {
+      font-size: 24px;
+      line-height: 28px;
+  }
+  @media only screen and (min-width: 750px) {
+      font-size: 32px;
+      line-height: 45px;
+  }
+}
+
+.slide_1 {
+  background-image: url("https://staging.hackjunction.com/wp-content/uploads/2018/07/allpartnerscar1.jpg");
+  background-size: cover;
+}
+
+.slide_2 {
+  background-image: url("https://staging.hackjunction.com/wp-content/uploads/2018/08/car5.jpg");
+  background-size: cover;
+}
+
+.slide_3 {
+  background-image: url("https://staging.hackjunction.com/wp-content/uploads/2018/07/allpartnerscar2.jpg");
+  background-size: cover;
+}
+
+.slide_4 {
+  background-image: url("https://staging.hackjunction.com/wp-content/uploads/2018/08/car4.jpg");
+  background-size: cover;
+}
