@@ -54,15 +54,15 @@ class TopNav extends React.Component {
           <Media query="(max-width: 900px)">
             <span onClick={window.openNavigationMenu}>MENU</span>
           </Media>
-          {/*}<a
+          <a
             className={styles.mlh}
-            href="https://mlh.io/seasons/eu-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=gray"
+            href="https://mlh.io/seasons/eu-2019/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=gray"
           >
             <img
-              src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/gray.svg"
-              alt="Major League Hacking 2017 Hackathon Season"
+              src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-gray.svg"
+              alt="Major League Hacking 2019 Hackathon Season"
             />
-          </a>*/}
+          </a>
         </header>
       </div>
     );
