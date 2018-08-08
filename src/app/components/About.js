@@ -45,7 +45,8 @@ const About = () => (
       </Row>
       <Row className={styles.bottomRow} center="xs">
         <Col xs={12} md={12}>
-          <span className={styles.number}> Over 5000 </span>participants in total
+          <span className={styles.number}> Over 5000 </span>
+          <br />participants in total
         </Col>
       </Row>
     </Block>
