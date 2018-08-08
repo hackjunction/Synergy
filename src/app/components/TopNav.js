@@ -37,6 +37,9 @@ class TopNav extends React.Component {
                 <MenuItem key="team">
                   <Link to="/team">Team</Link>
                 </MenuItem>
+                <MenuItem key="jobs">
+                  <Link to="/jobs">Jobs from partners</Link>
+                </MenuItem>
               </SubMenu>
               <SubMenu title={<Link to="/participate">JOIN</Link>} key="join">
                 <MenuItem key="participate">
