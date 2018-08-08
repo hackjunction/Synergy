@@ -61,7 +61,7 @@ const Footer = () => (
         </Row>
       </Col>
     </Row>
-    {/*    <Row center="xs" className={styles.base}>
+    <Row center="xs">
       <p>
         <a href="https://staging.hackjunction.com/wp-content/uploads/2018/05/Junction-Oy-Privacy-Policy-24052018.pdf">
           Privacy Policy
@@ -70,8 +70,10 @@ const Footer = () => (
         <a href="https://staging.hackjunction.com/wp-content/uploads/2018/05/Junction-Oy-Terms-of-Service-24052018.pdf">
           Terms of Service
         </a>
+        <br />
+        <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>
       </p>
-    </Row> */}
+    </Row>
     <Row center="xs" className={styles.base}>
       <p>
         Designed and developed with 💕 &amp; ☕ by the amazing Junction Team
