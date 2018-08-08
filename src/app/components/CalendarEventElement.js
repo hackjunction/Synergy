@@ -38,12 +38,11 @@ class CalendarEventElement extends Component {
     ) : null;
     var link2 = calendarEvent.link_2 ? (
       <Col xs={12} md={4}>
-        <a href={calendarEvent.link_1}>
+        <a href={calendarEvent.link_2}>
           <button className={styles.apply_button}>{calendarEvent.link_2_text}</button>
         </a>
       </Col>
     ) : null;
-    console.log(calendarEvent.link_1, link1);
     return calendarEvent.open ? (
       <Col xs={12} md={12} className={styles.open_container}>
         <ScrollElement name={calendarEvent.slug} />
