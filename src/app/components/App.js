@@ -20,6 +20,7 @@ import JunctionX from './JunctionX';
 import GoldenTicket from './GoldenTicket';
 import NotFound from './NotFound';
 import MobileNav from './MobileNav';
+import Terminal from './Terminal';
 
 class App extends React.Component {
   constructor(props) {
@@ -86,6 +87,7 @@ class App extends React.Component {
               <Route path="/junctionx" component={JunctionX} />
               <Route path="/jobs" component={AllJobs} />
               <Route path="/goldenticket" component={GoldenTicket} />
+              <Route path="/terminal" component={Terminal} />
               <Route path="/404" component={NotFound} />
               <Route component={NotFound} />
             </Switch>
