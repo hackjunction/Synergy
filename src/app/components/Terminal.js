@@ -19,7 +19,7 @@ const Terminal = () => (
       </div>
     </Block>
     <Block className={styles.block}>
-      <BlockHeader title="TERMINAL" />
+      <BlockHeader title="TERMINAL 3.0" />
       <Row className="junction_terminal">
         <Col xs={12} className={styles.parag}>
           <br />
@@ -28,7 +28,7 @@ const Terminal = () => (
           young talents to make connections with exhilarating international companies that are looking for in example
           developers and meet other hackers. A four day event includes extremely fun days, learning from each others,
           having nights out in Helsinki and getting most out of the entire Junction week! Participants of Terminal also
-          have possibility to join the Keynotes part of Hack\Talks.
+          have possibility to join the Keynotes part of Hack Talks.
           <br />
         </Col>
       </Row>
@@ -55,29 +55,23 @@ const Terminal = () => (
           alt="Terminal logo"
         />
       </div>
-    </Block>
-    <Block className={styles.block12}>
-      <BlockHeader title="SCHEDULE" />
       <Row className="junction_terminal">
         <Col xs={12} className={styles.parag}>
-          <br />
-          Terminal starts 19th of November with kick-off session and every day the specific partner company will host
-          the night. There are also partner-hosted events and events to explore Helsinki during the days. Wednesday 21st
-          is the last day of having company hosted events and Thursday 22nd is allocated free so participants and the
-          partner companies can book one-on-one meetings in terms of recruiting. (Hack talks during the evening!)
-          <br />
+          More partners announced soon!
         </Col>
       </Row>
     </Block>
     <Block className={styles.block}>
-      <BlockHeader title="CONTACT INFO" />
+      <BlockHeader title="SCHEDULE" />
       <Row className="junction_terminal">
         <Col xs={12} className={styles.parag}>
           <br />
-          Any questions or would like to know more?
-          <br />
-          <br />
-          Don’t hesitate to contact: maiju.aspegren(a)hackjunction.com
+          Terminal starts on the 19th of November with kick-off session and every day the specific partner company will
+          host the night. There are also partner-hosted events and events to explore Helsinki during the days. Wednesday
+          21st is the last day of having company hosted events and Thursday 22nd is allocated free so participants and
+          the partner companies can book one-on-one meetings in terms of recruiting and join Hack Talks Keynotes during
+          the evening! On the Friday 23rd we are getting ready for the Junction 2018! Accurate information about the
+          schedule will be completed later.
           <br />
         </Col>
       </Row>
@@ -88,8 +82,7 @@ const Terminal = () => (
         <Col xs={12} className={styles.parag}>
           <br />
           Welcome to Finland! Participating to Terminal means that we will provide you accommodation together with other
-          Terminal participants for the whole week! Accurate information about the schedule and participating companies
-          will be completed later.
+          Terminal participants for the whole week! More information coming soon.
           <br />
         </Col>
       </Row>
@@ -114,8 +107,21 @@ const Terminal = () => (
           time to book one on one meetings with participants.
           <br />
           <h3> Additional info </h3>
-          The amount of participants is approximately 100-150 persons and every partner will get one slot during day /
+          The amount of participants is approximately 120 persons and every partner will get one slot during day /
           evening, which means 2-4 hours for their program.
+          <br />
+        </Col>
+      </Row>
+    </Block>
+    <Block className={styles.block1}>
+      <BlockHeader title="CONTACT INFO" />
+      <Row className="junction_terminal">
+        <Col xs={12} className={styles.parag}>
+          <br />
+          Any questions or would like to know more?
+          <br />
+          <br />
+          Don’t hesitate to contact: maiju.aspegren(a)hackjunction.com
           <br />
         </Col>
       </Row>
