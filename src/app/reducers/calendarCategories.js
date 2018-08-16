@@ -1,5 +1,5 @@
 export default function calendarEvents(
-  state = { hacktour: true, junctionx: true, techrace: true, hacktalks: true },
+  state = { hacktour: true, junctionx: true, techrace: true, hacktalks: true, terminal: true },
   action
 ) {
   switch (action.type) {
