@@ -79,6 +79,37 @@ const Participate = () => (
     </Block>
 
     <Block className={styles.block}>
+      <BlockHeader title="MATCHMAKING AT JUNCTION" className={styles.community} />
+      <p>
+        We want to give you the best possible experience at Junction 2018. That’s why this year we are bringing over 30
+        of the top tech firms from various fields along with their experts to Junction! The weekend itself is an
+        excellent opportunity to get to know the tech people at these companies and explore new opportunities with or in
+        these companies. You can find out more information about our partners and their challenges in our track specific
+        pages!
+      </p>
+      <p>
+        Based on our feedback last year, 80% of participants were interested in exploring job opportunities at Junction.
+        This is why we have partnered again with aTalent in Junction 2018 – to bring you interesting and relevant open
+        positions from the fields of technology and design. We know hackathons and aTalent knows talent.
+      </p>
+      <p>
+        Hailing from the same ecosystem at Aalto University and still fully owned by student and alumni organizations,
+        aTalent is a recruitment company connecting skilled students and young professionals with the right companies.
+        We chose aTalent as our recruitment partner because they are committed to helping bright talents build their
+        career and treat applicants as valued customers.
+      </p>
+      <p>
+        During Junction 2018, aTalent will facilitate the Meeting Area alongside the Junction team. We are happy to
+        answer any questions you might have on recruitment and career-related topics! Contact us regarding matchmaking
+        or any other topic at hello@hackjunction.com and see the open job listings of our partners even before the event
+        at hackjunction.com/jobs
+      </p>
+      <a href="https://atalent.fi/en/who-are-we">
+        <button className={`${styles.apply_button}`}>LEARN MORE ABOUT aTALENT</button>
+      </a>
+    </Block>
+
+    <Block className={styles.block}>
       <Row>
         <Col xs={12} sm={12} md={8}>
           <h1>
