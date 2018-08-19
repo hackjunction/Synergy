@@ -137,17 +137,11 @@ class App extends React.Component {
                 }}
               >
                 View our updated{' '}
-                <a
-                  style={{ color: '#35E2DF' }}
-                  href="https://staging.hackjunction.com/wp-content/uploads/2018/05/Junction-Oy-Privacy-Policy-24052018.pdf"
-                >
+                <a style={{ color: '#35E2DF' }} href="/policy">
                   Privacy Policy
                 </a>{' '}
                 and{' '}
-                <a
-                  style={{ color: '#35E2DF' }}
-                  href="https://staging.hackjunction.com/wp-content/uploads/2018/05/Junction-Oy-Terms-of-Service-24052018.pdf"
-                >
+                <a style={{ color: '#35E2DF' }} href="/terms">
                   Terms of Service
                 </a>{' '}
               </div>

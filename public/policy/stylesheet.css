@@ -27,8 +27,16 @@ h3 {
   font-family: Montserrat, sans-serif;
 }
 
+h4 {
+  font-family: Montserrat, sans-serif;
+  font-style: italic;
+}
 span {
   color: #EC008B;
+}
+a,
+a:visited {
+  color: #5ABECF;
 }
 
 #content {

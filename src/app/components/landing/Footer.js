@@ -63,13 +63,9 @@ const Footer = () => (
     </Row>
     <Row center="xs">
       <p>
-        <a href="https://staging.hackjunction.com/wp-content/uploads/2018/05/Junction-Oy-Privacy-Policy-24052018.pdf">
-          Privacy Policy
-        </a>
+        <a href="/policy">Privacy Policy</a>
         <br />
-        <a href="https://staging.hackjunction.com/wp-content/uploads/2018/05/Junction-Oy-Terms-of-Service-24052018.pdf">
-          Terms of Service
-        </a>
+        <a href="/terms">Terms of Service</a>
         <br />
         <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>
       </p>

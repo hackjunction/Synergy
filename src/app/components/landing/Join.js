@@ -23,7 +23,7 @@ const Join = () => (
           </Link>
         </Col>
         <Col xs={12} md={4}>
-          <Link to="/partner">
+          <Link to="/partners">
             <button className={styles.apply_button}>PARTNER</button>
           </Link>
         </Col>
