@@ -22,6 +22,38 @@
   }
 }
 
+.applyLink {
+  text-decoration: none;
+  text-align: center;
+}
+
+.apply2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.apply {
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    width: 50%;
+  }
+  @media only screen and (min-width: 900px) {
+    width: 25%;
+  }
+  font-family: "Montserrat";
+  font-weight: normal;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  width: 35%;
+  text-align: center;
+  margin-top: 50px;
+}
 
 .h1 {
   word-wrap: break-word;
