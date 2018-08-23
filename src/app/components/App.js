@@ -90,6 +90,9 @@ class App extends React.Component {
               <Route path="/goldenticket" component={GoldenTicket} />
               <Route path="/terminal" component={Terminal} />
               <Route path="/techrace" component={Techrace} />
+              <Route path="/login" component={() => (window.location = 'https://apply.hackjunction.com')} />
+              <Route path="/apply" component={() => (window.location = 'https://apply.hackjunction.com')} />
+              <Route path="/redirect" component={() => (window.location = 'https://apply.hackjunction.com')} />
               <Route path="/404" component={NotFound} />
               <Route component={NotFound} />
             </Switch>
