@@ -5,7 +5,7 @@ import styles from './Track.c.scss';
 import Block from './viewBlocks/Block';
 import BlockHeader from './viewBlocks/BlockHeader';
 import TopNav from './TopNav';
-import Carousel from './Carousel';
+import Slideshow from './Slideshow';
 import PartnerSection from './landing/PartnerSection';
 import Footer from './landing/Footer';
 
@@ -14,7 +14,48 @@ const AllPartners = () => (
     <Grid className={styles.hero} fluid>
       <TopNav />
     </Grid>
-    <Carousel />
+    <Slideshow
+      elements={[
+        {
+          index: '0',
+          image: 'https://staging.hackjunction.com/wp-content/uploads/2018/07/allpartnerscar1.jpg',
+          quote: '“Awesome experience.”',
+          quoter: '- Participant 2017'
+        },
+        {
+          index: '1',
+          image: 'https://staging.hackjunction.com/wp-content/uploads/2018/08/car5.jpg',
+          quote:
+            '“The excitement and motivation to learn was very motivating for us. It was clear that we had come to the right place.”',
+          quoter: 'Nordea, partner 2017'
+        },
+        {
+          index: '2',
+          image: 'https://staging.hackjunction.com/wp-content/uploads/2018/08/car4.jpg',
+          quote: '“The best hackathon in Europe. Ever.”',
+          quoter: '- Participant 2017'
+        },
+        {
+          index: '3',
+          image: 'https://staging.hackjunction.com/wp-content/uploads/2018/07/allpartnerscar2.jpg',
+          quote: '“Junction was really impressive. It felt a bit like a piece of Silicon Valley in Otaniemi.”',
+          quoter: '- Finnair, partner 2017'
+        },
+        {
+          index: '4',
+          image: 'https://staging.hackjunction.com/wp-content/uploads/2018/08/car5.jpg',
+          quote: '“Hundreds of people making crazy stuff.”',
+          quoter: '- Participant 2017'
+        },
+        {
+          index: '5',
+          image: 'https://staging.hackjunction.com/wp-content/uploads/2018/07/allpartnerscar2.jpg',
+          quote:
+            '“Deep collaborations between young entrepreneurs with fresh ideas and executives from large industry players.”',
+          quoter: '- Erica Swallow, Huffington Post 2016'
+        }
+      ]}
+    />
     <Block className={styles.textblock}>
       <BlockHeader title="WHAT IS JUNCTION FOR PARTNERS">
         <p>
