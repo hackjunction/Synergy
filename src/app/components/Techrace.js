@@ -66,49 +66,39 @@ const Terminal = () => (
         <br />
         More detailed schedule:
       </p>
+      <Row className={styles.schedule_titles}>
+        <Col xs={3}>Date & City</Col>
+        <Col xs={3}>Location</Col>
+        <Col xs={6}>Co-organizer</Col>
+      </Row>
       <Row>
-        <Col xs={3}>
-          Date & City
-          <br />
-          <br />
-          17.9 Helsinki<br />
-          12.9 Tampere<br />
-          19.9 Vaasa<br />
-          18.9 Turku<br />
-          24.9 Jyväskylä<br />
-          25.9 Lappeenranta<br />
-          27.9 Joensuu<br />
-          4.10 Espoo<br />
-          5.10 Oulu<br />
-        </Col>
-        <Col xs={3}>
-          Location
-          <br />
-          <br />
-          Tiedekulma<br />
-          Tribe Tampere<br />
-          TBA<br />
-          SparkUp<br />
-          TBA<br />
-          TBA<br />
-          Tiedepuisto<br />
-          Startup Sauna<br />
-          Aleksinkulma<br />
-        </Col>
-        <Col xs={6}>
-          Co-organizer
-          <br />
-          <br />
-          Helsinki Think Company<br />
-          Tampere Entrepreneurship Society<br />
-          Vaasa Entrepreneurship Society<br />
-          Boost Turku<br />
-          Jyväskylä Entrepreneurship Society<br />
-          LUT Entrepreneurship Society<br />
-          Joensuu Entrepreneurship Society<br />
-          <br />
-          Oulu Entrepreneurship Society
-        </Col>
+        <Col xs={3}>17.9 Helsinki</Col>
+        <Col xs={3}>Tiedekulma</Col>
+        <Col xs={6}>Helsinki Think Company</Col>
+        <Col xs={3}>12.9 Tampere</Col>
+        <Col xs={3}>Tribe Tampere</Col>
+        <Col xs={6}>Tampere Entrepreneurship Society</Col>
+        <Col xs={3}>19.9 Vaasa</Col>
+        <Col xs={3}>TBA</Col>
+        <Col xs={6}>Vaasa Entrepreneurship Society</Col>
+        <Col xs={3}>18.9 Turku</Col>
+        <Col xs={3}>SparkUp</Col>
+        <Col xs={6}>Boost Turku</Col>
+        <Col xs={3}>24.9 Jyväskylä</Col>
+        <Col xs={3}>TBA</Col>
+        <Col xs={6}>Jyväskylä Entrepreneurship Society</Col>
+        <Col xs={3}>25.9 Lappeenranta</Col>
+        <Col xs={3}>TBA</Col>
+        <Col xs={6}>LUT Entrepreneurship Society</Col>
+        <Col xs={3}>27.9 Joensuu</Col>
+        <Col xs={3}>Tiedepuisto</Col>
+        <Col xs={6}>Joensuu Entrepreneurship Society</Col>
+        <Col xs={3}>4.10 Espoo</Col>
+        <Col xs={3}>Startup Sauna</Col>
+        <Col xs={6} />
+        <Col xs={3}>5.10 Oulu</Col>
+        <Col xs={3}>Aleksinkulma</Col>
+        <Col xs={6}>Oulu Entrepreneurship Society</Col>
       </Row>
     </Block>
     <Footer />
