@@ -7,7 +7,7 @@ import TopNav from './TopNav';
 import PartnerSection from './landing/PartnerSection';
 import Footer from './landing/Footer';
 
-const Terminal = () => (
+const Techrace = () => (
   <div>
     <TopNav />
     <div>
@@ -39,6 +39,22 @@ const Terminal = () => (
           them all”, is chosen based on the total points all participants earn during the local TechRace event. So,
           gather your local tech community together and get ready to race against other cities!
           <br />
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} sm={6}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2018/08/junction_logos_2018-wordmark_black.png"
+            className={styles.partnerImage}
+            alt="Junction Logo"
+          />
+        </Col>
+        <Col xs={12} sm={6}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2018/08/Startuplifers_Logo_Black_RGB_small.png"
+            className={styles.partnerImage}
+            alt="Startuplifers Logo"
+          />
         </Col>
       </Row>
     </Block>
@@ -73,7 +89,7 @@ const Terminal = () => (
         <Col xs={3}>Location</Col>
         <Col xs={6}>Co-organizer</Col>
       </Row>
-      <Row>
+      <Row className={styles.schedule}>
         <Col xs={3}>12.9 Helsinki</Col>
         <Col xs={3}>Tiedekulma</Col>
         <Col xs={6}>Helsinki Think Company</Col>
@@ -113,4 +129,4 @@ const Terminal = () => (
   </div>
 );
 
-export default Terminal;
+export default Techrace;

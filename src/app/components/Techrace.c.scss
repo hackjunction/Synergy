@@ -29,12 +29,18 @@
   font-weight: bold;
 }
 
-.partnerImage {
-  @media only screen and (min-width: 320px) {
-    width: 80%
+.schedule {
+  @media only screen and (max-width: 470px) {
+    font-size: 11px;
   }
-  @media only screen and (min-width: 1024px) {
-    width: 50%;
+}
+
+.partnerImage {
+  @media only screen and (min-width: 50px) {
+    max-width: 100%;
+  }
+  @media only screen and (min-width: 500px) {
+    padding-top: 20px;
     text-align: center;
   }
 }
