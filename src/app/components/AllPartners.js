@@ -113,7 +113,7 @@ const AllPartners = () => (
       </p>
       <PartnerSection
         categories={[{ priority: 300, size_md: 4, size_xs: 6 }, { priority: 200, size_md: 3, size_sm: 3, size_xs: 4 }]}
-        year="201"
+        year={201}
       />
     </Block>
     <Block className={styles.textblock_black}>

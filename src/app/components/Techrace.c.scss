@@ -1,3 +1,5 @@
+@import '../stylesheets/variables';
+
 .block {
   background-color: black;
   color: white;
@@ -19,6 +21,10 @@
   background-size: contain;
 }
 
+.link {
+  color: $accent;
+}
+
 .schedule_titles {
   font-weight: bold;
 }
@@ -36,9 +42,4 @@
 .partnerCnt {
   text-align: center;
   padding-bottom: 0;
-}
-
-.parag {
-  font-size: 20px;
-  line-height: 1.4;
 }
