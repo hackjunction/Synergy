@@ -19,7 +19,7 @@ class EventsAroundTheWorld extends Component {
       <Scroll.Element name="events_around_the_world">
         <Block className={styles.block}>
           <BlockHeader title="EVENTS ALL AROUND THE WORLD" />
-          <CalendarGrid categories={{ junctionx: true }} />
+          <CalendarGrid categories={{ junctionx: true, hacktour: true, techrace: true }} />
           <Row center="xs">
             <Col xs={12} md={12}>
               <Link to="/calendar">
