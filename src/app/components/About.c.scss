@@ -2,13 +2,28 @@
 
 .background_top {
   max-width: 100%;
+  padding-bottom: 0;
 }
+
+.infotext {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  background: black !important;
+  color: white !important;
+}
+
+.parag {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
 .block {
   background: #FBFBFB;
-  color: #000000 !important;
+  color: #000000;
   /*display: flex;*/
   align-items: center;
   justify-content: center;
+  z-index: 5;
 }
 
 .dark_block {

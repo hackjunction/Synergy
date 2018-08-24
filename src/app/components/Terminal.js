@@ -48,13 +48,26 @@ const Terminal = () => (
     </Block>
     <Block className={styles.block1}>
       <BlockHeader title="PARTNER COMPANIES" />
-      <div className={styles.partnerCnt}>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2018/06/logos_partners_website-12.png"
-          className={styles.partnerImage}
-          alt="Terminal logo"
-        />
-      </div>
+      <Row>
+        <Col md={6} xs={12}>
+          <div className={styles.partnerCnt}>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2018/06/logos_partners_website-12.png"
+              className={styles.partnerImage}
+              alt="partnerlogo1"
+            />
+          </div>
+        </Col>
+        <Col md={6} xs={12}>
+          <div className={styles.partnerCnt}>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2018/08/logos_partners_website-nextgames-22.png"
+              className={styles.partnerImage}
+              alt="partnerlogo2"
+            />
+          </div>
+        </Col>
+      </Row>
       <Row className="junction_terminal">
         <Col xs={12} className={styles.parag}>
           More partners announced soon!

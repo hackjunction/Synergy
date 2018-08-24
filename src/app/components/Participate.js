@@ -11,6 +11,14 @@ import Footer from './landing/Footer';
 const Participate = () => (
   <div>
     <TopNav />
+    <Block className={styles.greenBlock}>
+      <h1 className={styles.applyHeader}>JUNCTION 2018 APPLICATIONS NOW OPEN</h1>
+      <a href="https://2018.hackjunction.com" className={styles.applyLink}>
+        <div className={styles.apply}>
+          <h2 className={styles.apply2}>Learn more about applying</h2>
+        </div>
+      </a>
+    </Block>
     <Block className={styles.dark_block}>
       <BlockHeader title="HOW TO PARTICIPATE IN JUNCTION?" />
       <p>
@@ -44,11 +52,11 @@ const Participate = () => (
               }
               <Link to="/partners">here!</Link>
             </p>
-            <p>Applications open on August 20th – get ready!</p>
+            <p>Applications open now!</p>
           </BlockHeader>
           <Col xs={12} md={12}>
             <a href="https://2018.hackjunction.com">
-              <button className={styles.apply_button}>LEARN MORE ABOUT JUNCTION 2018</button>
+              <button className={styles.apply_button}>APPLY NOW</button>
             </a>
           </Col>
         </Col>

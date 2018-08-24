@@ -16,6 +16,23 @@ const About = () => (
     <Row className={styles.background_top} center="xs">
       <TitleMod title="WHAT IS JUNCTION" />
     </Row>
+    <Block className={`${styles.block} ${styles.infotext}`}>
+      <Col xs={12} className={styles.parag}>
+        Junction is a community of developers, designers and entrepreneurs from around the world, led by a team of
+        volunteers. The Junction main event, Europe{"'"}s biggest hackathon is organized annually in Finland during the
+        wintery month of November.
+        <br />
+        <br />
+        On top of our main event, Junction also organizes several other hackathons and tech-events around the world with
+        the help of local developer communities. Check out our calendar to get to know all that is going on in Junction!
+        We have a busy fall coming up.
+        <br />
+        <br />
+        The one thing about Junction that we love to mention is, that we are not your standard cafeteria hackathons.
+        Junction is an experience, a unique environment to create & learn and a global community on a mission to empower
+        people to create with technology.
+      </Col>
+    </Block>
     <Block className={styles.block} contentClassName={styles.content}>
       <Row center="xs" className={styles.community}>
         <Col xs={6} md={4}>
