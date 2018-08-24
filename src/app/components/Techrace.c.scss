@@ -1,0 +1,54 @@
+@import '../stylesheets/variables';
+
+.block {
+  background-color: black;
+  color: white;
+  padding: 0;
+}
+
+.block_white {
+  background-color: white;
+  color: black;
+}
+
+.techRaceImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  background-size: contain;
+}
+
+.link {
+  color: $accent;
+}
+
+.schedule_titles {
+  font-weight: bold;
+  @media only screen and (max-width: 470px) {
+    font-size: 11px;
+  }
+}
+
+.schedule {
+  @media only screen and (max-width: 470px) {
+    font-size: 11px;
+  }
+}
+
+.partnerImage {
+  @media only screen and (min-width: 50px) {
+    max-width: 100%;
+  }
+  @media only screen and (min-width: 500px) {
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+
+.partnerCnt {
+  text-align: center;
+  padding-bottom: 0;
+}
