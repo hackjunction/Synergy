@@ -4,9 +4,10 @@ import BlockHeader from './viewBlocks/BlockHeader';
 import Block from './viewBlocks/Block';
 import styles from './Techrace.c.scss';
 import TopNav from './TopNav';
+import PartnerSection from './landing/PartnerSection';
 import Footer from './landing/Footer';
 
-const Terminal = () => (
+const Techrace = () => (
   <div>
     <TopNav />
     <div>
@@ -16,7 +17,7 @@ const Terminal = () => (
         alt="TechRace Banner"
       />
     </div>
-    <Block className={styles.block}>
+    <Block className={styles.block_white}>
       <BlockHeader title="WHY?" />
       <Row>
         <Col xs={12}>
@@ -40,8 +41,24 @@ const Terminal = () => (
           <br />
         </Col>
       </Row>
+      <Row>
+        <Col xs={12} sm={6}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2018/08/junction_logos_2018-wordmark_black.png"
+            className={styles.partnerImage}
+            alt="Junction Logo"
+          />
+        </Col>
+        <Col xs={12} sm={6}>
+          <img
+            src="https://staging.hackjunction.com/wp-content/uploads/2018/08/Startuplifers_Logo_Black_RGB_small.png"
+            className={styles.partnerImage}
+            alt="Startuplifers Logo"
+          />
+        </Col>
+      </Row>
     </Block>
-    <Block className={styles.block_white}>
+    <Block className={styles.block}>
       <BlockHeader title="How to participate" />
       <p>
         TechRace is open for anyone interested in learning, solving, developing and trying new stuff with tech!
@@ -51,7 +68,8 @@ const Terminal = () => (
         background is, this is for everyone!
         <br />
         <br />
-        Find out more info about participating from our Facebook events! Registration opens THU 23.8.
+        Find out more info about participating from our Facebook events! Registration is open{' '}
+        <a href="https://hackjunction.typeform.com/to/WVpMF6">here</a>.
         <br />
       </p>
       <BlockHeader title="Schedule" />
@@ -71,21 +89,21 @@ const Terminal = () => (
         <Col xs={3}>Location</Col>
         <Col xs={6}>Co-organizer</Col>
       </Row>
-      <Row>
-        <Col xs={3}>17.9 Helsinki</Col>
+      <Row className={styles.schedule}>
+        <Col xs={3}>12.9 Helsinki</Col>
         <Col xs={3}>Tiedekulma</Col>
         <Col xs={6}>Helsinki Think Company</Col>
-        <Col xs={3}>12.9 Tampere</Col>
+        <Col xs={3}>17.9 Tampere</Col>
         <Col xs={3}>Tribe Tampere</Col>
         <Col xs={6}>Tampere Entrepreneurship Society</Col>
-        <Col xs={3}>19.9 Vaasa</Col>
-        <Col xs={3}>TBA</Col>
+        <Col xs={3}>18.9 Vaasa</Col>
+        <Col xs={3}>Ylioppilastalo</Col>
         <Col xs={6}>Vaasa Entrepreneurship Society</Col>
-        <Col xs={3}>18.9 Turku</Col>
+        <Col xs={3}>19.9 Turku</Col>
         <Col xs={3}>SparkUp</Col>
         <Col xs={6}>Boost Turku</Col>
         <Col xs={3}>24.9 Jyväskylä</Col>
-        <Col xs={3}>TBA</Col>
+        <Col xs={3}>Voimala Business Park</Col>
         <Col xs={6}>Jyväskylä Entrepreneurship Society</Col>
         <Col xs={3}>25.9 Lappeenranta</Col>
         <Col xs={3}>TBA</Col>
@@ -101,8 +119,14 @@ const Terminal = () => (
         <Col xs={6}>Oulu Entrepreneurship Society</Col>
       </Row>
     </Block>
+    <Block className={styles.block_white}>
+      <PartnerSection
+        categories={[{ priority: 300, size_md: 4, size_xs: 6 }, { priority: 200, size_md: 3, size_sm: 3, size_xs: 4 }]}
+        year={201800}
+      />
+    </Block>
     <Footer />
   </div>
 );
 
-export default Terminal;
+export default Techrace;
