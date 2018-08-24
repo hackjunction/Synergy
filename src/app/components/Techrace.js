@@ -7,6 +7,10 @@ import TopNav from './TopNav';
 import PartnerSection from './landing/PartnerSection';
 import Footer from './landing/Footer';
 
+{
+  /*import Tracks from './Tracks';*/
+}
+
 const Techrace = () => (
   <div>
     <TopNav />
@@ -125,6 +129,7 @@ const Techrace = () => (
         year={201800}
       />
     </Block>
+    {/*<Tracks year={2018} />*/}
     <Footer />
   </div>
 );

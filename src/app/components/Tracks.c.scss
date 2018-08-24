@@ -1,0 +1,18 @@
+@import '../stylesheets/variables';
+
+.block {
+  background-color: #000000;
+  color: #fbfbfb;
+  font-family: "Montserrat", sans-serif;
+}
+
+.track_row {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.text_highlight {
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: $accent;
+}

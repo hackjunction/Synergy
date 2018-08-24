@@ -22,7 +22,7 @@ class Tracks extends Component {
               </BlockHeader>
               <Col xs={12} md={12}>
                 <a href="https://2018.hackjunction.com">
-                  <button className={styles.apply_button}>LEARN MORE ABOUT APLYING</button>
+                  <button className={styles.apply_button}>LEARN MORE ABOUT APPLYING</button>
                 </a>
               </Col>
             </Col>
