@@ -32,23 +32,15 @@ class MobileNav extends React.Component {
           isOpen={this.state.isMenuOpen}
         >
           <nav className={styles.site_nav}>
-            <ul center="xs">
-              <li>
-                <Link to="/">HOME</Link>
-              </li>
-              <li>
-                <Link to="/team">TEAM</Link>
-              </li>
-              <li>
-                <Link to="/2017">JUNCTION&nbsp;2017</Link>
-              </li>
-              <li>
-                <Link to="/junctionx">JUNCTIONX</Link>
-              </li>
-              <li>
-                <Link to="/jobs">JOBS</Link>
-              </li>
-            </ul>
+            <a href="https://2018.hackjunction.com">Junction 2018</a>
+            <Link to="/junctionx">Global</Link>
+            <Link to="/calendar">Calendar</Link>
+            <Link to="/about">What is Junction</Link>
+            <Link to="/team">Team</Link>
+            <Link to="/jobs">Jobs from partners</Link>
+            <Link to="/participate">Participate</Link>
+            <Link to="/partners">Partner</Link>
+            <Link to="/volunteer">Volunteer</Link>
           </nav>
         </Menu>
       </Media>
