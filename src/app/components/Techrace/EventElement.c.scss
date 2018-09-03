@@ -1,0 +1,157 @@
+@import '../../stylesheets/variables';
+
+$color3: white;
+.track_page {
+  background-color: #fbfbfb;
+  .top_nav_tracks{
+    background-color: #232323 !important;
+  }
+}
+.categoryButton {
+  cursor: pointer;
+  padding: 0px 5px;
+  font-weight: bold;
+}
+.inner {
+  margin: 5px;
+  color: #000000;
+  background: #fbfbfb;
+}
+.innerSelected {
+  margin: 5px;
+  color: #000000;
+  background: $accent;
+}
+.calendarEvent {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.grid {
+  margin-bottom: 50px;
+}
+.h1 {
+  @media only screen and (min-width: 320px) {
+      font-size: 24px;
+      line-height: 28px;
+  }
+  @media only screen and (min-width: 500px) {
+      font-size: 32px;
+      line-height: 45px;
+  }
+}
+.trackCell {
+  margin-top: 20px;
+  height: 180px;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  background-size: 100%;
+  background-position: 50% 50%;
+  -webkit-transition: background-size 500ms linear;
+  -moz-transition: background-size 500ms linear;
+  -o-transition: background-size 500ms linear;
+  -ms-transition: background-size 500ms linear;
+  transition: background-size 500ms linear;
+
+  &:hover {
+    background-size: 110%;
+
+    .inside {
+      transition: all 0.5s ease;
+      opacity: 1;
+    }
+  }
+}
+
+.open_container {
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+}
+.header {
+  background-color: $accent;
+  padding: 20px;
+}
+.header h1{
+  @media only screen and (min-width: 768px) {
+    width: max-content;
+  }
+  text-align: left;
+  border-bottom: 10px solid black;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+.text_content {
+  background-color: $accent;
+}
+.text_content a {
+  color: white;
+}
+.challenges {
+  background-color: white;
+  padding: 20px;
+  h3 {
+    border-bottom: 10px solid $accent;
+  }
+}
+.challenge {
+  border-bottom: 1px solid $accent;
+  margin-bottom: 10px;
+  a {
+    color: $accent;
+  }
+}
+.challenge_partner {
+  font-weight: 700;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.challenge_title {
+  font-weight: 700;
+}
+.challenge_content {
+  p {
+    margin: 5px 0px;
+  }
+}
+.awesome_overlay {
+  background-color: transparentize($accent, 1);
+  height: 180px;
+}
+.awesome_overlay:hover {
+  background-color: transparentize($accent, 0.5);
+  transition: background-color 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.arrow {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: $accent;
+}
+.arrow:hover {
+  color: #fbfbfb;
+  text-shadow: 0px 0px 5px $accent;
+}
+
+.inside {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+
+  h2 {
+    text-shadow: 5px 5px 10px black;
+  }
+
+  * {
+    transition: all 0.5s ease-in 0.1s;
+  }
+}

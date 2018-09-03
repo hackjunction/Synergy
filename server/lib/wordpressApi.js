@@ -24,6 +24,7 @@ export const getTracks = () => {
           description: track.acf.description,
           image: track.acf.image,
           year: track.acf.year,
+          priority: track.acf.priority,
           challenges: track.acf.challenges
             ? track.acf.challenges.map(challenge => {
                 return {
@@ -35,7 +36,8 @@ export const getTracks = () => {
             : [],
           main_partners: track.main_partners,
           partners: track.partners,
-          slug: track.slug
+          slug: track.slug,
+          link: track.acf.link
         };
       });
     });
