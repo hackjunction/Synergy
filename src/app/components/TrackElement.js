@@ -15,7 +15,7 @@ class TrackElement extends Component {
       setTimeout(() => {
         scroller.scrollTo(track.slug, {
           duration: 500,
-          delay: 100,
+          delay: 0,
           smooth: true,
           offset: -50
         });

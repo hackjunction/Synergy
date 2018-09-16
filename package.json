@@ -68,7 +68,7 @@
     "medium-sdk": "^0.0.4",
     "moment": "^2.20.1",
     "node-instagram": "^3.0.0",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.9.3",
     "npx": "^9.7.1",
     "prettier": "^1.8.2",
     "prop-types": "^15.5.10",
