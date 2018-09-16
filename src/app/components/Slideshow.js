@@ -8,7 +8,7 @@ const Slideshow = props => (
   <div>
     <CarouselProvider
       naturalSlideWidth={100}
-      naturalSlideHeight={55}
+      naturalSlideHeight={48}
       totalSlides={props.elements.length}
       interval={7000}
       isPlaying
