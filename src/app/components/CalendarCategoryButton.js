@@ -18,7 +18,7 @@ class CalendarCategoryButton extends Component {
 
     return (
       <Col xs={4} md={3} onClick={toggle} className={styles.categoryButton}>
-        <div className={enabled ? styles.innerSelected : styles.inner}>{category.toUpperCase()}</div>
+        <div className={enabled ? styles.innerSelected : styles.inner}>{category.toUpperCase().replace('_', ' ')}</div>
       </Col>
     );
   }
