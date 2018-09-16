@@ -43,6 +43,13 @@ const Welcome = () => (
               </div>
             </div>
           </a>
+          <a href="https://2018.hackjunction.com" className={styles.applyLink}>
+            <div>
+              <div className={styles.apply}>
+                <h2 className={styles.apply2}>JUNCTION 2018 SITE</h2>
+              </div>
+            </div>
+          </a>
           <br />
         </Col>
       </Row>
