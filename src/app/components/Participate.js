@@ -6,11 +6,35 @@ import Block from './viewBlocks/Block';
 import BlockHeader from './viewBlocks/BlockHeader';
 import CalendarGrid from './CalendarGrid';
 import TopNav from './TopNav';
+import Slideshow from './Slideshow';
 import Footer from './landing/Footer';
 
 const Participate = () => (
   <div>
     <TopNav />
+    <Slideshow
+      elements={[
+        {
+          index: '0',
+          image: 'https://staging.hackjunction.com/wp-content/uploads/2018/09/helmikorhonen_friday14.jpg',
+          quote: '“Thank you for the event, this has become my must do every year now!”',
+          quoter: ' -Main event 2017'
+        },
+        {
+          index: '1',
+          image: 'https://staging.hackjunction.com/wp-content/uploads/2018/09/Copy-of-LAUANTAI-AINO-0887.jpg',
+          quote: "“LOVED IT! Please don't make us wait a whole year for the next one!”",
+          quoter: ''
+        },
+        {
+          index: '2',
+          image: 'https://staging.hackjunction.com/wp-content/uploads/2018/09/Copy-of-LAUANTAI-AINO-0978.jpg',
+          quote:
+            '“I was absolutely amazed at how well Junction was organized. It was my first hackathon and now I am definitely hooked!”',
+          quoter: ' -Main event 2017'
+        }
+      ]}
+    />
     <Block className={styles.greenBlock}>
       <h1 className={styles.applyHeader}>JUNCTION 2018 APPLICATIONS NOW OPEN</h1>
       <a href="https://2018.hackjunction.com" className={styles.applyLink}>
