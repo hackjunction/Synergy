@@ -88,7 +88,7 @@ class Techrace extends Component {
             <br />
             <br />
             Find out more info about participating from the events down below!<br />
-            <a href="https://hackjunction.typeform.com/to/WVpMF6">
+            <a href="https://hackjunction.typeform.com/to/yB6bxy">
               <button className={styles.apply_button}>Registration is open here!</button>
             </a>
             <br />
