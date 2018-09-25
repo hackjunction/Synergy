@@ -49,7 +49,7 @@ const Terminal = () => (
     <Block className={styles.block1}>
       <BlockHeader title="PARTNER COMPANIES" />
       <Row>
-        <Col md={6} xs={12}>
+        <Col md={6} xs={12} className={styles.partnerc}>
           <div className={styles.partnerCnt}>
             <img
               src="https://staging.hackjunction.com/wp-content/uploads/2018/06/logos_partners_website-12.png"
@@ -58,10 +58,19 @@ const Terminal = () => (
             />
           </div>
         </Col>
-        <Col md={6} xs={12}>
+        <Col md={6} xs={12} className={styles.partnerc}>
           <div className={styles.partnerCnt}>
             <img
               src="https://staging.hackjunction.com/wp-content/uploads/2018/08/logos_partners_website-nextgames-22.png"
+              className={styles.partnerImage}
+              alt="partnerlogo2"
+            />
+          </div>
+        </Col>
+        <Col md={6} xs={12} className={styles.partnerc}>
+          <div className={styles.partnerCnt}>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2018/07/logos_partners_website-16.png"
               className={styles.partnerImage}
               alt="partnerlogo2"
             />
