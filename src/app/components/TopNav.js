@@ -17,7 +17,7 @@ class TopNav extends React.Component {
               alt="Logo"
             />
           </Link>
-          <Media query="(min-width: 901px)">
+          <Media query="(min-width: 700px)">
             <Menu className={styles.menu} mode="horizontal" openAnimation="slide-up">
               <SubMenu title={<Link to="/calendar">EVENTS</Link>} key="events">
                 <MenuItem key="junction2018">
@@ -54,8 +54,14 @@ class TopNav extends React.Component {
               </SubMenu>
             </Menu>
           </Media>
-          <Media query="(max-width: 900px)">
-            <span onClick={window.openNavigationMenu}>MENU</span>
+          <Media query="(max-width: 699px)">
+            <a onClick={window.openNavigationMenu}>
+              <img
+                src="https://staging.hackjunction.com/wp-content/uploads/2018/09/white-hamburger-menu.png"
+                alt="Hamburger"
+                className={styles.hamburger}
+              />
+            </a>
           </Media>
           <a
             className={styles.mlh}

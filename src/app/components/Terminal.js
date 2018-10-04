@@ -9,15 +9,14 @@ import Footer from './landing/Footer';
 const Terminal = () => (
   <div>
     <TopNav />
-    <Block className={styles.block1}>
-      <div>
-        <img
-          src="https://staging.hackjunction.com/wp-content/uploads/2018/08/Terminal_logo_black@4x.png"
-          className={styles.terminalImage}
-          alt="Terminal logo"
-        />
-      </div>
-    </Block>
+    {/*<Block className={styles.block1}>*/}
+    <div>
+      <img
+        src="https://staging.hackjunction.com/wp-content/uploads/2018/08/terminal_socialmedia_fb_event.png"
+        className={styles.terminalImage}
+        alt="Terminal logo"
+      />
+    </div>
     <Block className={styles.block}>
       <BlockHeader title="TERMINAL 3.0" />
       <Row className="junction_terminal">
