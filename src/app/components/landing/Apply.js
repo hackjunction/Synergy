@@ -15,14 +15,14 @@ class Tracks extends Component {
         <Block className={styles.block} contentClassName={styles.block}>
           <Row>
             <Col xs={12} md={6} className={styles.text_section}>
-              <BlockHeader className={styles.title} titleStyle={styles.title} title="JUNCTION 2018 - APPLY NOW">
+              <BlockHeader className={styles.title} titleStyle={styles.title} title="JUNCTION 2018 - SEE YOU THERE">
                 {
-                  'Winter is coming – and so is Junction 2018! This November Europe’s biggest hackathon will be back even bigger and better in Helsinki area, Finland. Applications are open now!'
+                  'Winter is coming – and so is Junction 2018! This November Europe’s biggest hackathon will be back even bigger and better in Helsinki area, Finland.'
                 }
               </BlockHeader>
               <Col xs={12} md={12}>
                 <a href="https://2018.hackjunction.com">
-                  <button className={styles.apply_button}>LEARN MORE ABOUT APPLYING</button>
+                  <button className={styles.apply_button}>LEARN MORE ABOUT JUNCTION 2018</button>
                 </a>
               </Col>
             </Col>

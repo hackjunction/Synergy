@@ -36,17 +36,17 @@ const Welcome = () => (
             <br />
             23. - 25.11. 2018 <br />
           </h1>
-          <a href="https://apply.hackjunction.com" className={styles.applyLink}>
-            <div>
-              <div className={styles.apply}>
-                <h2 className={styles.apply2}>APPLY NOW</h2>
-              </div>
-            </div>
-          </a>
           <a href="https://2018.hackjunction.com" className={styles.applyLink}>
             <div>
               <div className={styles.apply}>
                 <h2 className={styles.apply2}>JUNCTION 2018 SITE</h2>
+              </div>
+            </div>
+          </a>
+          <a href="https://apply.hackjunction.com" className={styles.applyLink}>
+            <div>
+              <div className={styles.apply}>
+                <h2 className={styles.apply2}>VIEW YOUR APPLICATION</h2>
               </div>
             </div>
           </a>
