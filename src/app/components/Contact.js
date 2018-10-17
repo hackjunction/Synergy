@@ -90,10 +90,10 @@ const Contact = () => (
           image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-patrik.jpg"
         />
         <ContactCard
-          name="Timo Luukkola & Jenna Kallunki"
+          name="Jenna Kallunki"
           email="hello(at)hackjunction.com"
           title="Volunteers"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/05/junctionteam18-timojenna2.jpg"
+          image="https://staging.hackjunction.com/wp-content/uploads/2018/10/jenna.jpg"
         />
       </Row>
     </Block>
