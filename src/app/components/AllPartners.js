@@ -119,6 +119,7 @@ const AllPartners = () => (
     <Block className={styles.textblock_black}>
       <h1>Case Video</h1>
       <ReactPlayer url="https://www.youtube.com/watch?v=O0WFEAqeg7Y" className={styles.video} />
+      <ReactPlayer url="https://www.youtube.com/watch?v=sWef7zXsg_Y" className={styles.video} />
     </Block>
     <Block className={styles.textblock}>
       <Row>
