@@ -161,6 +161,7 @@ export const getJobs = () => {
             title: job.acf.title,
             content: job.content.rendered,
             partner: job.acf.partner,
+            application_start_date: job.acf.application_start_date,
             application_end_date: job.acf.application_end_date,
             partner_logo: job.acf.partner_logo,
             // Example input: 'HTML<br />\r\nCSS<br />\r\nJavaScript<br />\r\n'
@@ -173,9 +174,15 @@ export const getJobs = () => {
           };
         })
         .filter(job => {
-          var jobDate = new Date(job.application_end_date);
-          jobDate.setUTCHours(0, 0, 0, 0);
-          return currentTime <= jobDate;
+          if (job.application_start_date) {
+            var jobStartDate = new Date(job.application_start_date);
+            if (currentTime <= jobStartDate) {
+              return false;
+            }
+          }
+          var jobEndDate = new Date(job.application_end_date);
+          jobEndDate.setUTCHours(0, 0, 0, 0);
+          return currentTime <= jobEndDate;
         });
     });
 };
