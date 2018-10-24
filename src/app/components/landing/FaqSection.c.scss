@@ -1,3 +1,4 @@
+@import '../../stylesheets/variables';
 $question-height: 40px;
 $question-line-height: 20px;
 $question-padding: ($question-height - $question-line-height) / 2;
@@ -46,6 +47,9 @@ $answer-padding: $question-padding;
 .faqAnswerText {
   padding: $answer-padding;
   box-sizing: border-box;
+  a {
+    color: $accent;
+  }
 }
 
 .openButton {
