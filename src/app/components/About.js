@@ -18,19 +18,22 @@ const About = () => (
     </Row>
     <Block className={`${styles.block} ${styles.infotext}`}>
       <Col xs={12} className={styles.parag}>
-        Junction is a community of developers, designers and entrepreneurs from around the world, led by a team of
-        volunteers. The Junction main event, Europe{"'"}s biggest hackathon is organized annually in Finland during the
-        wintery month of November.
+        This is us in a nutshell: We bring together developers, designers and other tech-minded people to solve
+        intriguing challenges. In order to offer them the most pressing problems, we partner with roughly 60 companies
+        yearly. We believe that technology is a powerful tool when used right, and everybody should have the possibility
+        to build meaningful things with it. What started as a single hackathon in Helsinki, Finland, has now started a
+        movement of tech events all around the world. In early 2018, we launched JUNCTIONx – the possibility to join the
+        Junction community, utilize Junction’s brand and some of its muscles for your own event. In its first year,
+        JUNCTIONx’s were organized in 5 countries: China, Japan, Saudi Arabia, Hungary and Vietnam.
         <br />
         <br />
-        On top of our main event, Junction also organizes several other hackathons and tech-events around the world with
-        the help of local developer communities. Check out our calendar to get to know all that is going on in Junction!
-        We have a busy fall coming up.
-        <br />
-        <br />
-        The one thing about Junction that we love to mention is, that we are not your standard cafeteria hackathons.
-        Junction is an experience, a unique environment to create & learn and a global community on a mission to empower
-        people to create with technology.
+        All of our JUNCTIONx-event are co-hosted together with local tech hubs and passionate individuals. Check out our
+        calendar to get to know all that is going on in Junction!  The event filled year peaks annually with our
+        flagship event, Junction, held in Finland with around 1500 developers and designers in attendance every year.
+        Want to learn more from us? Drop us a line at <span className={styles.highlight}>
+          hello@hackjunction.com
+        </span>{' '}
+        and we will gladly tell you more!
       </Col>
     </Block>
     <Block className={styles.block} contentClassName={styles.content}>

@@ -15,6 +15,11 @@ const Contact = () => (
       image="https://staging.hackjunction.com/wp-content/uploads/2018/04/tiimikuva2017.jpg"
       header={<TopNav />}
     />
+    <Block>
+      {
+        'We are Junction – a volunteer-lead community effort around the world. Our headquarters is located at Startup Sauna in Finland but the whole Junction team spreads out to several different places, world-wide. The thing that keeps us together? Passion for empowering people to create with technology. Join us!'
+      }
+    </Block>
     <Block className={styles.block} contentClassName={null}>
       <Row>
         <ContactCard
