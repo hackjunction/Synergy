@@ -18,7 +18,7 @@ const Terminal = () => (
       />
     </div>
     <Block className={styles.block}>
-      <BlockHeader title="TERMINAL 3.0" />
+      <BlockHeader title="TERMINAL 19.-23.11." />
       <Row className="junction_terminal">
         <Col xs={12} className={styles.parag}>
           <br />
@@ -71,7 +71,16 @@ const Terminal = () => (
             <img
               src="https://staging.hackjunction.com/wp-content/uploads/2018/07/logos_partners_website-16.png"
               className={styles.partnerImage}
-              alt="partnerlogo2"
+              alt="partnerlogo3"
+            />
+          </div>
+        </Col>
+        <Col md={6} xs={12} className={styles.partnerc}>
+          <div className={styles.partnerCnt}>
+            <img
+              src="https://staging.hackjunction.com/wp-content/uploads/2018/11/KIUAS_logo_black.png"
+              className={styles.partnerImage}
+              alt="partnerlogo4"
             />
           </div>
         </Col>
@@ -82,28 +91,195 @@ const Terminal = () => (
         </Col>
       </Row>
     </Block>
-    <Block className={styles.block}>
+    <Block className={styles.blockSched}>
       <BlockHeader title="SCHEDULE" />
       <Row className="junction_terminal">
         <Col xs={12} className={styles.parag}>
           <br />
-          Terminal starts on the 19th of November with a kick-off session and every day the specific partner company
-          will host the night. There are also partner-hosted events and events to explore Helsinki during the days.
-          Wednesday 21st is the last day of company hosted events and Thursday 22nd is allocated free, so participants
-          and the partner companies can book one-on-one meetings in terms of recruiting and join Hack Talks Keynotes
-          during the evening! On Friday 23rd we are getting ready for Junction 2018! Accurate information about the
-          schedule will be completed later.
+          Terminal starts on the 19th of November with kick-off session and every day the specific partner company will
+          host the night. There are also partner-hosted events and events to explore Helsinki during the days. Wednesday
+          21st is the last day of having company hosted events and Thursday 22nd is allocated free so participants and
+          the partner companies can book one-on-one meetings in terms of recruiting and join Hack Talks Keynotes during
+          the evening! On the Friday 23rd we are getting ready for the Junction 2018!
           <br />
         </Col>
       </Row>
+      <div>
+        <img
+          src="https://staging.hackjunction.com/wp-content/uploads/2018/11/terSched.png"
+          className={styles.scheduleImage}
+          alt="Terminal logo"
+        />
+      </div>
+      <div className={styles.content}>
+        <Row className={styles.ter1}>
+          <Col xs={12} md={12} className={styles.name}>
+            <Row>
+              <Col>
+                <h1>Monday</h1>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Afternoon
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>Kick-off session 2 pm</div>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Evening
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>Partner session - Smartly</div>
+          </Col>
+        </Row>
+        <Row className={styles.ter1}>
+          <Col xs={12} md={12} className={styles.name}>
+            <Row>
+              <Col>
+                <h1>Tuesday</h1>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Morning
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>Partner session - Ericsson</div>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Afternoon
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>Free program</div>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Evening
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>Partner session - Next Games</div>
+          </Col>
+        </Row>
+        <Row className={styles.ter1}>
+          <Col xs={12} md={12} className={styles.name}>
+            <Row>
+              <Col>
+                <h1>Wednesday</h1>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Morning
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>Free morning</div>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Afternoon
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>Tour in Helsinki</div>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Evening
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>Program to be announced</div>
+          </Col>
+        </Row>
+        <Row className={styles.ter1}>
+          <Col xs={12} md={12} className={styles.name}>
+            <Row>
+              <Col>
+                <h1>Thursday</h1>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Morning
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>1-on-1 meetings with partners</div>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Afternoon
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>1-on-1 meetings with partners</div>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Evening
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>Hack\Talks Keynotes</div>
+          </Col>
+        </Row>
+        <Row className={styles.ter1}>
+          <Col xs={12} md={12} className={styles.name}>
+            <Row>
+              <Col>
+                <h1>Friday</h1>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Morning
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>Workshop with Kiuas</div>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Afternoon
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>Getting ready for Junction!</div>
+          </Col>
+        </Row>
+        <Row className={styles.event}>
+          <Col xs={4} sm={2} md={2} className={styles.time_1}>
+            Evening
+          </Col>
+          <Col xs={7}>
+            <div className={styles.eventName}>Junction 2018!</div>
+          </Col>
+        </Row>
+      </div>
     </Block>
-    <Block className={styles.block}>
+    <Block className={styles.blockParts}>
       <BlockHeader title="FOR THE PARTICIPANTS - INFO" />
       <Row className="junction_terminal">
         <Col xs={12} className={styles.parag}>
           <br />
-          Welcome to Finland! Participating in Terminal means that we will provide you with accommodation together with
-          other Terminal participants for the whole week! More information coming soon.
+          Welcome to Finland! Participating to Terminal means that we will provide you accommodation together with other
+          Terminal participants for the whole week, meet fascinating companies & be the first to hear about their open
+          jobs and enjoy time together! Some of the participants are already chosen, so stay tuned for info letter in
+          few weeks!
           <br />
         </Col>
       </Row>
