@@ -65,7 +65,7 @@ const Footer = () => (
       <p>
         <a href="/policy">Privacy Policy</a>
         <br />
-        <a href="/terms">Terms of Service</a>
+        <a href="/terms">Terms and Conditions</a>
         <br />
         <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>
       </p>
