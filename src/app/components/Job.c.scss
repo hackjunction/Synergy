@@ -72,6 +72,10 @@
     margin-bottom: 10px;
     display: inline-block;
   }
+  a {
+    color: $accent;
+    font-weight: 600;
+  }
 }
 .link {
   a:link {
