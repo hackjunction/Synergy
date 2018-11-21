@@ -40,7 +40,7 @@ class MobileNav extends React.Component {
             <Link to="/jobs">Jobs from partners</Link>
             <Link to="/participate">Participate</Link>
             <Link to="/partners">Partner</Link>
-            <Link to="/volunteer">Volunteer</Link>
+            {/*<Link to="/volunteer">Volunteer</Link>*/}
           </nav>
         </Menu>
       </Media>
