@@ -72,11 +72,17 @@
     margin-bottom: 10px;
     display: inline-block;
   }
+  a {
+    color: $accent;
+    font-weight: 600;
+  }
 }
 .link {
   a:link {
     color: $accent;
     text-decoration: none;
+    font-size: 1.3em !important;
+    font-weight: 800;
   }
   a:visited {
     color: $accent;
