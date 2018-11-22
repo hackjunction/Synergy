@@ -27,6 +27,10 @@ h3 {
   font-family: Montserrat, sans-serif;
 }
 
+p {
+  text-align: justify;
+}
+
 span {
   color: #EC008B;
 }
