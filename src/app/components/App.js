@@ -14,7 +14,7 @@ import AllTracks from './AllTracks';
 import AllPartners from './AllPartners';
 import OldPartners from './2017Partners';
 import AllJobs from './AllJobs';
-import Volunteer from './Volunteer';
+/*import Volunteer from './Volunteer';*/
 import Junction2017 from './Junction2017';
 import JunctionX from './JunctionX';
 import GoldenTicket from './GoldenTicket';
@@ -75,7 +75,7 @@ class App extends React.Component {
               <Route exact path="/" component={Landing} />
               <Route exact path="/post" component={Post} />
               <Route exact path="/team" component={Contact} />
-              <Route exact path="/volunteer" component={Volunteer} />
+              {/*<Route exact path="/volunteer" component={Volunteer} />*/}
               <Route exact path="/about" component={About} />
               <Route exact path="/participate" component={Participate} />
               <Route path="/tracks/:track" component={Track} />

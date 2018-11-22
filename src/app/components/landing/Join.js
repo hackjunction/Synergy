@@ -17,11 +17,13 @@ const Join = () => (
             <button className={styles.apply_button}>PARTICIPATE</button>
           </Link>
         </Col>
+        {/*
         <Col xs={12} md={4}>
           <Link to="/volunteer">
             <button className={styles.apply_button}>VOLUNTEER</button>
           </Link>
         </Col>
+        */}
         <Col xs={12} md={4}>
           <Link to="/partners">
             <button className={styles.apply_button}>PARTNER</button>
