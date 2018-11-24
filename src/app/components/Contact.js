@@ -89,10 +89,10 @@ const Contact = () => (
           image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-juuso.jpg"
         />
         <ContactCard
-          name="Patrik Holopainen"
-          email="patrik.holopainen(at)hackjunction.com"
+          name="Santeri Hietanen & Joonas Nurmi"
+          email="santeri.hietanen(at)hackjunction.com"
           title="Reviewing"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-patrik.jpg"
+          image="https://staging.hackjunction.com/wp-content/uploads/2018/11/junctionteam18-santeri.jpg"
         />
         <ContactCard
           name="Jenna Kallunki"
