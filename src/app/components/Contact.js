@@ -41,10 +41,10 @@ const Contact = () => (
           image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-henri.jpg"
         />
         <ContactCard
-          name="Anna Brchisky"
-          email="anna.brchisky(at)hackjunction.com"
+          name="Silvia Geier"
+          email="silvia.geier(at)hackjunction.com"
           title="Marketing & Communications"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-anna.jpg"
+          image=""
         />
         <ContactCard
           name="Antti Hämmäinen"
