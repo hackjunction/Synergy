@@ -112,8 +112,12 @@ const AllPartners = () => (
         co-create the innovations of tomorrow.
       </p>
       <PartnerSection
-        categories={[{ priority: 300, size_md: 4, size_xs: 6 }, { priority: 200, size_md: 3, size_sm: 3, size_xs: 4 }]}
-        year={201}
+        categories={[
+          { priority: 300, size_md: 4, size_xs: 6 },
+          { priority: 200, size_md: 3, size_sm: 3, size_xs: 4 },
+          { priority: 100, size_md: 3, size_sm: 3, size_xs: 4 }
+        ]}
+        year="2018"
       />
     </Block>
     <Block className={styles.textblock_black}>

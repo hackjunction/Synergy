@@ -25,31 +25,7 @@ const Welcome = () => (
     <Block contentClassName={styles.blockContent}>
       <Row center="xs" className="junction_welcome">
         <Col xs={12} className={styles.junction_hackthefuture}>
-          <div>
-            <img
-              src="https://staging.hackjunction.com/wp-content/uploads/2018/06/junction2018_website_logo-42-42.png"
-              className={styles.junLogo}
-            />
-          </div>
-          <h1 className={styles.h1}>
-            {"EUROPE'S BIGGEST HACKATHON"}
-            <br />
-            23. - 25.11. 2018 <br />
-          </h1>
-          <a href="https://2018.hackjunction.com" className={styles.applyLink}>
-            <div>
-              <div className={styles.apply}>
-                <h2 className={styles.apply2}>JUNCTION 2018 SITE</h2>
-              </div>
-            </div>
-          </a>
-          <a href="https://apply.hackjunction.com" className={styles.applyLink}>
-            <div>
-              <div className={styles.apply}>
-                <h2 className={styles.apply2}>VIEW YOUR APPLICATION</h2>
-              </div>
-            </div>
-          </a>
+          <h1 className={styles.h1}>EMPOWERING PEOPLE TO CREATE WITH TECHNOLOGY</h1>
           <br />
         </Col>
       </Row>

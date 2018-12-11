@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Row, Col } from 'react-flexbox-grid';
+import { Link } from 'react-router-dom';
 import Scroll from 'react-scroll';
 import Block from '../viewBlocks/Block';
 import BlockHeader from '../viewBlocks/BlockHeader';
@@ -15,15 +16,15 @@ class Tracks extends Component {
         <Block className={styles.block} contentClassName={styles.block}>
           <Row>
             <Col xs={12} md={6} className={styles.text_section}>
-              <BlockHeader className={styles.title} titleStyle={styles.title} title="JUNCTION 2018 - SEE YOU THERE">
-                {
-                  'Winter is coming – and so is Junction 2018! This November Europe’s biggest hackathon will be back even bigger and better in Helsinki area, Finland.'
-                }
+              <BlockHeader className={styles.title} titleStyle={styles.title} title="JUNCTION 2018">
+                <span>
+                  {`Junction 2018 was organized in November in Helsinki area, Finland. During one weekend, 1200 hackers from 105 nationalities came together and created over 300 new projects from scratch.`}
+                </span>
               </BlockHeader>
               <Col xs={12} md={12}>
-                <a href="https://2018.hackjunction.com">
+                <Link to="/2018">
                   <button className={styles.apply_button}>LEARN MORE ABOUT JUNCTION 2018</button>
-                </a>
+                </Link>
               </Col>
             </Col>
             <Col
