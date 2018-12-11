@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Row, Col } from 'react-flexbox-grid';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import Scroll from 'react-scroll';
 import Block from '../viewBlocks/Block';
 import BlockHeader from '../viewBlocks/BlockHeader';
@@ -21,11 +21,13 @@ class Tracks extends Component {
                   {`Junction 2018 was organized in November in Helsinki area, Finland. During one weekend, 1200 hackers from 105 nationalities came together and created over 300 new projects from scratch.`}
                 </span>
               </BlockHeader>
+              {/*
               <Col xs={12} md={12}>
                 <Link to="/2018">
                   <button className={styles.apply_button}>LEARN MORE ABOUT JUNCTION 2018</button>
                 </Link>
               </Col>
+              */}
             </Col>
             <Col
               xs={12}

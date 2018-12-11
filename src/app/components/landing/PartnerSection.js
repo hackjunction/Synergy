@@ -13,6 +13,7 @@ class PartnerSection extends Component {
   render() {
     if (!this.props.partners[this.props.year]) return null;
     var partners = this.props.partners[this.props.year].sort((a, b) => b.priority - a.priority);
+    console.log(partners);
     var groups = new Map();
     partners.forEach(partner => {
       var prio = Math.floor(Number(partner.priority) / 100);
@@ -22,6 +23,7 @@ class PartnerSection extends Component {
         groups.set(prio, [partner]);
       }
     });
+    console.log(groups);
     var elems = this.props.categories
       .map((category, i) => {
         var prio = Math.floor(Number(category.priority) / 100);
@@ -31,7 +33,11 @@ class PartnerSection extends Component {
           <Row id={i} className="junction_partners" center="xs">
             {partners.map(partner => {
               return (
-                <Col xs={category.size_xs} sm={category.size_sm} md={category.size_md}>
+                <Col
+                  xs={category.size_xs}
+                  sm={category.size_sm || category.size_xs}
+                  md={category.size_md || category.size_sm || category.size_xs}
+                >
                   <a target="_blank" rel="noopener noreferrer" href={partner.url}>
                     <img src={partner.logo} className="responsive" alt={partner.name} />
                   </a>
