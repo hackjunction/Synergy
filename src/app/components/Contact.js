@@ -22,24 +22,14 @@ const Contact = () => (
     </Block>
     <Block className={styles.block} contentClassName={null}>
       <Row>
-        <ContactCard
-          name="Iiro Nurmi"
-          email="iiro.nurmi(at)hackjunction.com"
-          title="Director"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-iiro.jpg"
-        />
+        <ContactCard name="Iiro Nurmi" email="iiro.nurmi(at)hackjunction.com" title="Director" image="" />
         <ContactCard
           name="Patrik Holopainen"
           email="patrik.holopainen(at)hackjunction.com"
           title="Operations"
           image=""
         />
-        <ContactCard
-          name="Henri Heliö"
-          email="henri.helio(at)hackjunction.com"
-          title="CSO"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-henri.jpg"
-        />
+        <ContactCard name="Henri Heliö" email="henri.helio(at)hackjunction.com" title="CSO" image="" />
         <ContactCard name="Maiju Aspegren" email="partnerships(at)hackjunction.com" title="Partnerships" image="" />
         <ContactCard
           name="Silvia Geier"
@@ -54,24 +44,14 @@ const Contact = () => (
           title="Brand & Design"
           image=""
         />
-        <ContactCard
-          name="Teemu Lemetti"
-          email="teemu.lemetti(at)hackjunction.com"
-          title="Finance"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-teemu.jpg"
-        />
+        <ContactCard name="Teemu Lemetti" email="teemu.lemetti(at)hackjunction.com" title="Finance" image="" />
         <ContactCard
           name="Martta Jämsén"
           email="martta.jamsen(at)hackjunction.com"
           title="Junction Main Event 2019"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-martta.jpg"
+          image=""
         />
-        <ContactCard
-          name="Juuso Lappalainen"
-          email="juuso.lappalainen(at)hackjunction.com"
-          title="CTO"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-juuso.jpg"
-        />
+        <ContactCard name="Juuso Lappalainen" email="juuso.lappalainen(at)hackjunction.com" title="CTO" image="" />
         <ContactCard name="Kasper Henriksson" email="kasper.henriksson(at)hackjunction.com" title="Hel Tech" image="" />
       </Row>
     </Block>
