@@ -29,34 +29,30 @@ const Contact = () => (
           image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-iiro.jpg"
         />
         <ContactCard
-          name="Aleksi Heinonen"
-          email="aleksi.heinonen(at)hackjunction.com"
+          name="Patrik Holopainen"
+          email="patrik.holopainen(at)hackjunction.com"
           title="Operations"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-aleksi.jpg"
+          image=""
         />
         <ContactCard
           name="Henri Heliö"
-          email="partnerships(at)hackjunction.com"
-          title="Partnerships"
+          email="henri.helio(at)hackjunction.com"
+          title="CSO"
           image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-henri.jpg"
         />
+        <ContactCard name="Maiju Aspegren" email="partnerships(at)hackjunction.com" title="Partnerships" image="" />
         <ContactCard
           name="Silvia Geier"
           email="silvia.geier(at)hackjunction.com"
           title="Marketing & Communications"
           image=""
         />
+        <ContactCard name="Minea Erviö" email="minea.ervio(at)hackjunction.com" title="Global, JUNCTIONx" image="" />
         <ContactCard
-          name="Antti Hämmäinen"
-          email="antti.hammainen(at)hackjunction.com"
-          title="Global, JUNCTIONx"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-antti.jpg"
-        />
-        <ContactCard
-          name="Suvi Majander"
-          email="suvi.majander(at)hackjunction.com"
-          title="Design & Brand"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-suvi2.jpg"
+          name="Julia Ehrnrooth"
+          email="julia.ehrnrooth(at)hackjunction.com"
+          title="Brand & Design"
+          image=""
         />
         <ContactCard
           name="Teemu Lemetti"
@@ -67,39 +63,16 @@ const Contact = () => (
         <ContactCard
           name="Martta Jämsén"
           email="martta.jamsen(at)hackjunction.com"
-          title="Junction Main Event 2018"
+          title="Junction Main Event 2019"
           image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-martta.jpg"
-        />
-        <ContactCard
-          name="Erika Ojanperä"
-          email="erika.ojanpera(at)hackjunction.com"
-          title="Participants"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-erika.jpg"
-        />
-        <ContactCard
-          name="Henrik Aarnio"
-          email="henrik.aarnio(at)hackjunction.com"
-          title="Tech"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-henrik.jpg"
         />
         <ContactCard
           name="Juuso Lappalainen"
           email="juuso.lappalainen(at)hackjunction.com"
-          title="Program"
+          title="CTO"
           image="https://staging.hackjunction.com/wp-content/uploads/2018/04/junction18team-juuso.jpg"
         />
-        <ContactCard
-          name="Santeri Hietanen & Joonas Nurmi"
-          email="santeri.hietanen(at)hackjunction.com"
-          title="Reviewing"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/11/junctionteam18-santeri.jpg"
-        />
-        <ContactCard
-          name="Jenna Kallunki"
-          email="hello(at)hackjunction.com"
-          title="Volunteers"
-          image="https://staging.hackjunction.com/wp-content/uploads/2018/10/jenna.jpg"
-        />
+        <ContactCard name="Kasper Henriksson" email="kasper.henriksson(at)hackjunction.com" title="Hel Tech" image="" />
       </Row>
     </Block>
     <Footer />
